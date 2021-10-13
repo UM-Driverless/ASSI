@@ -67,10 +67,38 @@ void main(void)
     
     
     
+    
     while (1)
-    {
-        LEDS();
+    { 
+        ucASState = 0;
+        DELAY_milliseconds(5000);
         
+        ucASState = 1;
+        DELAY_milliseconds(5000);
+        
+        ucASState = 2;
+        DELAY_milliseconds(10000);
+        
+        ucASState = 4;
+        DELAY_milliseconds(5000);
+        
+        ucASState = 1;
+        DELAY_milliseconds(3000);
+        
+        ucASState = 2;
+        DELAY_milliseconds(5000);
+        
+        ucASState = 3;
+        ucFlagEmergencySpeaker = 1;
+        DELAY_milliseconds(12000);
+        
+        ucASState = 0;
+        ucFlagEmergencySpeaker = 0;
+        
+        //AS_READY        1
+        //AS_DRIVING      2
+        //AS_EMERGENCY    3
+        //AS_FINISHED     4
     }
 }
 /**

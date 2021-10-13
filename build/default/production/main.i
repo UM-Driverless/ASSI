@@ -37761,11 +37761,17 @@ void CAN1_SetFIFO1nullHandler(void (*handler)(void));
 
 void CAN1_ISR(void);
 # 58 "./mcc_generated_files/mcc.h" 2
-# 73 "./mcc_generated_files/mcc.h"
+
+# 1 "./mcc_generated_files/delay.h" 1
+# 34 "./mcc_generated_files/delay.h"
+void DELAY_milliseconds(uint16_t milliseconds);
+void DELAY_microseconds(uint16_t microseconds);
+# 59 "./mcc_generated_files/mcc.h" 2
+# 74 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 86 "./mcc_generated_files/mcc.h"
+# 87 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 99 "./mcc_generated_files/mcc.h"
+# 100 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 44 "main.c" 2
 
@@ -37799,9 +37805,11 @@ void main(void)
 
 
 
+
     while (1)
     {
-        LEDS();
+        ucASState = 1;
+        DELAY_milliseconds(100);
 
     }
 }

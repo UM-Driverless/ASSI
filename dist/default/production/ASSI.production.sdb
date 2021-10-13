@@ -165,7 +165,6 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v ___omul __omul `(uo  1 e 8 0 ]
 "12 C:\Users\Usuario\Documents\GitHub\ASSI\LEDS.c
 [v _LEDS LEDS `(v  1 e 1 0 ]
-[v i2_LEDS LEDS `(v  1 e 1 0 ]
 "44
 [v _LEDTIMER LEDTIMER `(v  1 e 1 0 ]
 "53 C:\Users\Usuario\Documents\GitHub\ASSI\main.c
@@ -240,6 +239,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _CAN1_SetRxBufferOverFlowInterruptHandler CAN1_SetRxBufferOverFlowInterruptHandler `(v  1 e 1 0 ]
 "630
 [v _CAN1_ISR CAN1_ISR `(v  1 e 1 0 ]
+"38 C:\Users\Usuario\Documents\GitHub\ASSI\mcc_generated_files/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
 "52 C:\Users\Usuario\Documents\GitHub\ASSI\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "58
@@ -324,7 +325,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
 [v _LATB LATB `VEuc  1 e 1 @1215 ]
-[s S1326 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S1327 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -334,8 +335,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 LATB7 1 0 :1:7 
 ]
 "1553
-[u S1335 . 1 `S1326 1 . 1 0 ]
-[v _LATBbits LATBbits `VES1335  1 e 1 @1215 ]
+[u S1336 . 1 `S1327 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1336  1 e 1 @1215 ]
 "1565
 [v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
 "1598
@@ -758,7 +759,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "53 C:\Users\Usuario\Documents\GitHub\ASSI\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"75
+"77
 } 0
 "50 C:\Users\Usuario\Documents\GitHub\ASSI\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -905,9 +906,10 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 {
 "221
 } 0
-"12 C:\Users\Usuario\Documents\GitHub\ASSI\LEDS.c
-[v _LEDS LEDS `(v  1 e 1 0 ]
+"38 C:\Users\Usuario\Documents\GitHub\ASSI\mcc_generated_files/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
 {
+[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 2 ]
 "42
 } 0
 "58 C:\Users\Usuario\Documents\GitHub\ASSI\mcc_generated_files/interrupt_manager.c
@@ -944,7 +946,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "50
 } 0
 "12
-[v i2_LEDS LEDS `(v  1 e 1 0 ]
+[v _LEDS LEDS `(v  1 e 1 0 ]
 {
 "42
 } 0

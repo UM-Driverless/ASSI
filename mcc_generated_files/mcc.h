@@ -56,6 +56,7 @@
 #include "tmr1.h"
 #include "tmr0.h"
 #include "can1.h"
+#include "delay.h"
 
 
 

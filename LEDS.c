@@ -41,6 +41,7 @@ void LEDS(void)
         }
 }
 
+/*
 void LEDTIMER(void)
 {
     if (ucASState == AS_DRIVING || ucASState == AS_EMERGENCY)
@@ -48,3 +49,4 @@ void LEDTIMER(void)
         LEDS();
     }
 }
+ */

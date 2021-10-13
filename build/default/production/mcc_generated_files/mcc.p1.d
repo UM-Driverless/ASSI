@@ -7,4 +7,5 @@ mcc_generated_files/interrupt_manager.h  \
 mcc_generated_files/tmr1.h  \
 mcc_generated_files/tmr0.h  \
 mcc_generated_files/can1.h  \
-mcc_generated_files/can_types.h 
+mcc_generated_files/can_types.h  \
+mcc_generated_files/delay.h 

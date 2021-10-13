@@ -172,7 +172,7 @@ void TMR1_ISR(void)
     // callback function - called every 5th pass
     if (++CountCallBack >= TMR1_INTERRUPT_TICKER_FACTOR)
     {
-        LEDTIMER();
+        LEDS;
         // ticker function call
         TMR1_CallBack();
 
