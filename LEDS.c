@@ -38,15 +38,9 @@ void LEDS(void)
                 Y_SIGNAL_SetLow();
                 B_SIGNAL_SetHigh();
                 break;
+            default:
+                Y_SIGNAL_SetLow();
+                B_SIGNAL_SetLow();
+                break;
         }
 }
-
-/*
-void LEDTIMER(void)
-{
-    if (ucASState == AS_DRIVING || ucASState == AS_EMERGENCY)
-    {
-        LEDS();
-    }
-}
- */

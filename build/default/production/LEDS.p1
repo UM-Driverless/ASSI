@@ -3641,7 +3641,27 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;LEDS.c: 40:                 break;
 [e $U 3177  ]
 "41
-[; ;LEDS.c: 41:         }
+[; ;LEDS.c: 41:             default:
+[e :U 3214 ]
+"42
+[; ;LEDS.c: 42:                 do { LATBbits.LATB1 = 0; } while(0);
+[e :U 3217 ]
+{
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 3216 ]
+"43
+[; ;LEDS.c: 43:                 do { LATBbits.LATB2 = 0; } while(0);
+[e :U 3220 ]
+{
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 3219 ]
+"44
+[; ;LEDS.c: 44:                 break;
+[e $U 3177  ]
+"45
+[; ;LEDS.c: 45:         }
 }
 [e $U 3177  ]
 [e :U 3178 ]
@@ -3650,34 +3670,9 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 2 `i 3193
  , $ -> 3 `i 3200
  , $ -> 4 `i 3207
- 3177 ]
+ 3214 ]
 [e :U 3177 ]
-"42
-[; ;LEDS.c: 42: }
-[e :UE 3176 ]
-}
-"44
-[; ;LEDS.c: 44: void LEDTIMER(void)
-[v _LEDTIMER `(v ~T0 @X0 1 ef ]
-"45
-[; ;LEDS.c: 45: {
-{
-[e :U _LEDTIMER ]
-[f ]
 "46
-[; ;LEDS.c: 46:     if (ucASState == 2 || ucASState == 3)
-[e $ ! || == -> _ucASState `i -> 2 `i == -> _ucASState `i -> 3 `i 3215  ]
-"47
-[; ;LEDS.c: 47:     {
-{
-"48
-[; ;LEDS.c: 48:         LEDS();
-[e ( _LEDS ..  ]
-"49
-[; ;LEDS.c: 49:     }
-}
-[e :U 3215 ]
-"50
-[; ;LEDS.c: 50: }
-[e :UE 3214 ]
+[; ;LEDS.c: 46: }
+[e :UE 3176 ]
 }

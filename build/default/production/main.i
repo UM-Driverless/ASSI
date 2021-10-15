@@ -37781,6 +37781,15 @@ void LEDS(void);
 void LEDTIMER(void);
 # 45 "main.c" 2
 
+# 1 "./SPEAKER.h" 1
+# 16 "./SPEAKER.h"
+void SPEAKER (void);
+
+
+extern unsigned char ucFlagEmergencySpeaker;
+extern unsigned char ucSpeakerCount;
+# 46 "main.c" 2
+
 
 
 unsigned char ucASState;
@@ -37808,8 +37817,35 @@ void main(void)
 
     while (1)
     {
+        ucASState = 0;
+        DELAY_milliseconds(5000);
+
         ucASState = 1;
-        DELAY_milliseconds(100);
+        DELAY_milliseconds(5000);
+
+        ucASState = 2;
+        DELAY_milliseconds(10000);
+
+        ucASState = 4;
+        DELAY_milliseconds(5000);
+
+        ucASState = 1;
+        DELAY_milliseconds(3000);
+
+        ucASState = 2;
+        DELAY_milliseconds(5000);
+
+        ucASState = 3;
+        ucFlagEmergencySpeaker = 1;
+        ucSpeakerCount = 0;
+        DELAY_milliseconds(12000);
+
+        ucASState = 0;
+        ucFlagEmergencySpeaker = 0;
+
+
+
+
 
     }
 }

@@ -37537,13 +37537,9 @@ void LEDS(void)
                 do { LATBbits.LATB1 = 0; } while(0);
                 do { LATBbits.LATB2 = 1; } while(0);
                 break;
+            default:
+                do { LATBbits.LATB1 = 0; } while(0);
+                do { LATBbits.LATB2 = 0; } while(0);
+                break;
         }
-}
-
-void LEDTIMER(void)
-{
-    if (ucASState == 2 || ucASState == 3)
-    {
-        LEDS();
-    }
 }

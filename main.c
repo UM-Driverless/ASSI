@@ -43,6 +43,7 @@
 
 #include "mcc_generated_files/mcc.h"
 #include "LEDS.h"
+#include "SPEAKER.h"
 
 //VARIABLES
 unsigned char ucASState;
@@ -90,6 +91,7 @@ void main(void)
         
         ucASState = 3;
         ucFlagEmergencySpeaker = 1;
+        ucSpeakerCount = 0;
         DELAY_milliseconds(12000);
         
         ucASState = 0;

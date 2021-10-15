@@ -163,11 +163,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"12 C:\Users\Usuario\Documents\GitHub\ASSI\LEDS.c
-[v _LEDS LEDS `(v  1 e 1 0 ]
-"44
-[v _LEDTIMER LEDTIMER `(v  1 e 1 0 ]
-"53 C:\Users\Usuario\Documents\GitHub\ASSI\main.c
+"54 C:\Users\Usuario\Documents\GitHub\ASSI\main.c
 [v _main main `(v  1 e 1 0 ]
 "121 C:\Users\Usuario\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _DefaultInvalidMessageHandler DefaultInvalidMessageHandler `(v  1 s 1 DefaultInvalidMessageHandler ]
@@ -325,7 +321,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
 [v _LATB LATB `VEuc  1 e 1 @1215 ]
-[s S1327 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S1336 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -335,8 +331,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 LATB7 1 0 :1:7 
 ]
 "1553
-[u S1336 . 1 `S1327 1 . 1 0 ]
-[v _LATBbits LATBbits `VES1336  1 e 1 @1215 ]
+[u S1345 . 1 `S1336 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1345  1 e 1 @1215 ]
 "1565
 [v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
 "1598
@@ -723,7 +719,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "65251
 "65251
 [v _PIE3bits PIE3bits `VES826  1 e 1 @1185 ]
-"48 C:\Users\Usuario\Documents\GitHub\ASSI\main.c
+"49 C:\Users\Usuario\Documents\GitHub\ASSI\main.c
 [v _ucASState ucASState `uc  1 e 1 0 ]
 "103 C:\Users\Usuario\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _rxMsgData rxMsgData `[8]uc  1 s 8 rxMsgData ]
@@ -756,10 +752,10 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _ucFlagEmergencySpeaker ucFlagEmergencySpeaker `uc  1 e 1 0 ]
 "13
 [v _ucSpeakerCount ucSpeakerCount `uc  1 e 1 0 ]
-"53 C:\Users\Usuario\Documents\GitHub\ASSI\main.c
+"54 C:\Users\Usuario\Documents\GitHub\ASSI\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"77
+"105
 } 0
 "50 C:\Users\Usuario\Documents\GitHub\ASSI\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -939,16 +935,6 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "202
-} 0
-"44 C:\Users\Usuario\Documents\GitHub\ASSI\LEDS.c
-[v _LEDTIMER LEDTIMER `(v  1 e 1 0 ]
-{
-"50
-} 0
-"12
-[v _LEDS LEDS `(v  1 e 1 0 ]
-{
-"42
 } 0
 "121 C:\Users\Usuario\Documents\GitHub\ASSI\mcc_generated_files/tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
