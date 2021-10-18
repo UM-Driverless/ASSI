@@ -73,7 +73,7 @@ void PIN_MANAGER_Initialize(void)
     ANSELx registers
     */
     ANSELC = 0xFF;
-    ANSELB = 0xF7;
+    ANSELB = 0xF1;
     ANSELA = 0xFF;
 
     /**

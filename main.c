@@ -71,6 +71,20 @@ void main(void)
     
     while (1)
     { 
+        
+        Y_SIGNAL_SetHigh();
+        B_SIGNAL_SetLow();
+        DELAY_milliseconds(1000);
+        Y_SIGNAL_Toggle();
+        B_SIGNAL_Toggle();
+        DELAY_milliseconds(1000);
+        Y_SIGNAL_Toggle();
+        B_SIGNAL_Toggle();
+        DELAY_milliseconds(1000);
+        Y_SIGNAL_Toggle();
+        B_SIGNAL_Toggle();
+        DELAY_milliseconds(1000);
+        
         ucASState = 0;
         DELAY_milliseconds(5000);
         
