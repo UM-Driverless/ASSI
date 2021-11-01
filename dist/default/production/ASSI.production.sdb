@@ -321,7 +321,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
 [v _LATB LATB `VEuc  1 e 1 @1215 ]
-[s S1309 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S1346 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -331,8 +331,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 LATB7 1 0 :1:7 
 ]
 "1553
-[u S1318 . 1 `S1309 1 . 1 0 ]
-[v _LATBbits LATBbits `VES1318  1 e 1 @1215 ]
+[u S1355 . 1 `S1346 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1355  1 e 1 @1215 ]
 "1565
 [v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
 "1598
@@ -755,7 +755,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "54 C:\Users\panze\Documents\GitHub\ASSI\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"119
+"123
 } 0
 "50 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]

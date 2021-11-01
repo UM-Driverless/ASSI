@@ -1,30 +1,76 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[p mainexit ]
-"74 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 74: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"2080 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
-[s S3083 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3083 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
-"2089
-[s S3084 :7 `uc 1 :1 `uc 1 ]
-[n S3084 . . GIEH ]
-"2079
-[u S3082 `S3083 1 `S3084 1 ]
-[n S3082 . . . ]
-"2094
-[v _INTCON0bits `VS3082 ~T0 @X0 0 e@1238 ]
-"1604
-[s S3065 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3065 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-"1603
-[u S3064 `S3065 1 ]
-[n S3064 . . ]
-"1615
-[v _LATCbits `VS3064 ~T0 @X0 0 e@1216 ]
-"34 ./mcc_generated_files/delay.h
-[; ;./mcc_generated_files/delay.h: 34: void DELAY_milliseconds(uint16_t milliseconds);
-[v _DELAY_milliseconds `(v ~T0 @X0 0 ef1`us ]
+"1474 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 1474:         unsigned TU16AMD :1;
+[v _LATA `Vuc ~T0 @X0 0 e@1214 ]
+"1536
+[v _LATB `Vuc ~T0 @X0 0 e@1215 ]
+"1598
+[v _LATC `Vuc ~T0 @X0 0 e@1216 ]
+"1846
+[v _TRISE `Vuc ~T0 @X0 0 e@1226 ]
+"1660
+[v _TRISA `Vuc ~T0 @X0 0 e@1222 ]
+"1722
+[v _TRISB `Vuc ~T0 @X0 0 e@1223 ]
+"1784
+[v _TRISC `Vuc ~T0 @X0 0 e@1224 ]
+"59417
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 59417: extern volatile unsigned char ANSELC __attribute__((address(0x410)));
+[v _ANSELC `Vuc ~T0 @X0 0 e@1040 ]
+"58921
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 58921: extern volatile unsigned char ANSELB __attribute__((address(0x408)));
+[v _ANSELB `Vuc ~T0 @X0 0 e@1032 ]
+"58425
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 58425: extern volatile unsigned char ANSELA __attribute__((address(0x400)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@1024 ]
+"59913
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 59913: extern volatile unsigned char WPUE __attribute__((address(0x421)));
+[v _WPUE `Vuc ~T0 @X0 0 e@1057 ]
+"58983
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 58983: extern volatile unsigned char WPUB __attribute__((address(0x409)));
+[v _WPUB `Vuc ~T0 @X0 0 e@1033 ]
+"58487
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 58487: extern volatile unsigned char WPUA __attribute__((address(0x401)));
+[v _WPUA `Vuc ~T0 @X0 0 e@1025 ]
+"59479
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 59479: extern volatile unsigned char WPUC __attribute__((address(0x411)));
+[v _WPUC `Vuc ~T0 @X0 0 e@1041 ]
+"58549
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 58549: extern volatile unsigned char ODCONA __attribute__((address(0x402)));
+[v _ODCONA `Vuc ~T0 @X0 0 e@1026 ]
+"59045
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 59045: extern volatile unsigned char ODCONB __attribute__((address(0x40A)));
+[v _ODCONB `Vuc ~T0 @X0 0 e@1034 ]
+"59541
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 59541: extern volatile unsigned char ODCONC __attribute__((address(0x412)));
+[v _ODCONC `Vuc ~T0 @X0 0 e@1042 ]
+"58611
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 58611: extern volatile unsigned char SLRCONA __attribute__((address(0x403)));
+[v _SLRCONA `Vuc ~T0 @X0 0 e@1027 ]
+"59107
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 59107: extern volatile unsigned char SLRCONB __attribute__((address(0x40B)));
+[v _SLRCONB `Vuc ~T0 @X0 0 e@1035 ]
+"59603
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 59603: extern volatile unsigned char SLRCONC __attribute__((address(0x413)));
+[v _SLRCONC `Vuc ~T0 @X0 0 e@1043 ]
+"58673
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 58673: extern volatile unsigned char INLVLA __attribute__((address(0x404)));
+[v _INLVLA `Vuc ~T0 @X0 0 e@1028 ]
+"59169
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 59169: extern volatile unsigned char INLVLB __attribute__((address(0x40C)));
+[v _INLVLB `Vuc ~T0 @X0 0 e@1036 ]
+"59665
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 59665: extern volatile unsigned char INLVLC __attribute__((address(0x414)));
+[v _INLVLC `Vuc ~T0 @X0 0 e@1044 ]
+"59934
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 59934: extern volatile unsigned char INLVLE __attribute__((address(0x424)));
+[v _INLVLE `Vuc ~T0 @X0 0 e@1060 ]
+"24966
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 24966: extern volatile unsigned char CANRXPPS __attribute__((address(0x23D)));
+[v _CANRXPPS `Vuc ~T0 @X0 0 e@573 ]
+"24366
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 24366: extern volatile unsigned char RB4PPS __attribute__((address(0x20D)));
+[v _RB4PPS `Vuc ~T0 @X0 0 e@525 ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3541,54 +3587,105 @@ Version 4.0 HI-TECH Software Intermediate Code
 "68860
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 68860: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"49 main.c
-[; ;main.c: 49: unsigned char ucASState;
-[v _ucASState `uc ~T0 @X0 1 e ]
-[v $root$_main `(v ~T0 @X0 0 e ]
-"54
-[; ;main.c: 54: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
-"55
-[; ;main.c: 55: {
+"55 mcc_generated_files/pin_manager.c
+[; ;mcc_generated_files/pin_manager.c: 55: void PIN_MANAGER_Initialize(void)
+[v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
+"56
+[; ;mcc_generated_files/pin_manager.c: 56: {
 {
-[e :U _main ]
+[e :U _PIN_MANAGER_Initialize ]
 [f ]
-"57
-[; ;main.c: 57:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"64
-[; ;main.c: 64:     (INTCON0bits.GIE = 1);
-[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"72
-[; ;main.c: 72:     while (1)
-[e :U 3181 ]
-"73
-[; ;main.c: 73:     {
-{
+"60
+[; ;mcc_generated_files/pin_manager.c: 60:     LATA = 0x00;
+[e = _LATA -> -> 0 `i `uc ]
+"61
+[; ;mcc_generated_files/pin_manager.c: 61:     LATB = 0x00;
+[e = _LATB -> -> 0 `i `uc ]
+"62
+[; ;mcc_generated_files/pin_manager.c: 62:     LATC = 0x00;
+[e = _LATC -> -> 0 `i `uc ]
+"67
+[; ;mcc_generated_files/pin_manager.c: 67:     TRISE = 0x08;
+[e = _TRISE -> -> 8 `i `uc ]
+"68
+[; ;mcc_generated_files/pin_manager.c: 68:     TRISA = 0xFF;
+[e = _TRISA -> -> 255 `i `uc ]
+"69
+[; ;mcc_generated_files/pin_manager.c: 69:     TRISB = 0xE9;
+[e = _TRISB -> -> 233 `i `uc ]
+"70
+[; ;mcc_generated_files/pin_manager.c: 70:     TRISC = 0xE7;
+[e = _TRISC -> -> 231 `i `uc ]
+"75
+[; ;mcc_generated_files/pin_manager.c: 75:     ANSELC = 0xFF;
+[e = _ANSELC -> -> 255 `i `uc ]
 "76
-[; ;main.c: 76:         do { LATCbits.LATC3 = 1; } while(0);
-[e :U 3185 ]
-{
-[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 3184 ]
+[; ;mcc_generated_files/pin_manager.c: 76:     ANSELB = 0xF1;
+[e = _ANSELB -> -> 241 `i `uc ]
 "77
-[; ;main.c: 77:         DELAY_milliseconds(1000);
-[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
-"78
-[; ;main.c: 78:         do { LATCbits.LATC3 = 0; } while(0);
-[e :U 3188 ]
+[; ;mcc_generated_files/pin_manager.c: 77:     ANSELA = 0xFF;
+[e = _ANSELA -> -> 255 `i `uc ]
+"82
+[; ;mcc_generated_files/pin_manager.c: 82:     WPUE = 0x00;
+[e = _WPUE -> -> 0 `i `uc ]
+"83
+[; ;mcc_generated_files/pin_manager.c: 83:     WPUB = 0x00;
+[e = _WPUB -> -> 0 `i `uc ]
+"84
+[; ;mcc_generated_files/pin_manager.c: 84:     WPUA = 0x00;
+[e = _WPUA -> -> 0 `i `uc ]
+"85
+[; ;mcc_generated_files/pin_manager.c: 85:     WPUC = 0x00;
+[e = _WPUC -> -> 0 `i `uc ]
+"90
+[; ;mcc_generated_files/pin_manager.c: 90:     ODCONA = 0x00;
+[e = _ODCONA -> -> 0 `i `uc ]
+"91
+[; ;mcc_generated_files/pin_manager.c: 91:     ODCONB = 0x00;
+[e = _ODCONB -> -> 0 `i `uc ]
+"92
+[; ;mcc_generated_files/pin_manager.c: 92:     ODCONC = 0x00;
+[e = _ODCONC -> -> 0 `i `uc ]
+"97
+[; ;mcc_generated_files/pin_manager.c: 97:     SLRCONA = 0xFF;
+[e = _SLRCONA -> -> 255 `i `uc ]
+"98
+[; ;mcc_generated_files/pin_manager.c: 98:     SLRCONB = 0xFF;
+[e = _SLRCONB -> -> 255 `i `uc ]
+"99
+[; ;mcc_generated_files/pin_manager.c: 99:     SLRCONC = 0xFF;
+[e = _SLRCONC -> -> 255 `i `uc ]
+"104
+[; ;mcc_generated_files/pin_manager.c: 104:     INLVLA = 0xFF;
+[e = _INLVLA -> -> 255 `i `uc ]
+"105
+[; ;mcc_generated_files/pin_manager.c: 105:     INLVLB = 0xFF;
+[e = _INLVLB -> -> 255 `i `uc ]
+"106
+[; ;mcc_generated_files/pin_manager.c: 106:     INLVLC = 0xFF;
+[e = _INLVLC -> -> 255 `i `uc ]
+"107
+[; ;mcc_generated_files/pin_manager.c: 107:     INLVLE = 0x08;
+[e = _INLVLE -> -> 8 `i `uc ]
+"116
+[; ;mcc_generated_files/pin_manager.c: 116:     CANRXPPS = 0x0B;
+[e = _CANRXPPS -> -> 11 `i `uc ]
+"117
+[; ;mcc_generated_files/pin_manager.c: 117:     RB4PPS = 0x46;
+[e = _RB4PPS -> -> 70 `i `uc ]
+"118
+[; ;mcc_generated_files/pin_manager.c: 118: }
+[e :UE 3176 ]
+}
+"120
+[; ;mcc_generated_files/pin_manager.c: 120: void PIN_MANAGER_IOC(void)
+[v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
+"121
+[; ;mcc_generated_files/pin_manager.c: 121: {
 {
-[e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
-}
-[e :U 3187 ]
+[e :U _PIN_MANAGER_IOC ]
+[f ]
 "122
-[; ;main.c: 122:     }
-}
-[e :U 3180 ]
-[e $U 3181  ]
-[e :U 3182 ]
-"123
-[; ;main.c: 123: }
-[e :UE 3179 ]
+[; ;mcc_generated_files/pin_manager.c: 122: }
+[e :UE 3177 ]
 }

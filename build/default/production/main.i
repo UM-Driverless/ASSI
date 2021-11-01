@@ -37818,48 +37818,10 @@ void main(void)
     while (1)
     {
 
-        do { LATBbits.LATB1 = 1; } while(0);
-        do { LATBbits.LATB2 = 0; } while(0);
+
+        do { LATCbits.LATC3 = 1; } while(0);
         DELAY_milliseconds(1000);
-        do { LATBbits.LATB1 = ~LATBbits.LATB1; } while(0);
-        do { LATBbits.LATB2 = ~LATBbits.LATB2; } while(0);
-        DELAY_milliseconds(1000);
-        do { LATBbits.LATB1 = ~LATBbits.LATB1; } while(0);
-        do { LATBbits.LATB2 = ~LATBbits.LATB2; } while(0);
-        DELAY_milliseconds(1000);
-        do { LATBbits.LATB1 = ~LATBbits.LATB1; } while(0);
-        do { LATBbits.LATB2 = ~LATBbits.LATB2; } while(0);
-        DELAY_milliseconds(1000);
-
-        ucASState = 0;
-        DELAY_milliseconds(5000);
-
-        ucASState = 1;
-        DELAY_milliseconds(5000);
-
-        ucASState = 2;
-        DELAY_milliseconds(10000);
-
-        ucASState = 4;
-        DELAY_milliseconds(5000);
-
-        ucASState = 1;
-        DELAY_milliseconds(3000);
-
-        ucASState = 2;
-        DELAY_milliseconds(5000);
-
-        ucASState = 3;
-        ucFlagEmergencySpeaker = 1;
-        ucSpeakerCount = 0;
-        DELAY_milliseconds(12000);
-
-        ucASState = 0;
-        ucFlagEmergencySpeaker = 0;
-
-
-
-
-
+        do { LATCbits.LATC3 = 0; } while(0);
+# 122 "main.c"
     }
 }

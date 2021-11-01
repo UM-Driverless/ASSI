@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "mcc_generated_files/pin_manager.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 44 "main.c"
-# 1 "./mcc_generated_files/mcc.h" 1
-# 49 "./mcc_generated_files/mcc.h"
+# 1 "mcc_generated_files/pin_manager.c" 2
+# 49 "mcc_generated_files/pin_manager.c"
+# 1 "mcc_generated_files/pin_manager.h" 1
+# 54 "mcc_generated_files/pin_manager.h"
 # 1 "C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -37483,345 +37483,76 @@ __attribute__((__unsupported__("The READTIMER" "3" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\xc.h" 2 3
-# 49 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/pin_manager.h" 1
-# 182 "./mcc_generated_files/pin_manager.h"
+# 54 "mcc_generated_files/pin_manager.h" 2
+# 182 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 194 "./mcc_generated_files/pin_manager.h"
+# 194 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 1 3
+# 49 "mcc_generated_files/pin_manager.c" 2
 
 
 
 
 
 
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 3
-extern int errno;
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
-
-# 1 "C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\__null.h" 1 3
-# 9 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
-
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-
-
-extern char * cgets(char *);
-extern void cputs(const char *);
-# 54 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/interrupt_manager.h" 1
-# 87 "./mcc_generated_files/interrupt_manager.h"
-void INTERRUPT_Initialize (void);
-# 55 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/tmr1.h" 1
-# 101 "./mcc_generated_files/tmr1.h"
-void TMR1_Initialize(void);
-# 130 "./mcc_generated_files/tmr1.h"
-void TMR1_StartTimer(void);
-# 162 "./mcc_generated_files/tmr1.h"
-void TMR1_StopTimer(void);
-# 197 "./mcc_generated_files/tmr1.h"
-uint16_t TMR1_ReadTimer(void);
-# 236 "./mcc_generated_files/tmr1.h"
-void TMR1_WriteTimer(uint16_t timerVal);
-# 272 "./mcc_generated_files/tmr1.h"
-void TMR1_Reload(void);
-# 311 "./mcc_generated_files/tmr1.h"
-void TMR1_StartSinglePulseAcquisition(void);
-# 350 "./mcc_generated_files/tmr1.h"
-uint8_t TMR1_CheckGateValueStatus(void);
-# 368 "./mcc_generated_files/tmr1.h"
-void TMR1_ISR(void);
-# 385 "./mcc_generated_files/tmr1.h"
-void TMR1_CallBack(void);
-# 403 "./mcc_generated_files/tmr1.h"
- void TMR1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 421 "./mcc_generated_files/tmr1.h"
-extern void (*TMR1_InterruptHandler)(void);
-# 439 "./mcc_generated_files/tmr1.h"
-void TMR1_DefaultInterruptHandler(void);
-# 56 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/tmr0.h" 1
-# 106 "./mcc_generated_files/tmr0.h"
-void TMR0_Initialize(void);
-# 135 "./mcc_generated_files/tmr0.h"
-void TMR0_StartTimer(void);
-# 167 "./mcc_generated_files/tmr0.h"
-void TMR0_StopTimer(void);
-# 202 "./mcc_generated_files/tmr0.h"
-uint8_t TMR0_ReadTimer(void);
-# 241 "./mcc_generated_files/tmr0.h"
-void TMR0_WriteTimer(uint8_t timerVal);
-# 278 "./mcc_generated_files/tmr0.h"
-void TMR0_Reload(uint8_t periodVal);
-# 297 "./mcc_generated_files/tmr0.h"
-void TMR0_ISR(void);
-# 315 "./mcc_generated_files/tmr0.h"
-void TMR0_CallBack(void);
-# 333 "./mcc_generated_files/tmr0.h"
- void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 351 "./mcc_generated_files/tmr0.h"
-extern void (*TMR0_InterruptHandler)(void);
-# 369 "./mcc_generated_files/tmr0.h"
-void TMR0_DefaultInterruptHandler(void);
-# 57 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/can1.h" 1
-# 56 "./mcc_generated_files/can1.h"
-# 1 "./mcc_generated_files/can_types.h" 1
-# 65 "./mcc_generated_files/can_types.h"
-typedef union
-{
-    uint8_t msgfields;
-    struct
-    {
-        uint8_t idType:1;
-        uint8_t frameType:1;
-        uint8_t dlc:4;
-        uint8_t formatType:1;
-        uint8_t brs:1;
-    };
-} CAN_MSG_FIELD;
-
-typedef struct
-{
-    uint32_t msgId;
-    CAN_MSG_FIELD field;
-    uint8_t *data;
-} CAN_MSG_OBJ;
-# 94 "./mcc_generated_files/can_types.h"
-typedef enum
-{
-    CAN_NON_BRS_MODE = 0,
-    CAN_BRS_MODE = 1
-} CAN_MSG_OBJ_BRS_MODE;
-# 109 "./mcc_generated_files/can_types.h"
-typedef enum
-{
-    CAN_FRAME_STD = 0,
-    CAN_FRAME_EXT = 1,
-} CAN_MSG_OBJ_ID_TYPE;
-# 124 "./mcc_generated_files/can_types.h"
-typedef enum
-{
-    CAN_FRAME_DATA = 0,
-    CAN_FRAME_RTR = 1,
-} CAN_MSG_OBJ_FRAME_TYPE;
-# 139 "./mcc_generated_files/can_types.h"
-typedef enum
-{
-    CAN_2_0_FORMAT = 0,
-    CAN_FD_FORMAT = 1
-} CAN_MSG_OBJ_TYPE;
-# 154 "./mcc_generated_files/can_types.h"
-typedef enum
-{
-    CAN_TX_MSG_REQUEST_SUCCESS = 0,
-    CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR = 1,
-    CAN_TX_MSG_REQUEST_BRS_ERROR = 2,
-    CAN_TX_MSG_REQUEST_FIFO_FULL = 3,
-} CAN_TX_MSG_REQUEST_STATUS;
-# 171 "./mcc_generated_files/can_types.h"
-typedef enum
-{
-    CAN_NORMAL_FD_MODE = 0,
-    CAN_DISABLE_MODE = 1,
-    CAN_INTERNAL_LOOPBACK_MODE = 2,
-    CAN_LISTEN_ONLY_MODE = 3,
-    CAN_CONFIGURATION_MODE = 4,
-    CAN_EXTERNAL_LOOPBACK_MODE = 5,
-    CAN_NORMAL_2_0_MODE = 6,
-    CAN_RESTRICTED_OPERATION_MODE =7,
-} CAN_OP_MODES;
-# 192 "./mcc_generated_files/can_types.h"
-typedef enum
-{
-    CAN_OP_MODE_REQUEST_SUCCESS,
-    CAN_OP_MODE_REQUEST_FAIL,
-    CAN_OP_MODE_SYS_ERROR_OCCURED
-} CAN_OP_MODE_STATUS;
-# 208 "./mcc_generated_files/can_types.h"
-typedef enum
-{
-    CAN_TX_FIFO_FULL,
-    CAN_TX_FIFO_AVAILABLE,
-} CAN_TX_FIFO_STATUS;
-# 223 "./mcc_generated_files/can_types.h"
-typedef enum
+void PIN_MANAGER_Initialize(void)
 {
 
-    DLC_0,
-    DLC_1,
-    DLC_2,
-    DLC_3,
-    DLC_4,
-    DLC_5,
-    DLC_6,
-    DLC_7,
-    DLC_8,
 
 
-
-    DLC_12,
-    DLC_16,
-    DLC_20,
-    DLC_24,
-    DLC_32,
-    DLC_48,
-    DLC_64,
-} CAN_DLC;
-# 56 "./mcc_generated_files/can1.h" 2
+    LATA = 0x00;
+    LATB = 0x00;
+    LATC = 0x00;
 
 
 
 
+    TRISE = 0x08;
+    TRISA = 0xFF;
+    TRISB = 0xE9;
+    TRISC = 0xE7;
 
 
-typedef enum
+
+
+    ANSELC = 0xFF;
+    ANSELB = 0xF1;
+    ANSELA = 0xFF;
+
+
+
+
+    WPUE = 0x00;
+    WPUB = 0x00;
+    WPUA = 0x00;
+    WPUC = 0x00;
+
+
+
+
+    ODCONA = 0x00;
+    ODCONB = 0x00;
+    ODCONC = 0x00;
+
+
+
+
+    SLRCONA = 0xFF;
+    SLRCONB = 0xFF;
+    SLRCONC = 0xFF;
+
+
+
+
+    INLVLA = 0xFF;
+    INLVLB = 0xFF;
+    INLVLC = 0xFF;
+    INLVLE = 0x08;
+# 116 "mcc_generated_files/pin_manager.c"
+    CANRXPPS = 0x0B;
+    RB4PPS = 0x46;
+}
+
+void PIN_MANAGER_IOC(void)
 {
-    TXQ = 0,
-    FIFO1 = 1
-} CAN1_TX_FIFO_CHANNELS;
-# 104 "./mcc_generated_files/can1.h"
-void CAN1_Initialize(void);
-# 145 "./mcc_generated_files/can1.h"
-CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
-# 183 "./mcc_generated_files/can1.h"
-CAN_OP_MODES CAN1_OperationModeGet(void);
-# 233 "./mcc_generated_files/can1.h"
-_Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
-# 292 "./mcc_generated_files/can1.h"
-CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
-# 348 "./mcc_generated_files/can1.h"
-_Bool CAN1_IsBusOff(void);
-# 406 "./mcc_generated_files/can1.h"
-_Bool CAN1_IsTxErrorPassive(void);
-# 465 "./mcc_generated_files/can1.h"
-_Bool CAN1_IsTxErrorWarning(void);
-# 524 "./mcc_generated_files/can1.h"
-_Bool CAN1_IsTxErrorActive(void);
-# 572 "./mcc_generated_files/can1.h"
-_Bool CAN1_IsRxErrorPassive(void);
-# 620 "./mcc_generated_files/can1.h"
-_Bool CAN1_IsRxErrorWarning(void);
-# 668 "./mcc_generated_files/can1.h"
-_Bool CAN1_IsRxErrorActive(void);
-# 719 "./mcc_generated_files/can1.h"
-void CAN1_Sleep(void);
-# 773 "./mcc_generated_files/can1.h"
-CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
-# 815 "./mcc_generated_files/can1.h"
-uint8_t CAN1_ReceivedMessageCountGet(void);
-# 882 "./mcc_generated_files/can1.h"
-void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void));
-# 939 "./mcc_generated_files/can1.h"
-void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void));
-# 1007 "./mcc_generated_files/can1.h"
-void CAN1_SetBusErrorInterruptHandler(void (*handler)(void));
-# 1058 "./mcc_generated_files/can1.h"
-void CAN1_SetModeChangeInterruptHandler(void (*handler)(void));
-# 1127 "./mcc_generated_files/can1.h"
-void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void));
-# 1195 "./mcc_generated_files/can1.h"
-void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void));
-# 1247 "./mcc_generated_files/can1.h"
-void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
-# 1282 "./mcc_generated_files/can1.h"
-void CAN1_SetFIFO2nullHandler(void (*handler)(void));
-# 1326 "./mcc_generated_files/can1.h"
-void CAN1_SetTXQnullHandler(void (*handler)(void));
-# 1370 "./mcc_generated_files/can1.h"
-void CAN1_SetFIFO1nullHandler(void (*handler)(void));
-
-
-void CAN1_ISR(void);
-# 58 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/delay.h" 1
-# 34 "./mcc_generated_files/delay.h"
-void DELAY_milliseconds(uint16_t milliseconds);
-void DELAY_microseconds(uint16_t microseconds);
-# 59 "./mcc_generated_files/mcc.h" 2
-# 74 "./mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 87 "./mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 100 "./mcc_generated_files/mcc.h"
-void PMD_Initialize(void);
-# 44 "main.c" 2
-
-# 1 "./LEDS.h" 1
-# 16 "./LEDS.h"
-void LEDS(void);
-void LEDTIMER(void);
-# 45 "main.c" 2
-
-# 1 "./SPEAKER.h" 1
-# 16 "./SPEAKER.h"
-void SPEAKER (void);
-
-
-extern unsigned char ucFlagEmergencySpeaker;
-extern unsigned char ucSpeakerCount;
-# 46 "main.c" 2
-
-
-
-unsigned char ucASState;
-
-
-
-
-void main(void)
-{
-
-    SYSTEM_Initialize();
-
-
-
-
-
-
-    (INTCON0bits.GIE = 1);
-
-
-
-
-
-
-
-    while (1)
-    {
-
-
-        do { LATCbits.LATC3 = 1; } while(0);
-        DELAY_milliseconds(1000);
-        do { LATCbits.LATC3 = 0; } while(0);
-# 122 "main.c"
-    }
 }

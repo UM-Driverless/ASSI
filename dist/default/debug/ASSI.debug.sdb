@@ -273,16 +273,16 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
 "15 C:\Users\panze\Documents\GitHub\ASSI\SPEAKER.c
 [v _SPEAKER SPEAKER `(v  1 e 1 0 ]
-[s S285 . 1 `uc 1 idType 1 0 :1:0 
+[s S266 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
 "26 C:\Users\panze\Documents\GitHub\ASSI/MESSAGES.h
-[u S291 . 1 `uc 1 msgfields 1 0 `S285 1 . 1 0 ]
-[s S294 . 7 `ul 1 msgId 4 0 `S291 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v _msg msg `S294  1 e 7 0 ]
+[u S272 . 1 `uc 1 msgfields 1 0 `S266 1 . 1 0 ]
+[s S275 . 7 `ul 1 msgId 4 0 `S272 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v _msg msg `S275  1 e 7 0 ]
 "27
 [v _CANDATAdata CANDATAdata `[32]uc  1 e 32 0 ]
 [s S104 . 1 `uc 1 SWIF 1 0 :1:0 
@@ -321,7 +321,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
 [v _LATB LATB `VEuc  1 e 1 @1215 ]
-[s S1309 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S1346 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -331,8 +331,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 LATB7 1 0 :1:7 
 ]
 "1553
-[u S1318 . 1 `S1309 1 . 1 0 ]
-[v _LATBbits LATBbits `VES1318  1 e 1 @1215 ]
+[u S1355 . 1 `S1346 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1355  1 e 1 @1215 ]
 "1565
 [v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
 "1598
@@ -410,7 +410,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _C1CONHbits C1CONHbits `VES162  1 e 1 @257 ]
 "9085
 [v _C1CONU C1CONU `VEuc  1 e 1 @258 ]
-[s S253 . 1 `uc 1 RTXAT 1 0 :1:0 
+[s S234 . 1 `uc 1 RTXAT 1 0 :1:0 
 `uc 1 ESIGM 1 0 :1:1 
 `uc 1 SERR2LOM 1 0 :1:2 
 `uc 1 STEF 1 0 :1:3 
@@ -418,13 +418,13 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 OPMOD 1 0 :3:5 
 ]
 "9106
-[s S260 . 1 `uc 1 . 1 0 :5:0 
+[s S241 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 OPMOD0 1 0 :1:5 
 `uc 1 OPMOD1 1 0 :1:6 
 `uc 1 OPMOD2 1 0 :1:7 
 ]
-[u S265 . 1 `S253 1 . 1 0 `S260 1 . 1 0 ]
-[v _C1CONUbits C1CONUbits `VES265  1 e 1 @258 ]
+[u S246 . 1 `S234 1 . 1 0 `S241 1 . 1 0 ]
+[v _C1CONUbits C1CONUbits `VES246  1 e 1 @258 ]
 [s S204 . 1 `uc 1 REQOP 1 0 :3:0 
 `uc 1 ABAT 1 0 :1:3 
 `uc 1 TXBWS 1 0 :4:4 
@@ -462,7 +462,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _C1INTLbits C1INTLbits `VES401  1 e 1 @284 ]
 "10451
 [v _C1INTH C1INTH `VEuc  1 e 1 @285 ]
-[s S234 . 1 `uc 1 . 1 0 :2:0 
+[s S343 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXATIF 1 0 :1:2 
 `uc 1 RXOVIF 1 0 :1:3 
 `uc 1 SERRIF 1 0 :1:4 
@@ -471,8 +471,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 IVMIF 1 0 :1:7 
 ]
 "10467
-[u S242 . 1 `S234 1 . 1 0 ]
-[v _C1INTHbits C1INTHbits `VES242  1 e 1 @285 ]
+[u S351 . 1 `S343 1 . 1 0 ]
+[v _C1INTHbits C1INTHbits `VES351  1 e 1 @285 ]
 "10502
 [v _C1INTU C1INTU `VEuc  1 e 1 @286 ]
 "10546
@@ -488,7 +488,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "10562
 [u S370 . 1 `S362 1 . 1 0 ]
 [v _C1INTTbits C1INTTbits `VES370  1 e 1 @287 ]
-[s S345 . 1 `uc 1 EWARN 1 0 :1:0 
+[s S326 . 1 `uc 1 EWARN 1 0 :1:0 
 `uc 1 RXWARN 1 0 :1:1 
 `uc 1 TXWARN 1 0 :1:2 
 `uc 1 RXBP 1 0 :1:3 
@@ -496,8 +496,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TXBO 1 0 :1:5 
 ]
 "12179
-[u S352 . 1 `S345 1 . 1 0 ]
-[v _C1TRECUbits C1TRECUbits `VES352  1 e 1 @310 ]
+[u S333 . 1 `S326 1 . 1 0 ]
+[v _C1TRECUbits C1TRECUbits `VES333  1 e 1 @310 ]
 "13232
 [v _C1FIFOBA C1FIFOBA `VEul  1 e 4 @332 ]
 "13519
@@ -755,7 +755,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "54 C:\Users\panze\Documents\GitHub\ASSI\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"119
+"123
 } 0
 "50 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]

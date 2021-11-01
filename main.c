@@ -72,7 +72,11 @@ void main(void)
     while (1)
     { 
         
-        Y_SIGNAL_SetHigh();
+        
+        SPEAKER_SetHigh();
+        DELAY_milliseconds(1000);
+        SPEAKER_SetLow();
+        /*Y_SIGNAL_SetHigh();
         B_SIGNAL_SetLow();
         DELAY_milliseconds(1000);
         Y_SIGNAL_Toggle();
@@ -110,7 +114,7 @@ void main(void)
         
         ucASState = 0;
         ucFlagEmergencySpeaker = 0;
-        
+        */
         //AS_READY        1
         //AS_DRIVING      2
         //AS_EMERGENCY    3
