@@ -15,15 +15,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;MESSAGES.c: 43:     if(CAN_CONFIGURATION_MODE == CAN1_OperationModeGet())
 [c E22230 0 1 2 3 4 5 6 7 .. ]
 [n E22230 . CAN_NORMAL_FD_MODE CAN_DISABLE_MODE CAN_INTERNAL_LOOPBACK_MODE CAN_LISTEN_ONLY_MODE CAN_CONFIGURATION_MODE CAN_EXTERNAL_LOOPBACK_MODE CAN_NORMAL_2_0_MODE CAN_RESTRICTED_OPERATION_MODE  ]
-"183 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 183: CAN_OP_MODES CAN1_OperationModeGet(void);
+"181 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 181: CAN_OP_MODES CAN1_OperationModeGet(void);
 [v _CAN1_OperationModeGet `(E22230 ~T0 @X0 0 ef ]
 "45 MESSAGES.c
 [; ;MESSAGES.c: 45:         if(CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE))
 [c E22240 0 1 2 .. ]
 [n E22240 . CAN_OP_MODE_REQUEST_SUCCESS CAN_OP_MODE_REQUEST_FAIL CAN_OP_MODE_SYS_ERROR_OCCURED  ]
-"145 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 145: CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
+"143 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 143: CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
 [v _CAN1_OperationModeSet `(E22240 ~T0 @X0 0 ef1`CE22230 ]
 "48 MESSAGES.c
 [; ;MESSAGES.c: 48:             msg.field.formatType = CAN_2_0_FORMAT;
@@ -45,17 +45,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;MESSAGES.c: 57:             if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
 [c E22245 0 1 .. ]
 [n E22245 . CAN_TX_FIFO_FULL CAN_TX_FIFO_AVAILABLE  ]
-[c E22267 0 1 .. ]
-[n E22267 . TXQ FIFO1  ]
-"773 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 773: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
+[c E22267 0 .. ]
+[n E22267 . TXQ  ]
+"771 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 771: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
 [v _CAN1_TransmitFIFOStatusGet `(E22245 ~T0 @X0 0 ef1`CE22267 ]
 "59 MESSAGES.c
 [; ;MESSAGES.c: 59:                 CAN1_Transmit(TXQ, &msg);
 [c E22224 0 1 2 3 .. ]
 [n E22224 . CAN_TX_MSG_REQUEST_SUCCESS CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR CAN_TX_MSG_REQUEST_BRS_ERROR CAN_TX_MSG_REQUEST_FIFO_FULL  ]
-"292 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 292: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
+"290 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 290: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
 [v _CAN1_Transmit `(E22224 ~T0 @X0 0 ef2`CE22267`*S3178 ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");

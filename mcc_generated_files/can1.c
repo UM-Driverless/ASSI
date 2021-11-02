@@ -90,7 +90,7 @@ typedef enum
 
 typedef enum
 {
-    FIFO2 = 2
+    FIFO1 = 1
 } CAN1_RX_FIFO_CHANNELS;
 
 struct CAN1_RX_FIFO
@@ -104,7 +104,7 @@ static uint8_t rxMsgData[RX_FIFO_MSG_DATA];
 
 static struct CAN1_RX_FIFO rxFifos[] = 
 {
-    {FIFO2, 0u}
+    {FIFO1, 0u}
 };
 
 static volatile struct CAN_FIFOREG * const FIFO = (struct CAN_FIFOREG *)&C1TXQCONL;
@@ -158,17 +158,17 @@ void CAN1_RX_FIFO_ResetInfo(void)
 
 static void CAN1_RX_FIFO_Configuration(void)
 {
-    // TXEN disabled; RTREN disabled; RXTSEN disabled; TXATIE disabled; RXOVIE enabled; TFERFFIE disabled; TFHRFHIE disabled; TFNRFNIE disabled; 
-    C1FIFOCON2L = 0x08;
+    // TXEN disabled; RTREN disabled; RXTSEN disabled; TXATIE enabled; RXOVIE enabled; TFERFFIE disabled; TFHRFHIE disabled; TFNRFNIE disabled; 
+    C1FIFOCON1L = 0x18;
     
     // FRESET enabled; TXREQ disabled; UINC disabled; 
-    C1FIFOCON2H = 0x04;
+    C1FIFOCON1H = 0x04;
     
     // TXAT Unlimited number of retransmission attempts; TXPRI 1; 
-    C1FIFOCON2U = 0x60;
+    C1FIFOCON1U = 0x60;
     
     // PLSIZE 8; FSIZE 6; 
-    C1FIFOCON2T = 0x05;
+    C1FIFOCON1T = 0x05;
     
 }
 
@@ -189,18 +189,6 @@ static void CAN1_TX_FIFO_Configuration(void)
     
     // PLSIZE 8; FSIZE 6; 
     C1TXQCONT = 0x05;
-    
-    // TXEN enabled; RTREN disabled; RXTSEN disabled; TXATIE enabled; RXOVIE disabled; TFERFFIE disabled; TFHRFHIE disabled; TFNRFNIE disabled; 
-    C1FIFOCON1L = 0x90;
-    
-    // FRESET enabled; TXREQ disabled; UINC disabled; 
-    C1FIFOCON1H = 0x04;
-    
-    // TXAT Unlimited number of retransmission attempts; TXPRI 1; 
-    C1FIFOCON1U = 0x60;
-    
-    // PLSIZE 8; FSIZE 6; 
-    C1FIFOCON1T = 0x05;
     
 }
 
@@ -254,7 +242,7 @@ void CAN1_Initialize(void)
     if (CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
     {
         /* Initialize the C1FIFOBA with the start address of the CAN FIFO message object area. */
-        C1FIFOBA = 0x3800;
+        C1FIFOBA = 0x2600;
         
         // CLKSEL0 enabled; PXEDIS enabled; ISOCRCEN enabled; DNCNT 0; 
         C1CONL = 0xE0;
@@ -286,7 +274,7 @@ CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
     {
         C1CONTbits.REQOP = requestMode;
         
-        /*while (C1CONUbits.OPMOD != requestMode)
+        while (C1CONUbits.OPMOD != requestMode)
         {
             //This condition is avoiding the system error case endless loop
             if (1 == C1INTHbits.SERRIF)
@@ -294,7 +282,7 @@ CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
                 status = CAN_OP_MODE_SYS_ERROR_OCCURED;
                 break;
             }
-        }*/
+        }
     }
     else
     {
@@ -666,18 +654,14 @@ void CAN1_ISR(void)
         {
             C1TXQSTALbits.TXATIF = 0;
         }
-        if (1 == C1FIFOSTA1Lbits.TXATIF)
-        {
-            C1FIFOSTA1Lbits.TXATIF = 0;
-        }
     }
     
     if (1 == C1INTHbits.RXOVIF)
     {
         CAN1_RxBufferOverflowHandler();
-        if (1 == C1FIFOSTA2Lbits.RXOVIF)
+        if (1 == C1FIFOSTA1Lbits.RXOVIF)
         {
-            C1FIFOSTA2Lbits.RXOVIF = 0;
+            C1FIFOSTA1Lbits.RXOVIF = 0;
         }
     }
     
