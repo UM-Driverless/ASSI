@@ -25,6 +25,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "34 ./mcc_generated_files/delay.h
 [; ;./mcc_generated_files/delay.h: 34: void DELAY_milliseconds(uint16_t milliseconds);
 [v _DELAY_milliseconds `(v ~T0 @X0 0 ef1`us ]
+"1542 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
+[s S3063 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3063 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"1541
+[u S3062 `S3063 1 ]
+[n S3062 . . ]
+"1553
+[v _LATBbits `VS3062 ~T0 @X0 0 e@1215 ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3565,30 +3573,101 @@ Version 4.0 HI-TECH Software Intermediate Code
 "73
 [; ;main.c: 73:     {
 {
-"76
-[; ;main.c: 76:         do { LATCbits.LATC3 = 1; } while(0);
+"75
+[; ;main.c: 75:         do { LATCbits.LATC3 = 0; } while(0);
 [e :U 3185 ]
-{
-[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 3184 ]
-"77
-[; ;main.c: 77:         DELAY_milliseconds(1000);
-[e ( _DELAY_milliseconds (1 -> -> 1000 `i `us ]
-"78
-[; ;main.c: 78:         do { LATCbits.LATC3 = 0; } while(0);
-[e :U 3188 ]
 {
 [e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
 }
+[e :U 3184 ]
+"77
+[; ;main.c: 77:         DELAY_milliseconds(100);
+[e ( _DELAY_milliseconds (1 -> -> 100 `i `us ]
+"78
+[; ;main.c: 78:         do { LATCbits.LATC3 = 1; } while(0);
+[e :U 3188 ]
+{
+[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
+}
 [e :U 3187 ]
-"122
-[; ;main.c: 122:     }
+"79
+[; ;main.c: 79:         DELAY_milliseconds(100);
+[e ( _DELAY_milliseconds (1 -> -> 100 `i `us ]
+"80
+[; ;main.c: 80:         do { LATBbits.LATB1 = 1; } while(0);
+[e :U 3191 ]
+{
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 3190 ]
+"81
+[; ;main.c: 81:         do { LATBbits.LATB2 = 0; } while(0);
+[e :U 3194 ]
+{
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+}
+[e :U 3193 ]
+"82
+[; ;main.c: 82:         DELAY_milliseconds(100);
+[e ( _DELAY_milliseconds (1 -> -> 100 `i `us ]
+"83
+[; ;main.c: 83:         do { LATBbits.LATB1 = ~LATBbits.LATB1; } while(0);
+[e :U 3197 ]
+{
+[e = . . _LATBbits 0 1 -> ~ -> . . _LATBbits 0 1 `i `uc ]
+}
+[e :U 3196 ]
+"84
+[; ;main.c: 84:         do { LATBbits.LATB2 = ~LATBbits.LATB2; } while(0);
+[e :U 3200 ]
+{
+[e = . . _LATBbits 0 2 -> ~ -> . . _LATBbits 0 2 `i `uc ]
+}
+[e :U 3199 ]
+"85
+[; ;main.c: 85:         DELAY_milliseconds(100);
+[e ( _DELAY_milliseconds (1 -> -> 100 `i `us ]
+"86
+[; ;main.c: 86:         do { LATBbits.LATB1 = ~LATBbits.LATB1; } while(0);
+[e :U 3203 ]
+{
+[e = . . _LATBbits 0 1 -> ~ -> . . _LATBbits 0 1 `i `uc ]
+}
+[e :U 3202 ]
+"87
+[; ;main.c: 87:         do { LATBbits.LATB2 = ~LATBbits.LATB2; } while(0);
+[e :U 3206 ]
+{
+[e = . . _LATBbits 0 2 -> ~ -> . . _LATBbits 0 2 `i `uc ]
+}
+[e :U 3205 ]
+"88
+[; ;main.c: 88:         DELAY_milliseconds(100);
+[e ( _DELAY_milliseconds (1 -> -> 100 `i `us ]
+"89
+[; ;main.c: 89:         do { LATBbits.LATB1 = ~LATBbits.LATB1; } while(0);
+[e :U 3209 ]
+{
+[e = . . _LATBbits 0 1 -> ~ -> . . _LATBbits 0 1 `i `uc ]
+}
+[e :U 3208 ]
+"90
+[; ;main.c: 90:         do { LATBbits.LATB2 = ~LATBbits.LATB2; } while(0);
+[e :U 3212 ]
+{
+[e = . . _LATBbits 0 2 -> ~ -> . . _LATBbits 0 2 `i `uc ]
+}
+[e :U 3211 ]
+"91
+[; ;main.c: 91:         DELAY_milliseconds(100);
+[e ( _DELAY_milliseconds (1 -> -> 100 `i `us ]
+"123
+[; ;main.c: 123:     }
 }
 [e :U 3180 ]
 [e $U 3181  ]
 [e :U 3182 ]
-"123
-[; ;main.c: 123: }
+"124
+[; ;main.c: 124: }
 [e :UE 3179 ]
 }

@@ -274,7 +274,7 @@ CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
     {
         C1CONTbits.REQOP = requestMode;
         
-        while (C1CONUbits.OPMOD != requestMode)
+        /*while (C1CONUbits.OPMOD != requestMode)
         {
             //This condition is avoiding the system error case endless loop
             if (1 == C1INTHbits.SERRIF)
@@ -282,7 +282,7 @@ CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
                 status = CAN_OP_MODE_SYS_ERROR_OCCURED;
                 break;
             }
-        }
+        }*/
     }
     else
     {
