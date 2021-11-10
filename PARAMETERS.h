@@ -12,12 +12,16 @@
 extern "C" {
 #endif
 
+//AS STATES
 #define AS_OFF          0
 #define AS_READY        1
 #define AS_DRIVING      2
 #define AS_EMERGENCY    3
 #define AS_FINISHED     4
-
+    
+    
+#define TRUE    0x01
+#define FALSE   0x00
     
 //VARIABLES
 extern unsigned char ucASState;

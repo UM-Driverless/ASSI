@@ -48,6 +48,7 @@
       <itemPath>SPEAKER.c</itemPath>
       <itemPath>LEDS.c</itemPath>
       <itemPath>MESSAGES.c</itemPath>
+      <itemPath>PARAMETERS.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -66,7 +67,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.31</languageToolchainVersion>
+        <languageToolchainVersion>2.30</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -91,6 +92,7 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>

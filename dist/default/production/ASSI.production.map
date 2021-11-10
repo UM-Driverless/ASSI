@@ -1,13 +1,13 @@
-Microchip MPLAB XC8 Compiler V2.31
+Microchip MPLAB XC8 Compiler V2.30
 
 Linker command line:
 
--W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt \
+-W-3 --edf=C:\Program Files\Microchip\xc8\v2.30\pic\dat\en_msgs.txt \
   -pivt0x8=08h -cn -h+dist/default/production\ASSI.production.sym \
   --cmf=dist/default/production\ASSI.production.cmf -z -Q18F26Q84 \
-  -oC:\Users\panze\AppData\Local\Temp\s1mgc.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\panze\AppData\Local\Temp\sa84x2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/ASSI.production.map -E1 -ver=XC8 Compiler \
-  --acfsm=1493 -ASTACK=0560h-025FFh -pstack=STACK -ACODE=00h-0FFFFh \
+  --acfsm=1493 -ASTACK=0581h-025FFh -pstack=STACK -ACODE=00h-0FFFFh \
   -ACONST=00h-0FFFFh -ASMALLCONST=02600h-026FFhx218 \
   -AMEDIUMCONST=02600h-0FFFFh -ACOMRAM=0501h-055Fh -AABS1=0500h-025FFh \
   -ABIGRAM=0501h-025FFh -ARAM=0560h-05FFh,0600h-06FFhx32 \
@@ -31,7 +31,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\panze\AppData\Local\Temp\s1mgc.o \
+  C:\Users\panze\AppData\Local\Temp\sa84x8.o \
   dist/default/production\ASSI.production.o 
 
 Object code version is 3.11
@@ -41,7 +41,7 @@ Machine type is 18F26Q84
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\panze\AppData\Local\Temp\s1mgc.o
+C:\Users\panze\AppData\Local\Temp\sa84x8.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000       24        0       4
                 init                                 1A       1A        4        4       0
@@ -51,56 +51,70 @@ dist/default/production\ASSI.production.o
                 config                           300000   300000       24        0       4
                 smallconst                         2600     2600        E     1300       0
                 ivt0x8                                8        8       12        4       0
-                text43                             2DFA     2DFA        2     1307       0
-                text42                             2DF8     2DF8        2     1307       0
-                text41                             2DF6     2DF6        2     1307       0
-                text40                             2DF4     2DF4        2     1307       0
-                text39                             2DF2     2DF2        2     1307       0
-                text38                             2DF0     2DF0        2     1307       0
-                text37                             2DEE     2DEE        2     1307       0
-                text36                             260E     260E      148     1307       0
-                text35                             2B4C     2B4C       3A     1307       0
-                text34                             2DEC     2DEC        2     1307       0
-                text33                             2C70     2C70       2C     1307       0
-                text32                             29BC     29BC       5A     1307       0
-                text31                             2DEA     2DEA        2     1307       0
-                text30                             2C44     2C44       2C     1307       0
-                text29                             2BEA     2BEA       2E     1307       0
-                text28                             2B86     2B86       36     1307       0
-                text27                             2886     2886       6E     1307       0
-                text26                             2BBC     2BBC       2E     1307       0
-                text25                             2D6C     2D6C       14     1307       0
-                text24                             2DDA     2DDA        A     1307       0
-                text23                             2DD0     2DD0        A     1307       0
-                text22                             2DC6     2DC6        A     1307       0
-                text21                             2DBC     2DBC        A     1307       0
-                text20                             2DB2     2DB2        A     1307       0
-                text19                             2DA8     2DA8        A     1307       0
-                text18                             2D9E     2D9E        A     1307       0
-                text17                             28F4     28F4       6C     1307       0
-                text16                             2D94     2D94        A     1307       0
-                text15                             2A6E     2A6E       58     1307       0
-                text14                             2D58     2D58       14     1307       0
-                text13                             2DE8     2DE8        2     1307       0
-                text12                             2C18     2C18       2C     1307       0
-                text11                             2D44     2D44       14     1307       0
-                text10                             2A16     2A16       58     1307       0
-                text9                              2DE4     2DE4        4     1307       0
-                text8                              2D2C     2D2C       18     1307       0
-                text7                              2960     2960       5C     1307       0
-                text6                              2C9C     2C9C       28     1307       0
-                text5                              2D8A     2D8A        A     1307       0
-                text4                              2CC4     2CC4       26     1307       0
-                text3                              2D80     2D80        A     1307       0
-                text2                              2AC6     2AC6       46     1307       0
-                text1                              2D0C     2D0C       20     1307       0
-                text0                              2756     2756      130     1307       0
-                cstackCOMRAM                        547      547        7      501       1
-                dataCOMRAM                          525      525       22      501       1
-                bssCOMRAM                           501      501       24      501       1
-                cinit                              2B0C     2B0C       40     1307       0
-                nvCOMRAM                            54E      54E        6      501       1
-                idataCOMRAM                        2CEA     2CEA       22     1307       0
+                text54                             3496     3496        2     1307       0
+                text53                             3494     3494        2     1307       0
+                text52                             3492     3492        2     1307       0
+                text51                             3490     3490        2     1307       0
+                text50                             348E     348E        2     1307       0
+                text49                             348C     348C        2     1307       0
+                text48                             348A     348A        2     1307       0
+                text47                             284E     284E      156     1307       0
+                text46                             3398     3398       1E     1307       0
+                text45                             33CE     33CE       18     1307       0
+                text44                             2FE0     2FE0       5A     1307       0
+                text43                             260E     260E      240     1307       0
+                text42                             2AE0     2AE0       EC     1307       0
+                text41                             3092     3092       52     1307       0
+                text40                             2BCC     2BCC       CA     1307       0
+                text39                             2D58     2D58       C0     1307       0
+                text38                             3488     3488        2     1307       0
+                text37                             32D0     32D0       2E     1307       0
+                text36                             3174     3174       3A     1307       0
+                text35                             3486     3486        2     1307       0
+                text34                             32A2     32A2       2E     1307       0
+                text33                             2F86     2F86       5A     1307       0
+                text32                             3484     3484        2     1307       0
+                text31                             3274     3274       2E     1307       0
+                text30                             3246     3246       2E     1307       0
+                text29                             31AE     31AE       36     1307       0
+                text28                             2C96     2C96       C2     1307       0
+                text27                             31E4     31E4       34     1307       0
+                text26                             33FA     33FA       14     1307       0
+                text25                             3472     3472        A     1307       0
+                text24                             3468     3468        A     1307       0
+                text23                             345E     345E        A     1307       0
+                text22                             3454     3454        A     1307       0
+                text21                             344A     344A        A     1307       0
+                text20                             3440     3440        A     1307       0
+                text19                             3436     3436        A     1307       0
+                text18                             2EB0     2EB0       7A     1307       0
+                text17                             342C     342C        A     1307       0
+                text16                             2E18     2E18       98     1307       0
+                text15                             3422     3422        A     1307       0
+                text14                             32FE     32FE       2A     1307       0
+                text13                             3482     3482        2     1307       0
+                text12                             3218     3218       2E     1307       0
+                text11                             33E6     33E6       14     1307       0
+                text10                             303A     303A       58     1307       0
+                text9                              347C     347C        4     1307       0
+                text8                              33B6     33B6       18     1307       0
+                text7                              2F2A     2F2A       5C     1307       0
+                text6                              3350     3350       28     1307       0
+                text5                              3418     3418        A     1307       0
+                text4                              3328     3328       28     1307       0
+                text3                              340E     340E        A     1307       0
+                text2                              312C     312C       48     1307       0
+                text1                              3378     3378       20     1307       0
+                text0                              29A4     29A4      13C     1307       0
+                cstackCOMRAM                        501      501       3B      501       1
+                cstackBANK5                         576      576        5      560       1
+                dataBANK5                           57F      57F        2      560       1
+                bssBANK5                            560      560       16      560       1
+                bssCOMRAM                           53C      53C       1F      501       1
+                cinit                              30E4     30E4       48     1307       0
+                nvBANK5                             57B      57B        4      560       1
+                nvCOMRAM                            55B      55B        2      501       1
+                idataBANK5                         3480     3480        2     1307       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -109,52 +123,63 @@ TOTAL           Name                               Link     Load   Length     Sp
                 init                                 1A       1A        4         0
                 reset_vec                             0        0        4         0
                 ivt0x8                                8        8       12         0
-                text43                             2DFA     2DFA        2         0
-                text42                             2DF8     2DF8        2         0
-                text41                             2DF6     2DF6        2         0
-                text40                             2DF4     2DF4        2         0
-                text39                             2DF2     2DF2        2         0
-                text38                             2DF0     2DF0        2         0
-                text37                             2DEE     2DEE        2         0
-                text36                             260E     260E      148         0
-                text35                             2B4C     2B4C       3A         0
-                text34                             2DEC     2DEC        2         0
-                text33                             2C70     2C70       2C         0
-                text32                             29BC     29BC       5A         0
-                text31                             2DEA     2DEA        2         0
-                text30                             2C44     2C44       2C         0
-                text29                             2BEA     2BEA       2E         0
-                text28                             2B86     2B86       36         0
-                text27                             2886     2886       6E         0
-                text26                             2BBC     2BBC       2E         0
-                text25                             2D6C     2D6C       14         0
-                text24                             2DDA     2DDA        A         0
-                text23                             2DD0     2DD0        A         0
-                text22                             2DC6     2DC6        A         0
-                text21                             2DBC     2DBC        A         0
-                text20                             2DB2     2DB2        A         0
-                text19                             2DA8     2DA8        A         0
-                text18                             2D9E     2D9E        A         0
-                text17                             28F4     28F4       6C         0
-                text16                             2D94     2D94        A         0
-                text15                             2A6E     2A6E       58         0
-                text14                             2D58     2D58       14         0
-                text13                             2DE8     2DE8        2         0
-                text12                             2C18     2C18       2C         0
-                text11                             2D44     2D44       14         0
-                text10                             2A16     2A16       58         0
-                text9                              2DE4     2DE4        4         0
-                text8                              2D2C     2D2C       18         0
-                text7                              2960     2960       5C         0
-                text6                              2C9C     2C9C       28         0
-                text5                              2D8A     2D8A        A         0
-                text4                              2CC4     2CC4       26         0
-                text3                              2D80     2D80        A         0
-                text2                              2AC6     2AC6       46         0
-                text1                              2D0C     2D0C       20         0
-                text0                              2756     2756      130         0
-                cinit                              2B0C     2B0C       40         0
-                idataCOMRAM                        2CEA     2CEA       22         0
+                text54                             3496     3496        2         0
+                text53                             3494     3494        2         0
+                text52                             3492     3492        2         0
+                text51                             3490     3490        2         0
+                text50                             348E     348E        2         0
+                text49                             348C     348C        2         0
+                text48                             348A     348A        2         0
+                text47                             284E     284E      156         0
+                text46                             3398     3398       1E         0
+                text45                             33CE     33CE       18         0
+                text44                             2FE0     2FE0       5A         0
+                text43                             260E     260E      240         0
+                text42                             2AE0     2AE0       EC         0
+                text41                             3092     3092       52         0
+                text40                             2BCC     2BCC       CA         0
+                text39                             2D58     2D58       C0         0
+                text38                             3488     3488        2         0
+                text37                             32D0     32D0       2E         0
+                text36                             3174     3174       3A         0
+                text35                             3486     3486        2         0
+                text34                             32A2     32A2       2E         0
+                text33                             2F86     2F86       5A         0
+                text32                             3484     3484        2         0
+                text31                             3274     3274       2E         0
+                text30                             3246     3246       2E         0
+                text29                             31AE     31AE       36         0
+                text28                             2C96     2C96       C2         0
+                text27                             31E4     31E4       34         0
+                text26                             33FA     33FA       14         0
+                text25                             3472     3472        A         0
+                text24                             3468     3468        A         0
+                text23                             345E     345E        A         0
+                text22                             3454     3454        A         0
+                text21                             344A     344A        A         0
+                text20                             3440     3440        A         0
+                text19                             3436     3436        A         0
+                text18                             2EB0     2EB0       7A         0
+                text17                             342C     342C        A         0
+                text16                             2E18     2E18       98         0
+                text15                             3422     3422        A         0
+                text14                             32FE     32FE       2A         0
+                text13                             3482     3482        2         0
+                text12                             3218     3218       2E         0
+                text11                             33E6     33E6       14         0
+                text10                             303A     303A       58         0
+                text9                              347C     347C        4         0
+                text8                              33B6     33B6       18         0
+                text7                              2F2A     2F2A       5C         0
+                text6                              3350     3350       28         0
+                text5                              3418     3418        A         0
+                text4                              3328     3328       28         0
+                text3                              340E     340E        A         0
+                text2                              312C     312C       48         0
+                text1                              3378     3378       20         0
+                text0                              29A4     29A4      13C         0
+                cinit                              30E4     30E4       48         0
+                idataBANK5                         3480     3480        2         0
 
         CLASS   CONST          
 
@@ -164,10 +189,9 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   MEDIUMCONST    
 
         CLASS   COMRAM         
-                cstackCOMRAM                        547      547        7         1
-                dataCOMRAM                          525      525       22         1
-                bssCOMRAM                           501      501       24         1
-                nvCOMRAM                            54E      54E        6         1
+                cstackCOMRAM                        501      501       3B         1
+                bssCOMRAM                           53C      53C       1F         1
+                nvCOMRAM                            55B      55B        2         1
 
         CLASS   ABS1           
 
@@ -176,6 +200,10 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   RAM            
 
         CLASS   BANK5          
+                cstackBANK5                         576      576        5         1
+                dataBANK5                           57F      57F        2         1
+                bssBANK5                            560      560       16         1
+                nvBANK5                             57B      57B        4         1
 
         CLASS   BANK6          
 
@@ -259,9 +287,10 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
                 ivt0x8                         000008  000016  00001E         4       0  CODE    
-                bssCOMRAM                      000501  000053  000554       501       1  COMRAM  
+                cstackCOMRAM                   000501  00005C  00055D       501       1  COMRAM  
+                bssBANK5                       000560  000021  000581       560       1  BANK5   
                 smallconst                     002600  00000E  00260E      1300       0  SMALLCON
-                text36                         00260E  0007EE  002DFC      1307       0  CODE    
+                text43                         00260E  000E8A  003498      1307       0  CODE    
 
 
 UNUSED ADDRESS RANGES
@@ -295,48 +324,75 @@ UNUSED ADDRESS RANGES
         BANK35           002300-0023FF              100
         BANK36           002400-0024FF              100
         BANK37           002500-0025FF              100
-        BANK5            000560-0005FF               A0
+        BANK5            000581-0005FF               7F
         BANK6            000600-0006FF              100
         BANK7            000700-0007FF              100
         BANK8            000800-0008FF              100
         BANK9            000900-0009FF              100
-        BIGRAM           000554-0025FF             20AC
+        BIGRAM           00055D-00055F                3
+                         000581-0025FF             207F
         CODE             000004-000007                4
                          00001E-0025FF             25E2
-                         002DFC-00FFFF             D204
-        COMRAM           000554-00055F                C
+                         003498-00FFFF             CB68
+        COMRAM           00055D-00055F                3
         CONST            000004-000007                4
                          00001E-0025FF             25E2
-                         002DFC-00FFFF             D204
+                         003498-00FFFF             CB68
         EEDATA           380000-3803FF              400
-        MEDIUMCONST      002DFC-00FFFF             D204
-        RAM              000560-0025FF              100
+        MEDIUMCONST      003498-00FFFF             CB68
+        RAM              000581-0025FF              100
         SFR              000000-0004FF              100
-        SMALLCONST       002DFC-00FFFF              100
-        STACK            000560-0025FF             20A0
+        SMALLCONST       003498-00FFFF              100
+        STACK            000581-0025FF             207F
 
                                   Symbol Table
 
-CAN1_OperationModeSet@opMode                        cstackCOMRAM 000549
-CAN1_OperationModeSet@requestMode                   cstackCOMRAM 00054B
-CAN1_OperationModeSet@status                        cstackCOMRAM 00054A
-CAN1_RX_FIFO_ResetInfo@index                        cstackCOMRAM 000549
-CAN1_SetBusErrorInterruptHandler@handler            cstackCOMRAM 000549
-CAN1_SetBusWakeUpActivityInterruptHandler@handler   cstackCOMRAM 000549
-CAN1_SetInvalidMessageInterruptHandler@handler      cstackCOMRAM 000549
-CAN1_SetModeChangeInterruptHandler@handler          cstackCOMRAM 000549
-CAN1_SetRxBufferOverFlowInterruptHandler@handler    cstackCOMRAM 000549
-CAN1_SetSystemErrorInterruptHandler@handler         cstackCOMRAM 000549
-CAN1_SetTxAttemptInterruptHandler@handler           cstackCOMRAM 000549
-DELAY_milliseconds@milliseconds                     cstackCOMRAM 000549
+CAN1_OperationModeSet@opMode                        cstackBANK5  000576
+CAN1_OperationModeSet@requestMode                   cstackBANK5  000578
+CAN1_OperationModeSet@status                        cstackBANK5  000577
+CAN1_RX_FIFO_ResetInfo@index                        cstackBANK5  000576
+CAN1_Receive@index                                  cstackCOMRAM 000525
+CAN1_Receive@rxCanMsg                               cstackCOMRAM 000522
+CAN1_Receive@status                                 cstackCOMRAM 000524
+CAN1_ReceivedMessageCountGet@channel                cstackCOMRAM 000506
+CAN1_ReceivedMessageCountGet@fifoDepth              cstackCOMRAM 000507
+CAN1_ReceivedMessageCountGet@fifoHead               cstackCOMRAM 000509
+CAN1_ReceivedMessageCountGet@fifoTail               cstackCOMRAM 000508
+CAN1_ReceivedMessageCountGet@index                  cstackCOMRAM 00050A
+CAN1_ReceivedMessageCountGet@numOfMsg               cstackCOMRAM 000504
+CAN1_ReceivedMessageCountGet@rxMsgStatus            cstackCOMRAM 000505
+CAN1_ReceivedMessageCountGet@totalMsgObj            cstackCOMRAM 000503
+CAN1_SetBusErrorInterruptHandler@handler            cstackBANK5  000576
+CAN1_SetBusWakeUpActivityInterruptHandler@handler   cstackBANK5  000576
+CAN1_SetFIFO1NotEmptyHandler@handler                cstackBANK5  000576
+CAN1_SetInvalidMessageInterruptHandler@handler      cstackBANK5  000576
+CAN1_SetModeChangeInterruptHandler@handler          cstackBANK5  000576
+CAN1_SetRxBufferOverFlowInterruptHandler@handler    cstackBANK5  000576
+CAN1_SetSystemErrorInterruptHandler@handler         cstackBANK5  000576
+CAN1_SetTxAttemptInterruptHandler@handler           cstackBANK5  000576
+CANReadMessage@data1                                cstackCOMRAM 000537
+CANReadMessage@id                                   cstackCOMRAM 000533
+DELAY_milliseconds@milliseconds                     cstackBANK5  000576
+GetRxFifoDepth@validChannel                         cstackCOMRAM 000502
+GetRxFifoStatus@validChannel                        cstackCOMRAM 000501
 IVTBASEH                                            (abs)        00045E
 IVTBASEL                                            (abs)        00045D
 IVTBASEU                                            (abs)        00045F
-TMR0_ISR@CountCallBack                              bssCOMRAM    000501
-TMR0_SetInterruptHandler@InterruptHandler           cstackCOMRAM 000549
-TMR1_ISR@CountCallBack                              bssCOMRAM    000503
-TMR1_SetInterruptHandler@InterruptHandler           cstackCOMRAM 000549
-TMR1_WriteTimer@timerVal                            cstackCOMRAM 000547
+ReadMessageFromFifo@msgId                           cstackCOMRAM 000513
+ReadMessageFromFifo@rxCanMsg                        cstackCOMRAM 00050E
+ReadMessageFromFifo@rxFifoObj                       cstackCOMRAM 00050C
+ReadMessageFromFifo@status                          cstackCOMRAM 000517
+Receive@channel                                     cstackCOMRAM 000518
+Receive@index                                       cstackCOMRAM 000521
+Receive@rxCanMsg                                    cstackCOMRAM 000519
+Receive@rxFifoObj                                   cstackCOMRAM 00051E
+Receive@rxMsgStatus                                 cstackCOMRAM 000520
+Receive@status                                      cstackCOMRAM 00051D
+TMR0_ISR@CountCallBack                              bssCOMRAM    00053C
+TMR0_SetInterruptHandler@InterruptHandler           cstackBANK5  000576
+TMR1_ISR@CountCallBack                              bssCOMRAM    00053E
+TMR1_SetInterruptHandler@InterruptHandler           cstackBANK5  000576
+TMR1_WriteTimer@timerVal                            cstackCOMRAM 000501
 _ANSELA                                             (abs)        000400
 _ANSELB                                             (abs)        000408
 _ANSELC                                             (abs)        000410
@@ -359,6 +415,7 @@ _C1INTLbits                                         (abs)        00011C
 _C1INTT                                             (abs)        00011F
 _C1INTTbits                                         (abs)        00011F
 _C1INTU                                             (abs)        00011E
+_C1INTUbits                                         (abs)        00011E
 _C1NBTCFGH                                          (abs)        000105
 _C1NBTCFGL                                          (abs)        000104
 _C1NBTCFGT                                          (abs)        000107
@@ -369,48 +426,57 @@ _C1TXQCONL                                          (abs)        000150
 _C1TXQCONT                                          (abs)        000153
 _C1TXQCONU                                          (abs)        000152
 _C1TXQSTALbits                                      (abs)        000154
-_CAN1_BitRateConfiguration                          text25       002D6C
-_CAN1_BusErrorHandler                               bssCOMRAM    00050D
-_CAN1_BusWakeUpActivityHandler                      bssCOMRAM    00050F
-_CAN1_ErrorNotificationInterruptEnable              text17       0028F4
-_CAN1_ISR                                           text36       00260E
-_CAN1_Initialize                                    text10       002A16
-_CAN1_InvalidMessageHandler                         bssCOMRAM    000511
-_CAN1_ModeChangeHandler                             bssCOMRAM    00050B
-_CAN1_OperationModeGet                              text16       002D94
-_CAN1_OperationModeSet                              text15       002A6E
-_CAN1_RX_FIFO_Configuration                         text14       002D58
-_CAN1_RX_FIFO_FilterMaskConfiguration               text13       002DE8
-_CAN1_RX_FIFO_ResetInfo                             text12       002C18
-_CAN1_RxBufferOverflowHandler                       bssCOMRAM    000505
-_CAN1_SetBusErrorInterruptHandler                   text24       002DDA
-_CAN1_SetBusWakeUpActivityInterruptHandler          text23       002DD0
-_CAN1_SetInvalidMessageInterruptHandler             text22       002DC6
-_CAN1_SetModeChangeInterruptHandler                 text21       002DBC
-_CAN1_SetRxBufferOverFlowInterruptHandler           text20       002DB2
-_CAN1_SetSystemErrorInterruptHandler                text19       002DA8
-_CAN1_SetTxAttemptInterruptHandler                  text18       002D9E
-_CAN1_SystemErrorHandler                            bssCOMRAM    000509
-_CAN1_TX_FIFO_Configuration                         text11       002D44
-_CAN1_TxAttemptHandler                              bssCOMRAM    000507
-_CANDATAdata                                        dataCOMRAM   000527
+_CAN1_BitRateConfiguration                          text26       0033FA
+_CAN1_BusErrorHandler                               bssBANK5     000568
+_CAN1_BusWakeUpActivityHandler                      bssBANK5     00056A
+_CAN1_ErrorNotificationInterruptEnable              text18       002EB0
+_CAN1_FIFO1NotEmptyHandler                          bssCOMRAM    000540
+_CAN1_ISR                                           text47       00284E
+_CAN1_Initialize                                    text10       00303A
+_CAN1_InvalidMessageHandler                         bssBANK5     00056C
+_CAN1_ModeChangeHandler                             bssBANK5     000566
+_CAN1_OperationModeGet                              text17       00342C
+_CAN1_OperationModeSet                              text16       002E18
+_CAN1_RXI_ISR                                       text37       0032D0
+_CAN1_RX_FIFO_Configuration                         text14       0032FE
+_CAN1_RX_FIFO_FilterMaskConfiguration               text13       003482
+_CAN1_RX_FIFO_ResetInfo                             text12       003218
+_CAN1_Receive                                       text41       003092
+_CAN1_ReceivedMessageCountGet                       text40       002BCC
+_CAN1_RxBufferOverflowHandler                       bssBANK5     000560
+_CAN1_SetBusErrorInterruptHandler                   text25       003472
+_CAN1_SetBusWakeUpActivityInterruptHandler          text24       003468
+_CAN1_SetFIFO1NotEmptyHandler                       text15       003422
+_CAN1_SetInvalidMessageInterruptHandler             text23       00345E
+_CAN1_SetModeChangeInterruptHandler                 text22       003454
+_CAN1_SetRxBufferOverFlowInterruptHandler           text21       00344A
+_CAN1_SetSystemErrorInterruptHandler                text20       003440
+_CAN1_SetTxAttemptInterruptHandler                  text19       003436
+_CAN1_SystemErrorHandler                            bssBANK5     000564
+_CAN1_TX_FIFO_Configuration                         text11       0033E6
+_CAN1_TxAttemptHandler                              bssBANK5     000562
+_CANDATAdata                                        bssCOMRAM    000545
 _CANRXPPS                                           (abs)        00023D
-_DELAY_milliseconds                                 text26       002BBC
+_CANReadMessage                                     text39       002D58
+_DELAY_milliseconds                                 text27       0031E4
 _DLC_BYTES                                          smallconst   002601
-_DefaultBusErrorHandler                             text43       002DFA
-_DefaultBusWakeUpActivityHandler                    text42       002DF8
-_DefaultInvalidMessageHandler                       text41       002DF6
-_DefaultModeChangeHandler                           text40       002DF4
-_DefaultRxBufferOverflowHandler                     text39       002DF2
-_DefaultSystemErrorHandler                          text38       002DF0
-_DefaultTxAttemptHandler                            text37       002DEE
+_DefaultBusErrorHandler                             text54       003496
+_DefaultBusWakeUpActivityHandler                    text53       003494
+_DefaultFIFO1NotEmptyHandler                        text38       003488
+_DefaultInvalidMessageHandler                       text52       003492
+_DefaultModeChangeHandler                           text51       003490
+_DefaultRxBufferOverflowHandler                     text50       00348E
+_DefaultSystemErrorHandler                          text49       00348C
+_DefaultTxAttemptHandler                            text48       00348A
+_GetRxFifoDepth                                     text46       003398
+_GetRxFifoStatus                                    text45       0033CE
 _INLVLA                                             (abs)        000404
 _INLVLB                                             (abs)        00040C
 _INLVLC                                             (abs)        000414
 _INLVLE                                             (abs)        000424
 _INTCON0bits                                        (abs)        0004D6
-_INTERRUPT_Initialize                               text9        002DE4
-_INTERRUPT_InterruptManager                         text27       002886
+_INTERRUPT_Initialize                               text9        00347C
+_INTERRUPT_InterruptManager                         text28       002C96
 _LATA                                               (abs)        0004BE
 _LATB                                               (abs)        0004BF
 _LATBbits                                           (abs)        0004BF
@@ -423,13 +489,15 @@ _OSCCON1                                            (abs)        0000AD
 _OSCCON3                                            (abs)        0000AF
 _OSCEN                                              (abs)        0000B3
 _OSCFRQ                                             (abs)        0000B1
-_OSCILLATOR_Initialize                              text8        002D2C
+_OSCILLATOR_Initialize                              text8        0033B6
 _OSCTUNE                                            (abs)        0000B0
 _PIE0bits                                           (abs)        00049E
 _PIE3bits                                           (abs)        0004A1
-_PIN_MANAGER_Initialize                             text7        002960
+_PIE4bits                                           (abs)        0004A2
+_PIN_MANAGER_Initialize                             text7        002F2A
 _PIR0bits                                           (abs)        0004AE
 _PIR3bits                                           (abs)        0004B1
+_PIR4bits                                           (abs)        0004B2
 _PMD0                                               (abs)        000060
 _PMD1                                               (abs)        000061
 _PMD2                                               (abs)        000062
@@ -439,13 +507,15 @@ _PMD5                                               (abs)        000065
 _PMD6                                               (abs)        000066
 _PMD7                                               (abs)        000067
 _PMD8                                               (abs)        000068
-_PMD_Initialize                                     text6        002C9C
+_PMD_Initialize                                     text6        003350
 _RB4PPS                                             (abs)        00020D
+_ReadMessageFromFifo                                text43       00260E
+_Receive                                            text42       002AE0
 _SLRCONA                                            (abs)        000403
 _SLRCONB                                            (abs)        00040B
 _SLRCONC                                            (abs)        000413
-_SPEAKER                                            text35       002B4C
-_SYSTEM_Initialize                                  text1        002D0C
+_SPEAKER                                            text36       003174
+_SYSTEM_Initialize                                  text1        003378
 _T0CON0                                             (abs)        00031A
 _T0CON0bits                                         (abs)        00031A
 _T0CON1                                             (abs)        00031B
@@ -457,21 +527,21 @@ _T1GCON                                             (abs)        00031F
 _T1GCONbits                                         (abs)        00031F
 _TMR0H                                              (abs)        000319
 _TMR0L                                              (abs)        000318
-_TMR0_CallBack                                      text33       002C70
-_TMR0_DefaultInterruptHandler                       text34       002DEC
-_TMR0_ISR                                           text32       0029BC
-_TMR0_Initialize                                    text4        002CC4
-_TMR0_InterruptHandler                              nvCOMRAM     00054E
-_TMR0_SetInterruptHandler                           text5        002D8A
+_TMR0_CallBack                                      text34       0032A2
+_TMR0_DefaultInterruptHandler                       text35       003486
+_TMR0_ISR                                           text33       002F86
+_TMR0_Initialize                                    text4        003328
+_TMR0_InterruptHandler                              nvBANK5      00057B
+_TMR0_SetInterruptHandler                           text5        003418
 _TMR1H                                              (abs)        00031D
 _TMR1L                                              (abs)        00031C
-_TMR1_CallBack                                      text30       002C44
-_TMR1_DefaultInterruptHandler                       text31       002DEA
-_TMR1_ISR                                           text28       002B86
-_TMR1_Initialize                                    text2        002AC6
-_TMR1_InterruptHandler                              nvCOMRAM     000550
-_TMR1_SetInterruptHandler                           text3        002D80
-_TMR1_WriteTimer                                    text29       002BEA
+_TMR1_CallBack                                      text31       003274
+_TMR1_DefaultInterruptHandler                       text32       003484
+_TMR1_ISR                                           text29       0031AE
+_TMR1_Initialize                                    text2        00312C
+_TMR1_InterruptHandler                              nvBANK5      00057D
+_TMR1_SetInterruptHandler                           text3        00340E
+_TMR1_WriteTimer                                    text30       003246
 _TRISA                                              (abs)        0004C6
 _TRISB                                              (abs)        0004C7
 _TRISC                                              (abs)        0004C8
@@ -519,21 +589,23 @@ __Hbigbss                                           bigbss       000000
 __Hbigdata                                          bigdata      000000
 __Hbigram                                           bigram       000000
 __Hbss                                              bss          000000
+__HbssBANK5                                         bssBANK5     000000
 __HbssCOMRAM                                        bssCOMRAM    000000
 __Hcinit                                            cinit        000000
 __Hclrtext                                          clrtext      000000
 __Hcomram                                           comram       000000
 __Hconfig                                           config       300024
 __Hconst                                            const        000000
+__HcstackBANK5                                      cstackBANK5  000000
 __HcstackCOMRAM                                     cstackCOMRAM 000000
 __Hdata                                             data         000000
-__HdataCOMRAM                                       dataCOMRAM   000000
+__HdataBANK5                                        dataBANK5    000000
 __Heeprom_data                                      eeprom_data  000000
 __Hfarbss                                           farbss       000000
 __Hfardata                                          fardata      000000
 __Hibigdata                                         ibigdata     000000
 __Hidata                                            idata        000000
-__HidataCOMRAM                                      idataCOMRAM  000000
+__HidataBANK5                                       idataBANK5   000000
 __Hidloc                                            idloc        200020
 __Hifardata                                         ifardata     000000
 __Hinit                                             init         00001E
@@ -541,6 +613,7 @@ __Hintsave_regs                                     intsave_regs 000000
 __Hirdata                                           irdata       000000
 __Hivt0x8                                           ivt0x8       00001A
 __Hmediumconst                                      mediumconst  000000
+__HnvBANK5                                          nvBANK5      000000
 __HnvCOMRAM                                         nvCOMRAM     000000
 __HnvFARRAM                                         nvFARRAM     000000
 __Hnvbit                                            nvbit        000000
@@ -556,8 +629,8 @@ __Hreset_vec                                        reset_vec    000004
 __Hrparam                                           rparam       000000
 __Hsfr                                              sfr          000000
 __Hsmallconst                                       smallconst   00260E
-__Hspace_0                                          (abs)        002DFC
-__Hspace_1                                          (abs)        000554
+__Hspace_0                                          (abs)        003498
+__Hspace_1                                          (abs)        000581
 __Hspace_2                                          (abs)        000000
 __Hspace_4                                          (abs)        600024
 __Hstack                                            stack        000000
@@ -604,7 +677,18 @@ __Htext41                                           text41       000000
 __Htext42                                           text42       000000
 __Htext43                                           text43       000000
 __Htext44                                           text44       000000
+__Htext45                                           text45       000000
+__Htext46                                           text46       000000
+__Htext47                                           text47       000000
+__Htext48                                           text48       000000
+__Htext49                                           text49       000000
 __Htext5                                            text5        000000
+__Htext50                                           text50       000000
+__Htext51                                           text51       000000
+__Htext52                                           text52       000000
+__Htext53                                           text53       000000
+__Htext54                                           text54       000000
+__Htext55                                           text55       000000
 __Htext6                                            text6        000000
 __Htext7                                            text7        000000
 __Htext8                                            text8        000000
@@ -648,21 +732,23 @@ __Lbigbss                                           bigbss       000000
 __Lbigdata                                          bigdata      000000
 __Lbigram                                           bigram       000000
 __Lbss                                              bss          000000
+__LbssBANK5                                         bssBANK5     000000
 __LbssCOMRAM                                        bssCOMRAM    000000
 __Lcinit                                            cinit        000000
 __Lclrtext                                          clrtext      000000
 __Lcomram                                           comram       000000
 __Lconfig                                           config       000000
 __Lconst                                            const        000000
+__LcstackBANK5                                      cstackBANK5  000000
 __LcstackCOMRAM                                     cstackCOMRAM 000000
 __Ldata                                             data         000000
-__LdataCOMRAM                                       dataCOMRAM   000000
+__LdataBANK5                                        dataBANK5    000000
 __Leeprom_data                                      eeprom_data  000000
 __Lfarbss                                           farbss       000000
 __Lfardata                                          fardata      000000
 __Libigdata                                         ibigdata     000000
 __Lidata                                            idata        000000
-__LidataCOMRAM                                      idataCOMRAM  000000
+__LidataBANK5                                       idataBANK5   000000
 __Lidloc                                            idloc        000000
 __Lifardata                                         ifardata     000000
 __Linit                                             init         00001A
@@ -670,6 +756,7 @@ __Lintsave_regs                                     intsave_regs 000000
 __Lirdata                                           irdata       000000
 __Livt0x8                                           ivt0x8       000008
 __Lmediumconst                                      mediumconst  000000
+__LnvBANK5                                          nvBANK5      000000
 __LnvCOMRAM                                         nvCOMRAM     000000
 __LnvFARRAM                                         nvFARRAM     000000
 __Lnvbit                                            nvbit        000000
@@ -733,13 +820,24 @@ __Ltext41                                           text41       000000
 __Ltext42                                           text42       000000
 __Ltext43                                           text43       000000
 __Ltext44                                           text44       000000
+__Ltext45                                           text45       000000
+__Ltext46                                           text46       000000
+__Ltext47                                           text47       000000
+__Ltext48                                           text48       000000
+__Ltext49                                           text49       000000
 __Ltext5                                            text5        000000
+__Ltext50                                           text50       000000
+__Ltext51                                           text51       000000
+__Ltext52                                           text52       000000
+__Ltext53                                           text53       000000
+__Ltext54                                           text54       000000
+__Ltext55                                           text55       000000
 __Ltext6                                            text6        000000
 __Ltext7                                            text7        000000
 __Ltext8                                            text8        000000
 __Ltext9                                            text9        000000
-__S0                                                (abs)        002DFC
-__S1                                                (abs)        000554
+__S0                                                (abs)        003498
+__S1                                                (abs)        000581
 __S2                                                (abs)        000000
 __S4                                                (abs)        000000
 __S5                                                (abs)        000000
@@ -750,108 +848,133 @@ ___rparam_used                                      (abs)        000001
 ___sp                                               stack        000000
 __accesstop                                         (abs)        000560
 __activetblptr                                      (abs)        000003
-__end_of_CAN1_BitRateConfiguration                  text25       002D80
-__end_of_CAN1_ErrorNotificationInterruptEnable      text17       002960
-__end_of_CAN1_ISR                                   text36       002756
-__end_of_CAN1_Initialize                            text10       002A6E
-__end_of_CAN1_OperationModeGet                      text16       002D9E
-__end_of_CAN1_OperationModeSet                      text15       002AC6
-__end_of_CAN1_RX_FIFO_Configuration                 text14       002D6C
-__end_of_CAN1_RX_FIFO_FilterMaskConfiguration       text13       002DEA
-__end_of_CAN1_RX_FIFO_ResetInfo                     text12       002C44
-__end_of_CAN1_SetBusErrorInterruptHandler           text24       002DE4
-__end_of_CAN1_SetBusWakeUpActivityInterruptHandler  text23       002DDA
-__end_of_CAN1_SetInvalidMessageInterruptHandler     text22       002DD0
-__end_of_CAN1_SetModeChangeInterruptHandler         text21       002DC6
-__end_of_CAN1_SetRxBufferOverFlowInterruptHandler   text20       002DBC
-__end_of_CAN1_SetSystemErrorInterruptHandler        text19       002DB2
-__end_of_CAN1_SetTxAttemptInterruptHandler          text18       002DA8
-__end_of_CAN1_TX_FIFO_Configuration                 text11       002D58
-__end_of_DELAY_milliseconds                         text26       002BEA
+__end_of_CAN1_BitRateConfiguration                  text26       00340E
+__end_of_CAN1_ErrorNotificationInterruptEnable      text18       002F2A
+__end_of_CAN1_ISR                                   text47       0029A4
+__end_of_CAN1_Initialize                            text10       003092
+__end_of_CAN1_OperationModeGet                      text17       003436
+__end_of_CAN1_OperationModeSet                      text16       002EB0
+__end_of_CAN1_RXI_ISR                               text37       0032FE
+__end_of_CAN1_RX_FIFO_Configuration                 text14       003328
+__end_of_CAN1_RX_FIFO_FilterMaskConfiguration       text13       003484
+__end_of_CAN1_RX_FIFO_ResetInfo                     text12       003246
+__end_of_CAN1_Receive                               text41       0030E4
+__end_of_CAN1_ReceivedMessageCountGet               text40       002C96
+__end_of_CAN1_SetBusErrorInterruptHandler           text25       00347C
+__end_of_CAN1_SetBusWakeUpActivityInterruptHandler  text24       003472
+__end_of_CAN1_SetFIFO1NotEmptyHandler               text15       00342C
+__end_of_CAN1_SetInvalidMessageInterruptHandler     text23       003468
+__end_of_CAN1_SetModeChangeInterruptHandler         text22       00345E
+__end_of_CAN1_SetRxBufferOverFlowInterruptHandler   text21       003454
+__end_of_CAN1_SetSystemErrorInterruptHandler        text20       00344A
+__end_of_CAN1_SetTxAttemptInterruptHandler          text19       003440
+__end_of_CAN1_TX_FIFO_Configuration                 text11       0033FA
+__end_of_CANReadMessage                             text39       002E18
+__end_of_DELAY_milliseconds                         text27       003218
 __end_of_DLC_BYTES                                  smallconst   00260A
-__end_of_DefaultBusErrorHandler                     text43       002DFC
-__end_of_DefaultBusWakeUpActivityHandler            text42       002DFA
-__end_of_DefaultInvalidMessageHandler               text41       002DF8
-__end_of_DefaultModeChangeHandler                   text40       002DF6
-__end_of_DefaultRxBufferOverflowHandler             text39       002DF4
-__end_of_DefaultSystemErrorHandler                  text38       002DF2
-__end_of_DefaultTxAttemptHandler                    text37       002DF0
+__end_of_DefaultBusErrorHandler                     text54       003498
+__end_of_DefaultBusWakeUpActivityHandler            text53       003496
+__end_of_DefaultFIFO1NotEmptyHandler                text38       00348A
+__end_of_DefaultInvalidMessageHandler               text52       003494
+__end_of_DefaultModeChangeHandler                   text51       003492
+__end_of_DefaultRxBufferOverflowHandler             text50       003490
+__end_of_DefaultSystemErrorHandler                  text49       00348E
+__end_of_DefaultTxAttemptHandler                    text48       00348C
 __end_of_FIFO                                       smallconst   00260C
-__end_of_INTERRUPT_Initialize                       text9        002DE8
-__end_of_INTERRUPT_InterruptManager                 text27       0028F4
-__end_of_OSCILLATOR_Initialize                      text8        002D44
-__end_of_PIN_MANAGER_Initialize                     text7        0029BC
-__end_of_PMD_Initialize                             text6        002CC4
-__end_of_SPEAKER                                    text35       002B86
-__end_of_SYSTEM_Initialize                          text1        002D2C
-__end_of_TMR0_CallBack                              text33       002C9C
-__end_of_TMR0_DefaultInterruptHandler               text34       002DEE
-__end_of_TMR0_ISR                                   text32       002A16
-__end_of_TMR0_Initialize                            text4        002CEA
-__end_of_TMR0_SetInterruptHandler                   text5        002D94
-__end_of_TMR1_CallBack                              text30       002C70
-__end_of_TMR1_DefaultInterruptHandler               text31       002DEC
-__end_of_TMR1_ISR                                   text28       002BBC
-__end_of_TMR1_Initialize                            text2        002B0C
-__end_of_TMR1_SetInterruptHandler                   text3        002D8A
-__end_of_TMR1_WriteTimer                            text29       002C18
-__end_of__initialization                            cinit        002B46
-__end_of_main                                       text0        002886
-__initialization                                    cinit        002B0C
+__end_of_GetRxFifoDepth                             text46       0033B6
+__end_of_GetRxFifoStatus                            text45       0033E6
+__end_of_INTERRUPT_Initialize                       text9        003480
+__end_of_INTERRUPT_InterruptManager                 text28       002D58
+__end_of_OSCILLATOR_Initialize                      text8        0033CE
+__end_of_PIN_MANAGER_Initialize                     text7        002F86
+__end_of_PMD_Initialize                             text6        003378
+__end_of_ReadMessageFromFifo                        text43       00284E
+__end_of_Receive                                    text42       002BCC
+__end_of_SPEAKER                                    text36       0031AE
+__end_of_SYSTEM_Initialize                          text1        003398
+__end_of_TMR0_CallBack                              text34       0032D0
+__end_of_TMR0_DefaultInterruptHandler               text35       003488
+__end_of_TMR0_ISR                                   text33       002FE0
+__end_of_TMR0_Initialize                            text4        003350
+__end_of_TMR0_SetInterruptHandler                   text5        003422
+__end_of_TMR1_CallBack                              text31       0032A2
+__end_of_TMR1_DefaultInterruptHandler               text32       003486
+__end_of_TMR1_ISR                                   text29       0031E4
+__end_of_TMR1_Initialize                            text2        003174
+__end_of_TMR1_SetInterruptHandler                   text3        003418
+__end_of_TMR1_WriteTimer                            text30       003274
+__end_of__initialization                            cinit        003126
+__end_of_main                                       text0        002AE0
+__end_of_memcpy                                     text44       00303A
+__initialization                                    cinit        0030E4
 __mediumconst                                       mediumconst  000000
-__pbssCOMRAM                                        bssCOMRAM    000501
-__pcinit                                            cinit        002B0C
-__pcstackCOMRAM                                     cstackCOMRAM 000547
-__pdataCOMRAM                                       dataCOMRAM   000525
-__pidataCOMRAM                                      idataCOMRAM  002CEA
+__pbssBANK5                                         bssBANK5     000560
+__pbssCOMRAM                                        bssCOMRAM    00053C
+__pcinit                                            cinit        0030E4
+__pcstackBANK5                                      cstackBANK5  000576
+__pcstackCOMRAM                                     cstackCOMRAM 000501
+__pdataBANK5                                        dataBANK5    00057F
+__pidataBANK5                                       idataBANK5   003480
 __pivt0x8                                           ivt0x8       000008
-__pnvCOMRAM                                         nvCOMRAM     00054E
+__pnvBANK5                                          nvBANK5      00057B
+__pnvCOMRAM                                         nvCOMRAM     00055B
 __psmallconst                                       smallconst   002600
-__ptext0                                            text0        002756
-__ptext1                                            text1        002D0C
-__ptext10                                           text10       002A16
-__ptext11                                           text11       002D44
-__ptext12                                           text12       002C18
-__ptext13                                           text13       002DE8
-__ptext14                                           text14       002D58
-__ptext15                                           text15       002A6E
-__ptext16                                           text16       002D94
-__ptext17                                           text17       0028F4
-__ptext18                                           text18       002D9E
-__ptext19                                           text19       002DA8
-__ptext2                                            text2        002AC6
-__ptext20                                           text20       002DB2
-__ptext21                                           text21       002DBC
-__ptext22                                           text22       002DC6
-__ptext23                                           text23       002DD0
-__ptext24                                           text24       002DDA
-__ptext25                                           text25       002D6C
-__ptext26                                           text26       002BBC
-__ptext27                                           text27       002886
-__ptext28                                           text28       002B86
-__ptext29                                           text29       002BEA
-__ptext3                                            text3        002D80
-__ptext30                                           text30       002C44
-__ptext31                                           text31       002DEA
-__ptext32                                           text32       0029BC
-__ptext33                                           text33       002C70
-__ptext34                                           text34       002DEC
-__ptext35                                           text35       002B4C
-__ptext36                                           text36       00260E
-__ptext37                                           text37       002DEE
-__ptext38                                           text38       002DF0
-__ptext39                                           text39       002DF2
-__ptext4                                            text4        002CC4
-__ptext40                                           text40       002DF4
-__ptext41                                           text41       002DF6
-__ptext42                                           text42       002DF8
-__ptext43                                           text43       002DFA
-__ptext44                                           text44       000000
-__ptext5                                            text5        002D8A
-__ptext6                                            text6        002C9C
-__ptext7                                            text7        002960
-__ptext8                                            text8        002D2C
-__ptext9                                            text9        002DE4
+__ptext0                                            text0        0029A4
+__ptext1                                            text1        003378
+__ptext10                                           text10       00303A
+__ptext11                                           text11       0033E6
+__ptext12                                           text12       003218
+__ptext13                                           text13       003482
+__ptext14                                           text14       0032FE
+__ptext15                                           text15       003422
+__ptext16                                           text16       002E18
+__ptext17                                           text17       00342C
+__ptext18                                           text18       002EB0
+__ptext19                                           text19       003436
+__ptext2                                            text2        00312C
+__ptext20                                           text20       003440
+__ptext21                                           text21       00344A
+__ptext22                                           text22       003454
+__ptext23                                           text23       00345E
+__ptext24                                           text24       003468
+__ptext25                                           text25       003472
+__ptext26                                           text26       0033FA
+__ptext27                                           text27       0031E4
+__ptext28                                           text28       002C96
+__ptext29                                           text29       0031AE
+__ptext3                                            text3        00340E
+__ptext30                                           text30       003246
+__ptext31                                           text31       003274
+__ptext32                                           text32       003484
+__ptext33                                           text33       002F86
+__ptext34                                           text34       0032A2
+__ptext35                                           text35       003486
+__ptext36                                           text36       003174
+__ptext37                                           text37       0032D0
+__ptext38                                           text38       003488
+__ptext39                                           text39       002D58
+__ptext4                                            text4        003328
+__ptext40                                           text40       002BCC
+__ptext41                                           text41       003092
+__ptext42                                           text42       002AE0
+__ptext43                                           text43       00260E
+__ptext44                                           text44       002FE0
+__ptext45                                           text45       0033CE
+__ptext46                                           text46       003398
+__ptext47                                           text47       00284E
+__ptext48                                           text48       00348A
+__ptext49                                           text49       00348C
+__ptext5                                            text5        003418
+__ptext50                                           text50       00348E
+__ptext51                                           text51       003490
+__ptext52                                           text52       003492
+__ptext53                                           text53       003494
+__ptext54                                           text54       003496
+__ptext55                                           text55       000000
+__ptext6                                            text6        003350
+__ptext7                                            text7        002F2A
+__ptext8                                            text8        0033B6
+__ptext9                                            text9        00347C
 __ramtop                                            ramtop       002600
 __size_of_CAN1_BitRateConfiguration                 (abs)        000000
 __size_of_CAN1_ErrorNotificationInterruptEnable     (abs)        000000
@@ -859,30 +982,40 @@ __size_of_CAN1_ISR                                  (abs)        000000
 __size_of_CAN1_Initialize                           (abs)        000000
 __size_of_CAN1_OperationModeGet                     (abs)        000000
 __size_of_CAN1_OperationModeSet                     (abs)        000000
+__size_of_CAN1_RXI_ISR                              (abs)        000000
 __size_of_CAN1_RX_FIFO_Configuration                (abs)        000000
 __size_of_CAN1_RX_FIFO_FilterMaskConfiguration      (abs)        000000
 __size_of_CAN1_RX_FIFO_ResetInfo                    (abs)        000000
+__size_of_CAN1_Receive                              (abs)        000000
+__size_of_CAN1_ReceivedMessageCountGet              (abs)        000000
 __size_of_CAN1_SetBusErrorInterruptHandler          (abs)        000000
 __size_of_CAN1_SetBusWakeUpActivityInterruptHandler (abs)        000000
+__size_of_CAN1_SetFIFO1NotEmptyHandler              (abs)        000000
 __size_of_CAN1_SetInvalidMessageInterruptHandler    (abs)        000000
 __size_of_CAN1_SetModeChangeInterruptHandler        (abs)        000000
 __size_of_CAN1_SetRxBufferOverFlowInterruptHandler  (abs)        000000
 __size_of_CAN1_SetSystemErrorInterruptHandler       (abs)        000000
 __size_of_CAN1_SetTxAttemptInterruptHandler         (abs)        000000
 __size_of_CAN1_TX_FIFO_Configuration                (abs)        000000
+__size_of_CANReadMessage                            (abs)        000000
 __size_of_DELAY_milliseconds                        (abs)        000000
 __size_of_DefaultBusErrorHandler                    (abs)        000000
 __size_of_DefaultBusWakeUpActivityHandler           (abs)        000000
+__size_of_DefaultFIFO1NotEmptyHandler               (abs)        000000
 __size_of_DefaultInvalidMessageHandler              (abs)        000000
 __size_of_DefaultModeChangeHandler                  (abs)        000000
 __size_of_DefaultRxBufferOverflowHandler            (abs)        000000
 __size_of_DefaultSystemErrorHandler                 (abs)        000000
 __size_of_DefaultTxAttemptHandler                   (abs)        000000
+__size_of_GetRxFifoDepth                            (abs)        000000
+__size_of_GetRxFifoStatus                           (abs)        000000
 __size_of_INTERRUPT_Initialize                      (abs)        000000
 __size_of_INTERRUPT_InterruptManager                (abs)        000000
 __size_of_OSCILLATOR_Initialize                     (abs)        000000
 __size_of_PIN_MANAGER_Initialize                    (abs)        000000
 __size_of_PMD_Initialize                            (abs)        000000
+__size_of_ReadMessageFromFifo                       (abs)        000000
+__size_of_Receive                                   (abs)        000000
 __size_of_SPEAKER                                   (abs)        000000
 __size_of_SYSTEM_Initialize                         (abs)        000000
 __size_of_TMR0_CallBack                             (abs)        000000
@@ -897,25 +1030,34 @@ __size_of_TMR1_Initialize                           (abs)        000000
 __size_of_TMR1_SetInterruptHandler                  (abs)        000000
 __size_of_TMR1_WriteTimer                           (abs)        000000
 __size_of_main                                      (abs)        000000
+__size_of_memcpy                                    (abs)        000000
 __smallconst                                        smallconst   002600
-_main                                               text0        002756
-_msg                                                bssCOMRAM    00051E
-_rxFifos                                            dataCOMRAM   000525
-_rxMsgData                                          bssCOMRAM    000516
-_timer1ReloadVal                                    nvCOMRAM     000552
-_ucASState                                          bssCOMRAM    000513
-_ucFlagEmergencySpeaker                             bssCOMRAM    000515
-_ucSpeakerCount                                     bssCOMRAM    000514
-end_of_initialization                               cinit        002B46
+_main                                               text0        0029A4
+_memcpy                                             text44       002FE0
+_msgReceipt                                         bssCOMRAM    00054D
+_msgTransmit                                        bssCOMRAM    000554
+_rxFifos                                            dataBANK5    00057F
+_rxMsgData                                          bssBANK5     00056E
+_timer1ReloadVal                                    nvCOMRAM     00055B
+_ucASState                                          bssCOMRAM    000542
+_ucFlagEmergencySpeaker                             bssCOMRAM    000544
+_ucSpeakerCount                                     bssCOMRAM    000543
+end_of_initialization                               cinit        003126
 intlevel0                                           text         000000
 intlevel1                                           text         000000
 intlevel2                                           text         000000
 intlevel3                                           text         000000
 ivt0x8_base                                         ivt0x8       000008
+memcpy@d                                            cstackCOMRAM 000507
+memcpy@d1                                           cstackCOMRAM 000501
+memcpy@n                                            cstackCOMRAM 000505
+memcpy@s                                            cstackCOMRAM 000509
+memcpy@s1                                           cstackCOMRAM 000503
+memcpy@tmp                                          cstackCOMRAM 00050B
 stackhi                                             (abs)        0025FF
-stacklo                                             (abs)        000560
+stacklo                                             (abs)        000581
 start                                               init         00001A
-start_initialization                                cinit        002B0C
+start_initialization                                cinit        0030E4
 
 
 FUNCTION INFORMATION:
@@ -938,10 +1080,10 @@ FUNCTION INFORMATION:
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        1 bytes
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:   11
  This function calls:
 		_DELAY_milliseconds
 		_SYSTEM_Initialize
@@ -972,7 +1114,7 @@ Total ram usage:        1 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    7
+ Hardware stack levels required when called:   10
  This function calls:
 		_CAN1_Initialize
 		_INTERRUPT_Initialize
@@ -1004,11 +1146,11 @@ Total ram usage:        0 bytes
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    5
+ Hardware stack levels required when called:    8
  This function calls:
 		_TMR1_SetInterruptHandler
  This function is called by:
@@ -1020,7 +1162,7 @@ Total ram usage:        2 bytes
  Defined at:
 		line 195 in file "mcc_generated_files/tmr1.c"
  Parameters:    Size  Location     Type
-  InterruptHan    2    2[COMRAM] PTR FTN()void 
+  InterruptHan    2    0[BANK5 ] PTR FTN()void 
 		 -> TMR1_DefaultInterruptHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -1033,13 +1175,13 @@ Total ram usage:        2 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1069,7 +1211,7 @@ Total ram usage:        2 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    5
+ Hardware stack levels required when called:    8
  This function calls:
 		_TMR0_SetInterruptHandler
  This function is called by:
@@ -1081,7 +1223,7 @@ Total ram usage:        0 bytes
  Defined at:
 		line 164 in file "mcc_generated_files/tmr0.c"
  Parameters:    Size  Location     Type
-  InterruptHan    2    2[COMRAM] PTR FTN()void 
+  InterruptHan    2    0[BANK5 ] PTR FTN()void 
 		 -> TMR0_DefaultInterruptHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -1094,13 +1236,13 @@ Total ram usage:        0 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1130,7 +1272,7 @@ Total ram usage:        2 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1160,7 +1302,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1190,7 +1332,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1220,7 +1362,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1230,7 +1372,7 @@ Total ram usage:        0 bytes
 
  *************** function _CAN1_Initialize *****************
  Defined at:
-		line 237 in file "mcc_generated_files/can1.c"
+		line 245 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1250,7 +1392,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    6
+ Hardware stack levels required when called:    9
  This function calls:
 		_CAN1_BitRateConfiguration
 		_CAN1_ErrorNotificationInterruptEnable
@@ -1266,7 +1408,7 @@ Total ram usage:        0 bytes
 
  *************** function _CAN1_TX_FIFO_Configuration *****************
  Defined at:
-		line 179 in file "mcc_generated_files/can1.c"
+		line 187 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1286,7 +1428,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1296,11 +1438,11 @@ Total ram usage:        0 bytes
 
  *************** function _CAN1_RX_FIFO_ResetInfo *****************
  Defined at:
-		line 149 in file "mcc_generated_files/can1.c"
+		line 151 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  index           1    2[COMRAM] unsigned char 
+  index           1    0[BANK5 ] unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
@@ -1311,12 +1453,12 @@ Total ram usage:        0 bytes
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        1 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1326,7 +1468,7 @@ Total ram usage:        1 bytes
 
  *************** function _CAN1_RX_FIFO_FilterMaskConfiguration *****************
  Defined at:
-		line 175 in file "mcc_generated_files/can1.c"
+		line 183 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1346,7 +1488,7 @@ Total ram usage:        1 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1356,7 +1498,7 @@ Total ram usage:        0 bytes
 
  *************** function _CAN1_RX_FIFO_Configuration *****************
  Defined at:
-		line 159 in file "mcc_generated_files/can1.c"
+		line 161 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1364,7 +1506,7 @@ Total ram usage:        0 bytes
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2
+		wreg, status,2, status,0, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1376,23 +1518,54 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    8
  This function calls:
-		Nothing
+		_CAN1_SetFIFO1NotEmptyHandler
  This function is called by:
 		_CAN1_Initialize
  This function uses a non-reentrant model
 
 
+ *************** function _CAN1_SetFIFO1NotEmptyHandler *****************
+ Defined at:
+		line 707 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  handler         2    0[BANK5 ] PTR FTN()void 
+		 -> DefaultFIFO1NotEmptyHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		Nothing
+ This function is called by:
+		_CAN1_RX_FIFO_Configuration
+ This function uses a non-reentrant model
+
+
  *************** function _CAN1_OperationModeSet *****************
  Defined at:
-		line 266 in file "mcc_generated_files/can1.c"
+		line 274 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
   requestMode     1    wreg     const enum E22346
  Auto vars:     Size  Location     Type
-  requestMode     1    4[COMRAM] const enum E22346
-  status          1    3[COMRAM] enum E22356
-  opMode          1    2[COMRAM] enum E22346
+  requestMode     1    2[BANK5 ] const enum E22346
+  status          1    1[BANK5 ] enum E22356
+  opMode          1    0[BANK5 ] enum E22346
  Return value:  Size  Location     Type
                   1    wreg      enum E22356
  Registers used:
@@ -1403,24 +1576,23 @@ Total ram usage:        0 bytes
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        3 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    5
+ Hardware stack levels required when called:    8
  This function calls:
 		_CAN1_OperationModeGet
  This function is called by:
 		_CAN1_Initialize
 		_CAN1_Sleep
-		_CANWriteMessage
  This function uses a non-reentrant model
 
 
  *************** function _CAN1_OperationModeGet *****************
  Defined at:
-		line 295 in file "mcc_generated_files/can1.c"
+		line 303 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1440,19 +1612,18 @@ Total ram usage:        3 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
 		_CAN1_OperationModeSet
 		_ValidateTransmission
-		_CANWriteMessage
  This function uses a non-reentrant model
 
 
  *************** function _CAN1_ErrorNotificationInterruptEnable *****************
  Defined at:
-		line 211 in file "mcc_generated_files/can1.c"
+		line 219 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1472,7 +1643,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    5
+ Hardware stack levels required when called:    8
  This function calls:
 		_CAN1_SetBusErrorInterruptHandler
 		_CAN1_SetBusWakeUpActivityInterruptHandler
@@ -1488,9 +1659,9 @@ Total ram usage:        0 bytes
 
  *************** function _CAN1_SetTxAttemptInterruptHandler *****************
  Defined at:
-		line 608 in file "mcc_generated_files/can1.c"
+		line 644 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
-  handler         2    2[COMRAM] PTR FTN()void 
+  handler         2    0[BANK5 ] PTR FTN()void 
 		 -> DefaultTxAttemptHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -1503,13 +1674,13 @@ Total ram usage:        0 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1519,9 +1690,9 @@ Total ram usage:        2 bytes
 
  *************** function _CAN1_SetSystemErrorInterruptHandler *****************
  Defined at:
-		line 603 in file "mcc_generated_files/can1.c"
+		line 639 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
-  handler         2    2[COMRAM] PTR FTN()void 
+  handler         2    0[BANK5 ] PTR FTN()void 
 		 -> DefaultSystemErrorHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -1534,13 +1705,13 @@ Total ram usage:        2 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1550,9 +1721,9 @@ Total ram usage:        2 bytes
 
  *************** function _CAN1_SetRxBufferOverFlowInterruptHandler *****************
  Defined at:
-		line 613 in file "mcc_generated_files/can1.c"
+		line 649 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
-  handler         2    2[COMRAM] PTR FTN()void 
+  handler         2    0[BANK5 ] PTR FTN()void 
 		 -> DefaultRxBufferOverflowHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -1565,13 +1736,13 @@ Total ram usage:        2 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1581,9 +1752,9 @@ Total ram usage:        2 bytes
 
  *************** function _CAN1_SetModeChangeInterruptHandler *****************
  Defined at:
-		line 598 in file "mcc_generated_files/can1.c"
+		line 634 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
-  handler         2    2[COMRAM] PTR FTN()void 
+  handler         2    0[BANK5 ] PTR FTN()void 
 		 -> DefaultModeChangeHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -1596,13 +1767,13 @@ Total ram usage:        2 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1612,9 +1783,9 @@ Total ram usage:        2 bytes
 
  *************** function _CAN1_SetInvalidMessageInterruptHandler *****************
  Defined at:
-		line 583 in file "mcc_generated_files/can1.c"
+		line 619 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
-  handler         2    2[COMRAM] PTR FTN()void 
+  handler         2    0[BANK5 ] PTR FTN()void 
 		 -> DefaultInvalidMessageHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -1627,13 +1798,13 @@ Total ram usage:        2 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1643,9 +1814,9 @@ Total ram usage:        2 bytes
 
  *************** function _CAN1_SetBusWakeUpActivityInterruptHandler *****************
  Defined at:
-		line 588 in file "mcc_generated_files/can1.c"
+		line 624 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
-  handler         2    2[COMRAM] PTR FTN()void 
+  handler         2    0[BANK5 ] PTR FTN()void 
 		 -> DefaultBusWakeUpActivityHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -1658,13 +1829,13 @@ Total ram usage:        2 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1674,9 +1845,9 @@ Total ram usage:        2 bytes
 
  *************** function _CAN1_SetBusErrorInterruptHandler *****************
  Defined at:
-		line 593 in file "mcc_generated_files/can1.c"
+		line 629 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
-  handler         2    2[COMRAM] PTR FTN()void 
+  handler         2    0[BANK5 ] PTR FTN()void 
 		 -> DefaultBusErrorHandler(1), 
  Auto vars:     Size  Location     Type
 		None
@@ -1689,13 +1860,13 @@ Total ram usage:        2 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1705,7 +1876,7 @@ Total ram usage:        2 bytes
 
  *************** function _CAN1_BitRateConfiguration *****************
  Defined at:
-		line 195 in file "mcc_generated_files/can1.c"
+		line 203 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1725,7 +1896,7 @@ Total ram usage:        2 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1737,7 +1908,7 @@ Total ram usage:        0 bytes
  Defined at:
 		line 38 in file "mcc_generated_files/delay.c"
  Parameters:    Size  Location     Type
-  milliseconds    2    2[COMRAM] unsigned short 
+  milliseconds    2    0[BANK5 ] unsigned short 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -1749,13 +1920,13 @@ Total ram usage:        0 bytes
 		On exit  : 
 		Unchanged: 
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        3 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    4
+ Hardware stack levels required when called:    7
  This function calls:
 		Nothing
  This function is called by:
@@ -1773,7 +1944,7 @@ Total ram usage:        3 bytes
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2, status,0, pclath, tosl, cstack
+		wreg, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1781,13 +1952,14 @@ Total ram usage:        3 bytes
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        0 bytes
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    3
+ Hardware stack levels required when called:    6
  This function calls:
 		_CAN1_ISR
+		_CAN1_RXI_ISR
 		_TMR0_ISR
 		_TMR1_ISR
  This function is called by:
@@ -2038,9 +2210,355 @@ Total ram usage:        1 bytes
  This function uses a non-reentrant model
 
 
+ *************** function _CAN1_RXI_ISR *****************
+ Defined at:
+		line 713 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Absolute function
+		_CANReadMessage
+		_DefaultFIFO1NotEmptyHandler
+ This function is called by:
+		_INTERRUPT_InterruptManager
+ This function uses a non-reentrant model
+
+
+ *************** function _DefaultFIFO1NotEmptyHandler *****************
+ Defined at:
+		line 119 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_CAN1_RX_FIFO_Configuration
+		_CAN1_RXI_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function _CANReadMessage *****************
+ Defined at:
+		line 67 in file "MESSAGES.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  id              4   50[COMRAM] unsigned long 
+  data1           1   54[COMRAM] unsigned char 
+  data8           1    0        unsigned char 
+  data7           1    0        unsigned char 
+  data6           1    0        unsigned char 
+  data5           1    0        unsigned char 
+  data4           1    0        unsigned char 
+  data3           1    0        unsigned char 
+  data2           1    0        unsigned char 
+  dlc             1    0        unsigned char 
+  idType          1    0        unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:        14       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        18       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       18 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_CAN1_Receive
+		_CAN1_ReceivedMessageCountGet
+ This function is called by:
+		_CAN1_RXI_ISR
+ This function uses a non-reentrant model
+
+
+ *************** function _CAN1_ReceivedMessageCountGet *****************
+ Defined at:
+		line 419 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  fifoHead        1    8[COMRAM] unsigned char 
+  fifoTail        1    7[COMRAM] unsigned char 
+  fifoDepth       1    6[COMRAM] unsigned char 
+  numOfMsg        1    3[COMRAM] unsigned char 
+  channel         1    5[COMRAM] enum E22386
+  rxMsgStatus     1    4[COMRAM] enum E22533
+  index           1    9[COMRAM] unsigned char 
+  totalMsgObj     1    2[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_GetRxFifoDepth
+		_GetRxFifoStatus
+ This function is called by:
+		_CANReadMessage
+ This function uses a non-reentrant model
+
+
+ *************** function _CAN1_Receive *****************
+ Defined at:
+		line 384 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  rxCanMsg        2   33[COMRAM] PTR struct .
+		 -> msgReceipt(7), 
+ Auto vars:     Size  Location     Type
+  index           1   36[COMRAM] unsigned char 
+  status          1   35[COMRAM] _Bool 
+ Return value:  Size  Location     Type
+                  1    wreg      _Bool 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_Receive
+ This function is called by:
+		_CANReadMessage
+ This function uses a non-reentrant model
+
+
+ *************** function _Receive *****************
+ Defined at:
+		line 352 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  index           1    wreg     unsigned char 
+  channel         1   23[COMRAM] enum E22386
+  rxCanMsg        2   24[COMRAM] PTR struct .
+		 -> msgReceipt(7), 
+ Auto vars:     Size  Location     Type
+  index           1   32[COMRAM] unsigned char 
+  rxFifoObj       2   29[COMRAM] PTR unsigned char 
+		 -> RAM(9727), 
+  rxMsgStatus     1   31[COMRAM] enum E22533
+  status          1   28[COMRAM] _Bool 
+ Return value:  Size  Location     Type
+                  1    wreg      _Bool 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        10       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       10 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_GetRxFifoDepth
+		_GetRxFifoStatus
+		_ReadMessageFromFifo
+ This function is called by:
+		_CAN1_Receive
+		_CAN1_ReceiveFrom
+ This function uses a non-reentrant model
+
+
+ *************** function _ReadMessageFromFifo *****************
+ Defined at:
+		line 318 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  rxFifoObj       2   11[COMRAM] PTR unsigned char 
+		 -> RAM(9727), 
+  rxCanMsg        2   13[COMRAM] PTR struct .
+		 -> msgReceipt(7), 
+ Auto vars:     Size  Location     Type
+  msgId           4   18[COMRAM] unsigned long 
+  status          1   22[COMRAM] unsigned char 
+  payloadOffse    1    0        const unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        12       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       12 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_memcpy
+ This function is called by:
+		_Receive
+ This function uses a non-reentrant model
+
+
+ *************** function _memcpy *****************
+ Defined at:
+		line 4 in file "C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c"
+ Parameters:    Size  Location     Type
+  d1              2    0[COMRAM] PTR void 
+		 -> RAM(9727), rxMsgData(8), 
+  s1              2    2[COMRAM] PTR const void 
+		 -> CANDATAdata(8), RAM(9727), rxMsgData(8), 
+  n               2    4[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  s               2    8[COMRAM] PTR const unsigned char 
+		 -> CANDATAdata(8), RAM(9727), rxMsgData(8), 
+  d               2    6[COMRAM] PTR unsigned char 
+		 -> RAM(9727), rxMsgData(8), 
+  tmp             1   10[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] PTR void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         5       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        11       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       11 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_ReadMessageFromFifo
+		_WriteMessageToFifo
+ This function uses a non-reentrant model
+
+
+ *************** function _GetRxFifoStatus *****************
+ Defined at:
+		line 313 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  validChannel    1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  validChannel    1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E22533
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Receive
+		_CAN1_ReceivedMessageCountGet
+ This function uses a non-reentrant model
+
+
+ *************** function _GetRxFifoDepth *****************
+ Defined at:
+		line 308 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  validChannel    1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  validChannel    1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_Receive
+		_CAN1_ReceivedMessageCountGet
+ This function uses a non-reentrant model
+
+
  *************** function _CAN1_ISR *****************
  Defined at:
-		line 618 in file "mcc_generated_files/can1.c"
+		line 654 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2077,7 +2595,7 @@ Total ram usage:        0 bytes
 
  *************** function _DefaultTxAttemptHandler *****************
  Defined at:
-		line 141 in file "mcc_generated_files/can1.c"
+		line 143 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2107,7 +2625,7 @@ Total ram usage:        0 bytes
 
  *************** function _DefaultSystemErrorHandler *****************
  Defined at:
-		line 137 in file "mcc_generated_files/can1.c"
+		line 139 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2137,7 +2655,7 @@ Total ram usage:        0 bytes
 
  *************** function _DefaultRxBufferOverflowHandler *****************
  Defined at:
-		line 145 in file "mcc_generated_files/can1.c"
+		line 147 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2167,7 +2685,7 @@ Total ram usage:        0 bytes
 
  *************** function _DefaultModeChangeHandler *****************
  Defined at:
-		line 133 in file "mcc_generated_files/can1.c"
+		line 135 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2197,7 +2715,7 @@ Total ram usage:        0 bytes
 
  *************** function _DefaultInvalidMessageHandler *****************
  Defined at:
-		line 121 in file "mcc_generated_files/can1.c"
+		line 123 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2227,7 +2745,7 @@ Total ram usage:        0 bytes
 
  *************** function _DefaultBusWakeUpActivityHandler *****************
  Defined at:
-		line 125 in file "mcc_generated_files/can1.c"
+		line 127 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2257,7 +2775,7 @@ Total ram usage:        0 bytes
 
  *************** function _DefaultBusErrorHandler *****************
  Defined at:
-		line 129 in file "mcc_generated_files/can1.c"
+		line 131 in file "mcc_generated_files/can1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2290,89 +2808,108 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 mcc_generated_files/can1.c
-		_CAN1_BitRateConfiguration		CODE           	2D6C	0000	20
-		_CAN1_SetTxAttemptInterruptHandler		CODE           	2D9E	0000	10
-		_CAN1_SetInvalidMessageInterruptHandler		CODE           	2DC6	0000	10
-		_CAN1_TX_FIFO_Configuration		CODE           	2D44	0000	20
-		_CAN1_ISR      		CODE           	260E	0000	328
-		_DefaultBusErrorHandler		CODE           	2DFA	0000	2
-		_CAN1_OperationModeGet		CODE           	2D94	0000	10
-		_CAN1_Initialize		CODE           	2A16	0000	88
-		_DefaultInvalidMessageHandler		CODE           	2DF6	0000	2
-		_DefaultBusWakeUpActivityHandler		CODE           	2DF8	0000	2
-		_CAN1_RX_FIFO_FilterMaskConfiguration		CODE           	2DE8	0000	2
-		_CAN1_RX_FIFO_Configuration		CODE           	2D58	0000	20
-		_CAN1_SetBusErrorInterruptHandler		CODE           	2DDA	0000	10
-		_CAN1_SetSystemErrorInterruptHandler		CODE           	2DA8	0000	10
-		_DefaultSystemErrorHandler		CODE           	2DF0	0000	2
-		_DefaultRxBufferOverflowHandler		CODE           	2DF2	0000	2
-		_CAN1_ErrorNotificationInterruptEnable		CODE           	28F4	0000	108
-		_CAN1_SetBusWakeUpActivityInterruptHandler		CODE           	2DD0	0000	10
-		_CAN1_SetRxBufferOverFlowInterruptHandler		CODE           	2DB2	0000	10
-		_CAN1_RX_FIFO_ResetInfo		CODE           	2C18	0000	44
-		_CAN1_OperationModeSet		CODE           	2A6E	0000	88
-		_CAN1_SetModeChangeInterruptHandler		CODE           	2DBC	0000	10
-		_DefaultTxAttemptHandler		CODE           	2DEE	0000	2
-		_DefaultModeChangeHandler		CODE           	2DF4	0000	2
+		_ReadMessageFromFifo		CODE           	260E	0000	576
+		_DefaultFIFO1NotEmptyHandler		CODE           	3488	0000	2
+		_CAN1_BitRateConfiguration		CODE           	33FA	0000	20
+		_CAN1_SetTxAttemptInterruptHandler		CODE           	3436	0000	10
+		_Receive       		CODE           	2AE0	0000	236
+		_CAN1_SetInvalidMessageInterruptHandler		CODE           	345E	0000	10
+		_CAN1_TX_FIFO_Configuration		CODE           	33E6	0000	20
+		_GetRxFifoDepth		CODE           	3398	0000	30
+		_CAN1_ISR      		CODE           	284E	0000	342
+		_DefaultBusErrorHandler		CODE           	3496	0000	2
+		_CAN1_OperationModeGet		CODE           	342C	0000	10
+		_CAN1_Initialize		CODE           	303A	0000	88
+		_DefaultInvalidMessageHandler		CODE           	3492	0000	2
+		_CAN1_SetFIFO1NotEmptyHandler		CODE           	3422	0000	10
+		_DefaultBusWakeUpActivityHandler		CODE           	3494	0000	2
+		_CAN1_RX_FIFO_FilterMaskConfiguration		CODE           	3482	0000	2
+		_CAN1_RX_FIFO_Configuration		CODE           	32FE	0000	42
+		_GetRxFifoStatus		CODE           	33CE	0000	24
+		_CAN1_ReceivedMessageCountGet		CODE           	2BCC	0000	202
+		_CAN1_SetBusErrorInterruptHandler		CODE           	3472	0000	10
+		_CAN1_SetSystemErrorInterruptHandler		CODE           	3440	0000	10
+		_DefaultSystemErrorHandler		CODE           	348C	0000	2
+		_DefaultRxBufferOverflowHandler		CODE           	348E	0000	2
+		_CAN1_ErrorNotificationInterruptEnable		CODE           	2EB0	0000	122
+		_CAN1_SetBusWakeUpActivityInterruptHandler		CODE           	3468	0000	10
+		_CAN1_Receive  		CODE           	3092	0000	82
+		_CAN1_SetRxBufferOverFlowInterruptHandler		CODE           	344A	0000	10
+		_CAN1_RX_FIFO_ResetInfo		CODE           	3218	0000	46
+		_CAN1_OperationModeSet		CODE           	2E18	0000	152
+		_CAN1_SetModeChangeInterruptHandler		CODE           	3454	0000	10
+		_CAN1_RXI_ISR  		CODE           	32D0	0000	46
+		_DefaultTxAttemptHandler		CODE           	348A	0000	2
+		_DefaultModeChangeHandler		CODE           	3490	0000	2
 
-mcc_generated_files/can1.c estimated size: 812
+mcc_generated_files/can1.c estimated size: 2136
+
+C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c
+		_memcpy        		CODE           	2FE0	0000	90
+
+C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c estimated size: 90
+
+MESSAGES.c
+		_CANReadMessage		CODE           	2D58	0000	192
+
+MESSAGES.c estimated size: 192
 
 mcc_generated_files/interrupt_manager.c
-		_INTERRUPT_Initialize		CODE           	2DE4	0000	4
-		_INTERRUPT_InterruptManager		CODE           	2886	0000	110
+		_INTERRUPT_Initialize		CODE           	347C	0000	4
+		_INTERRUPT_InterruptManager		CODE           	2C96	0000	194
 
-mcc_generated_files/interrupt_manager.c estimated size: 114
+mcc_generated_files/interrupt_manager.c estimated size: 198
 
 mcc_generated_files/tmr0.c
-		_TMR0_SetInterruptHandler		CODE           	2D8A	0000	10
-		_TMR0_DefaultInterruptHandler		CODE           	2DEC	0000	2
-		_TMR0_CallBack 		CODE           	2C70	0000	44
-		_TMR0_ISR      		CODE           	29BC	0000	90
-		_TMR0_Initialize		CODE           	2CC4	0000	38
+		_TMR0_SetInterruptHandler		CODE           	3418	0000	10
+		_TMR0_DefaultInterruptHandler		CODE           	3486	0000	2
+		_TMR0_CallBack 		CODE           	32A2	0000	46
+		_TMR0_ISR      		CODE           	2F86	0000	90
+		_TMR0_Initialize		CODE           	3328	0000	40
 
-mcc_generated_files/tmr0.c estimated size: 184
+mcc_generated_files/tmr0.c estimated size: 188
 
 mcc_generated_files/pin_manager.c
-		_PIN_MANAGER_Initialize		CODE           	2960	0000	92
+		_PIN_MANAGER_Initialize		CODE           	2F2A	0000	92
 
 mcc_generated_files/pin_manager.c estimated size: 92
 
 SPEAKER.c
-		_SPEAKER       		CODE           	2B4C	0000	58
+		_SPEAKER       		CODE           	3174	0000	58
 
 SPEAKER.c estimated size: 58
 
 shared
 		_FIFO          		SMALLCONST     	0000	0000	0
 		_DLC_BYTES     		SMALLCONST     	2601	0000	9
-		__initialization		CODE           	2B0C	0000	58
+		__initialization		CODE           	30E4	0000	66
 
-shared estimated size: 67
+shared estimated size: 75
 
 mcc_generated_files/mcc.c
-		_PMD_Initialize		CODE           	2C9C	0000	40
-		_OSCILLATOR_Initialize		CODE           	2D2C	0000	24
-		_SYSTEM_Initialize		CODE           	2D0C	0000	32
+		_PMD_Initialize		CODE           	3350	0000	40
+		_OSCILLATOR_Initialize		CODE           	33B6	0000	24
+		_SYSTEM_Initialize		CODE           	3378	0000	32
 
 mcc_generated_files/mcc.c estimated size: 96
 
 mcc_generated_files/tmr1.c
-		_TMR1_Initialize		CODE           	2AC6	0000	70
-		_TMR1_SetInterruptHandler		CODE           	2D80	0000	10
-		_TMR1_DefaultInterruptHandler		CODE           	2DEA	0000	2
-		_TMR1_CallBack 		CODE           	2C44	0000	44
-		_TMR1_WriteTimer		CODE           	2BEA	0000	46
-		_TMR1_ISR      		CODE           	2B86	0000	54
+		_TMR1_Initialize		CODE           	312C	0000	72
+		_TMR1_SetInterruptHandler		CODE           	340E	0000	10
+		_TMR1_DefaultInterruptHandler		CODE           	3484	0000	2
+		_TMR1_CallBack 		CODE           	3274	0000	46
+		_TMR1_WriteTimer		CODE           	3246	0000	46
+		_TMR1_ISR      		CODE           	31AE	0000	54
 
-mcc_generated_files/tmr1.c estimated size: 226
+mcc_generated_files/tmr1.c estimated size: 230
 
 mcc_generated_files/delay.c
-		_DELAY_milliseconds		CODE           	2BBC	0000	46
+		_DELAY_milliseconds		CODE           	31E4	0000	52
 
-mcc_generated_files/delay.c estimated size: 46
+mcc_generated_files/delay.c estimated size: 52
 
 main.c
-		_main          		CODE           	2756	0000	304
+		_main          		CODE           	29A4	0000	316
 
-main.c estimated size: 304
+main.c estimated size: 316
 
