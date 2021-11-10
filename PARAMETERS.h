@@ -25,7 +25,7 @@ extern "C" {
     
 //VARIABLES
 extern unsigned char ucASState;
-
+extern unsigned char ucASState_prev;
 #ifdef	__cplusplus
 }
 #endif

@@ -72,50 +72,6 @@ void main(void)
     while (1)
     { 
         
-        SPEAKER_SetLow();
-        
-        DELAY_milliseconds(100);
-        SPEAKER_SetHigh();
-        DELAY_milliseconds(100);
-        Y_SIGNAL_SetHigh();
-        B_SIGNAL_SetLow();
-        DELAY_milliseconds(100);
-        Y_SIGNAL_Toggle();
-        B_SIGNAL_Toggle();
-        DELAY_milliseconds(100);
-        Y_SIGNAL_Toggle();
-        B_SIGNAL_Toggle();
-        DELAY_milliseconds(100);
-        Y_SIGNAL_Toggle();
-        B_SIGNAL_Toggle();
-        DELAY_milliseconds(100);
-        
-        /*ucASState = 0;
-        DELAY_milliseconds(5000);
-        
-        ucASState = 1;
-        DELAY_milliseconds(5000);
-        
-        ucASState = 2;
-        DELAY_milliseconds(10000);
-        
-        ucASState = 4;
-        DELAY_milliseconds(5000);
-        
-        ucASState = 1;
-        DELAY_milliseconds(3000);
-        
-        ucASState = 2;
-        DELAY_milliseconds(5000);
-        
-        ucASState = 3;
-        ucFlagEmergencySpeaker = 1;
-        ucSpeakerCount = 0;
-        DELAY_milliseconds(12000);
-        
-        ucASState = 0;
-        ucFlagEmergencySpeaker = 0;
-        */
         //AS_READY        1
         //AS_DRIVING      2
         //AS_EMERGENCY    3

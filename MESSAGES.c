@@ -10,7 +10,8 @@
 #include "MESSAGES.h"
 #include "mcc_generated_files/mcc.h"
 #include "PARAMETERS.h"
-
+#include "LEDS.h"
+#include "SPEAKER.h"
  
 
 
@@ -98,14 +99,13 @@ void CANReadMessage (void)
             switch (id)
             {
                 case DV_SYSTEM_STATUS:
-                    //ucASState_prev = ucASState;
+                    ucASState_prev = ucASState;
                     ucASState = ( data1 & 0x03 );
-                    break;
-                case DV_DRIVING_DYNAMICS_1:
-                    
-                    break;
-                case DV_DRIVING_DYNAMICS_2:
-                    
+                    if (ucASState_prev != ucASState)
+                    {
+                        LEDS();
+                        SPEAKER();
+                    }
                     break;
                 default:
                     Nop();

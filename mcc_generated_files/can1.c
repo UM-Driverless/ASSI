@@ -717,6 +717,7 @@ void CAN1_RXI_ISR(void)
         CAN1_FIFO1NotEmptyHandler();
         // flag readonly
         CANReadMessage();
+        C1FIFOSTA1Lbits.TFNRFNIF = 0;
     }
     
 }

@@ -14,7 +14,6 @@ extern "C" {
 
 //INICIALIZACION FUNCIONES
 void LEDS(void);
-void LEDTIMER(void);
 
 #ifdef	__cplusplus
 }

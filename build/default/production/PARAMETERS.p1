@@ -1,1 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"2 PARAMETERS.c
+[; ;PARAMETERS.c: 2: unsigned char ucASState;
+[v _ucASState `uc ~T0 @X0 1 e ]
+"3
+[; ;PARAMETERS.c: 3: unsigned char ucASState_prev;
+[v _ucASState_prev `uc ~T0 @X0 1 e ]
