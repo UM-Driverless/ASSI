@@ -64,11 +64,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "235
 [; ;./mcc_generated_files/can1.h: 235: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
 [v _CAN1_Receive `(a ~T0 @X0 0 ef1`*S3178 ]
-"28 ./PARAMETERS.h
-[; ;./PARAMETERS.h: 28: extern unsigned char ucASState_prev;
+"33 ./PARAMETERS.h
+[; ;./PARAMETERS.h: 33: extern unsigned char ucASState_prev;
 [v _ucASState_prev `uc ~T0 @X0 0 e ]
-"27
-[; ;./PARAMETERS.h: 27: extern unsigned char ucASState;
+"32
+[; ;./PARAMETERS.h: 32: extern unsigned char ucASState;
 [v _ucASState `uc ~T0 @X0 0 e ]
 "16 ./LEDS.h
 [; ;./LEDS.h: 16: void LEDS(void);
@@ -76,6 +76,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "16 ./SPEAKER.h
 [; ;./SPEAKER.h: 16: void SPEAKER (void);
 [v _SPEAKER `(v ~T0 @X0 0 ef ]
+"34 ./PARAMETERS.h
+[; ;./PARAMETERS.h: 34: extern unsigned char ucASSIName;
+[v _ucASSIName `uc ~T0 @X0 0 e ]
 "363 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3894,4 +3897,59 @@ Version 4.0 HI-TECH Software Intermediate Code
 "116
 [; ;MESSAGES.c: 116: }
 [e :UE 3185 ]
+}
+"121
+[; ;MESSAGES.c: 121: void MESSSAGES_ASSIState (void)
+[v _MESSSAGES_ASSIState `(v ~T0 @X0 1 ef ]
+"122
+[; ;MESSAGES.c: 122: {
+{
+[e :U _MESSSAGES_ASSIState ]
+[f ]
+"123
+[; ;MESSAGES.c: 123:     switch ( ucASSIName )
+[e $U 3195  ]
+"124
+[; ;MESSAGES.c: 124:     {
+{
+"125
+[; ;MESSAGES.c: 125:         case 0:
+[e :U 3196 ]
+"126
+[; ;MESSAGES.c: 126:             CANWriteMessage(0x350, 8, 0, 0, 0, 0, 0, 0, 0, 0);
+[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 848 `i `l `ul -> -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"127
+[; ;MESSAGES.c: 127:             break;
+[e $U 3194  ]
+"128
+[; ;MESSAGES.c: 128:         case 1:
+[e :U 3197 ]
+"129
+[; ;MESSAGES.c: 129:             CANWriteMessage(0x351, 8, 0, 0, 0, 0, 0, 0, 0, 0);
+[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 849 `i `l `ul -> -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"130
+[; ;MESSAGES.c: 130:             break;
+[e $U 3194  ]
+"131
+[; ;MESSAGES.c: 131:         case 2:
+[e :U 3198 ]
+"132
+[; ;MESSAGES.c: 132:             CANWriteMessage(0x352, 8, 0, 0, 0, 0, 0, 0, 0, 0);
+[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 850 `i `l `ul -> -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"133
+[; ;MESSAGES.c: 133:             break;
+[e $U 3194  ]
+"134
+[; ;MESSAGES.c: 134:     }
+}
+[e $U 3194  ]
+[e :U 3195 ]
+[e [\ -> _ucASSIName `i , $ -> 0 `i 3196
+ , $ -> 1 `i 3197
+ , $ -> 2 `i 3198
+ 3194 ]
+[e :U 3194 ]
+"136
+[; ;MESSAGES.c: 136: }
+[e :UE 3193 ]
 }

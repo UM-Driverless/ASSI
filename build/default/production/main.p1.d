@@ -10,4 +10,5 @@ mcc_generated_files/can1.h  \
 mcc_generated_files/can_types.h  \
 mcc_generated_files/delay.h  \
 LEDS.h  \
-SPEAKER.h 
+SPEAKER.h  \
+PARAMETERS.h 

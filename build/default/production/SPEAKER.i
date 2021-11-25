@@ -24,9 +24,13 @@ extern unsigned char ucSpeakerCount;
 # 8 "SPEAKER.c" 2
 
 # 1 "./PARAMETERS.h" 1
-# 27 "./PARAMETERS.h"
+# 32 "./PARAMETERS.h"
 extern unsigned char ucASState;
 extern unsigned char ucASState_prev;
+extern unsigned char ucASSIName;
+
+
+void PARAMETERS_Init(void);
 # 9 "SPEAKER.c" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1

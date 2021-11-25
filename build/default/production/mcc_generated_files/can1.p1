@@ -26,14 +26,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "13519 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 13519: extern volatile unsigned char C1TXQCONL __attribute__((address(0x150)));
 [v _C1TXQCONL `Vuc ~T0 @X0 0 e@336 ]
-[v F22547 `(v ~T0 @X0 0 tf ]
-[v F22549 `(v ~T0 @X0 0 tf ]
-[v F22551 `(v ~T0 @X0 0 tf ]
-[v F22553 `(v ~T0 @X0 0 tf ]
-[v F22555 `(v ~T0 @X0 0 tf ]
-[v F22557 `(v ~T0 @X0 0 tf ]
-[v F22559 `(v ~T0 @X0 0 tf ]
-[v F22561 `(v ~T0 @X0 0 tf ]
+[v F22548 `(v ~T0 @X0 0 tf ]
+[v F22550 `(v ~T0 @X0 0 tf ]
+[v F22552 `(v ~T0 @X0 0 tf ]
+[v F22554 `(v ~T0 @X0 0 tf ]
+[v F22556 `(v ~T0 @X0 0 tf ]
+[v F22558 `(v ~T0 @X0 0 tf ]
+[v F22560 `(v ~T0 @X0 0 tf ]
+[v F22562 `(v ~T0 @X0 0 tf ]
 "14150
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 14150: extern volatile unsigned char C1FIFOCON1L __attribute__((address(0x15C)));
 [v _C1FIFOCON1L `Vuc ~T0 @X0 0 e@348 ]
@@ -245,8 +245,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _C1CONUbits `VS425 ~T0 @X0 0 e@258 ]
 "313 mcc_generated_files/can1.c
 [; ;mcc_generated_files/can1.c: 313: static CAN_RX_FIFO_STATUS GetRxFifoStatus(uint8_t validChannel)
-[c E22533 0 1 8 .. ]
-[n E22533 . CAN_RX_MSG_NOT_AVAILABLE CAN_RX_MSG_AVAILABLE CAN_RX_MSG_OVERFLOW  ]
+[c E22534 0 1 8 .. ]
+[n E22534 . CAN_RX_MSG_NOT_AVAILABLE CAN_RX_MSG_AVAILABLE CAN_RX_MSG_OVERFLOW  ]
 "329
 [; ;mcc_generated_files/can1.c: 329:     rxCanMsg->field.idType = (status & (1UL << (4U))) ? CAN_FRAME_EXT : CAN_FRAME_STD;
 [c E22328 0 1 .. ]
@@ -302,20 +302,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 "10562
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 10562: extern volatile C1INTTbits_t C1INTTbits __attribute__((address(0x11F)));
 [v _C1INTTbits `VS500 ~T0 @X0 0 e@287 ]
-[v F22659 `(v ~T0 @X0 0 tf ]
-[v F22661 `(v ~T0 @X0 0 tf ]
-[v F22664 `(v ~T0 @X0 0 tf ]
-[v F22666 `(v ~T0 @X0 0 tf ]
-[v F22669 `(v ~T0 @X0 0 tf ]
-[v F22671 `(v ~T0 @X0 0 tf ]
-[v F22674 `(v ~T0 @X0 0 tf ]
-[v F22676 `(v ~T0 @X0 0 tf ]
-[v F22679 `(v ~T0 @X0 0 tf ]
-[v F22681 `(v ~T0 @X0 0 tf ]
-[v F22684 `(v ~T0 @X0 0 tf ]
-[v F22686 `(v ~T0 @X0 0 tf ]
-[v F22689 `(v ~T0 @X0 0 tf ]
-[v F22691 `(v ~T0 @X0 0 tf ]
+[v F22660 `(v ~T0 @X0 0 tf ]
+[v F22662 `(v ~T0 @X0 0 tf ]
+[v F22665 `(v ~T0 @X0 0 tf ]
+[v F22667 `(v ~T0 @X0 0 tf ]
+[v F22670 `(v ~T0 @X0 0 tf ]
+[v F22672 `(v ~T0 @X0 0 tf ]
+[v F22675 `(v ~T0 @X0 0 tf ]
+[v F22677 `(v ~T0 @X0 0 tf ]
+[v F22680 `(v ~T0 @X0 0 tf ]
+[v F22682 `(v ~T0 @X0 0 tf ]
+[v F22685 `(v ~T0 @X0 0 tf ]
+[v F22687 `(v ~T0 @X0 0 tf ]
+[v F22690 `(v ~T0 @X0 0 tf ]
+[v F22692 `(v ~T0 @X0 0 tf ]
 "10413
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 10413:     struct {
 [s S495 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -349,8 +349,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "14414
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 14414: extern volatile C1FIFOSTA1Lbits_t C1FIFOSTA1Lbits __attribute__((address(0x160)));
 [v _C1FIFOSTA1Lbits `VS662 ~T0 @X0 0 e@352 ]
-[v F22695 `(v ~T0 @X0 0 tf ]
-[v F22697 `(v ~T0 @X0 0 tf ]
+[v F22696 `(v ~T0 @X0 0 tf ]
+[v F22698 `(v ~T0 @X0 0 tf ]
 "70 mcc_generated_files/../MESSAGES.h
 [; ;mcc_generated_files/../MESSAGES.h: 70: void CANReadMessage(void);
 [v _CANReadMessage `(v ~T0 @X0 0 ef ]
@@ -3893,7 +3893,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-[v F22544 `*VS3180 ~T0 @X0 1 t ]
+[v F22545 `*VS3180 ~T0 @X0 1 t ]
 "107
 [; ;mcc_generated_files/can1.c: 107: static volatile struct CAN_FIFOREG * const FIFO = (struct CAN_FIFOREG *)&C1TXQCONL;
 [v _FIFO `C*VS3180 ~T0 @X0 1 s ]
@@ -3918,28 +3918,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 ]
 "110
 [; ;mcc_generated_files/can1.c: 110: static void (*CAN1_FIFO1NotEmptyHandler)(void);
-[v _CAN1_FIFO1NotEmptyHandler `*F22547 ~T0 @X0 1 s ]
+[v _CAN1_FIFO1NotEmptyHandler `*F22548 ~T0 @X0 1 s ]
 "111
 [; ;mcc_generated_files/can1.c: 111: static void (*CAN1_InvalidMessageHandler)(void);
-[v _CAN1_InvalidMessageHandler `*F22549 ~T0 @X0 1 s ]
+[v _CAN1_InvalidMessageHandler `*F22550 ~T0 @X0 1 s ]
 "112
 [; ;mcc_generated_files/can1.c: 112: static void (*CAN1_BusWakeUpActivityHandler)(void);
-[v _CAN1_BusWakeUpActivityHandler `*F22551 ~T0 @X0 1 s ]
+[v _CAN1_BusWakeUpActivityHandler `*F22552 ~T0 @X0 1 s ]
 "113
 [; ;mcc_generated_files/can1.c: 113: static void (*CAN1_BusErrorHandler)(void);
-[v _CAN1_BusErrorHandler `*F22553 ~T0 @X0 1 s ]
+[v _CAN1_BusErrorHandler `*F22554 ~T0 @X0 1 s ]
 "114
 [; ;mcc_generated_files/can1.c: 114: static void (*CAN1_ModeChangeHandler)(void);
-[v _CAN1_ModeChangeHandler `*F22555 ~T0 @X0 1 s ]
+[v _CAN1_ModeChangeHandler `*F22556 ~T0 @X0 1 s ]
 "115
 [; ;mcc_generated_files/can1.c: 115: static void (*CAN1_SystemErrorHandler)(void);
-[v _CAN1_SystemErrorHandler `*F22557 ~T0 @X0 1 s ]
+[v _CAN1_SystemErrorHandler `*F22558 ~T0 @X0 1 s ]
 "116
 [; ;mcc_generated_files/can1.c: 116: static void (*CAN1_TxAttemptHandler)(void);
-[v _CAN1_TxAttemptHandler `*F22559 ~T0 @X0 1 s ]
+[v _CAN1_TxAttemptHandler `*F22560 ~T0 @X0 1 s ]
 "117
 [; ;mcc_generated_files/can1.c: 117: static void (*CAN1_RxBufferOverflowHandler)(void);
-[v _CAN1_RxBufferOverflowHandler `*F22561 ~T0 @X0 1 s ]
+[v _CAN1_RxBufferOverflowHandler `*F22562 ~T0 @X0 1 s ]
 "119
 [; ;mcc_generated_files/can1.c: 119: static void DefaultFIFO1NotEmptyHandler(void)
 [v _DefaultFIFO1NotEmptyHandler `(v ~T0 @X0 1 sf ]
@@ -4401,7 +4401,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "313
 [; ;mcc_generated_files/can1.c: 313: static CAN_RX_FIFO_STATUS GetRxFifoStatus(uint8_t validChannel)
-[v _GetRxFifoStatus `(E22533 ~T0 @X0 1 sf1`uc ]
+[v _GetRxFifoStatus `(E22534 ~T0 @X0 1 sf1`uc ]
 "314
 [; ;mcc_generated_files/can1.c: 314: {
 {
@@ -4414,7 +4414,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "315
 [; ;mcc_generated_files/can1.c: 315:     return FIFO[validChannel].STAL & (CAN_RX_MSG_AVAILABLE | CAN_RX_MSG_OVERFLOW);
-[e ) -> & -> . *U + _FIFO * -> _validChannel `ux -> -> # *U _FIFO `ui `ux 4 `i | -> . `E22533 1 `i -> . `E22533 2 `i `E22533 ]
+[e ) -> & -> . *U + _FIFO * -> _validChannel `ux -> -> # *U _FIFO `ui `ux 4 `i | -> . `E22534 1 `i -> . `E22534 2 `i `E22534 ]
 [e $UE 3210  ]
 "316
 [; ;mcc_generated_files/can1.c: 316: }
@@ -4531,11 +4531,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _status -> -> 0 `i `a ]
 "355
 [; ;mcc_generated_files/can1.c: 355:     CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
-[v _rxMsgStatus `E22533 ~T0 @X0 1 a ]
+[v _rxMsgStatus `E22534 ~T0 @X0 1 a ]
 [e = _rxMsgStatus ( _GetRxFifoStatus (1 -> _channel `uc ]
 "357
 [; ;mcc_generated_files/can1.c: 357:     if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
-[e $ ! == -> . `E22533 1 `ui & -> _rxMsgStatus `ui -> . `E22533 1 `ui 3214  ]
+[e $ ! == -> . `E22534 1 `ui & -> _rxMsgStatus `ui -> . `E22534 1 `ui 3214  ]
 "358
 [; ;mcc_generated_files/can1.c: 358:     {
 {
@@ -4573,7 +4573,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 3216 ]
 "372
 [; ;mcc_generated_files/can1.c: 372:             if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
-[e $ ! == -> . `E22533 2 `ui & -> _rxMsgStatus `ui -> . `E22533 2 `ui 3217  ]
+[e $ ! == -> . `E22534 2 `ui & -> _rxMsgStatus `ui -> . `E22534 2 `ui 3217  ]
 "373
 [; ;mcc_generated_files/can1.c: 373:             {
 {
@@ -4755,11 +4755,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _channel . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 0 ]
 "426
 [; ;mcc_generated_files/can1.c: 426:         CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
-[v _rxMsgStatus `E22533 ~T0 @X0 1 a ]
+[v _rxMsgStatus `E22534 ~T0 @X0 1 a ]
 [e = _rxMsgStatus ( _GetRxFifoStatus (1 -> _channel `uc ]
 "428
 [; ;mcc_generated_files/can1.c: 428:         if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
-[e $ ! == -> . `E22533 1 `ui & -> _rxMsgStatus `ui -> . `E22533 1 `ui 3232  ]
+[e $ ! == -> . `E22534 1 `ui & -> _rxMsgStatus `ui -> . `E22534 1 `ui 3232  ]
 "429
 [; ;mcc_generated_files/can1.c: 429:         {
 {
@@ -4770,7 +4770,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _fifoDepth ( _GetRxFifoDepth (1 -> _channel `uc ]
 "432
 [; ;mcc_generated_files/can1.c: 432:             if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
-[e $ ! == -> . `E22533 2 `ui & -> _rxMsgStatus `ui -> . `E22533 2 `ui 3233  ]
+[e $ ! == -> . `E22534 2 `ui & -> _rxMsgStatus `ui -> . `E22534 2 `ui 3233  ]
 "433
 [; ;mcc_generated_files/can1.c: 433:             {
 {
@@ -5342,14 +5342,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "619
 [; ;mcc_generated_files/can1.c: 619: void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void))
-[v _CAN1_SetInvalidMessageInterruptHandler `(v ~T0 @X0 1 ef1`*F22659 ]
+[v _CAN1_SetInvalidMessageInterruptHandler `(v ~T0 @X0 1 ef1`*F22660 ]
 "620
 [; ;mcc_generated_files/can1.c: 620: {
 {
 [e :U _CAN1_SetInvalidMessageInterruptHandler ]
 "619
 [; ;mcc_generated_files/can1.c: 619: void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void))
-[v _handler `*F22661 ~T0 @X0 1 r1 ]
+[v _handler `*F22662 ~T0 @X0 1 r1 ]
 "620
 [; ;mcc_generated_files/can1.c: 620: {
 [f ]
@@ -5362,14 +5362,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "624
 [; ;mcc_generated_files/can1.c: 624: void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void))
-[v _CAN1_SetBusWakeUpActivityInterruptHandler `(v ~T0 @X0 1 ef1`*F22664 ]
+[v _CAN1_SetBusWakeUpActivityInterruptHandler `(v ~T0 @X0 1 ef1`*F22665 ]
 "625
 [; ;mcc_generated_files/can1.c: 625: {
 {
 [e :U _CAN1_SetBusWakeUpActivityInterruptHandler ]
 "624
 [; ;mcc_generated_files/can1.c: 624: void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void))
-[v _handler `*F22666 ~T0 @X0 1 r1 ]
+[v _handler `*F22667 ~T0 @X0 1 r1 ]
 "625
 [; ;mcc_generated_files/can1.c: 625: {
 [f ]
@@ -5382,14 +5382,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "629
 [; ;mcc_generated_files/can1.c: 629: void CAN1_SetBusErrorInterruptHandler(void (*handler)(void))
-[v _CAN1_SetBusErrorInterruptHandler `(v ~T0 @X0 1 ef1`*F22669 ]
+[v _CAN1_SetBusErrorInterruptHandler `(v ~T0 @X0 1 ef1`*F22670 ]
 "630
 [; ;mcc_generated_files/can1.c: 630: {
 {
 [e :U _CAN1_SetBusErrorInterruptHandler ]
 "629
 [; ;mcc_generated_files/can1.c: 629: void CAN1_SetBusErrorInterruptHandler(void (*handler)(void))
-[v _handler `*F22671 ~T0 @X0 1 r1 ]
+[v _handler `*F22672 ~T0 @X0 1 r1 ]
 "630
 [; ;mcc_generated_files/can1.c: 630: {
 [f ]
@@ -5402,14 +5402,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "634
 [; ;mcc_generated_files/can1.c: 634: void CAN1_SetModeChangeInterruptHandler(void (*handler)(void))
-[v _CAN1_SetModeChangeInterruptHandler `(v ~T0 @X0 1 ef1`*F22674 ]
+[v _CAN1_SetModeChangeInterruptHandler `(v ~T0 @X0 1 ef1`*F22675 ]
 "635
 [; ;mcc_generated_files/can1.c: 635: {
 {
 [e :U _CAN1_SetModeChangeInterruptHandler ]
 "634
 [; ;mcc_generated_files/can1.c: 634: void CAN1_SetModeChangeInterruptHandler(void (*handler)(void))
-[v _handler `*F22676 ~T0 @X0 1 r1 ]
+[v _handler `*F22677 ~T0 @X0 1 r1 ]
 "635
 [; ;mcc_generated_files/can1.c: 635: {
 [f ]
@@ -5422,14 +5422,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "639
 [; ;mcc_generated_files/can1.c: 639: void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void))
-[v _CAN1_SetSystemErrorInterruptHandler `(v ~T0 @X0 1 ef1`*F22679 ]
+[v _CAN1_SetSystemErrorInterruptHandler `(v ~T0 @X0 1 ef1`*F22680 ]
 "640
 [; ;mcc_generated_files/can1.c: 640: {
 {
 [e :U _CAN1_SetSystemErrorInterruptHandler ]
 "639
 [; ;mcc_generated_files/can1.c: 639: void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void))
-[v _handler `*F22681 ~T0 @X0 1 r1 ]
+[v _handler `*F22682 ~T0 @X0 1 r1 ]
 "640
 [; ;mcc_generated_files/can1.c: 640: {
 [f ]
@@ -5442,14 +5442,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "644
 [; ;mcc_generated_files/can1.c: 644: void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void))
-[v _CAN1_SetTxAttemptInterruptHandler `(v ~T0 @X0 1 ef1`*F22684 ]
+[v _CAN1_SetTxAttemptInterruptHandler `(v ~T0 @X0 1 ef1`*F22685 ]
 "645
 [; ;mcc_generated_files/can1.c: 645: {
 {
 [e :U _CAN1_SetTxAttemptInterruptHandler ]
 "644
 [; ;mcc_generated_files/can1.c: 644: void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void))
-[v _handler `*F22686 ~T0 @X0 1 r1 ]
+[v _handler `*F22687 ~T0 @X0 1 r1 ]
 "645
 [; ;mcc_generated_files/can1.c: 645: {
 [f ]
@@ -5462,14 +5462,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "649
 [; ;mcc_generated_files/can1.c: 649: void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void))
-[v _CAN1_SetRxBufferOverFlowInterruptHandler `(v ~T0 @X0 1 ef1`*F22689 ]
+[v _CAN1_SetRxBufferOverFlowInterruptHandler `(v ~T0 @X0 1 ef1`*F22690 ]
 "650
 [; ;mcc_generated_files/can1.c: 650: {
 {
 [e :U _CAN1_SetRxBufferOverFlowInterruptHandler ]
 "649
 [; ;mcc_generated_files/can1.c: 649: void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void))
-[v _handler `*F22691 ~T0 @X0 1 r1 ]
+[v _handler `*F22692 ~T0 @X0 1 r1 ]
 "650
 [; ;mcc_generated_files/can1.c: 650: {
 [f ]
@@ -5629,14 +5629,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "707
 [; ;mcc_generated_files/can1.c: 707: void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void))
-[v _CAN1_SetFIFO1NotEmptyHandler `(v ~T0 @X0 1 ef1`*F22695 ]
+[v _CAN1_SetFIFO1NotEmptyHandler `(v ~T0 @X0 1 ef1`*F22696 ]
 "708
 [; ;mcc_generated_files/can1.c: 708: {
 {
 [e :U _CAN1_SetFIFO1NotEmptyHandler ]
 "707
 [; ;mcc_generated_files/can1.c: 707: void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void))
-[v _handler `*F22697 ~T0 @X0 1 r1 ]
+[v _handler `*F22698 ~T0 @X0 1 r1 ]
 "708
 [; ;mcc_generated_files/can1.c: 708: {
 [f ]

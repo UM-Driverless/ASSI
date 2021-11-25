@@ -37792,13 +37792,18 @@ uint8_t CANDATAdata[8];
 # 69 "./MESSAGES.h"
 void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8);
 void CANReadMessage(void);
+void MESSSAGES_ASSIState (void);
 # 10 "MESSAGES.c" 2
 
 
 # 1 "./PARAMETERS.h" 1
-# 27 "./PARAMETERS.h"
+# 32 "./PARAMETERS.h"
 extern unsigned char ucASState;
 extern unsigned char ucASState_prev;
+extern unsigned char ucASSIName;
+
+
+void PARAMETERS_Init(void);
 # 12 "MESSAGES.c" 2
 
 # 1 "./LEDS.h" 1
@@ -37916,4 +37921,24 @@ void CANReadMessage (void)
             }
         }
     }
+}
+
+
+
+
+void MESSSAGES_ASSIState (void)
+{
+    switch ( ucASSIName )
+    {
+        case 0:
+            CANWriteMessage(0x350, 8, 0, 0, 0, 0, 0, 0, 0, 0);
+            break;
+        case 1:
+            CANWriteMessage(0x351, 8, 0, 0, 0, 0, 0, 0, 0, 0);
+            break;
+        case 2:
+            CANWriteMessage(0x352, 8, 0, 0, 0, 0, 0, 0, 0, 0);
+            break;
+    }
+
 }

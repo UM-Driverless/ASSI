@@ -170,9 +170,9 @@ void TMR1_ISR(void)
     TMR1_WriteTimer(timer1ReloadVal);
 
     // callback function - called every 5th pass
-    if (++CountCallBack >= TMR1_INTERRUPT_TICKER_FACTOR)
+    if (++CountCallBack >= TMR1_INTERRUPT_TICKER_FACTOR)    //500MS???
     {
-        LEDS;
+        LEDS();
         // ticker function call
         TMR1_CallBack();
 

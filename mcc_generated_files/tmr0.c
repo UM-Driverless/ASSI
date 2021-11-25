@@ -52,6 +52,8 @@
 #include "tmr0.h"
 #include "../SPEAKER.h"
 #include "pin_manager.h"
+#include "../TEMPORIZATIONS.h"
+
 /**
   Section: TMR0 APIs
 */
@@ -125,10 +127,12 @@ void TMR0_ISR(void)
     // clear the TMR0 interrupt flag
     PIR3bits.TMR0IF = 0;
     // callback function - called every 36th pass
-    if (++CountCallBack >= TMR0_INTERRUPT_TICKER_FACTOR)
+    if (++CountCallBack >= TMR0_INTERRUPT_TICKER_FACTOR)    //tiempo????
     {
    
-            
+        //DJU Ejemplo añadir, ponerla en su tiempo bien
+        TEMPORIZATION_1s();
+        
         // ticker function call
         TMR0_CallBack();
 

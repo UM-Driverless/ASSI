@@ -37641,7 +37641,7 @@ void TMR1_ISR(void)
 
     if (++CountCallBack >= 5)
     {
-        LEDS;
+        LEDS();
 
         TMR1_CallBack();
 

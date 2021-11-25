@@ -8,5 +8,31 @@
 # 2 "<built-in>" 2
 # 1 "PARAMETERS.c" 2
 
+
+
+
+
+
+
+# 1 "./PARAMETERS.h" 1
+# 32 "./PARAMETERS.h"
+extern unsigned char ucASState;
+extern unsigned char ucASState_prev;
+extern unsigned char ucASSIName;
+
+
+void PARAMETERS_Init(void);
+# 8 "PARAMETERS.c" 2
+
+
+
+
 unsigned char ucASState;
 unsigned char ucASState_prev;
+unsigned char ucASSIName;
+
+
+void PARAMETERS_Init(void)
+{
+    ucASSIName = 0;
+}

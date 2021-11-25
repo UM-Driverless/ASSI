@@ -23,9 +23,19 @@ extern "C" {
 #define TRUE    0x01
 #define FALSE   0x00
     
+//ASSIS NAME
+#define ASSI_CENTER     0
+#define ASSI_LEFT       1
+#define ASSI_RIGHT      2
+    
 //VARIABLES
 extern unsigned char ucASState;
 extern unsigned char ucASState_prev;
+extern unsigned char ucASSIName;
+
+//FUNCIONES 
+void PARAMETERS_Init(void);
+
 #ifdef	__cplusplus
 }
 #endif

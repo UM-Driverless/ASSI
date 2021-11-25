@@ -37793,9 +37793,42 @@ extern unsigned char ucFlagEmergencySpeaker;
 extern unsigned char ucSpeakerCount;
 # 46 "main.c" 2
 
+# 1 "./PARAMETERS.h" 1
+# 32 "./PARAMETERS.h"
+extern unsigned char ucASState;
+extern unsigned char ucASState_prev;
+extern unsigned char ucASSIName;
+
+
+void PARAMETERS_Init(void);
+# 47 "main.c" 2
+
 
 
 unsigned char ucASState;
+
+
+
+
+void Init_hardware (void)
+{
+    do { LATBbits.LATB1 = 0; } while(0);
+    do { LATBbits.LATB2 = 1; } while(0);
+    do { LATCbits.LATC3 = 1; } while(0);
+    DELAY_milliseconds(500);
+    do { LATBbits.LATB1 = 0; } while(0);
+    do { LATBbits.LATB2 = 0; } while(0);
+    do { LATCbits.LATC3 = 0; } while(0);
+    DELAY_milliseconds(500);
+    do { LATBbits.LATB1 = 1; } while(0);
+    do { LATBbits.LATB2 = 0; } while(0);
+    do { LATCbits.LATC3 = 1; } while(0);
+    DELAY_milliseconds(500);
+    do { LATBbits.LATB1 = 0; } while(0);
+    do { LATBbits.LATB2 = 0; } while(0);
+    do { LATCbits.LATC3 = 0; } while(0);
+}
+
 
 
 
@@ -37804,6 +37837,9 @@ void main(void)
 {
 
     SYSTEM_Initialize();
+
+
+    PARAMETERS_Init();
 
 
 
@@ -37816,14 +37852,11 @@ void main(void)
 
 
 
+    Init_hardware();
 
 
     while (1)
     {
-
-
-
-
-
+# 110 "main.c"
     }
 }

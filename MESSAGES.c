@@ -116,3 +116,23 @@ void CANReadMessage (void)
 }
 
 
+// MESSSAGES_ASSIState //
+//Ejecutar este mensaje cada 10s aprox y meter en que estado se encuentra el ASSI
+void MESSSAGES_ASSIState (void)
+{
+    switch ( ucASSIName )
+    {
+        case ASSI_CENTER:
+            CANWriteMessage(ID_ASSIS_C, data_lenght8, 0, 0, 0, 0, 0, 0, 0, 0);
+            break;
+        case ASSI_LEFT:
+            CANWriteMessage(ID_ASSIS_R, data_lenght8, 0, 0, 0, 0, 0, 0, 0, 0);
+            break;
+        case ASSI_RIGHT:
+            CANWriteMessage(ID_ASSIS_L, data_lenght8, 0, 0, 0, 0, 0, 0, 0, 0);
+            break;
+    }
+    
+}
+
+

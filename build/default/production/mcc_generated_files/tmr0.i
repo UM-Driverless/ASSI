@@ -37527,6 +37527,24 @@ void PIN_MANAGER_Initialize (void);
 void PIN_MANAGER_IOC(void);
 # 54 "mcc_generated_files/tmr0.c" 2
 
+# 1 "mcc_generated_files/../TEMPORIZATIONS.h" 1
+# 22 "mcc_generated_files/../TEMPORIZATIONS.h"
+unsigned int uiCount30min;
+unsigned int uiCount15min;
+unsigned int uiCount1min;
+unsigned int uiCount30s;
+
+
+void TEMPORIZATION_10ms (void);
+void TEMPORIZATION_100ms (void);
+void TEMPORIZATION_1s (void);
+void TEMPORIZATION_30s (void);
+void TEMPORIZATION_1mins (void);
+void TEMPORIZATION_15mins (void);
+void TEMPORIZATION_30mins (void);
+# 55 "mcc_generated_files/tmr0.c" 2
+
+
 
 
 
@@ -37603,6 +37621,8 @@ void TMR0_ISR(void)
     if (++CountCallBack >= 36)
     {
 
+
+        TEMPORIZATION_1s();
 
 
         TMR0_CallBack();

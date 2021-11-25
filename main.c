@@ -44,9 +44,33 @@
 #include "mcc_generated_files/mcc.h"
 #include "LEDS.h"
 #include "SPEAKER.h"
+#include "PARAMETERS.h"
 
 //VARIABLES
 unsigned char ucASState;
+
+
+
+//Inicializacion de comprobacion de hardware en arranques
+void Init_hardware (void)
+{
+    Y_SIGNAL_SetLow();
+    B_SIGNAL_SetHigh();
+    SPEAKER_SetHigh();
+    DELAY_milliseconds(500);
+    Y_SIGNAL_SetLow();
+    B_SIGNAL_SetLow();
+    SPEAKER_SetLow();
+    DELAY_milliseconds(500);
+    Y_SIGNAL_SetHigh();
+    B_SIGNAL_SetLow();
+    SPEAKER_SetHigh();
+    DELAY_milliseconds(500);
+    Y_SIGNAL_SetLow();
+    B_SIGNAL_SetLow();
+    SPEAKER_SetLow();
+}
+
 
 /*
                          Main application
@@ -55,6 +79,9 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
+    
+    //INIT DE PARAMETROS
+    PARAMETERS_Init();
 
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
@@ -66,7 +93,8 @@ void main(void)
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
     
-    
+    //INIT HARDWARE
+    Init_hardware();
     
     
     while (1)
@@ -76,8 +104,14 @@ void main(void)
         //AS_DRIVING      2
         //AS_EMERGENCY    3
         //AS_FINISHED     4
+        
+        
+        
     }
 }
+
+
+
 /**
  End of File
 */

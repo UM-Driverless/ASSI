@@ -1,0 +1,191 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"34 ./TEMPORIZATIONS.h
+[; ;./TEMPORIZATIONS.h: 34: void TEMPORIZATION_30mins (void);
+[v _TEMPORIZATION_30mins `(v ~T0 @X0 0 ef ]
+"33
+[; ;./TEMPORIZATIONS.h: 33: void TEMPORIZATION_15mins (void);
+[v _TEMPORIZATION_15mins `(v ~T0 @X0 0 ef ]
+"32
+[; ;./TEMPORIZATIONS.h: 32: void TEMPORIZATION_1mins (void);
+[v _TEMPORIZATION_1mins `(v ~T0 @X0 0 ef ]
+"31
+[; ;./TEMPORIZATIONS.h: 31: void TEMPORIZATION_30s (void);
+[v _TEMPORIZATION_30s `(v ~T0 @X0 0 ef ]
+"22 ./TEMPORIZATIONS.h
+[; ;./TEMPORIZATIONS.h: 22: unsigned int uiCount30min;
+[v _uiCount30min `ui ~T0 @X0 1 e ]
+"23
+[; ;./TEMPORIZATIONS.h: 23: unsigned int uiCount15min;
+[v _uiCount15min `ui ~T0 @X0 1 e ]
+"24
+[; ;./TEMPORIZATIONS.h: 24: unsigned int uiCount1min;
+[v _uiCount1min `ui ~T0 @X0 1 e ]
+"25
+[; ;./TEMPORIZATIONS.h: 25: unsigned int uiCount30s;
+[v _uiCount30s `ui ~T0 @X0 1 e ]
+"13 TEMPORIZATIONS.c
+[; ;TEMPORIZATIONS.c: 13: unsigned int uiCount30min;
+[v _uiCount30min `ui ~T0 @X0 1 e ]
+"14
+[; ;TEMPORIZATIONS.c: 14: unsigned int uiCount15min;
+[v _uiCount15min `ui ~T0 @X0 1 e ]
+"15
+[; ;TEMPORIZATIONS.c: 15: unsigned int uiCount1min;
+[v _uiCount1min `ui ~T0 @X0 1 e ]
+"16
+[; ;TEMPORIZATIONS.c: 16: unsigned int uiCount30s;
+[v _uiCount30s `ui ~T0 @X0 1 e ]
+"20
+[; ;TEMPORIZATIONS.c: 20: void TEMPORIZATION_1s (void)
+[v _TEMPORIZATION_1s `(v ~T0 @X0 1 ef ]
+"21
+[; ;TEMPORIZATIONS.c: 21: {
+{
+[e :U _TEMPORIZATION_1s ]
+[f ]
+"22
+[; ;TEMPORIZATIONS.c: 22:     if (uiCount30min++ > 1800)
+[e $ ! > ++ _uiCount30min -> -> 1 `i `ui -> -> 1800 `i `ui 2  ]
+"23
+[; ;TEMPORIZATIONS.c: 23:     {
+{
+"24
+[; ;TEMPORIZATIONS.c: 24:         TEMPORIZATION_30mins();
+[e ( _TEMPORIZATION_30mins ..  ]
+"25
+[; ;TEMPORIZATIONS.c: 25:         uiCount30min = 0;
+[e = _uiCount30min -> -> 0 `i `ui ]
+"26
+[; ;TEMPORIZATIONS.c: 26:     }
+}
+[e $U 3  ]
+"27
+[; ;TEMPORIZATIONS.c: 27:     else if (uiCount15min++ > 900)
+[e :U 2 ]
+[e $ ! > ++ _uiCount15min -> -> 1 `i `ui -> -> 900 `i `ui 4  ]
+"28
+[; ;TEMPORIZATIONS.c: 28:     {
+{
+"29
+[; ;TEMPORIZATIONS.c: 29:         TEMPORIZATION_15mins();
+[e ( _TEMPORIZATION_15mins ..  ]
+"30
+[; ;TEMPORIZATIONS.c: 30:         uiCount15min = 0;
+[e = _uiCount15min -> -> 0 `i `ui ]
+"31
+[; ;TEMPORIZATIONS.c: 31:     }
+}
+[e $U 5  ]
+"32
+[; ;TEMPORIZATIONS.c: 32:     else if (uiCount1min++ > 60)
+[e :U 4 ]
+[e $ ! > ++ _uiCount1min -> -> 1 `i `ui -> -> 60 `i `ui 6  ]
+"33
+[; ;TEMPORIZATIONS.c: 33:     {
+{
+"34
+[; ;TEMPORIZATIONS.c: 34:         TEMPORIZATION_1mins();
+[e ( _TEMPORIZATION_1mins ..  ]
+"35
+[; ;TEMPORIZATIONS.c: 35:         uiCount1min = 0;
+[e = _uiCount1min -> -> 0 `i `ui ]
+"36
+[; ;TEMPORIZATIONS.c: 36:     }
+}
+[e $U 7  ]
+"37
+[; ;TEMPORIZATIONS.c: 37:     else if (uiCount30s++ > 1)
+[e :U 6 ]
+[e $ ! > ++ _uiCount30s -> -> 1 `i `ui -> -> 1 `i `ui 8  ]
+"38
+[; ;TEMPORIZATIONS.c: 38:     {
+{
+"39
+[; ;TEMPORIZATIONS.c: 39:         TEMPORIZATION_30s();
+[e ( _TEMPORIZATION_30s ..  ]
+"40
+[; ;TEMPORIZATIONS.c: 40:         uiCount30s = 0;
+[e = _uiCount30s -> -> 0 `i `ui ]
+"41
+[; ;TEMPORIZATIONS.c: 41:     }
+}
+[e :U 8 ]
+[e :U 7 ]
+[e :U 5 ]
+[e :U 3 ]
+"43
+[; ;TEMPORIZATIONS.c: 43: }
+[e :UE 1 ]
+}
+"45
+[; ;TEMPORIZATIONS.c: 45: void TEMPORIZATION_10ms (void)
+[v _TEMPORIZATION_10ms `(v ~T0 @X0 1 ef ]
+"46
+[; ;TEMPORIZATIONS.c: 46: {
+{
+[e :U _TEMPORIZATION_10ms ]
+[f ]
+"48
+[; ;TEMPORIZATIONS.c: 48: }
+[e :UE 9 ]
+}
+"50
+[; ;TEMPORIZATIONS.c: 50: void TEMPORIZATION_100ms (void)
+[v _TEMPORIZATION_100ms `(v ~T0 @X0 1 ef ]
+"51
+[; ;TEMPORIZATIONS.c: 51: {
+{
+[e :U _TEMPORIZATION_100ms ]
+[f ]
+"53
+[; ;TEMPORIZATIONS.c: 53: }
+[e :UE 10 ]
+}
+"55
+[; ;TEMPORIZATIONS.c: 55: void TEMPORIZATION_30mins (void)
+[v _TEMPORIZATION_30mins `(v ~T0 @X0 1 ef ]
+"56
+[; ;TEMPORIZATIONS.c: 56: {
+{
+[e :U _TEMPORIZATION_30mins ]
+[f ]
+"58
+[; ;TEMPORIZATIONS.c: 58: }
+[e :UE 11 ]
+}
+"60
+[; ;TEMPORIZATIONS.c: 60: void TEMPORIZATION_15mins (void)
+[v _TEMPORIZATION_15mins `(v ~T0 @X0 1 ef ]
+"61
+[; ;TEMPORIZATIONS.c: 61: {
+{
+[e :U _TEMPORIZATION_15mins ]
+[f ]
+"63
+[; ;TEMPORIZATIONS.c: 63: }
+[e :UE 12 ]
+}
+"66
+[; ;TEMPORIZATIONS.c: 66: void TEMPORIZATION_1mins (void)
+[v _TEMPORIZATION_1mins `(v ~T0 @X0 1 ef ]
+"67
+[; ;TEMPORIZATIONS.c: 67: {
+{
+[e :U _TEMPORIZATION_1mins ]
+[f ]
+"69
+[; ;TEMPORIZATIONS.c: 69: }
+[e :UE 13 ]
+}
+"71
+[; ;TEMPORIZATIONS.c: 71: void TEMPORIZATION_30s (void)
+[v _TEMPORIZATION_30s `(v ~T0 @X0 1 ef ]
+"72
+[; ;TEMPORIZATIONS.c: 72: {
+{
+[e :U _TEMPORIZATION_30s ]
+[f ]
+"74
+[; ;TEMPORIZATIONS.c: 74: }
+[e :UE 14 ]
+}
