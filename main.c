@@ -45,6 +45,7 @@
 #include "LEDS.h"
 #include "SPEAKER.h"
 #include "PARAMETERS.h"
+#include "MESSAGES.h"
 
 //VARIABLES
 unsigned char ucASState;
@@ -57,15 +58,15 @@ void Init_hardware (void)
     Y_SIGNAL_SetLow();
     B_SIGNAL_SetHigh();
     SPEAKER_SetHigh();
-    DELAY_milliseconds(500);
+    DELAY_milliseconds(200);
     Y_SIGNAL_SetLow();
     B_SIGNAL_SetLow();
     SPEAKER_SetLow();
-    DELAY_milliseconds(500);
+    DELAY_milliseconds(200);
     Y_SIGNAL_SetHigh();
     B_SIGNAL_SetLow();
     SPEAKER_SetHigh();
-    DELAY_milliseconds(500);
+    DELAY_milliseconds(200);
     Y_SIGNAL_SetLow();
     B_SIGNAL_SetLow();
     SPEAKER_SetLow();
@@ -105,7 +106,7 @@ void main(void)
         //AS_EMERGENCY    3
         //AS_FINISHED     4
         
-        
+        MESSSAGES_ASSIState();
         
     }
 }
