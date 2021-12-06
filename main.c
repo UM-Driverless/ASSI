@@ -100,14 +100,14 @@ void main(void)
     
     while (1)
     { 
-        
+        //Init_hardware();
         //AS_READY        1
         //AS_DRIVING      2
         //AS_EMERGENCY    3
         //AS_FINISHED     4
         
-        MESSSAGES_ASSIState();
-        
+        //MESSSAGES_ASSIState();
+        CANReadMessage();
     }
 }
 

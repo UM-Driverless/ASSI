@@ -3,11 +3,11 @@
 [d edition pro ]
 [d chip 18F26Q84 ]
 [d frameptr 1249 ]
-"102 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
-[e E22386 . `uc
+"105 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
+[e E22458 . `uc
 FIFO1 1
 ]
-"250
+"253
 [e E22356 . `uc
 CAN_OP_MODE_REQUEST_SUCCESS 0
 CAN_OP_MODE_REQUEST_FAIL 1
@@ -23,40 +23,40 @@ CAN_EXTERNAL_LOOPBACK_MODE 5
 CAN_NORMAL_2_0_MODE 6
 CAN_RESTRICTED_OPERATION_MODE 7
 ]
-"313
-[e E22534 . `uc
+"316
+[e E22453 . `uc
 CAN_RX_MSG_NOT_AVAILABLE 0
 CAN_RX_MSG_AVAILABLE 1
 CAN_RX_MSG_OVERFLOW 8
 ]
-"329
+"332
 [e E22328 . `uc
 CAN_FRAME_STD 0
 CAN_FRAME_EXT 1
 ]
-"330
+"333
 [e E22332 . `uc
 CAN_FRAME_DATA 0
 CAN_FRAME_RTR 1
 ]
-"331
+"334
 [e E22324 . `uc
 CAN_NON_BRS_MODE 0
 CAN_BRS_MODE 1
 ]
-"467
+"442
 [e E22361 . `uc
 CAN_TX_FIFO_FULL 0
 CAN_TX_FIFO_AVAILABLE 1
 ]
-"513
+"488
 [e E22340 . `uc
 CAN_TX_MSG_REQUEST_SUCCESS 0
 CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
 CAN_TX_MSG_REQUEST_BRS_ERROR 2
 CAN_TX_MSG_REQUEST_FIFO_FULL 3
 ]
-"524
+"499
 [e E22365 . `uc
 DLC_0 0
 DLC_1 1
@@ -79,7 +79,7 @@ DLC_64 15
 CAN_2_0_FORMAT 0
 CAN_FD_FORMAT 1
 ]
-"542
+"517
 [e E22383 . `uc
 TXQ 0
 ]
@@ -132,7 +132,6 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
-[v i2_memcpy memcpy `(*.39v  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
@@ -147,98 +146,91 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v ___omul __omul `(uo  1 e 8 0 ]
 "12 C:\Users\panze\Documents\GitHub\ASSI\LEDS.c
 [v _LEDS LEDS `(v  1 e 1 0 ]
+[v i2_LEDS LEDS `(v  1 e 1 0 ]
 "56 C:\Users\panze\Documents\GitHub\ASSI\main.c
 [v _Init_hardware Init_hardware `(v  1 e 1 0 ]
 "79
 [v _main main `(v  1 e 1 0 ]
-"119 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
-[v _DefaultFIFO1NotEmptyHandler DefaultFIFO1NotEmptyHandler `(v  1 s 1 DefaultFIFO1NotEmptyHandler ]
-"123
+"121 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _DefaultInvalidMessageHandler DefaultInvalidMessageHandler `(v  1 s 1 DefaultInvalidMessageHandler ]
-"127
+"125
 [v _DefaultBusWakeUpActivityHandler DefaultBusWakeUpActivityHandler `(v  1 s 1 DefaultBusWakeUpActivityHandler ]
-"131
+"129
 [v _DefaultBusErrorHandler DefaultBusErrorHandler `(v  1 s 1 DefaultBusErrorHandler ]
-"135
+"133
 [v _DefaultModeChangeHandler DefaultModeChangeHandler `(v  1 s 1 DefaultModeChangeHandler ]
-"139
+"137
 [v _DefaultSystemErrorHandler DefaultSystemErrorHandler `(v  1 s 1 DefaultSystemErrorHandler ]
-"143
+"141
 [v _DefaultTxAttemptHandler DefaultTxAttemptHandler `(v  1 s 1 DefaultTxAttemptHandler ]
-"147
+"145
 [v _DefaultRxBufferOverflowHandler DefaultRxBufferOverflowHandler `(v  1 s 1 DefaultRxBufferOverflowHandler ]
-"151
+"149
 [v _CAN1_RX_FIFO_ResetInfo CAN1_RX_FIFO_ResetInfo `(v  1 e 1 0 ]
-"161
+"159
 [v _CAN1_RX_FIFO_Configuration CAN1_RX_FIFO_Configuration `(v  1 s 1 CAN1_RX_FIFO_Configuration ]
-"183
+"175
 [v _CAN1_RX_FIFO_FilterMaskConfiguration CAN1_RX_FIFO_FilterMaskConfiguration `(v  1 s 1 CAN1_RX_FIFO_FilterMaskConfiguration ]
-"187
+"190
 [v _CAN1_TX_FIFO_Configuration CAN1_TX_FIFO_Configuration `(v  1 s 1 CAN1_TX_FIFO_Configuration ]
-"203
+"206
 [v _CAN1_BitRateConfiguration CAN1_BitRateConfiguration `(v  1 s 1 CAN1_BitRateConfiguration ]
-"219
+"222
 [v _CAN1_ErrorNotificationInterruptEnable CAN1_ErrorNotificationInterruptEnable `(v  1 s 1 CAN1_ErrorNotificationInterruptEnable ]
-"245
+"248
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
-"274
+"277
 [v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22356  1 e 1 0 ]
-"303
+"306
 [v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
-"308
+"311
 [v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
-"313
-[v _GetRxFifoStatus GetRxFifoStatus `(E22534  1 s 1 GetRxFifoStatus ]
-"318
+"316
+[v _GetRxFifoStatus GetRxFifoStatus `(E22453  1 s 1 GetRxFifoStatus ]
+"321
 [v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
-"352
-[v _Receive Receive `(a  1 s 1 Receive ]
-"384
+"355
 [v _CAN1_Receive CAN1_Receive `(a  1 e 1 0 ]
-"419
+"394
 [v _CAN1_ReceivedMessageCountGet CAN1_ReceivedMessageCountGet `(uc  1 e 1 0 ]
-"462
+"437
 [v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
-"467
+"442
 [v _GetTxFifoStatus GetTxFifoStatus `(E22361  1 s 1 GetTxFifoStatus ]
-"472
+"447
 [v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
-"513
+"488
 [v _ValidateTransmission ValidateTransmission `(E22340  1 s 1 ValidateTransmission ]
-"542
+"517
 [v _CAN1_Transmit CAN1_Transmit `(E22340  1 e 1 0 ]
-"564
+"539
 [v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22361  1 e 1 0 ]
-"576
+"551
 [v _CAN1_IsBusOff CAN1_IsBusOff `(a  1 e 1 0 ]
-"581
+"556
 [v _CAN1_IsRxErrorPassive CAN1_IsRxErrorPassive `(a  1 e 1 0 ]
-"596
+"571
 [v _CAN1_IsTxErrorPassive CAN1_IsTxErrorPassive `(a  1 e 1 0 ]
-"601
+"576
 [v _CAN1_IsTxErrorWarning CAN1_IsTxErrorWarning `(a  1 e 1 0 ]
-"606
+"581
 [v _CAN1_IsTxErrorActive CAN1_IsTxErrorActive `(a  1 e 1 0 ]
-"619
+"594
 [v _CAN1_SetInvalidMessageInterruptHandler CAN1_SetInvalidMessageInterruptHandler `(v  1 e 1 0 ]
-"624
+"599
 [v _CAN1_SetBusWakeUpActivityInterruptHandler CAN1_SetBusWakeUpActivityInterruptHandler `(v  1 e 1 0 ]
-"629
+"604
 [v _CAN1_SetBusErrorInterruptHandler CAN1_SetBusErrorInterruptHandler `(v  1 e 1 0 ]
-"634
+"609
 [v _CAN1_SetModeChangeInterruptHandler CAN1_SetModeChangeInterruptHandler `(v  1 e 1 0 ]
-"639
+"614
 [v _CAN1_SetSystemErrorInterruptHandler CAN1_SetSystemErrorInterruptHandler `(v  1 e 1 0 ]
-"644
+"619
 [v _CAN1_SetTxAttemptInterruptHandler CAN1_SetTxAttemptInterruptHandler `(v  1 e 1 0 ]
-"649
+"624
 [v _CAN1_SetRxBufferOverFlowInterruptHandler CAN1_SetRxBufferOverFlowInterruptHandler `(v  1 e 1 0 ]
-"654
+"629
 [v _CAN1_ISR CAN1_ISR `(v  1 e 1 0 ]
-"707
-[v _CAN1_SetFIFO1NotEmptyHandler CAN1_SetFIFO1NotEmptyHandler `(v  1 e 1 0 ]
-"713
-[v _CAN1_RXI_ISR CAN1_RXI_ISR `(v  1 e 1 0 ]
 "38 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/delay.c
 [v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
 "52 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/interrupt_manager.c
@@ -279,12 +271,11 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
 "68
 [v _CANReadMessage CANReadMessage `(v  1 e 1 0 ]
-"121
-[v _MESSSAGES_ASSIState MESSSAGES_ASSIState `(v  1 e 1 0 ]
 "17 C:\Users\panze\Documents\GitHub\ASSI\PARAMETERS.c
 [v _PARAMETERS_Init PARAMETERS_Init `(v  1 e 1 0 ]
 "15 C:\Users\panze\Documents\GitHub\ASSI\SPEAKER.c
 [v _SPEAKER SPEAKER `(v  1 e 1 0 ]
+[v i2_SPEAKER SPEAKER `(v  1 e 1 0 ]
 "20 C:\Users\panze\Documents\GitHub\ASSI\TEMPORIZATIONS.c
 [v _TEMPORIZATION_1s TEMPORIZATION_1s `(v  1 e 1 0 ]
 "55
@@ -295,19 +286,19 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _TEMPORIZATION_1mins TEMPORIZATION_1mins `(v  1 e 1 0 ]
 "71
 [v _TEMPORIZATION_30s TEMPORIZATION_30s `(v  1 e 1 0 ]
-[s S24 . 1 `uc 1 idType 1 0 :1:0 
+[s S290 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
 "26 C:\Users\panze\Documents\GitHub\ASSI/MESSAGES.h
-[u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
-[s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v _msgTransmit msgTransmit `S33  1 e 7 0 ]
+[u S296 . 1 `uc 1 msgfields 1 0 `S290 1 . 1 0 ]
+[s S299 . 7 `ul 1 msgId 4 0 `S296 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v _msgTransmit msgTransmit `S299  1 e 7 0 ]
 "27
-[v _msgReceipt msgReceipt `S33  1 e 7 0 ]
-[s S177 . 1 `uc 1 SWIF 1 0 :1:0 
+[v _msgReceipt msgReceipt `S299  1 e 7 0 ]
+[s S109 . 1 `uc 1 SWIF 1 0 :1:0 
 `uc 1 HLVDIF 1 0 :1:1 
 `uc 1 OSFIF 1 0 :1:2 
 `uc 1 CSWIF 1 0 :1:3 
@@ -317,9 +308,9 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 IOCIF 1 0 :1:7 
 ]
 "506 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
-[u S186 . 1 `S177 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES186  1 e 1 @1198 ]
-[s S921 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+[u S118 . 1 `S109 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES118  1 e 1 @1198 ]
+[s S800 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
 `uc 1 SPI1TXIF 1 0 :1:1 
 `uc 1 SPI1IF 1 0 :1:2 
 `uc 1 TMR2IF 1 0 :1:3 
@@ -329,20 +320,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "700
-[u S930 . 1 `S921 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES930  1 e 1 @1201 ]
-[s S86 . 1 `uc 1 U1RXIF 1 0 :1:0 
-`uc 1 U1TXIF 1 0 :1:1 
-`uc 1 U1EIF 1 0 :1:2 
-`uc 1 U1IF 1 0 :1:3 
-`uc 1 CANRXIF 1 0 :1:4 
-`uc 1 CANTXIF 1 0 :1:5 
-`uc 1 PWM1PIF 1 0 :1:6 
-`uc 1 PWM1IF 1 0 :1:7 
-]
-"762
-[u S95 . 1 `S86 1 . 1 0 ]
-[v _PIR4bits PIR4bits `VES95  1 e 1 @1202 ]
+[u S809 . 1 `S800 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES809  1 e 1 @1201 ]
 "1339
 [v _PMD0 PMD0 `VEuc  1 e 1 @96 ]
 "1405
@@ -355,7 +334,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
 [v _LATB LATB `VEuc  1 e 1 @1215 ]
-[s S1448 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S1301 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -365,13 +344,13 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 LATB7 1 0 :1:7 
 ]
 "1553
-[u S1457 . 1 `S1448 1 . 1 0 ]
-[v _LATBbits LATBbits `VES1457  1 e 1 @1215 ]
+[u S1310 . 1 `S1301 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1310  1 e 1 @1215 ]
 "1565
 [v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
 "1598
 [v _LATC LATC `VEuc  1 e 1 @1216 ]
-[s S847 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S726 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -381,8 +360,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 LATC7 1 0 :1:7 
 ]
 "1615
-[u S856 . 1 `S847 1 . 1 0 ]
-[v _LATCbits LATCbits `VES856  1 e 1 @1216 ]
+[u S735 . 1 `S726 1 . 1 0 ]
+[v _LATCbits LATCbits `VES735  1 e 1 @1216 ]
 "1621
 [v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
 "1660
@@ -399,7 +378,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PMD8 PMD8 `VEuc  1 e 1 @104 ]
 "1846
 [v _TRISE TRISE `VEuc  1 e 1 @1226 ]
-[s S1141 . 1 `uc 1 INT0EDG 1 0 :1:0 
+[s S1020 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -408,11 +387,11 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 GIE 1 0 :1:7 
 ]
 "2094
-[s S1149 . 1 `uc 1 . 1 0 :7:0 
+[s S1028 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S1152 . 1 `S1141 1 . 1 0 `S1149 1 . 1 0 ]
-[v _INTCON0bits INTCON0bits `VES1152  1 e 1 @1238 ]
+[u S1031 . 1 `S1020 1 . 1 0 `S1028 1 . 1 0 ]
+[v _INTCON0bits INTCON0bits `VES1031  1 e 1 @1238 ]
 "5336
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
 "5476
@@ -427,7 +406,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _C1CONL C1CONL `VEuc  1 e 1 @256 ]
 "9014
 [v _C1CONH C1CONH `VEuc  1 e 1 @257 ]
-[s S223 . 1 `uc 1 WAKFIL 1 0 :1:0 
+[s S155 . 1 `uc 1 WAKFIL 1 0 :1:0 
 `uc 1 WFT 1 0 :2:1 
 `uc 1 BUSY 1 0 :1:3 
 `uc 1 BRSDIS 1 0 :1:4 
@@ -436,15 +415,15 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 ON 1 0 :1:7 
 ]
 "9035
-[s S231 . 1 `uc 1 . 1 0 :1:0 
+[s S163 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 WFT0 1 0 :1:1 
 `uc 1 WFT1 1 0 :1:2 
 ]
-[u S235 . 1 `S223 1 . 1 0 `S231 1 . 1 0 ]
-[v _C1CONHbits C1CONHbits `VES235  1 e 1 @257 ]
+[u S167 . 1 `S155 1 . 1 0 `S163 1 . 1 0 ]
+[v _C1CONHbits C1CONHbits `VES167  1 e 1 @257 ]
 "9085
 [v _C1CONU C1CONU `VEuc  1 e 1 @258 ]
-[s S326 . 1 `uc 1 RTXAT 1 0 :1:0 
+[s S258 . 1 `uc 1 RTXAT 1 0 :1:0 
 `uc 1 ESIGM 1 0 :1:1 
 `uc 1 SERR2LOM 1 0 :1:2 
 `uc 1 STEF 1 0 :1:3 
@@ -452,19 +431,19 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 OPMOD 1 0 :3:5 
 ]
 "9106
-[s S333 . 1 `uc 1 . 1 0 :5:0 
+[s S265 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 OPMOD0 1 0 :1:5 
 `uc 1 OPMOD1 1 0 :1:6 
 `uc 1 OPMOD2 1 0 :1:7 
 ]
-[u S338 . 1 `S326 1 . 1 0 `S333 1 . 1 0 ]
-[v _C1CONUbits C1CONUbits `VES338  1 e 1 @258 ]
-[s S277 . 1 `uc 1 REQOP 1 0 :3:0 
+[u S270 . 1 `S258 1 . 1 0 `S265 1 . 1 0 ]
+[v _C1CONUbits C1CONUbits `VES270  1 e 1 @258 ]
+[s S209 . 1 `uc 1 REQOP 1 0 :3:0 
 `uc 1 ABAT 1 0 :1:3 
 `uc 1 TXBWS 1 0 :4:4 
 ]
 "9178
-[s S281 . 1 `uc 1 REQOP0 1 0 :1:0 
+[s S213 . 1 `uc 1 REQOP0 1 0 :1:0 
 `uc 1 REQOP1 1 0 :1:1 
 `uc 1 REQOP2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -473,8 +452,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TXBWS2 1 0 :1:6 
 `uc 1 TXBWS3 1 0 :1:7 
 ]
-[u S290 . 1 `S277 1 . 1 0 `S281 1 . 1 0 ]
-[v _C1CONTbits C1CONTbits `VES290  1 e 1 @259 ]
+[u S222 . 1 `S209 1 . 1 0 `S213 1 . 1 0 ]
+[v _C1CONTbits C1CONTbits `VES222  1 e 1 @259 ]
 "9233
 [v _C1NBTCFGL C1NBTCFGL `VEuc  1 e 1 @260 ]
 "9297
@@ -485,18 +464,18 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _C1NBTCFGT C1NBTCFGT `VEuc  1 e 1 @263 ]
 "10407
 [v _C1INTL C1INTL `VEuc  1 e 1 @284 ]
-[s S454 . 1 `uc 1 TXIF 1 0 :1:0 
+[s S399 . 1 `uc 1 TXIF 1 0 :1:0 
 `uc 1 RXIF 1 0 :1:1 
 `uc 1 TBCIF 1 0 :1:2 
 `uc 1 MODIF 1 0 :1:3 
 `uc 1 TEFIF 1 0 :1:4 
 ]
 "10421
-[u S460 . 1 `S454 1 . 1 0 ]
-[v _C1INTLbits C1INTLbits `VES460  1 e 1 @284 ]
+[u S405 . 1 `S399 1 . 1 0 ]
+[v _C1INTLbits C1INTLbits `VES405  1 e 1 @284 ]
 "10451
 [v _C1INTH C1INTH `VEuc  1 e 1 @285 ]
-[s S307 . 1 `uc 1 . 1 0 :2:0 
+[s S239 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXATIF 1 0 :1:2 
 `uc 1 RXOVIF 1 0 :1:3 
 `uc 1 SERRIF 1 0 :1:4 
@@ -505,22 +484,13 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 IVMIF 1 0 :1:7 
 ]
 "10467
-[u S315 . 1 `S307 1 . 1 0 ]
-[v _C1INTHbits C1INTHbits `VES315  1 e 1 @285 ]
+[u S247 . 1 `S239 1 . 1 0 ]
+[v _C1INTHbits C1INTHbits `VES247  1 e 1 @285 ]
 "10502
 [v _C1INTU C1INTU `VEuc  1 e 1 @286 ]
-[s S71 . 1 `uc 1 TXIE 1 0 :1:0 
-`uc 1 RXIE 1 0 :1:1 
-`uc 1 TBCIE 1 0 :1:2 
-`uc 1 MODIE 1 0 :1:3 
-`uc 1 TEFIE 1 0 :1:4 
-]
-"10516
-[u S77 . 1 `S71 1 . 1 0 ]
-[v _C1INTUbits C1INTUbits `VES77  1 e 1 @286 ]
 "10546
 [v _C1INTT C1INTT `VEuc  1 e 1 @287 ]
-[s S421 . 1 `uc 1 . 1 0 :2:0 
+[s S366 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXATIE 1 0 :1:2 
 `uc 1 RXOVIE 1 0 :1:3 
 `uc 1 SERRIE 1 0 :1:4 
@@ -529,9 +499,9 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 IVMIE 1 0 :1:7 
 ]
 "10562
-[u S429 . 1 `S421 1 . 1 0 ]
-[v _C1INTTbits C1INTTbits `VES429  1 e 1 @287 ]
-[s S404 . 1 `uc 1 EWARN 1 0 :1:0 
+[u S374 . 1 `S366 1 . 1 0 ]
+[v _C1INTTbits C1INTTbits `VES374  1 e 1 @287 ]
+[s S349 . 1 `uc 1 EWARN 1 0 :1:0 
 `uc 1 RXWARN 1 0 :1:1 
 `uc 1 TXWARN 1 0 :1:2 
 `uc 1 RXBP 1 0 :1:3 
@@ -539,8 +509,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TXBO 1 0 :1:5 
 ]
 "12179
-[u S411 . 1 `S404 1 . 1 0 ]
-[v _C1TRECUbits C1TRECUbits `VES411  1 e 1 @310 ]
+[u S356 . 1 `S349 1 . 1 0 ]
+[v _C1TRECUbits C1TRECUbits `VES356  1 e 1 @310 ]
 "13232
 [v _C1FIFOBA C1FIFOBA `VEul  1 e 4 @332 ]
 "13519
@@ -551,7 +521,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _C1TXQCONU C1TXQCONU `VEuc  1 e 1 @338 ]
 "13662
 [v _C1TXQCONT C1TXQCONT `VEuc  1 e 1 @339 ]
-[s S469 . 1 `uc 1 TXQNIF 1 0 :1:0 
+[s S414 . 1 `uc 1 TXQNIF 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 TXQEIF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -561,8 +531,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TXABT 1 0 :1:7 
 ]
 "13755
-[u S478 . 1 `S469 1 . 1 0 ]
-[v _C1TXQSTALbits C1TXQSTALbits `VES478  1 e 1 @340 ]
+[u S423 . 1 `S414 1 . 1 0 ]
+[v _C1TXQSTALbits C1TXQSTALbits `VES423  1 e 1 @340 ]
 "14150
 [v _C1FIFOCON1L C1FIFOCON1L `VEuc  1 e 1 @348 ]
 "14212
@@ -571,7 +541,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _C1FIFOCON1U C1FIFOCON1U `VEuc  1 e 1 @350 ]
 "14314
 [v _C1FIFOCON1T C1FIFOCON1T `VEuc  1 e 1 @351 ]
-[s S490 . 1 `uc 1 TFNRFNIF 1 0 :1:0 
+[s S435 . 1 `uc 1 TFNRFNIF 1 0 :1:0 
 `uc 1 TFHRFHIF 1 0 :1:1 
 `uc 1 TFERFFIF 1 0 :1:2 
 `uc 1 RXOVIF 1 0 :1:3 
@@ -581,8 +551,26 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TXABT 1 0 :1:7 
 ]
 "14414
-[u S499 . 1 `S490 1 . 1 0 ]
-[v _C1FIFOSTA1Lbits C1FIFOSTA1Lbits `VES499  1 e 1 @352 ]
+[u S444 . 1 `S435 1 . 1 0 ]
+[v _C1FIFOSTA1Lbits C1FIFOSTA1Lbits `VES444  1 e 1 @352 ]
+"16209
+[v _C1FLTCON0H C1FLTCON0H `VEuc  1 e 1 @385 ]
+"17439
+[v _C1FLTOBJ1L C1FLTOBJ1L `VEuc  1 e 1 @404 ]
+"17509
+[v _C1FLTOBJ1H C1FLTOBJ1H `VEuc  1 e 1 @405 ]
+"17585
+[v _C1FLTOBJ1U C1FLTOBJ1U `VEuc  1 e 1 @406 ]
+"17655
+[v _C1FLTOBJ1T C1FLTOBJ1T `VEuc  1 e 1 @407 ]
+"17726
+[v _C1MASK1L C1MASK1L `VEuc  1 e 1 @408 ]
+"17796
+[v _C1MASK1H C1MASK1H `VEuc  1 e 1 @409 ]
+"17872
+[v _C1MASK1U C1MASK1U `VEuc  1 e 1 @410 ]
+"17942
+[v _C1MASK1T C1MASK1T `VEuc  1 e 1 @411 ]
 "24366
 [v _RB4PPS RB4PPS `VEuc  1 e 1 @525 ]
 "24966
@@ -593,31 +581,31 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
 "38942
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @794 ]
-[s S1301 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S1154 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 MD16 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "38970
-[s S1307 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S1160 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T0MD16 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "38970
-[s S1313 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S1166 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
 `uc 1 T016BIT 1 0 :1:4 
 ]
 "38970
-[u S1319 . 1 `S1301 1 . 1 0 `S1307 1 . 1 0 `S1313 1 . 1 0 ]
+[u S1172 . 1 `S1154 1 . 1 0 `S1160 1 . 1 0 `S1166 1 . 1 0 ]
 "38970
 "38970
-[v _T0CON0bits T0CON0bits `VES1319  1 e 1 @794 ]
+[v _T0CON0bits T0CON0bits `VES1172  1 e 1 @794 ]
 "39040
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @795 ]
 "39182
@@ -626,14 +614,14 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _TMR1H TMR1H `VEuc  1 e 1 @797 ]
 "39322
 [v _T1CON T1CON `VEuc  1 e 1 @798 ]
-[s S974 . 1 `uc 1 ON 1 0 :1:0 
+[s S853 . 1 `uc 1 ON 1 0 :1:0 
 `uc 1 RD16 1 0 :1:1 
 `uc 1 NOT_SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 CKPS 1 0 :2:4 
 ]
 "39358
-[s S980 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S859 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 T1RD16 1 0 :1:1 
 `uc 1 NOT_T1SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -641,22 +629,22 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 T1CKPS1 1 0 :1:5 
 ]
 "39358
-[s S987 . 1 `uc 1 . 1 0 :4:0 
+[s S866 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 CKPS0 1 0 :1:4 
 `uc 1 CKPS1 1 0 :1:5 
 ]
 "39358
-[s S991 . 1 `uc 1 . 1 0 :1:0 
+[s S870 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RD161 1 0 :1:1 
 ]
 "39358
-[u S994 . 1 `S974 1 . 1 0 `S980 1 . 1 0 `S987 1 . 1 0 `S991 1 . 1 0 ]
+[u S873 . 1 `S853 1 . 1 0 `S859 1 . 1 0 `S866 1 . 1 0 `S870 1 . 1 0 ]
 "39358
 "39358
-[v _T1CONbits T1CONbits `VES994  1 e 1 @798 ]
+[v _T1CONbits T1CONbits `VES873  1 e 1 @798 ]
 "39512
 [v _T1GCON T1GCON `VEuc  1 e 1 @799 ]
-[s S1020 . 1 `uc 1 . 1 0 :2:0 
+[s S899 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 GVAL 1 0 :1:2 
 `uc 1 GGO 1 0 :1:3 
 `uc 1 GSPM 1 0 :1:4 
@@ -665,7 +653,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 GE 1 0 :1:7 
 ]
 "39550
-[s S1028 . 1 `uc 1 . 1 0 :2:0 
+[s S907 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T1GVAL 1 0 :1:2 
 `uc 1 T1GGO 1 0 :1:3 
 `uc 1 T1GSPM 1 0 :1:4 
@@ -674,18 +662,18 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 T1GE 1 0 :1:7 
 ]
 "39550
-[s S1036 . 1 `uc 1 . 1 0 :3:0 
+[s S915 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_DONE 1 0 :1:3 
 ]
 "39550
-[s S1039 . 1 `uc 1 . 1 0 :3:0 
+[s S918 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_T1DONE 1 0 :1:3 
 ]
 "39550
-[u S1042 . 1 `S1020 1 . 1 0 `S1028 1 . 1 0 `S1036 1 . 1 0 `S1039 1 . 1 0 ]
+[u S921 . 1 `S899 1 . 1 0 `S907 1 . 1 0 `S915 1 . 1 0 `S918 1 . 1 0 ]
 "39550
 "39550
-[v _T1GCONbits T1GCONbits `VES1042  1 e 1 @799 ]
+[v _T1GCONbits T1GCONbits `VES921  1 e 1 @799 ]
 "39726
 [v _T1GATE T1GATE `VEuc  1 e 1 @800 ]
 "39892
@@ -724,7 +712,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _WPUE WPUE `VEuc  1 e 1 @1057 ]
 "59934
 [v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
-[s S202 . 1 `uc 1 SWIE 1 0 :1:0 
+[s S134 . 1 `uc 1 SWIE 1 0 :1:0 
 `uc 1 HLVDIE 1 0 :1:1 
 `uc 1 OSFIE 1 0 :1:2 
 `uc 1 CSWIE 1 0 :1:3 
@@ -734,11 +722,11 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 IOCIE 1 0 :1:7 
 ]
 "65057
-[u S211 . 1 `S202 1 . 1 0 ]
+[u S143 . 1 `S134 1 . 1 0 ]
 "65057
 "65057
-[v _PIE0bits PIE0bits `VES211  1 e 1 @1182 ]
-[s S942 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+[v _PIE0bits PIE0bits `VES143  1 e 1 @1182 ]
+[s S821 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
 `uc 1 SPI1TXIE 1 0 :1:1 
 `uc 1 SPI1IE 1 0 :1:2 
 `uc 1 TMR2IE 1 0 :1:3 
@@ -748,46 +736,30 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 TMR0IE 1 0 :1:7 
 ]
 "65251
-[u S951 . 1 `S942 1 . 1 0 ]
+[u S830 . 1 `S821 1 . 1 0 ]
 "65251
 "65251
-[v _PIE3bits PIE3bits `VES951  1 e 1 @1185 ]
-[s S107 . 1 `uc 1 U1RXIE 1 0 :1:0 
-`uc 1 U1TXIE 1 0 :1:1 
-`uc 1 U1EIE 1 0 :1:2 
-`uc 1 U1IE 1 0 :1:3 
-`uc 1 CANRXIE 1 0 :1:4 
-`uc 1 CANTXIE 1 0 :1:5 
-`uc 1 PWM1PIE 1 0 :1:6 
-`uc 1 PWM1IE 1 0 :1:7 
-]
-"65313
-[u S116 . 1 `S107 1 . 1 0 ]
-"65313
-"65313
-[v _PIE4bits PIE4bits `VES116  1 e 1 @1186 ]
-"100 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
-[v _rxMsgData rxMsgData `VE[8]uc  1 s 8 rxMsgData ]
-[s S39 CAN1_RX_FIFO 2 `E22386 1 channel 1 0 `VEuc 1 fifoHead 1 1 ]
-"102
-[v _rxFifos rxFifos `VE[1]S39  1 s 2 rxFifos ]
-"108
-[v _DLC_BYTES DLC_BYTES `C[9]uc  1 s 9 DLC_BYTES ]
-"110
-[v _CAN1_FIFO1NotEmptyHandler CAN1_FIFO1NotEmptyHandler `*.37(v  1 s 2 CAN1_FIFO1NotEmptyHandler ]
+[v _PIE3bits PIE3bits `VES830  1 e 1 @1185 ]
+"103 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
+[v _rxMsgData rxMsgData `[8]uc  1 s 8 rxMsgData ]
+[s S26 CAN1_RX_FIFO 2 `E22458 1 channel 1 0 `VEuc 1 fifoHead 1 1 ]
+"105
+[v _rxFifos rxFifos `VE[1]S26  1 s 2 rxFifos ]
 "111
-[v _CAN1_InvalidMessageHandler CAN1_InvalidMessageHandler `*.37(v  1 s 2 CAN1_InvalidMessageHandler ]
-"112
-[v _CAN1_BusWakeUpActivityHandler CAN1_BusWakeUpActivityHandler `*.37(v  1 s 2 CAN1_BusWakeUpActivityHandler ]
+[v _DLC_BYTES DLC_BYTES `C[9]uc  1 s 9 DLC_BYTES ]
 "113
-[v _CAN1_BusErrorHandler CAN1_BusErrorHandler `*.37(v  1 s 2 CAN1_BusErrorHandler ]
+[v _CAN1_InvalidMessageHandler CAN1_InvalidMessageHandler `*.37(v  1 s 2 CAN1_InvalidMessageHandler ]
 "114
-[v _CAN1_ModeChangeHandler CAN1_ModeChangeHandler `*.37(v  1 s 2 CAN1_ModeChangeHandler ]
+[v _CAN1_BusWakeUpActivityHandler CAN1_BusWakeUpActivityHandler `*.37(v  1 s 2 CAN1_BusWakeUpActivityHandler ]
 "115
-[v _CAN1_SystemErrorHandler CAN1_SystemErrorHandler `*.37(v  1 s 2 CAN1_SystemErrorHandler ]
+[v _CAN1_BusErrorHandler CAN1_BusErrorHandler `*.37(v  1 s 2 CAN1_BusErrorHandler ]
 "116
-[v _CAN1_TxAttemptHandler CAN1_TxAttemptHandler `*.37(v  1 s 2 CAN1_TxAttemptHandler ]
+[v _CAN1_ModeChangeHandler CAN1_ModeChangeHandler `*.37(v  1 s 2 CAN1_ModeChangeHandler ]
 "117
+[v _CAN1_SystemErrorHandler CAN1_SystemErrorHandler `*.37(v  1 s 2 CAN1_SystemErrorHandler ]
+"118
+[v _CAN1_TxAttemptHandler CAN1_TxAttemptHandler `*.37(v  1 s 2 CAN1_TxAttemptHandler ]
+"119
 [v _CAN1_RxBufferOverflowHandler CAN1_RxBufferOverflowHandler `*.37(v  1 s 2 CAN1_RxBufferOverflowHandler ]
 "61 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr0.c
 [v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
@@ -833,7 +805,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "195
 [v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
 "197
 } 0
 "63 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr0.c
@@ -844,7 +816,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "168
 [v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
 "170
 } 0
 "76 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/mcc.c
@@ -867,264 +839,108 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 {
 "56
 } 0
-"245 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
+"248 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
 {
-"272
+"275
 } 0
-"187
+"190
 [v _CAN1_TX_FIFO_Configuration CAN1_TX_FIFO_Configuration `(v  1 s 1 CAN1_TX_FIFO_Configuration ]
 {
-"201
+"204
 } 0
-"151
+"149
 [v _CAN1_RX_FIFO_ResetInfo CAN1_RX_FIFO_ResetInfo `(v  1 e 1 0 ]
 {
-"153
-[v CAN1_RX_FIFO_ResetInfo@index index `uc  1 a 1 0 ]
-"159
+"151
+[v CAN1_RX_FIFO_ResetInfo@index index `uc  1 a 1 2 ]
+"157
 } 0
-"183
+"175
 [v _CAN1_RX_FIFO_FilterMaskConfiguration CAN1_RX_FIFO_FilterMaskConfiguration `(v  1 s 1 CAN1_RX_FIFO_FilterMaskConfiguration ]
 {
-"185
+"188
 } 0
-"161
+"159
 [v _CAN1_RX_FIFO_Configuration CAN1_RX_FIFO_Configuration `(v  1 s 1 CAN1_RX_FIFO_Configuration ]
 {
-"181
+"173
 } 0
-"707
-[v _CAN1_SetFIFO1NotEmptyHandler CAN1_SetFIFO1NotEmptyHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetFIFO1NotEmptyHandler@handler handler `*.37(v  1 p 2 0 ]
-"710
-} 0
-"274
+"277
 [v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22356  1 e 1 0 ]
 {
 [v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 wreg ]
-"276
-[v CAN1_OperationModeSet@status status `E22356  1 a 1 1 ]
+"279
+[v CAN1_OperationModeSet@status status `E22356  1 a 1 3 ]
+"280
+[v CAN1_OperationModeSet@opMode opMode `E22346  1 a 1 2 ]
 "277
-[v CAN1_OperationModeSet@opMode opMode `E22346  1 a 1 0 ]
-"274
 [v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 wreg ]
-"276
-[v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 2 ]
-"301
+"279
+[v CAN1_OperationModeSet@requestMode requestMode `CE22346  1 a 1 4 ]
+"304
 } 0
-"219
+"306
+[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
+{
+"309
+} 0
+"222
 [v _CAN1_ErrorNotificationInterruptEnable CAN1_ErrorNotificationInterruptEnable `(v  1 s 1 CAN1_ErrorNotificationInterruptEnable ]
 {
-"243
-} 0
-"644
-[v _CAN1_SetTxAttemptInterruptHandler CAN1_SetTxAttemptInterruptHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetTxAttemptInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
-"647
-} 0
-"639
-[v _CAN1_SetSystemErrorInterruptHandler CAN1_SetSystemErrorInterruptHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetSystemErrorInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
-"642
-} 0
-"649
-[v _CAN1_SetRxBufferOverFlowInterruptHandler CAN1_SetRxBufferOverFlowInterruptHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetRxBufferOverFlowInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
-"652
-} 0
-"634
-[v _CAN1_SetModeChangeInterruptHandler CAN1_SetModeChangeInterruptHandler `(v  1 e 1 0 ]
-{
-[v CAN1_SetModeChangeInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
-"637
+"246
 } 0
 "619
-[v _CAN1_SetInvalidMessageInterruptHandler CAN1_SetInvalidMessageInterruptHandler `(v  1 e 1 0 ]
+[v _CAN1_SetTxAttemptInterruptHandler CAN1_SetTxAttemptInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetInvalidMessageInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
+[v CAN1_SetTxAttemptInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
 "622
 } 0
-"624
-[v _CAN1_SetBusWakeUpActivityInterruptHandler CAN1_SetBusWakeUpActivityInterruptHandler `(v  1 e 1 0 ]
+"614
+[v _CAN1_SetSystemErrorInterruptHandler CAN1_SetSystemErrorInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetBusWakeUpActivityInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
+[v CAN1_SetSystemErrorInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
+"617
+} 0
+"624
+[v _CAN1_SetRxBufferOverFlowInterruptHandler CAN1_SetRxBufferOverFlowInterruptHandler `(v  1 e 1 0 ]
+{
+[v CAN1_SetRxBufferOverFlowInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
 "627
 } 0
-"629
+"609
+[v _CAN1_SetModeChangeInterruptHandler CAN1_SetModeChangeInterruptHandler `(v  1 e 1 0 ]
+{
+[v CAN1_SetModeChangeInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
+"612
+} 0
+"594
+[v _CAN1_SetInvalidMessageInterruptHandler CAN1_SetInvalidMessageInterruptHandler `(v  1 e 1 0 ]
+{
+[v CAN1_SetInvalidMessageInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
+"597
+} 0
+"599
+[v _CAN1_SetBusWakeUpActivityInterruptHandler CAN1_SetBusWakeUpActivityInterruptHandler `(v  1 e 1 0 ]
+{
+[v CAN1_SetBusWakeUpActivityInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
+"602
+} 0
+"604
 [v _CAN1_SetBusErrorInterruptHandler CAN1_SetBusErrorInterruptHandler `(v  1 e 1 0 ]
 {
-[v CAN1_SetBusErrorInterruptHandler@handler handler `*.37(v  1 p 2 0 ]
-"632
+[v CAN1_SetBusErrorInterruptHandler@handler handler `*.37(v  1 p 2 2 ]
+"607
 } 0
-"203
+"206
 [v _CAN1_BitRateConfiguration CAN1_BitRateConfiguration `(v  1 s 1 CAN1_BitRateConfiguration ]
 {
-"217
+"220
 } 0
 "17 C:\Users\panze\Documents\GitHub\ASSI\PARAMETERS.c
 [v _PARAMETERS_Init PARAMETERS_Init `(v  1 e 1 0 ]
 {
 "20
-} 0
-"121 C:\Users\panze\Documents\GitHub\ASSI\MESSAGES.c
-[v _MESSSAGES_ASSIState MESSSAGES_ASSIState `(v  1 e 1 0 ]
-{
-"136
-} 0
-"23
-[v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
-{
-[v CANWriteMessage@id id `ul  1 p 4 29 ]
-[v CANWriteMessage@dataLength dataLength `uc  1 p 1 33 ]
-[v CANWriteMessage@data1 data1 `uc  1 p 1 34 ]
-[v CANWriteMessage@data2 data2 `uc  1 p 1 35 ]
-[v CANWriteMessage@data3 data3 `uc  1 p 1 36 ]
-[v CANWriteMessage@data4 data4 `uc  1 p 1 37 ]
-[v CANWriteMessage@data5 data5 `uc  1 p 1 38 ]
-[v CANWriteMessage@data6 data6 `uc  1 p 1 39 ]
-[v CANWriteMessage@data7 data7 `uc  1 p 1 40 ]
-[v CANWriteMessage@data8 data8 `uc  1 p 1 41 ]
-"65
-} 0
-"564 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
-[v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22361  1 e 1 0 ]
-{
-[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-"566
-[v CAN1_TransmitFIFOStatusGet@status status `E22361  1 a 1 2 ]
-"564
-[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-"566
-[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 3 ]
-"574
-} 0
-"542
-[v _CAN1_Transmit CAN1_Transmit `(E22340  1 e 1 0 ]
-{
-[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-"551
-[v CAN1_Transmit@txFifoObj txFifoObj `*.39uc  1 a 2 26 ]
-"544
-[v CAN1_Transmit@status status `E22340  1 a 1 25 ]
-"542
-[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
-[s S24 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-[u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
-[s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v CAN1_Transmit@txCanMsg txCanMsg `*.39S33  1 p 2 23 ]
-[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 28 ]
-"562
-} 0
-"462
-[v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
-{
-[v isTxChannel@channel channel `uc  1 a 1 wreg ]
-[v isTxChannel@channel channel `uc  1 a 1 wreg ]
-"464
-[v isTxChannel@channel channel `uc  1 a 1 1 ]
-"465
-} 0
-"472
-[v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
-{
-"474
-[v WriteMessageToFifo@msgId msgId `ul  1 a 4 19 ]
-"475
-[v WriteMessageToFifo@status status `uc  1 a 1 18 ]
-"472
-[v WriteMessageToFifo@txFifoObj txFifoObj `*.39uc  1 p 2 11 ]
-[s S24 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-[u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
-[s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v WriteMessageToFifo@txCanMsg txCanMsg `*.39S33  1 p 2 13 ]
-"511
-} 0
-"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
-[v _memcpy memcpy `(*.39v  1 e 2 0 ]
-{
-"8
-[v memcpy@s s `*.39Cuc  1 a 2 8 ]
-"7
-[v memcpy@d d `*.39uc  1 a 2 6 ]
-"9
-[v memcpy@tmp tmp `uc  1 a 1 10 ]
-"4
-[v memcpy@d1 d1 `*.39v  1 p 2 0 ]
-[v memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
-[v memcpy@n n `ui  1 p 2 4 ]
-"18
-} 0
-"513 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
-[v _ValidateTransmission ValidateTransmission `(E22340  1 s 1 ValidateTransmission ]
-{
-[v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
-[s S24 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-"516
-[u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
-[v ValidateTransmission@field field `S30  1 a 1 9 ]
-"515
-[v ValidateTransmission@txMsgStatus txMsgStatus `E22340  1 a 1 8 ]
-"513
-[v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
-[s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v ValidateTransmission@txCanMsg txCanMsg `*.39S33  1 p 2 1 ]
-"515
-[v ValidateTransmission@validChannel validChannel `uc  1 a 1 6 ]
-"540
-} 0
-"467
-[v _GetTxFifoStatus GetTxFifoStatus `(E22361  1 s 1 GetTxFifoStatus ]
-{
-[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
-[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
-"469
-[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 0 ]
-"470
-} 0
-"303
-[v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
-{
-"306
-} 0
-"601
-[v _CAN1_IsTxErrorWarning CAN1_IsTxErrorWarning `(a  1 e 1 0 ]
-{
-"604
-} 0
-"606
-[v _CAN1_IsTxErrorActive CAN1_IsTxErrorActive `(a  1 e 1 0 ]
-{
-"609
-} 0
-"596
-[v _CAN1_IsTxErrorPassive CAN1_IsTxErrorPassive `(a  1 e 1 0 ]
-{
-"599
-} 0
-"576
-[v _CAN1_IsBusOff CAN1_IsBusOff `(a  1 e 1 0 ]
-{
-"579
 } 0
 "56 C:\Users\panze\Documents\GitHub\ASSI\main.c
 [v _Init_hardware Init_hardware `(v  1 e 1 0 ]
@@ -1134,13 +950,129 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "38 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/delay.c
 [v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
 {
-[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 0 ]
+[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 2 ]
 "42
+} 0
+"68 C:\Users\panze\Documents\GitHub\ASSI\MESSAGES.c
+[v _CANReadMessage CANReadMessage `(v  1 e 1 0 ]
+{
+"70
+[v CANReadMessage@id id `ul  1 a 4 48 ]
+"73
+[v CANReadMessage@data1 data1 `uc  1 a 1 52 ]
+"118
+} 0
+"15 C:\Users\panze\Documents\GitHub\ASSI\SPEAKER.c
+[v _SPEAKER SPEAKER `(v  1 e 1 0 ]
+{
+"21
+} 0
+"12 C:\Users\panze\Documents\GitHub\ASSI\LEDS.c
+[v _LEDS LEDS `(v  1 e 1 0 ]
+{
+"46
+} 0
+"394 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
+[v _CAN1_ReceivedMessageCountGet CAN1_ReceivedMessageCountGet `(uc  1 e 1 0 ]
+{
+"414
+[v CAN1_ReceivedMessageCountGet@fifoHead fifoHead `uc  1 a 1 10 ]
+"413
+[v CAN1_ReceivedMessageCountGet@fifoTail fifoTail `uc  1 a 1 9 ]
+"405
+[v CAN1_ReceivedMessageCountGet@fifoDepth fifoDepth `uc  1 a 1 8 ]
+[v CAN1_ReceivedMessageCountGet@numOfMsg numOfMsg `uc  1 a 1 5 ]
+"400
+[v CAN1_ReceivedMessageCountGet@channel channel `E22458  1 a 1 7 ]
+"401
+[v CAN1_ReceivedMessageCountGet@rxMsgStatus rxMsgStatus `E22453  1 a 1 6 ]
+"396
+[v CAN1_ReceivedMessageCountGet@index index `uc  1 a 1 11 ]
+[v CAN1_ReceivedMessageCountGet@totalMsgObj totalMsgObj `uc  1 a 1 4 ]
+"435
+} 0
+"355
+[v _CAN1_Receive CAN1_Receive `(a  1 e 1 0 ]
+{
+"367
+[v CAN1_Receive@rxFifoObj rxFifoObj `*.39uc  1 a 2 30 ]
+"362
+[v CAN1_Receive@channel channel `E22458  1 a 1 33 ]
+"363
+[v CAN1_Receive@rxMsgStatus rxMsgStatus `E22453  1 a 1 32 ]
+"357
+[v CAN1_Receive@index index `uc  1 a 1 34 ]
+"358
+[v CAN1_Receive@status status `a  1 a 1 29 ]
+[s S290 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+"355
+[u S296 . 1 `uc 1 msgfields 1 0 `S290 1 . 1 0 ]
+[s S299 . 7 `ul 1 msgId 4 0 `S296 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v CAN1_Receive@rxCanMsg rxCanMsg `*.39S299  1 p 2 25 ]
+"392
+} 0
+"321
+[v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
+{
+"323
+[v ReadMessageFromFifo@msgId msgId `ul  1 a 4 20 ]
+"324
+[v ReadMessageFromFifo@status status `uc  1 a 1 24 ]
+"321
+[v ReadMessageFromFifo@rxFifoObj rxFifoObj `*.39uc  1 p 2 13 ]
+[s S290 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+[u S296 . 1 `uc 1 msgfields 1 0 `S290 1 . 1 0 ]
+[s S299 . 7 `ul 1 msgId 4 0 `S296 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v ReadMessageFromFifo@rxCanMsg rxCanMsg `*.39S299  1 p 2 15 ]
+"353
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v memcpy@s s `*.39Cuc  1 a 2 10 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 8 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 12 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 2 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 4 ]
+[v memcpy@n n `ui  1 p 2 6 ]
+"18
+} 0
+"316 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
+[v _GetRxFifoStatus GetRxFifoStatus `(E22453  1 s 1 GetRxFifoStatus ]
+{
+[v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
+[v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
+"318
+[v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 2 ]
+"319
+} 0
+"311
+[v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
+{
+[v GetRxFifoDepth@validChannel validChannel `uc  1 a 1 wreg ]
+[v GetRxFifoDepth@validChannel validChannel `uc  1 a 1 wreg ]
+"313
+[v GetRxFifoDepth@validChannel validChannel `uc  1 a 1 3 ]
+"314
 } 0
 "58 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
-"81
+"77
 } 0
 "164 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr1.c
 [v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
@@ -1149,7 +1081,12 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v TMR1_ISR@CountCallBack CountCallBack `VEui  1 s 2 CountCallBack ]
 "184
 } 0
-"127
+"12 C:\Users\panze\Documents\GitHub\ASSI\LEDS.c
+[v i2_LEDS LEDS `(v  1 e 1 0 ]
+{
+"46
+} 0
+"127 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr1.c
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
 {
 [v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
@@ -1172,7 +1109,12 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v TMR0_ISR@CountCallBack CountCallBack `VEus  1 s 2 CountCallBack ]
 "156
 } 0
-"158
+"15 C:\Users\panze\Documents\GitHub\ASSI\SPEAKER.c
+[v i2_SPEAKER SPEAKER `(v  1 e 1 0 ]
+{
+"21
+} 0
+"158 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr0.c
 [v _TMR0_CallBack TMR0_CallBack `(v  1 e 1 0 ]
 {
 "166
@@ -1207,189 +1149,43 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 {
 "63
 } 0
-"713 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
-[v _CAN1_RXI_ISR CAN1_RXI_ISR `(v  1 e 1 0 ]
-{
-"723
-} 0
-"119
-[v _DefaultFIFO1NotEmptyHandler DefaultFIFO1NotEmptyHandler `(v  1 s 1 DefaultFIFO1NotEmptyHandler ]
-{
-"121
-} 0
-"68 C:\Users\panze\Documents\GitHub\ASSI\MESSAGES.c
-[v _CANReadMessage CANReadMessage `(v  1 e 1 0 ]
-{
-"70
-[v CANReadMessage@id id `ul  1 a 4 50 ]
-"73
-[v CANReadMessage@data1 data1 `uc  1 a 1 54 ]
-"116
-} 0
-"15 C:\Users\panze\Documents\GitHub\ASSI\SPEAKER.c
-[v _SPEAKER SPEAKER `(v  1 e 1 0 ]
-{
-"21
-} 0
-"12 C:\Users\panze\Documents\GitHub\ASSI\LEDS.c
-[v _LEDS LEDS `(v  1 e 1 0 ]
-{
-"46
-} 0
-"419 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
-[v _CAN1_ReceivedMessageCountGet CAN1_ReceivedMessageCountGet `(uc  1 e 1 0 ]
-{
-"439
-[v CAN1_ReceivedMessageCountGet@fifoHead fifoHead `uc  1 a 1 8 ]
-"438
-[v CAN1_ReceivedMessageCountGet@fifoTail fifoTail `uc  1 a 1 7 ]
-"430
-[v CAN1_ReceivedMessageCountGet@fifoDepth fifoDepth `uc  1 a 1 6 ]
-[v CAN1_ReceivedMessageCountGet@numOfMsg numOfMsg `uc  1 a 1 3 ]
-"425
-[v CAN1_ReceivedMessageCountGet@channel channel `E22386  1 a 1 5 ]
-"426
-[v CAN1_ReceivedMessageCountGet@rxMsgStatus rxMsgStatus `E22534  1 a 1 4 ]
-"421
-[v CAN1_ReceivedMessageCountGet@index index `uc  1 a 1 9 ]
-[v CAN1_ReceivedMessageCountGet@totalMsgObj totalMsgObj `uc  1 a 1 2 ]
-"460
-} 0
-"384
-[v _CAN1_Receive CAN1_Receive `(a  1 e 1 0 ]
-{
-"386
-[v CAN1_Receive@index index `uc  1 a 1 36 ]
-"387
-[v CAN1_Receive@status status `a  1 a 1 35 ]
-[s S24 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-"384
-[u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
-[s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v CAN1_Receive@rxCanMsg rxCanMsg `*.39S33  1 p 2 33 ]
-"400
-} 0
-"352
-[v _Receive Receive `(a  1 s 1 Receive ]
-{
-[v Receive@index index `uc  1 a 1 wreg ]
-"359
-[v Receive@rxFifoObj rxFifoObj `*.39uc  1 a 2 29 ]
-"355
-[v Receive@rxMsgStatus rxMsgStatus `E22534  1 a 1 31 ]
-"354
-[v Receive@status status `a  1 a 1 28 ]
-"352
-[v Receive@index index `uc  1 a 1 wreg ]
-[v Receive@channel channel `E22386  1 p 1 23 ]
-[s S24 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-[u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
-[s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v Receive@rxCanMsg rxCanMsg `*.39S33  1 p 2 24 ]
-"354
-[v Receive@index index `uc  1 a 1 32 ]
-"382
-} 0
-"318
-[v _ReadMessageFromFifo ReadMessageFromFifo `(v  1 s 1 ReadMessageFromFifo ]
-{
-"320
-[v ReadMessageFromFifo@msgId msgId `ul  1 a 4 18 ]
-"321
-[v ReadMessageFromFifo@status status `uc  1 a 1 22 ]
-"318
-[v ReadMessageFromFifo@rxFifoObj rxFifoObj `*.39uc  1 p 2 11 ]
-[s S24 . 1 `uc 1 idType 1 0 :1:0 
-`uc 1 frameType 1 0 :1:1 
-`uc 1 dlc 1 0 :4:2 
-`uc 1 formatType 1 0 :1:6 
-`uc 1 brs 1 0 :1:7 
-]
-[u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
-[s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
-[v ReadMessageFromFifo@rxCanMsg rxCanMsg `*.39S33  1 p 2 13 ]
-"350
-} 0
-"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
-[v i2_memcpy memcpy `(*.39v  1 e 2 0 ]
-{
-"8
-[v i2memcpy@s s `*.39Cuc  1 a 2 8 ]
-"7
-[v i2memcpy@d d `*.39uc  1 a 2 6 ]
-"9
-[v i2memcpy@tmp tmp `uc  1 a 1 10 ]
-"4
-[v i2memcpy@d1 d1 `*.39v  1 p 2 0 ]
-[v i2memcpy@s1 s1 `*.39Cv  1 p 2 2 ]
-[v i2memcpy@n n `ui  1 p 2 4 ]
-"18
-} 0
-"313 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
-[v _GetRxFifoStatus GetRxFifoStatus `(E22534  1 s 1 GetRxFifoStatus ]
-{
-[v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
-[v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
-"315
-[v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 0 ]
-"316
-} 0
-"308
-[v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
-{
-[v GetRxFifoDepth@validChannel validChannel `uc  1 a 1 wreg ]
-[v GetRxFifoDepth@validChannel validChannel `uc  1 a 1 wreg ]
-"310
-[v GetRxFifoDepth@validChannel validChannel `uc  1 a 1 1 ]
-"311
-} 0
-"654
+"629 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _CAN1_ISR CAN1_ISR `(v  1 e 1 0 ]
 {
-"705
+"680
 } 0
-"143
+"141
 [v _DefaultTxAttemptHandler DefaultTxAttemptHandler `(v  1 s 1 DefaultTxAttemptHandler ]
 {
-"145
+"143
 } 0
-"139
+"137
 [v _DefaultSystemErrorHandler DefaultSystemErrorHandler `(v  1 s 1 DefaultSystemErrorHandler ]
 {
-"141
+"139
 } 0
-"147
+"145
 [v _DefaultRxBufferOverflowHandler DefaultRxBufferOverflowHandler `(v  1 s 1 DefaultRxBufferOverflowHandler ]
 {
-"149
+"147
 } 0
-"135
+"133
 [v _DefaultModeChangeHandler DefaultModeChangeHandler `(v  1 s 1 DefaultModeChangeHandler ]
 {
-"137
+"135
 } 0
-"123
+"121
 [v _DefaultInvalidMessageHandler DefaultInvalidMessageHandler `(v  1 s 1 DefaultInvalidMessageHandler ]
 {
-"125
+"123
 } 0
-"127
+"125
 [v _DefaultBusWakeUpActivityHandler DefaultBusWakeUpActivityHandler `(v  1 s 1 DefaultBusWakeUpActivityHandler ]
 {
-"129
+"127
 } 0
-"131
+"129
 [v _DefaultBusErrorHandler DefaultBusErrorHandler `(v  1 s 1 DefaultBusErrorHandler ]
 {
-"133
+"131
 } 0

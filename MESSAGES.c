@@ -79,6 +79,8 @@ void CANReadMessage (void)
     unsigned char data7;
     unsigned char data8;
     
+    Nop();
+    
     if(CAN1_ReceivedMessageCountGet() > 0) 
     {
         if(TRUE == CAN1_Receive(&msgReceipt))

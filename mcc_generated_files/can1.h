@@ -63,10 +63,6 @@ typedef enum
     TXQ = 0
 } CAN1_TX_FIFO_CHANNELS;
 
-typedef enum
-{
-    FIFO1 = 1
-} CAN1_RX_FIFO_CHANNELS;
 
 /**
   Section: CAN Module APIs
@@ -233,46 +229,6 @@ CAN_OP_MODES CAN1_OperationModeGet(void);
     </code>
 */
 bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
-
-/**
-  @Summary
-    Reads the message object from the specified CAN receive FIFO.
-
-  @Description
-    This routine reads a message object from the specified CAN receive FIFO.
-
-  @Preconditions
-    CAN1_Initialize() function should be called before calling this function. 
-
-  @Param
-    fifoChannel - CAN RX FIFO channel
-    rxCanMsg    - pointer to the message object
-
-  @Returns
-    true        - Receive successful
-    false       - Receive failure
-
-  @Example
-    <code>
-    volatile CAN_MSG_OBJ gMsg;
-    
-    void CustomFIFO1Handler(void)
-    {
-        CAN1_ReceiveFrom(FIFO1, &gMsg));
-    }
-
-    void main(void)
-    {
-        SYSTEM_Initialize();
-        CAN1_SetFIFO1FullHandler(&CustomFIFO1Handler);
-        
-        INTERRUPT_GlobalInterruptEnable();
-
-        while(1);
-    }
-    </code>
-*/
-bool CAN1_ReceiveFrom(const CAN1_RX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *rxCanMsg);
 
 /**
   @Summary
@@ -1290,10 +1246,10 @@ void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
 
 /**
   @Summary
-    Sets the RX FIFO Not Empty interrupt handler.
+    Sets the Disable RX FIFO Interrupt interrupt handler.
 
   @Description
-    This routine sets the RX FIFO Not Empty interrupt handler for FIFO1.
+    This routine sets the Disable RX FIFO Interrupt interrupt handler for FIFO1.
 
   @Param
     Address of the callback routine.
@@ -1313,7 +1269,7 @@ void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
     void main(void)
     {
         SYSTEM_Initialize();
-        CAN1_SetFIFO1NotEmptyHandler(&CustomFIFO1Handler);
+        CAN1_SetFIFO1nullHandler(&CustomFIFO1Handler);
         
         INTERRUPT_GlobalInterruptEnable();
 
@@ -1321,7 +1277,7 @@ void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
     }
     </code>
 */
-void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void));
+void CAN1_SetFIFO1nullHandler(void (*handler)(void));
 
 /**
   @Summary
@@ -1369,6 +1325,5 @@ void CAN1_SetTXQnullHandler(void (*handler)(void));
 
 
 void CAN1_ISR(void);
-void CAN1_RXI_ISR(void);
 
 #endif  //CAN1_H

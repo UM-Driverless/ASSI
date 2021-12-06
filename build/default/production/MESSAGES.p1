@@ -27,20 +27,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;MESSAGES.c: 39:     msgTransmit.field.idType = CAN_FRAME_EXT;
 [c E22212 0 1 .. ]
 [n E22212 . CAN_FRAME_STD CAN_FRAME_EXT  ]
-"390 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 390: _Bool CAN1_IsBusOff(void);
+"346 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 346: _Bool CAN1_IsBusOff(void);
 [v _CAN1_IsBusOff `(a ~T0 @X0 0 ef ]
 "8 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\builtins.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
-"448 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 448: _Bool CAN1_IsTxErrorPassive(void);
+"404 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 404: _Bool CAN1_IsTxErrorPassive(void);
 [v _CAN1_IsTxErrorPassive `(a ~T0 @X0 0 ef ]
-"507
-[; ;./mcc_generated_files/can1.h: 507: _Bool CAN1_IsTxErrorWarning(void);
+"463
+[; ;./mcc_generated_files/can1.h: 463: _Bool CAN1_IsTxErrorWarning(void);
 [v _CAN1_IsTxErrorWarning `(a ~T0 @X0 0 ef ]
-"566
-[; ;./mcc_generated_files/can1.h: 566: _Bool CAN1_IsTxErrorActive(void);
+"522
+[; ;./mcc_generated_files/can1.h: 522: _Bool CAN1_IsTxErrorActive(void);
 [v _CAN1_IsTxErrorActive `(a ~T0 @X0 0 ef ]
 "60 MESSAGES.c
 [; ;MESSAGES.c: 60:     if(CAN_TX_FIFO_AVAILABLE == (CAN1_TransmitFIFOStatusGet(TXQ) & CAN_TX_FIFO_AVAILABLE))
@@ -48,21 +48,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n E22245 . CAN_TX_FIFO_FULL CAN_TX_FIFO_AVAILABLE  ]
 [c E22267 0 .. ]
 [n E22267 . TXQ  ]
-"815 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 815: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
+"771 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 771: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
 [v _CAN1_TransmitFIFOStatusGet `(E22245 ~T0 @X0 0 ef1`CE22267 ]
 "62 MESSAGES.c
 [; ;MESSAGES.c: 62:         CAN1_Transmit(TXQ, &msgTransmit);
 [c E22224 0 1 2 3 .. ]
 [n E22224 . CAN_TX_MSG_REQUEST_SUCCESS CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR CAN_TX_MSG_REQUEST_BRS_ERROR CAN_TX_MSG_REQUEST_FIFO_FULL  ]
-"334 ./mcc_generated_files/can1.h
-[; ;./mcc_generated_files/can1.h: 334: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
+"290 ./mcc_generated_files/can1.h
+[; ;./mcc_generated_files/can1.h: 290: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
 [v _CAN1_Transmit `(E22224 ~T0 @X0 0 ef2`CE22267`*S3178 ]
-"857
-[; ;./mcc_generated_files/can1.h: 857: uint8_t CAN1_ReceivedMessageCountGet(void);
+"813
+[; ;./mcc_generated_files/can1.h: 813: uint8_t CAN1_ReceivedMessageCountGet(void);
 [v _CAN1_ReceivedMessageCountGet `(uc ~T0 @X0 0 ef ]
-"235
-[; ;./mcc_generated_files/can1.h: 235: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
+"231
+[; ;./mcc_generated_files/can1.h: 231: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
 [v _CAN1_Receive `(a ~T0 @X0 0 ef1`*S3178 ]
 "33 ./PARAMETERS.h
 [; ;./PARAMETERS.h: 33: extern unsigned char ucASState_prev;
@@ -3788,159 +3788,162 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;MESSAGES.c: 80:     unsigned char data8;
 [v _data8 `uc ~T0 @X0 1 a ]
 "82
-[; ;MESSAGES.c: 82:     if(CAN1_ReceivedMessageCountGet() > 0)
-[e $ ! > -> ( _CAN1_ReceivedMessageCountGet ..  `i -> 0 `i 3186  ]
-"83
-[; ;MESSAGES.c: 83:     {
-{
+[; ;MESSAGES.c: 82:     __nop();
+[e ( ___nop ..  ]
 "84
-[; ;MESSAGES.c: 84:         if(0x01 == CAN1_Receive(&msgReceipt))
-[e $ ! == -> 1 `i -> ( _CAN1_Receive (1 &U _msgReceipt `i 3187  ]
+[; ;MESSAGES.c: 84:     if(CAN1_ReceivedMessageCountGet() > 0)
+[e $ ! > -> ( _CAN1_ReceivedMessageCountGet ..  `i -> 0 `i 3186  ]
 "85
-[; ;MESSAGES.c: 85:         {
+[; ;MESSAGES.c: 85:     {
 {
 "86
-[; ;MESSAGES.c: 86:             __nop();
-[e ( ___nop ..  ]
+[; ;MESSAGES.c: 86:         if(0x01 == CAN1_Receive(&msgReceipt))
+[e $ ! == -> 1 `i -> ( _CAN1_Receive (1 &U _msgReceipt `i 3187  ]
 "87
-[; ;MESSAGES.c: 87:             id = msgReceipt.msgId;
-[e = _id . _msgReceipt 0 ]
+[; ;MESSAGES.c: 87:         {
+{
 "88
-[; ;MESSAGES.c: 88:             idType = msgReceipt.field.idType;
-[e = _idType . . . _msgReceipt 1 1 0 ]
+[; ;MESSAGES.c: 88:             __nop();
+[e ( ___nop ..  ]
 "89
-[; ;MESSAGES.c: 89:             dlc = msgReceipt.field.dlc;
-[e = _dlc . . . _msgReceipt 1 1 2 ]
+[; ;MESSAGES.c: 89:             id = msgReceipt.msgId;
+[e = _id . _msgReceipt 0 ]
 "90
-[; ;MESSAGES.c: 90:             data1 = msgReceipt.data[0];
-[e = _data1 *U + . _msgReceipt 2 * -> -> 0 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
+[; ;MESSAGES.c: 90:             idType = msgReceipt.field.idType;
+[e = _idType . . . _msgReceipt 1 1 0 ]
 "91
-[; ;MESSAGES.c: 91:             data2 = msgReceipt.data[1];
-[e = _data2 *U + . _msgReceipt 2 * -> -> 1 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
+[; ;MESSAGES.c: 91:             dlc = msgReceipt.field.dlc;
+[e = _dlc . . . _msgReceipt 1 1 2 ]
 "92
-[; ;MESSAGES.c: 92:             data3 = msgReceipt.data[2];
-[e = _data3 *U + . _msgReceipt 2 * -> -> 2 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
+[; ;MESSAGES.c: 92:             data1 = msgReceipt.data[0];
+[e = _data1 *U + . _msgReceipt 2 * -> -> 0 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
 "93
-[; ;MESSAGES.c: 93:             data4 = msgReceipt.data[3];
-[e = _data4 *U + . _msgReceipt 2 * -> -> 3 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
+[; ;MESSAGES.c: 93:             data2 = msgReceipt.data[1];
+[e = _data2 *U + . _msgReceipt 2 * -> -> 1 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
 "94
-[; ;MESSAGES.c: 94:             data5 = msgReceipt.data[4];
-[e = _data5 *U + . _msgReceipt 2 * -> -> 4 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
+[; ;MESSAGES.c: 94:             data3 = msgReceipt.data[2];
+[e = _data3 *U + . _msgReceipt 2 * -> -> 2 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
 "95
-[; ;MESSAGES.c: 95:             data6 = msgReceipt.data[5];
-[e = _data6 *U + . _msgReceipt 2 * -> -> 5 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
+[; ;MESSAGES.c: 95:             data4 = msgReceipt.data[3];
+[e = _data4 *U + . _msgReceipt 2 * -> -> 3 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
 "96
-[; ;MESSAGES.c: 96:             data7 = msgReceipt.data[6];
-[e = _data7 *U + . _msgReceipt 2 * -> -> 6 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
+[; ;MESSAGES.c: 96:             data5 = msgReceipt.data[4];
+[e = _data5 *U + . _msgReceipt 2 * -> -> 4 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
 "97
-[; ;MESSAGES.c: 97:             data8 = msgReceipt.data[7];
-[e = _data8 *U + . _msgReceipt 2 * -> -> 7 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
+[; ;MESSAGES.c: 97:             data6 = msgReceipt.data[5];
+[e = _data6 *U + . _msgReceipt 2 * -> -> 5 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
+"98
+[; ;MESSAGES.c: 98:             data7 = msgReceipt.data[6];
+[e = _data7 *U + . _msgReceipt 2 * -> -> 6 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
 "99
-[; ;MESSAGES.c: 99:             switch (id)
-[e $U 3189  ]
-"100
-[; ;MESSAGES.c: 100:             {
-{
+[; ;MESSAGES.c: 99:             data8 = msgReceipt.data[7];
+[e = _data8 *U + . _msgReceipt 2 * -> -> 7 `i `x -> -> # *U . _msgReceipt 2 `i `x ]
 "101
-[; ;MESSAGES.c: 101:                 case 0x500:
-[e :U 3190 ]
+[; ;MESSAGES.c: 101:             switch (id)
+[e $U 3189  ]
 "102
-[; ;MESSAGES.c: 102:                     ucASState_prev = ucASState;
-[e = _ucASState_prev _ucASState ]
-"103
-[; ;MESSAGES.c: 103:                     ucASState = ( data1 & 0x03 );
-[e = _ucASState -> & -> _data1 `i -> 3 `i `uc ]
-"104
-[; ;MESSAGES.c: 104:                     if (ucASState_prev != ucASState)
-[e $ ! != -> _ucASState_prev `i -> _ucASState `i 3191  ]
-"105
-[; ;MESSAGES.c: 105:                     {
+[; ;MESSAGES.c: 102:             {
 {
+"103
+[; ;MESSAGES.c: 103:                 case 0x502:
+[e :U 3190 ]
+"104
+[; ;MESSAGES.c: 104:                     ucASState_prev = ucASState;
+[e = _ucASState_prev _ucASState ]
+"105
+[; ;MESSAGES.c: 105:                     ucASState = ( data1 & 0x03 );
+[e = _ucASState -> & -> _data1 `i -> 3 `i `uc ]
 "106
-[; ;MESSAGES.c: 106:                         LEDS();
-[e ( _LEDS ..  ]
+[; ;MESSAGES.c: 106:                     if (ucASState_prev != ucASState)
+[e $ ! != -> _ucASState_prev `i -> _ucASState `i 3191  ]
 "107
-[; ;MESSAGES.c: 107:                         SPEAKER();
-[e ( _SPEAKER ..  ]
+[; ;MESSAGES.c: 107:                     {
+{
 "108
-[; ;MESSAGES.c: 108:                     }
+[; ;MESSAGES.c: 108:                         LEDS();
+[e ( _LEDS ..  ]
+"109
+[; ;MESSAGES.c: 109:                         SPEAKER();
+[e ( _SPEAKER ..  ]
+"110
+[; ;MESSAGES.c: 110:                     }
 }
 [e :U 3191 ]
-"109
-[; ;MESSAGES.c: 109:                     break;
-[e $U 3188  ]
-"110
-[; ;MESSAGES.c: 110:                 default:
-[e :U 3192 ]
 "111
-[; ;MESSAGES.c: 111:                     __nop();
-[e ( ___nop ..  ]
-"112
-[; ;MESSAGES.c: 112:                     break;
+[; ;MESSAGES.c: 111:                     break;
 [e $U 3188  ]
+"112
+[; ;MESSAGES.c: 112:                 default:
+[e :U 3192 ]
 "113
-[; ;MESSAGES.c: 113:             }
+[; ;MESSAGES.c: 113:                     __nop();
+[e ( ___nop ..  ]
+"114
+[; ;MESSAGES.c: 114:                     break;
+[e $U 3188  ]
+"115
+[; ;MESSAGES.c: 115:             }
 }
 [e $U 3188  ]
 [e :U 3189 ]
-[e [\ _id , $ -> -> -> 1280 `i `l `ul 3190
+[e [\ _id , $ -> -> -> 1282 `i `l `ul 3190
  3192 ]
 [e :U 3188 ]
-"114
-[; ;MESSAGES.c: 114:         }
+"116
+[; ;MESSAGES.c: 116:         }
 }
 [e :U 3187 ]
-"115
-[; ;MESSAGES.c: 115:     }
+"117
+[; ;MESSAGES.c: 117:     }
 }
 [e :U 3186 ]
-"116
-[; ;MESSAGES.c: 116: }
+"118
+[; ;MESSAGES.c: 118: }
 [e :UE 3185 ]
 }
-"121
-[; ;MESSAGES.c: 121: void MESSSAGES_ASSIState (void)
+"123
+[; ;MESSAGES.c: 123: void MESSSAGES_ASSIState (void)
 [v _MESSSAGES_ASSIState `(v ~T0 @X0 1 ef ]
-"122
-[; ;MESSAGES.c: 122: {
+"124
+[; ;MESSAGES.c: 124: {
 {
 [e :U _MESSSAGES_ASSIState ]
 [f ]
-"123
-[; ;MESSAGES.c: 123:     switch ( ucASSIName )
-[e $U 3195  ]
-"124
-[; ;MESSAGES.c: 124:     {
-{
 "125
-[; ;MESSAGES.c: 125:         case 0:
-[e :U 3196 ]
+[; ;MESSAGES.c: 125:     switch ( ucASSIName )
+[e $U 3195  ]
 "126
-[; ;MESSAGES.c: 126:             CANWriteMessage(0x350, 8, 0, 0, 0, 0, 0, 0, 0, 0);
-[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 848 `i `l `ul -> -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;MESSAGES.c: 126:     {
+{
 "127
-[; ;MESSAGES.c: 127:             break;
-[e $U 3194  ]
+[; ;MESSAGES.c: 127:         case 0:
+[e :U 3196 ]
 "128
-[; ;MESSAGES.c: 128:         case 1:
-[e :U 3197 ]
+[; ;MESSAGES.c: 128:             CANWriteMessage(0x350, 8, 0, 0, 0, 0, 0, 0, 0, 0);
+[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 848 `i `l `ul -> -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
 "129
-[; ;MESSAGES.c: 129:             CANWriteMessage(0x351, 8, 0, 0, 0, 0, 0, 0, 0, 0);
-[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 849 `i `l `ul -> -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;MESSAGES.c: 129:             break;
+[e $U 3194  ]
 "130
-[; ;MESSAGES.c: 130:             break;
-[e $U 3194  ]
+[; ;MESSAGES.c: 130:         case 1:
+[e :U 3197 ]
 "131
-[; ;MESSAGES.c: 131:         case 2:
-[e :U 3198 ]
+[; ;MESSAGES.c: 131:             CANWriteMessage(0x351, 8, 0, 0, 0, 0, 0, 0, 0, 0);
+[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 849 `i `l `ul -> -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
 "132
-[; ;MESSAGES.c: 132:             CANWriteMessage(0x352, 8, 0, 0, 0, 0, 0, 0, 0, 0);
-[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 850 `i `l `ul -> -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
-"133
-[; ;MESSAGES.c: 133:             break;
+[; ;MESSAGES.c: 132:             break;
 [e $U 3194  ]
+"133
+[; ;MESSAGES.c: 133:         case 2:
+[e :U 3198 ]
 "134
-[; ;MESSAGES.c: 134:     }
+[; ;MESSAGES.c: 134:             CANWriteMessage(0x352, 8, 0, 0, 0, 0, 0, 0, 0, 0);
+[e ( _CANWriteMessage (4 , , , , , , , , , -> -> -> 850 `i `l `ul -> -> 8 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"135
+[; ;MESSAGES.c: 135:             break;
+[e $U 3194  ]
+"136
+[; ;MESSAGES.c: 136:     }
 }
 [e $U 3194  ]
 [e :U 3195 ]
@@ -3949,7 +3952,7 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 2 `i 3198
  3194 ]
 [e :U 3194 ]
-"136
-[; ;MESSAGES.c: 136: }
+"138
+[; ;MESSAGES.c: 138: }
 [e :UE 3193 ]
 }

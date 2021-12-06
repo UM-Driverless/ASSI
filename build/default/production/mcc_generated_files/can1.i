@@ -37659,203 +37659,59 @@ typedef enum
 {
     TXQ = 0
 } CAN1_TX_FIFO_CHANNELS;
-
-typedef enum
-{
-    FIFO1 = 1
-} CAN1_RX_FIFO_CHANNELS;
-# 106 "mcc_generated_files/can1.h"
+# 102 "mcc_generated_files/can1.h"
 void CAN1_Initialize(void);
-# 147 "mcc_generated_files/can1.h"
+# 143 "mcc_generated_files/can1.h"
 CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
-# 185 "mcc_generated_files/can1.h"
+# 181 "mcc_generated_files/can1.h"
 CAN_OP_MODES CAN1_OperationModeGet(void);
-# 235 "mcc_generated_files/can1.h"
+# 231 "mcc_generated_files/can1.h"
 _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg);
-# 275 "mcc_generated_files/can1.h"
-_Bool CAN1_ReceiveFrom(const CAN1_RX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *rxCanMsg);
-# 334 "mcc_generated_files/can1.h"
+# 290 "mcc_generated_files/can1.h"
 CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg);
-# 390 "mcc_generated_files/can1.h"
+# 346 "mcc_generated_files/can1.h"
 _Bool CAN1_IsBusOff(void);
-# 448 "mcc_generated_files/can1.h"
+# 404 "mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorPassive(void);
-# 507 "mcc_generated_files/can1.h"
+# 463 "mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorWarning(void);
-# 566 "mcc_generated_files/can1.h"
+# 522 "mcc_generated_files/can1.h"
 _Bool CAN1_IsTxErrorActive(void);
-# 614 "mcc_generated_files/can1.h"
+# 570 "mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorPassive(void);
-# 662 "mcc_generated_files/can1.h"
+# 618 "mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorWarning(void);
-# 710 "mcc_generated_files/can1.h"
+# 666 "mcc_generated_files/can1.h"
 _Bool CAN1_IsRxErrorActive(void);
-# 761 "mcc_generated_files/can1.h"
+# 717 "mcc_generated_files/can1.h"
 void CAN1_Sleep(void);
-# 815 "mcc_generated_files/can1.h"
+# 771 "mcc_generated_files/can1.h"
 CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel);
-# 857 "mcc_generated_files/can1.h"
+# 813 "mcc_generated_files/can1.h"
 uint8_t CAN1_ReceivedMessageCountGet(void);
-# 924 "mcc_generated_files/can1.h"
+# 880 "mcc_generated_files/can1.h"
 void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void));
-# 981 "mcc_generated_files/can1.h"
+# 937 "mcc_generated_files/can1.h"
 void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void));
-# 1049 "mcc_generated_files/can1.h"
+# 1005 "mcc_generated_files/can1.h"
 void CAN1_SetBusErrorInterruptHandler(void (*handler)(void));
-# 1100 "mcc_generated_files/can1.h"
+# 1056 "mcc_generated_files/can1.h"
 void CAN1_SetModeChangeInterruptHandler(void (*handler)(void));
-# 1169 "mcc_generated_files/can1.h"
+# 1125 "mcc_generated_files/can1.h"
 void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void));
-# 1237 "mcc_generated_files/can1.h"
+# 1193 "mcc_generated_files/can1.h"
 void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void));
-# 1289 "mcc_generated_files/can1.h"
+# 1245 "mcc_generated_files/can1.h"
 void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
+# 1280 "mcc_generated_files/can1.h"
+void CAN1_SetFIFO1nullHandler(void (*handler)(void));
 # 1324 "mcc_generated_files/can1.h"
-void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void));
-# 1368 "mcc_generated_files/can1.h"
 void CAN1_SetTXQnullHandler(void (*handler)(void));
 
 
 void CAN1_ISR(void);
-void CAN1_RXI_ISR(void);
 # 50 "mcc_generated_files/can1.c" 2
-
-# 1 "mcc_generated_files/../MESSAGES.h" 1
-# 20 "mcc_generated_files/../MESSAGES.h"
-# 1 "./mcc_generated_files/mcc.h" 1
-# 50 "./mcc_generated_files/mcc.h"
-# 1 "mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
-
-# 1 "mcc_generated_files/pin_manager.h" 1
-# 182 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 194 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 1 3
-
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 3
-extern int errno;
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
-
-# 1 "C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\__null.h" 1 3
-# 9 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
-
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-
-
-extern char * cgets(char *);
-extern void cputs(const char *);
-# 54 "./mcc_generated_files/mcc.h" 2
-
-# 1 "mcc_generated_files/interrupt_manager.h" 1
-# 87 "mcc_generated_files/interrupt_manager.h"
-void INTERRUPT_Initialize (void);
-# 55 "./mcc_generated_files/mcc.h" 2
-
-# 1 "mcc_generated_files/tmr1.h" 1
-# 101 "mcc_generated_files/tmr1.h"
-void TMR1_Initialize(void);
-# 130 "mcc_generated_files/tmr1.h"
-void TMR1_StartTimer(void);
-# 162 "mcc_generated_files/tmr1.h"
-void TMR1_StopTimer(void);
-# 197 "mcc_generated_files/tmr1.h"
-uint16_t TMR1_ReadTimer(void);
-# 236 "mcc_generated_files/tmr1.h"
-void TMR1_WriteTimer(uint16_t timerVal);
-# 272 "mcc_generated_files/tmr1.h"
-void TMR1_Reload(void);
-# 311 "mcc_generated_files/tmr1.h"
-void TMR1_StartSinglePulseAcquisition(void);
-# 350 "mcc_generated_files/tmr1.h"
-uint8_t TMR1_CheckGateValueStatus(void);
-# 368 "mcc_generated_files/tmr1.h"
-void TMR1_ISR(void);
-# 385 "mcc_generated_files/tmr1.h"
-void TMR1_CallBack(void);
-# 403 "mcc_generated_files/tmr1.h"
- void TMR1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 421 "mcc_generated_files/tmr1.h"
-extern void (*TMR1_InterruptHandler)(void);
-# 439 "mcc_generated_files/tmr1.h"
-void TMR1_DefaultInterruptHandler(void);
-# 56 "./mcc_generated_files/mcc.h" 2
-
-# 1 "mcc_generated_files/tmr0.h" 1
-# 106 "mcc_generated_files/tmr0.h"
-void TMR0_Initialize(void);
-# 135 "mcc_generated_files/tmr0.h"
-void TMR0_StartTimer(void);
-# 167 "mcc_generated_files/tmr0.h"
-void TMR0_StopTimer(void);
-# 202 "mcc_generated_files/tmr0.h"
-uint8_t TMR0_ReadTimer(void);
-# 241 "mcc_generated_files/tmr0.h"
-void TMR0_WriteTimer(uint8_t timerVal);
-# 278 "mcc_generated_files/tmr0.h"
-void TMR0_Reload(uint8_t periodVal);
-# 297 "mcc_generated_files/tmr0.h"
-void TMR0_ISR(void);
-# 315 "mcc_generated_files/tmr0.h"
-void TMR0_CallBack(void);
-# 333 "mcc_generated_files/tmr0.h"
- void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 351 "mcc_generated_files/tmr0.h"
-extern void (*TMR0_InterruptHandler)(void);
-# 369 "mcc_generated_files/tmr0.h"
-void TMR0_DefaultInterruptHandler(void);
-# 57 "./mcc_generated_files/mcc.h" 2
-
-
-# 1 "mcc_generated_files/delay.h" 1
-# 34 "mcc_generated_files/delay.h"
-void DELAY_milliseconds(uint16_t milliseconds);
-void DELAY_microseconds(uint16_t microseconds);
-# 59 "./mcc_generated_files/mcc.h" 2
-# 74 "./mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 87 "./mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 100 "./mcc_generated_files/mcc.h"
-void PMD_Initialize(void);
-# 20 "mcc_generated_files/../MESSAGES.h" 2
-
-
-
-
-
-
-CAN_MSG_OBJ msgTransmit;
-CAN_MSG_OBJ msgReceipt;
-uint8_t CANDATAdata[8];
-# 69 "mcc_generated_files/../MESSAGES.h"
-void CANWriteMessage(unsigned long id, unsigned char dataLength, unsigned char data1, unsigned char data2, unsigned char data3, unsigned char data4, unsigned char data5, unsigned char data6, unsigned char data7, unsigned char data8);
-void CANReadMessage(void);
-void MESSSAGES_ASSIState (void);
-# 51 "mcc_generated_files/can1.c" 2
-# 72 "mcc_generated_files/can1.c"
+# 71 "mcc_generated_files/can1.c"
 struct CAN_FIFOREG
 {
     uint8_t CONL;
@@ -37876,6 +37732,10 @@ typedef enum
     CAN_RX_MSG_OVERFLOW = 8U
 } CAN_RX_FIFO_STATUS;
 
+typedef enum
+{
+    FIFO1 = 1
+} CAN1_RX_FIFO_CHANNELS;
 
 struct CAN1_RX_FIFO
 {
@@ -37884,7 +37744,7 @@ struct CAN1_RX_FIFO
 };
 
 
-static volatile uint8_t rxMsgData[(8U)];
+static uint8_t rxMsgData[(8U)];
 
 static struct CAN1_RX_FIFO rxFifos[] =
 {
@@ -37894,7 +37754,6 @@ static struct CAN1_RX_FIFO rxFifos[] =
 static volatile struct CAN_FIFOREG * const FIFO = (struct CAN_FIFOREG *)&C1TXQCONL;
 static const uint8_t DLC_BYTES[] = {0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U};
 
-static void (*CAN1_FIFO1NotEmptyHandler)(void);
 static void (*CAN1_InvalidMessageHandler)(void);
 static void (*CAN1_BusWakeUpActivityHandler)(void);
 static void (*CAN1_BusErrorHandler)(void);
@@ -37902,10 +37761,6 @@ static void (*CAN1_ModeChangeHandler)(void);
 static void (*CAN1_SystemErrorHandler)(void);
 static void (*CAN1_TxAttemptHandler)(void);
 static void (*CAN1_RxBufferOverflowHandler)(void);
-
-static void DefaultFIFO1NotEmptyHandler(void)
-{
-}
 
 static void DefaultInvalidMessageHandler(void)
 {
@@ -37948,7 +37803,7 @@ void CAN1_RX_FIFO_ResetInfo(void)
 static void CAN1_RX_FIFO_Configuration(void)
 {
 
-    C1FIFOCON1L = 0x19;
+    C1FIFOCON1L = 0x18;
 
 
     C1FIFOCON1H = 0x04;
@@ -37959,16 +37814,21 @@ static void CAN1_RX_FIFO_Configuration(void)
 
     C1FIFOCON1T = 0x05;
 
-    CAN1_SetFIFO1NotEmptyHandler(DefaultFIFO1NotEmptyHandler);
-
-    C1INTUbits.RXIE = 1;
-
-    PIR4bits.CANRXIF = 0;
-    PIE4bits.CANRXIE = 1;
 }
 
 static void CAN1_RX_FIFO_FilterMaskConfiguration(void)
 {
+
+    C1FLTOBJ1L = 0x01;
+    C1FLTOBJ1H = 0x00;
+    C1FLTOBJ1U = 0x00;
+    C1FLTOBJ1T = 0x00;
+    C1MASK1L = 0xFF;
+    C1MASK1H = 0x07;
+    C1MASK1U = 0x00;
+    C1MASK1T = 0x40;
+    C1FLTCON0H = 0x81;
+
 }
 
 static void CAN1_TX_FIFO_Configuration(void)
@@ -37980,7 +37840,7 @@ static void CAN1_TX_FIFO_Configuration(void)
     C1TXQCONH = 0x04;
 
 
-    C1TXQCONU = 0x60;
+    C1TXQCONU = 0x61;
 
 
     C1TXQCONT = 0x05;
@@ -38021,7 +37881,7 @@ static void CAN1_ErrorNotificationInterruptEnable(void)
     C1INTH = 0x00;
 
 
-    C1INTU = 0x0A;
+    C1INTU = 0x08;
 
 
     C1INTT = 0xFC;
@@ -38136,38 +37996,6 @@ static void ReadMessageFromFifo(uint8_t *rxFifoObj, CAN_MSG_OBJ *rxCanMsg)
     rxCanMsg->data = rxMsgData;
 }
 
-static _Bool Receive(uint8_t index, CAN1_RX_FIFO_CHANNELS channel, CAN_MSG_OBJ *rxCanMsg)
-{
-    _Bool status = 0;
-    CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
-
-    if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
-    {
-        uint8_t *rxFifoObj = (uint8_t *) FIFO[channel].UA;
-
-        if (rxFifoObj != ((void*)0))
-        {
-            ReadMessageFromFifo(rxFifoObj, rxCanMsg);
-            FIFO[channel].CONH |= 0x1;
-
-            rxFifos[index].fifoHead += 1;
-            if (rxFifos[index].fifoHead >= GetRxFifoDepth(channel))
-            {
-                rxFifos[index].fifoHead = 0;
-            }
-
-            if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
-            {
-                FIFO[channel].STAL &= ~0x8;
-            }
-
-            status = 1;
-        }
-    }
-
-    return status;
-}
-
 _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
 {
     uint8_t index;
@@ -38175,31 +38003,35 @@ _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
 
     for (index = 0; index < (1U); index++)
     {
-        status = Receive(index, rxFifos[index].channel, rxCanMsg);
+        CAN1_RX_FIFO_CHANNELS channel = rxFifos[index].channel;
+        CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
 
-        if (status)
+        if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
         {
+            uint8_t *rxFifoObj = (uint8_t *) FIFO[channel].UA;
+
+            if (rxFifoObj != ((void*)0))
+            {
+                ReadMessageFromFifo(rxFifoObj, rxCanMsg);
+                FIFO[channel].CONH |= 0x1;
+
+                rxFifos[index].fifoHead += 1;
+                if (rxFifos[index].fifoHead >= GetRxFifoDepth(channel))
+                {
+                    rxFifos[index].fifoHead = 0;
+                }
+
+                if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
+                {
+                    FIFO[channel].STAL &= ~0x8;
+                }
+
+                status = 1;
+            }
+
             break;
         }
     }
-
-    return status;
-}
-
-_Bool CAN1_ReceiveFrom(const CAN1_RX_FIFO_CHANNELS channel, CAN_MSG_OBJ *rxCanMsg)
-{
-    uint8_t index;
-    _Bool status = 0;
-
-    for (index = 0; index < (1U); index++)
-    {
-        if (channel == rxFifos[index].channel)
-        {
-            status = Receive(index, channel, rxCanMsg);
-            break;
-        }
-    }
-
     return status;
 }
 
@@ -38489,22 +38321,4 @@ void CAN1_ISR(void)
     }
 
     PIR0bits.CANIF = 0;
-}
-
-void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void))
-{
-    CAN1_FIFO1NotEmptyHandler = handler;
-}
-
-
-void CAN1_RXI_ISR(void)
-{
-    if (1 == C1FIFOSTA1Lbits.TFNRFNIF)
-    {
-        CAN1_FIFO1NotEmptyHandler();
-
-        CANReadMessage();
-        C1FIFOSTA1Lbits.TFNRFNIF = 0;
-    }
-
 }

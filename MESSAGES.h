@@ -57,9 +57,9 @@ uint8_t CANDATAdata[8];
 #define ID_ASSIS_L   0x352
 
 //CAN MESSAGES
-#define DV_SYSTEM_STATUS            0x500
-#define DV_DRIVING_DYNAMICS_1       0x501
-#define DV_DRIVING_DYNAMICS_2       0x502
+#define DV_SYSTEM_STATUS            0x502
+#define DV_DRIVING_DYNAMICS_1       0x500
+#define DV_DRIVING_DYNAMICS_2       0x501
 #define TRAJECTORY_ACT              0x320
 #define ASB_ANALOG                  0x360
 #define ASB_SIGNALS                 0x361
