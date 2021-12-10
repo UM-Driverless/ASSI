@@ -13,11 +13,11 @@ extern "C" {
 #endif
 
 //AS STATES
-#define AS_OFF          0
-#define AS_READY        1
-#define AS_DRIVING      2
-#define AS_EMERGENCY    3
-#define AS_FINISHED     4
+#define AS_OFF          1
+#define AS_READY        2
+#define AS_DRIVING      3
+#define AS_EMERGENCY    4
+#define AS_FINISHED     5
     
     
 #define TRUE    0x01

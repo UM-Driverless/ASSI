@@ -57,10 +57,16 @@ void  INTERRUPT_Initialize (void)
 
 void __interrupt() INTERRUPT_InterruptManager (void)
 {
+    Nop();
+    Nop();
     // interrupt handler
     if(PIE0bits.CANIE == 1 && PIR0bits.CANIF == 1)
     {
         CAN1_ISR();
+    }
+    else if(PIE4bits.CANRXIE == 1 && PIR4bits.CANRXIF == 1)
+    {
+        CAN1_RXI_ISR();
     }
     else if(PIE3bits.TMR0IE == 1 && PIR3bits.TMR0IF == 1)
     {

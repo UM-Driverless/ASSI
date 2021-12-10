@@ -48,6 +48,7 @@
 #include <stdint.h>
 #include <string.h>
 #include "can1.h"
+#include "../MESSAGES.h"
 
 #define RX_FIFO_MSG_DATA                (8U)
 #define NUM_OF_RX_FIFO                  (1U)
@@ -88,10 +89,6 @@ typedef enum
     CAN_RX_MSG_OVERFLOW = 8U
 } CAN_RX_FIFO_STATUS;
 
-typedef enum
-{
-    FIFO1 = 1
-} CAN1_RX_FIFO_CHANNELS;
 
 struct CAN1_RX_FIFO
 {
@@ -100,7 +97,7 @@ struct CAN1_RX_FIFO
 };
 
 //CAN RX FIFO Message object data field 
-static uint8_t rxMsgData[RX_FIFO_MSG_DATA];
+static volatile uint8_t rxMsgData[RX_FIFO_MSG_DATA];
 
 static struct CAN1_RX_FIFO rxFifos[] = 
 {
@@ -110,6 +107,7 @@ static struct CAN1_RX_FIFO rxFifos[] =
 static volatile struct CAN_FIFOREG * const FIFO = (struct CAN_FIFOREG *)&C1TXQCONL;
 static const uint8_t DLC_BYTES[] = {0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U};
 
+static void (*CAN1_FIFO1NotEmptyHandler)(void);
 static void (*CAN1_InvalidMessageHandler)(void);
 static void (*CAN1_BusWakeUpActivityHandler)(void);
 static void (*CAN1_BusErrorHandler)(void);
@@ -117,6 +115,11 @@ static void (*CAN1_ModeChangeHandler)(void);
 static void (*CAN1_SystemErrorHandler)(void);
 static void (*CAN1_TxAttemptHandler)(void);
 static void (*CAN1_RxBufferOverflowHandler)(void);
+
+static void DefaultFIFO1NotEmptyHandler(void)
+{
+    CANReadMessage();
+}
 
 static void DefaultInvalidMessageHandler(void)
 {
@@ -158,8 +161,8 @@ void CAN1_RX_FIFO_ResetInfo(void)
 
 static void CAN1_RX_FIFO_Configuration(void)
 {
-    // TXEN disabled; RTREN disabled; RXTSEN disabled; TXATIE enabled; RXOVIE enabled; TFERFFIE disabled; TFHRFHIE disabled; TFNRFNIE disabled; 
-    C1FIFOCON1L = 0x18;
+    // TXEN disabled; RTREN disabled; RXTSEN disabled; TXATIE enabled; RXOVIE enabled; TFERFFIE disabled; TFHRFHIE disabled; TFNRFNIE enabled; 
+    C1FIFOCON1L = 0x19;
     
     // FRESET enabled; TXREQ disabled; UINC disabled; 
     C1FIFOCON1H = 0x04;
@@ -170,12 +173,19 @@ static void CAN1_RX_FIFO_Configuration(void)
     // PLSIZE 8; FSIZE 6; 
     C1FIFOCON1T = 0x05;
     
+    CAN1_SetFIFO1NotEmptyHandler(DefaultFIFO1NotEmptyHandler);
+    
+    C1INTUbits.RXIE = 1;
+    
+    PIR4bits.CANRXIF = 0;
+    PIE4bits.CANRXIE = 1;
 }
 
 static void CAN1_RX_FIFO_FilterMaskConfiguration(void)
 {
+    //MCC CONFIG//
     // FLTEN1 enabled; F1BP FIFO 1; 
-    C1FLTOBJ1L = 0x01;
+    /*C1FLTOBJ1L = 0x01;
     C1FLTOBJ1H = 0x00;
     C1FLTOBJ1U = 0x00;
     C1FLTOBJ1T = 0x00;
@@ -183,6 +193,18 @@ static void CAN1_RX_FIFO_FilterMaskConfiguration(void)
     C1MASK1H = 0x07;
     C1MASK1U = 0x00;
     C1MASK1T = 0x40;
+    C1FLTCON0H = 0x81; */
+    
+    //U MOTORSPORT CONFIG
+    C1FLTOBJ1L = 0x5F;
+    C1FLTOBJ1H = 0xFF;
+    C1FLTOBJ1U = 0xFF;
+    C1FLTOBJ1T = 0xFF;
+    //permitir mask de extended y standard
+    C1MASK1L = 0x00;
+    C1MASK1H = 0x00;
+    C1MASK1U = 0x00;
+    C1MASK1T = 0x00; //EXT and STD
     C1FLTCON0H = 0x81; 
     
 }
@@ -236,8 +258,8 @@ static void CAN1_ErrorNotificationInterruptEnable(void)
     // IVMIF disabled; WAKIF disabled; CERRIF disabled; SERRIF disabled; 
     C1INTH = 0x00;
     
-    // TEFIE disabled; MODIE enabled; TBCIE disabled; RXIE disabled; TXIE disabled; 
-    C1INTU = 0x08;
+    // TEFIE disabled; MODIE enabled; TBCIE disabled; RXIE enabled; TXIE disabled; 
+    C1INTU = 0x0A;
     
     // IVMIE enabled; WAKIE enabled; CERRIE enabled; SERRIE enabled; RXOVIE enabled; TXATIE enabled; 
     C1INTT = 0xFC;
@@ -352,6 +374,38 @@ static void ReadMessageFromFifo(uint8_t *rxFifoObj, CAN_MSG_OBJ *rxCanMsg)
     rxCanMsg->data = rxMsgData;
 }
 
+static bool Receive(uint8_t index, CAN1_RX_FIFO_CHANNELS channel, CAN_MSG_OBJ *rxCanMsg)
+{
+    bool status = false;
+    CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
+
+    if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
+    {
+        uint8_t *rxFifoObj = (uint8_t *) FIFO[channel].UA;
+
+        if (rxFifoObj != NULL)
+        {
+            ReadMessageFromFifo(rxFifoObj, rxCanMsg);
+            FIFO[channel].CONH |= _C1FIFOCON1H_UINC_MASK;
+
+            rxFifos[index].fifoHead += 1;
+            if (rxFifos[index].fifoHead >= GetRxFifoDepth(channel))
+            {
+                rxFifos[index].fifoHead = 0;
+            }
+
+            if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
+            {
+                FIFO[channel].STAL &= ~_C1FIFOSTA1L_RXOVIF_MASK;
+            }
+
+            status = true;
+        }
+    }
+    
+    return status;
+}
+
 bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
 {
     uint8_t index;
@@ -359,35 +413,31 @@ bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
     
     for (index = 0; index < NUM_OF_RX_FIFO; index++)
     {
-        CAN1_RX_FIFO_CHANNELS channel = rxFifos[index].channel;
-        CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
-
-        if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
+        status = Receive(index, rxFifos[index].channel, rxCanMsg);
+        
+        if (status)
         {
-            uint8_t *rxFifoObj = (uint8_t *) FIFO[channel].UA;
-            
-            if (rxFifoObj != NULL)
-            {
-                ReadMessageFromFifo(rxFifoObj, rxCanMsg);
-                FIFO[channel].CONH |= _C1FIFOCON1H_UINC_MASK;
-                
-                rxFifos[index].fifoHead += 1;
-                if (rxFifos[index].fifoHead >= GetRxFifoDepth(channel))
-                {
-                    rxFifos[index].fifoHead = 0;
-                }
-
-                if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
-                {
-                    FIFO[channel].STAL &= ~_C1FIFOSTA1L_RXOVIF_MASK;
-                }
-
-                status = true;
-            }
-
             break;
         }
     }
+    
+    return status;
+}
+
+bool CAN1_ReceiveFrom(const CAN1_RX_FIFO_CHANNELS channel, CAN_MSG_OBJ *rxCanMsg)
+{
+    uint8_t index;
+    bool status = false;
+    
+    for (index = 0; index < NUM_OF_RX_FIFO; index++)
+    {
+        if (channel == rxFifos[index].channel)
+        {
+            status = Receive(index, channel, rxCanMsg);
+            break;
+        }
+    }
+    
     return status;
 }
 
@@ -679,5 +729,19 @@ void CAN1_ISR(void)
     PIR0bits.CANIF = 0;
 }
 
+void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void))
+{
+    CAN1_FIFO1NotEmptyHandler = handler;
+}
 
+
+void CAN1_RXI_ISR(void)
+{
+    if (1 == C1FIFOSTA1Lbits.TFNRFNIF)
+    {
+        CAN1_FIFO1NotEmptyHandler();
+        // flag readonly
+    }
+    
+}
 

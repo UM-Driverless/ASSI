@@ -53,6 +53,7 @@
 #include "../SPEAKER.h"
 #include "pin_manager.h"
 #include "../TEMPORIZATIONS.h"
+#include "../MESSAGES.h"
 
 /**
   Section: TMR0 APIs

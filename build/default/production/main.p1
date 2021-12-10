@@ -48,9 +48,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S3082 . . . ]
 "2094
 [v _INTCON0bits `VS3082 ~T0 @X0 0 e@1238 ]
-"70 ./MESSAGES.h
-[; ;./MESSAGES.h: 70: void CANReadMessage(void);
-[v _CANReadMessage `(v ~T0 @X0 0 ef ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3711,9 +3708,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "102
 [; ;main.c: 102:     {
 {
-"110
-[; ;main.c: 110:         CANReadMessage();
-[e ( _CANReadMessage ..  ]
 "111
 [; ;main.c: 111:     }
 }

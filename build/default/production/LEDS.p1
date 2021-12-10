@@ -3541,7 +3541,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;LEDS.c: 15:         {
 {
 "17
-[; ;LEDS.c: 17:             case 0:
+[; ;LEDS.c: 17:             case 1:
 [e :U 3179 ]
 "18
 [; ;LEDS.c: 18:                 do { LATBbits.LATB1 = 0; } while(0);
@@ -3561,7 +3561,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;LEDS.c: 20:                 break;
 [e $U 3177  ]
 "22
-[; ;LEDS.c: 22:             case 1:
+[; ;LEDS.c: 22:             case 2:
 [e :U 3186 ]
 "23
 [; ;LEDS.c: 23:                 do { LATBbits.LATB2 = 0; } while(0);
@@ -3581,7 +3581,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;LEDS.c: 25:                 break;
 [e $U 3177  ]
 "27
-[; ;LEDS.c: 27:             case 2:
+[; ;LEDS.c: 27:             case 3:
 [e :U 3193 ]
 "28
 [; ;LEDS.c: 28:                 do { LATBbits.LATB2 = 0; } while(0);
@@ -3601,7 +3601,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;LEDS.c: 30:                 break;
 [e $U 3177  ]
 "32
-[; ;LEDS.c: 32:             case 3:
+[; ;LEDS.c: 32:             case 4:
 [e :U 3200 ]
 "33
 [; ;LEDS.c: 33:                 do { LATBbits.LATB1 = 0; } while(0);
@@ -3621,7 +3621,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;LEDS.c: 35:                 break;
 [e $U 3177  ]
 "37
-[; ;LEDS.c: 37:             case 4:
+[; ;LEDS.c: 37:             case 5:
 [e :U 3207 ]
 "38
 [; ;LEDS.c: 38:                 do { LATBbits.LATB1 = 0; } while(0);
@@ -3665,11 +3665,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 3177  ]
 [e :U 3178 ]
-[e [\ -> _ucASState `i , $ -> 0 `i 3179
- , $ -> 1 `i 3186
- , $ -> 2 `i 3193
- , $ -> 3 `i 3200
- , $ -> 4 `i 3207
+[e [\ -> _ucASState `i , $ -> 1 `i 3179
+ , $ -> 2 `i 3186
+ , $ -> 3 `i 3193
+ , $ -> 4 `i 3200
+ , $ -> 5 `i 3207
  3214 ]
 [e :U 3177 ]
 "46

@@ -1,27 +1,43 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"105 mcc_generated_files/can1.c
-[; ;mcc_generated_files/can1.c: 105: static struct CAN1_RX_FIFO rxFifos[] =
-[c E22458 1 .. ]
-[n E22458 . FIFO1  ]
-"97
-[; ;mcc_generated_files/can1.c: 97: {
-[s S3181 `E22458 1 `Vuc 1 ]
+"69 mcc_generated_files/can_types.h
+[; ;mcc_generated_files/can_types.h: 69:     {
+[s S3178 :1 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3178 . idType frameType dlc formatType brs ]
+"66
+[; ;mcc_generated_files/can_types.h: 66: {
+[u S3177 `uc 1 `S3178 1 ]
+[n S3177 . msgfields . ]
+"79
+[; ;mcc_generated_files/can_types.h: 79: {
+[s S3179 `ul 1 `S3177 1 `*uc 1 ]
+[n S3179 . msgId field data ]
+"102 mcc_generated_files/can1.c
+[; ;mcc_generated_files/can1.c: 102: static struct CAN1_RX_FIFO rxFifos[] =
+[c E22386 1 .. ]
+[n E22386 . FIFO1  ]
+"94
+[; ;mcc_generated_files/can1.c: 94: {
+[s S3181 `E22386 1 `Vuc 1 ]
 [n S3181 CAN1_RX_FIFO channel fifoHead ]
-"72
-[; ;mcc_generated_files/can1.c: 72: {
+"73
+[; ;mcc_generated_files/can1.c: 73: {
 [s S3180 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `ul 1 ]
 [n S3180 CAN_FIFOREG CONL CONH CONU CONT STAL STAH STAU STAT UA ]
 "13519 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 13519: extern volatile unsigned char C1TXQCONL __attribute__((address(0x150)));
 [v _C1TXQCONL `Vuc ~T0 @X0 0 e@336 ]
-[v F22470 `(v ~T0 @X0 0 tf ]
-[v F22472 `(v ~T0 @X0 0 tf ]
-[v F22474 `(v ~T0 @X0 0 tf ]
-[v F22476 `(v ~T0 @X0 0 tf ]
-[v F22478 `(v ~T0 @X0 0 tf ]
-[v F22480 `(v ~T0 @X0 0 tf ]
-[v F22482 `(v ~T0 @X0 0 tf ]
-"14150
+[v F22548 `(v ~T0 @X0 0 tf ]
+[v F22550 `(v ~T0 @X0 0 tf ]
+[v F22552 `(v ~T0 @X0 0 tf ]
+[v F22554 `(v ~T0 @X0 0 tf ]
+[v F22556 `(v ~T0 @X0 0 tf ]
+[v F22558 `(v ~T0 @X0 0 tf ]
+[v F22560 `(v ~T0 @X0 0 tf ]
+[v F22562 `(v ~T0 @X0 0 tf ]
+"70 mcc_generated_files/../MESSAGES.h
+[; ;mcc_generated_files/../MESSAGES.h: 70: void CANReadMessage(void);
+[v _CANReadMessage `(v ~T0 @X0 0 ef ]
+"14150 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 14150: extern volatile unsigned char C1FIFOCON1L __attribute__((address(0x15C)));
 [v _C1FIFOCON1L `Vuc ~T0 @X0 0 e@348 ]
 "14212
@@ -33,6 +49,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 "14314
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 14314: extern volatile unsigned char C1FIFOCON1T __attribute__((address(0x15F)));
 [v _C1FIFOCON1T `Vuc ~T0 @X0 0 e@351 ]
+[v F22441 `(v ~T0 @X0 0 tf ]
+"1324 mcc_generated_files/can1.h
+[; ;mcc_generated_files/can1.h: 1324: void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void));
+[v _CAN1_SetFIFO1NotEmptyHandler `(v ~T0 @X0 0 ef1`*F22441 ]
+"10508 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 10508:     struct {
+[s S499 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S499 . TXIE RXIE TBCIE MODIE TEFIE ]
+"10507
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 10507: typedef union {
+[u S498 `S499 1 ]
+[n S498 . . ]
+"10516
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 10516: extern volatile C1INTUbits_t C1INTUbits __attribute__((address(0x11E)));
+[v _C1INTUbits `VS498 ~T0 @X0 0 e@286 ]
+"751
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 751: extern volatile unsigned char NVMADRH __attribute__((address(0x044)));
+[s S3037 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3037 . U1RXIF U1TXIF U1EIF U1IF CANRXIF CANTXIF PWM1PIF PWM1IF ]
+"750
+[u S3036 `S3037 1 ]
+[n S3036 . . ]
+"762
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 762:         unsigned NVMADR9 :1;
+[v _PIR4bits `VS3036 ~T0 @X0 0 e@1202 ]
+"65302
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 65302:     struct {
+[s S3004 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3004 . U1RXIE U1TXIE U1EIE U1IE CANRXIE CANTXIE PWM1PIE PWM1IE ]
+"65301
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 65301: typedef union {
+[u S3003 `S3004 1 ]
+[n S3003 . . ]
+"65313
+[; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 65313: extern volatile PIE4bits_t PIE4bits __attribute__((address(0x4A2)));
+[v _PIE4bits `VS3003 ~T0 @X0 0 e@1186 ]
 "17439
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 17439: extern volatile unsigned char C1FLTOBJ1L __attribute__((address(0x194)));
 [v _C1FLTOBJ1L `Vuc ~T0 @X0 0 e@404 ]
@@ -81,34 +133,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9431
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 9431: extern volatile unsigned char C1NBTCFGT __attribute__((address(0x107)));
 [v _C1NBTCFGT `Vuc ~T0 @X0 0 e@263 ]
-[v F22407 `(v ~T0 @X0 0 tf ]
-"880 mcc_generated_files/can1.h
-[; ;mcc_generated_files/can1.h: 880: void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void));
-[v _CAN1_SetInvalidMessageInterruptHandler `(v ~T0 @X0 0 ef1`*F22407 ]
-[v F22411 `(v ~T0 @X0 0 tf ]
-"937
-[; ;mcc_generated_files/can1.h: 937: void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void));
-[v _CAN1_SetBusWakeUpActivityInterruptHandler `(v ~T0 @X0 0 ef1`*F22411 ]
-[v F22415 `(v ~T0 @X0 0 tf ]
-"1005
-[; ;mcc_generated_files/can1.h: 1005: void CAN1_SetBusErrorInterruptHandler(void (*handler)(void));
-[v _CAN1_SetBusErrorInterruptHandler `(v ~T0 @X0 0 ef1`*F22415 ]
-[v F22419 `(v ~T0 @X0 0 tf ]
-"1056
-[; ;mcc_generated_files/can1.h: 1056: void CAN1_SetModeChangeInterruptHandler(void (*handler)(void));
-[v _CAN1_SetModeChangeInterruptHandler `(v ~T0 @X0 0 ef1`*F22419 ]
-[v F22423 `(v ~T0 @X0 0 tf ]
-"1125
-[; ;mcc_generated_files/can1.h: 1125: void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void));
-[v _CAN1_SetSystemErrorInterruptHandler `(v ~T0 @X0 0 ef1`*F22423 ]
-[v F22427 `(v ~T0 @X0 0 tf ]
-"1193
-[; ;mcc_generated_files/can1.h: 1193: void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void));
-[v _CAN1_SetTxAttemptInterruptHandler `(v ~T0 @X0 0 ef1`*F22427 ]
-[v F22431 `(v ~T0 @X0 0 tf ]
-"1245
-[; ;mcc_generated_files/can1.h: 1245: void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
-[v _CAN1_SetRxBufferOverFlowInterruptHandler `(v ~T0 @X0 0 ef1`*F22431 ]
+[v F22413 `(v ~T0 @X0 0 tf ]
+"924 mcc_generated_files/can1.h
+[; ;mcc_generated_files/can1.h: 924: void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void));
+[v _CAN1_SetInvalidMessageInterruptHandler `(v ~T0 @X0 0 ef1`*F22413 ]
+[v F22417 `(v ~T0 @X0 0 tf ]
+"981
+[; ;mcc_generated_files/can1.h: 981: void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void));
+[v _CAN1_SetBusWakeUpActivityInterruptHandler `(v ~T0 @X0 0 ef1`*F22417 ]
+[v F22421 `(v ~T0 @X0 0 tf ]
+"1049
+[; ;mcc_generated_files/can1.h: 1049: void CAN1_SetBusErrorInterruptHandler(void (*handler)(void));
+[v _CAN1_SetBusErrorInterruptHandler `(v ~T0 @X0 0 ef1`*F22421 ]
+[v F22425 `(v ~T0 @X0 0 tf ]
+"1100
+[; ;mcc_generated_files/can1.h: 1100: void CAN1_SetModeChangeInterruptHandler(void (*handler)(void));
+[v _CAN1_SetModeChangeInterruptHandler `(v ~T0 @X0 0 ef1`*F22425 ]
+[v F22429 `(v ~T0 @X0 0 tf ]
+"1169
+[; ;mcc_generated_files/can1.h: 1169: void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void));
+[v _CAN1_SetSystemErrorInterruptHandler `(v ~T0 @X0 0 ef1`*F22429 ]
+[v F22433 `(v ~T0 @X0 0 tf ]
+"1237
+[; ;mcc_generated_files/can1.h: 1237: void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void));
+[v _CAN1_SetTxAttemptInterruptHandler `(v ~T0 @X0 0 ef1`*F22433 ]
+[v F22437 `(v ~T0 @X0 0 tf ]
+"1289
+[; ;mcc_generated_files/can1.h: 1289: void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void));
+[v _CAN1_SetRxBufferOverFlowInterruptHandler `(v ~T0 @X0 0 ef1`*F22437 ]
 "495 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [s S3028 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3028 . SWIF HLVDIF OSFIF CSWIF TU16AIF CLC1IF CANIF IOCIF ]
@@ -156,14 +208,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9035
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 9035: extern volatile C1CONHbits_t C1CONHbits __attribute__((address(0x101)));
 [v _C1CONHbits `VS422 ~T0 @X0 0 e@257 ]
-"253 mcc_generated_files/can1.c
-[; ;mcc_generated_files/can1.c: 253:     if (CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
+"275 mcc_generated_files/can1.c
+[; ;mcc_generated_files/can1.c: 275:     if (CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
 [c E22356 0 1 2 .. ]
 [n E22356 . CAN_OP_MODE_REQUEST_SUCCESS CAN_OP_MODE_REQUEST_FAIL CAN_OP_MODE_SYS_ERROR_OCCURED  ]
 [c E22346 0 1 2 3 4 5 6 7 .. ]
 [n E22346 . CAN_NORMAL_FD_MODE CAN_DISABLE_MODE CAN_INTERNAL_LOOPBACK_MODE CAN_LISTEN_ONLY_MODE CAN_CONFIGURATION_MODE CAN_EXTERNAL_LOOPBACK_MODE CAN_NORMAL_2_0_MODE CAN_RESTRICTED_OPERATION_MODE  ]
-"143 mcc_generated_files/can1.h
-[; ;mcc_generated_files/can1.h: 143: CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
+"147 mcc_generated_files/can1.h
+[; ;mcc_generated_files/can1.h: 147: CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES reqestMode);
 [v _CAN1_OperationModeSet `(E22356 ~T0 @X0 0 ef1`CE22346 ]
 "13232 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 13232: extern volatile unsigned long C1FIFOBA __attribute__((address(0x14C)));
@@ -177,8 +229,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9085
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 9085: extern volatile unsigned char C1CONU __attribute__((address(0x102)));
 [v _C1CONU `Vuc ~T0 @X0 0 e@258 ]
-"181 mcc_generated_files/can1.h
-[; ;mcc_generated_files/can1.h: 181: CAN_OP_MODES CAN1_OperationModeGet(void);
+"185 mcc_generated_files/can1.h
+[; ;mcc_generated_files/can1.h: 185: CAN_OP_MODES CAN1_OperationModeGet(void);
 [v _CAN1_OperationModeGet `(E22346 ~T0 @X0 0 ef ]
 "9162 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 9162:     struct {
@@ -221,53 +273,41 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9106
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 9106: extern volatile C1CONUbits_t C1CONUbits __attribute__((address(0x102)));
 [v _C1CONUbits `VS425 ~T0 @X0 0 e@258 ]
-"316 mcc_generated_files/can1.c
-[; ;mcc_generated_files/can1.c: 316: static CAN_RX_FIFO_STATUS GetRxFifoStatus(uint8_t validChannel)
-[c E22453 0 1 8 .. ]
-[n E22453 . CAN_RX_MSG_NOT_AVAILABLE CAN_RX_MSG_AVAILABLE CAN_RX_MSG_OVERFLOW  ]
-"69 mcc_generated_files/can_types.h
-[; ;mcc_generated_files/can_types.h: 69:     {
-[s S3178 :1 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3178 . idType frameType dlc formatType brs ]
-"66
-[; ;mcc_generated_files/can_types.h: 66: {
-[u S3177 `uc 1 `S3178 1 ]
-[n S3177 . msgfields . ]
-"79
-[; ;mcc_generated_files/can_types.h: 79: {
-[s S3179 `ul 1 `S3177 1 `*uc 1 ]
-[n S3179 . msgId field data ]
-"332 mcc_generated_files/can1.c
-[; ;mcc_generated_files/can1.c: 332:     rxCanMsg->field.idType = (status & (1UL << (4U))) ? CAN_FRAME_EXT : CAN_FRAME_STD;
+"338 mcc_generated_files/can1.c
+[; ;mcc_generated_files/can1.c: 338: static CAN_RX_FIFO_STATUS GetRxFifoStatus(uint8_t validChannel)
+[c E22534 0 1 8 .. ]
+[n E22534 . CAN_RX_MSG_NOT_AVAILABLE CAN_RX_MSG_AVAILABLE CAN_RX_MSG_OVERFLOW  ]
+"354
+[; ;mcc_generated_files/can1.c: 354:     rxCanMsg->field.idType = (status & (1UL << (4U))) ? CAN_FRAME_EXT : CAN_FRAME_STD;
 [c E22328 0 1 .. ]
 [n E22328 . CAN_FRAME_STD CAN_FRAME_EXT  ]
-"333
-[; ;mcc_generated_files/can1.c: 333:     rxCanMsg->field.frameType = (status & (1UL << (5U))) ? CAN_FRAME_RTR : CAN_FRAME_DATA;
+"355
+[; ;mcc_generated_files/can1.c: 355:     rxCanMsg->field.frameType = (status & (1UL << (5U))) ? CAN_FRAME_RTR : CAN_FRAME_DATA;
 [c E22332 0 1 .. ]
 [n E22332 . CAN_FRAME_DATA CAN_FRAME_RTR  ]
-"334
-[; ;mcc_generated_files/can1.c: 334:     rxCanMsg->field.brs = (status & (1UL << (6U))) ? CAN_BRS_MODE : CAN_NON_BRS_MODE;
+"356
+[; ;mcc_generated_files/can1.c: 356:     rxCanMsg->field.brs = (status & (1UL << (6U))) ? CAN_BRS_MODE : CAN_NON_BRS_MODE;
 [c E22324 0 1 .. ]
 [n E22324 . CAN_NON_BRS_MODE CAN_BRS_MODE  ]
-"27 C:\Program Files\Microchip\xc8\v2.31\pic\include\c99\string.h
-[; ;C:\Program Files\Microchip\xc8\v2.31\pic\include\c99\string.h: 27: void *memcpy (void *restrict, const void *restrict, size_t);
+"27 C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.30\pic\include\c99\string.h: 27: void *memcpy (void *restrict, const void *restrict, size_t);
 [v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
-"442 mcc_generated_files/can1.c
-[; ;mcc_generated_files/can1.c: 442: static CAN_TX_FIFO_STATUS GetTxFifoStatus(uint8_t validChannel)
+"492 mcc_generated_files/can1.c
+[; ;mcc_generated_files/can1.c: 492: static CAN_TX_FIFO_STATUS GetTxFifoStatus(uint8_t validChannel)
 [c E22361 0 1 .. ]
 [n E22361 . CAN_TX_FIFO_FULL CAN_TX_FIFO_AVAILABLE  ]
-"488
-[; ;mcc_generated_files/can1.c: 488: static CAN_TX_MSG_REQUEST_STATUS ValidateTransmission(uint8_t validChannel, CAN_MSG_OBJ *txCanMsg)
+"538
+[; ;mcc_generated_files/can1.c: 538: static CAN_TX_MSG_REQUEST_STATUS ValidateTransmission(uint8_t validChannel, CAN_MSG_OBJ *txCanMsg)
 [c E22340 0 1 2 3 .. ]
 [n E22340 . CAN_TX_MSG_REQUEST_SUCCESS CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR CAN_TX_MSG_REQUEST_BRS_ERROR CAN_TX_MSG_REQUEST_FIFO_FULL  ]
-"499
-[; ;mcc_generated_files/can1.c: 499:     if (field.dlc > DLC_8 && (CAN_2_0_FORMAT == field.formatType || CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
+"549
+[; ;mcc_generated_files/can1.c: 549:     if (field.dlc > DLC_8 && (CAN_2_0_FORMAT == field.formatType || CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
 [c E22365 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 .. ]
 [n E22365 . DLC_0 DLC_1 DLC_2 DLC_3 DLC_4 DLC_5 DLC_6 DLC_7 DLC_8 DLC_12 DLC_16 DLC_20 DLC_24 DLC_32 DLC_48 DLC_64  ]
 [c E22336 0 1 .. ]
 [n E22336 . CAN_2_0_FORMAT CAN_FD_FORMAT  ]
-"517
-[; ;mcc_generated_files/can1.c: 517: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg)
+"567
+[; ;mcc_generated_files/can1.c: 567: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg)
 [c E22383 0 .. ]
 [n E22383 . TXQ  ]
 "12170 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
@@ -292,20 +332,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 "10562
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 10562: extern volatile C1INTTbits_t C1INTTbits __attribute__((address(0x11F)));
 [v _C1INTTbits `VS500 ~T0 @X0 0 e@287 ]
-[v F22569 `(v ~T0 @X0 0 tf ]
-[v F22571 `(v ~T0 @X0 0 tf ]
-[v F22574 `(v ~T0 @X0 0 tf ]
-[v F22576 `(v ~T0 @X0 0 tf ]
-[v F22579 `(v ~T0 @X0 0 tf ]
-[v F22581 `(v ~T0 @X0 0 tf ]
-[v F22584 `(v ~T0 @X0 0 tf ]
-[v F22586 `(v ~T0 @X0 0 tf ]
-[v F22589 `(v ~T0 @X0 0 tf ]
-[v F22591 `(v ~T0 @X0 0 tf ]
-[v F22594 `(v ~T0 @X0 0 tf ]
-[v F22596 `(v ~T0 @X0 0 tf ]
-[v F22599 `(v ~T0 @X0 0 tf ]
-[v F22601 `(v ~T0 @X0 0 tf ]
+[v F22660 `(v ~T0 @X0 0 tf ]
+[v F22662 `(v ~T0 @X0 0 tf ]
+[v F22665 `(v ~T0 @X0 0 tf ]
+[v F22667 `(v ~T0 @X0 0 tf ]
+[v F22670 `(v ~T0 @X0 0 tf ]
+[v F22672 `(v ~T0 @X0 0 tf ]
+[v F22675 `(v ~T0 @X0 0 tf ]
+[v F22677 `(v ~T0 @X0 0 tf ]
+[v F22680 `(v ~T0 @X0 0 tf ]
+[v F22682 `(v ~T0 @X0 0 tf ]
+[v F22685 `(v ~T0 @X0 0 tf ]
+[v F22687 `(v ~T0 @X0 0 tf ]
+[v F22690 `(v ~T0 @X0 0 tf ]
+[v F22692 `(v ~T0 @X0 0 tf ]
 "10413
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 10413:     struct {
 [s S495 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -339,6 +379,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "14414
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 14414: extern volatile C1FIFOSTA1Lbits_t C1FIFOSTA1Lbits __attribute__((address(0x160)));
 [v _C1FIFOSTA1Lbits `VS662 ~T0 @X0 0 e@352 ]
+[v F22696 `(v ~T0 @X0 0 tf ]
+[v F22698 `(v ~T0 @X0 0 tf ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3855,29 +3897,38 @@ Version 4.0 HI-TECH Software Intermediate Code
 "68860
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 68860: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
-"103 mcc_generated_files/can1.c
-[; ;mcc_generated_files/can1.c: 103: static uint8_t rxMsgData[(8U)];
-[v _rxMsgData `uc ~T0 @X0 -> 8 `i s ]
-"105
-[; ;mcc_generated_files/can1.c: 105: static struct CAN1_RX_FIFO rxFifos[] =
+"26 mcc_generated_files/../MESSAGES.h
+[; ;mcc_generated_files/../MESSAGES.h: 26: CAN_MSG_OBJ msgTransmit;
+[v _msgTransmit `S3179 ~T0 @X0 1 e ]
+"27
+[; ;mcc_generated_files/../MESSAGES.h: 27: CAN_MSG_OBJ msgReceipt;
+[v _msgReceipt `S3179 ~T0 @X0 1 e ]
+"28
+[; ;mcc_generated_files/../MESSAGES.h: 28: uint8_t CANDATAdata[8];
+[v _CANDATAdata `uc ~T0 @X0 -> 8 `i e ]
+"100 mcc_generated_files/can1.c
+[; ;mcc_generated_files/can1.c: 100: static volatile uint8_t rxMsgData[(8U)];
+[v _rxMsgData `Vuc ~T0 @X0 -> 8 `i s ]
+"102
+[; ;mcc_generated_files/can1.c: 102: static struct CAN1_RX_FIFO rxFifos[] =
 [v _rxFifos `S3181 ~T0 @X0 -> -> 1 `i `ux s ]
 [i _rxFifos
 :U ..
 :U ..
-. `E22458 0
+. `E22386 0
 -> -> 0 `ui `uc
 ..
 ..
 ]
-[v F22467 `*VS3180 ~T0 @X0 1 t ]
-"110
-[; ;mcc_generated_files/can1.c: 110: static volatile struct CAN_FIFOREG * const FIFO = (struct CAN_FIFOREG *)&C1TXQCONL;
+[v F22545 `*VS3180 ~T0 @X0 1 t ]
+"107
+[; ;mcc_generated_files/can1.c: 107: static volatile struct CAN_FIFOREG * const FIFO = (struct CAN_FIFOREG *)&C1TXQCONL;
 [v _FIFO `C*VS3180 ~T0 @X0 1 s ]
 [i _FIFO
 -> -> &U _C1TXQCONL `*S3180 `*VS3180
 ]
-"111
-[; ;mcc_generated_files/can1.c: 111: static const uint8_t DLC_BYTES[] = {0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U};
+"108
+[; ;mcc_generated_files/can1.c: 108: static const uint8_t DLC_BYTES[] = {0U, 1U, 2U, 3U, 4U, 5U, 6U, 7U, 8U};
 [v _DLC_BYTES `Cuc ~T0 @X0 -> 9 `i s ]
 [i _DLC_BYTES
 :U ..
@@ -3892,1616 +3943,1789 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 8 `ui `uc
 ..
 ]
+"110
+[; ;mcc_generated_files/can1.c: 110: static void (*CAN1_FIFO1NotEmptyHandler)(void);
+[v _CAN1_FIFO1NotEmptyHandler `*F22548 ~T0 @X0 1 s ]
+"111
+[; ;mcc_generated_files/can1.c: 111: static void (*CAN1_InvalidMessageHandler)(void);
+[v _CAN1_InvalidMessageHandler `*F22550 ~T0 @X0 1 s ]
+"112
+[; ;mcc_generated_files/can1.c: 112: static void (*CAN1_BusWakeUpActivityHandler)(void);
+[v _CAN1_BusWakeUpActivityHandler `*F22552 ~T0 @X0 1 s ]
 "113
-[; ;mcc_generated_files/can1.c: 113: static void (*CAN1_InvalidMessageHandler)(void);
-[v _CAN1_InvalidMessageHandler `*F22470 ~T0 @X0 1 s ]
+[; ;mcc_generated_files/can1.c: 113: static void (*CAN1_BusErrorHandler)(void);
+[v _CAN1_BusErrorHandler `*F22554 ~T0 @X0 1 s ]
 "114
-[; ;mcc_generated_files/can1.c: 114: static void (*CAN1_BusWakeUpActivityHandler)(void);
-[v _CAN1_BusWakeUpActivityHandler `*F22472 ~T0 @X0 1 s ]
+[; ;mcc_generated_files/can1.c: 114: static void (*CAN1_ModeChangeHandler)(void);
+[v _CAN1_ModeChangeHandler `*F22556 ~T0 @X0 1 s ]
 "115
-[; ;mcc_generated_files/can1.c: 115: static void (*CAN1_BusErrorHandler)(void);
-[v _CAN1_BusErrorHandler `*F22474 ~T0 @X0 1 s ]
+[; ;mcc_generated_files/can1.c: 115: static void (*CAN1_SystemErrorHandler)(void);
+[v _CAN1_SystemErrorHandler `*F22558 ~T0 @X0 1 s ]
 "116
-[; ;mcc_generated_files/can1.c: 116: static void (*CAN1_ModeChangeHandler)(void);
-[v _CAN1_ModeChangeHandler `*F22476 ~T0 @X0 1 s ]
+[; ;mcc_generated_files/can1.c: 116: static void (*CAN1_TxAttemptHandler)(void);
+[v _CAN1_TxAttemptHandler `*F22560 ~T0 @X0 1 s ]
 "117
-[; ;mcc_generated_files/can1.c: 117: static void (*CAN1_SystemErrorHandler)(void);
-[v _CAN1_SystemErrorHandler `*F22478 ~T0 @X0 1 s ]
-"118
-[; ;mcc_generated_files/can1.c: 118: static void (*CAN1_TxAttemptHandler)(void);
-[v _CAN1_TxAttemptHandler `*F22480 ~T0 @X0 1 s ]
+[; ;mcc_generated_files/can1.c: 117: static void (*CAN1_RxBufferOverflowHandler)(void);
+[v _CAN1_RxBufferOverflowHandler `*F22562 ~T0 @X0 1 s ]
 "119
-[; ;mcc_generated_files/can1.c: 119: static void (*CAN1_RxBufferOverflowHandler)(void);
-[v _CAN1_RxBufferOverflowHandler `*F22482 ~T0 @X0 1 s ]
+[; ;mcc_generated_files/can1.c: 119: static void DefaultFIFO1NotEmptyHandler(void)
+[v _DefaultFIFO1NotEmptyHandler `(v ~T0 @X0 1 sf ]
+"120
+[; ;mcc_generated_files/can1.c: 120: {
+{
+[e :U _DefaultFIFO1NotEmptyHandler ]
+[f ]
 "121
-[; ;mcc_generated_files/can1.c: 121: static void DefaultInvalidMessageHandler(void)
-[v _DefaultInvalidMessageHandler `(v ~T0 @X0 1 sf ]
+[; ;mcc_generated_files/can1.c: 121:     CANReadMessage();
+[e ( _CANReadMessage ..  ]
 "122
-[; ;mcc_generated_files/can1.c: 122: {
+[; ;mcc_generated_files/can1.c: 122: }
+[e :UE 3182 ]
+}
+"124
+[; ;mcc_generated_files/can1.c: 124: static void DefaultInvalidMessageHandler(void)
+[v _DefaultInvalidMessageHandler `(v ~T0 @X0 1 sf ]
+"125
+[; ;mcc_generated_files/can1.c: 125: {
 {
 [e :U _DefaultInvalidMessageHandler ]
 [f ]
-"123
-[; ;mcc_generated_files/can1.c: 123: }
-[e :UE 3182 ]
-}
-"125
-[; ;mcc_generated_files/can1.c: 125: static void DefaultBusWakeUpActivityHandler(void)
-[v _DefaultBusWakeUpActivityHandler `(v ~T0 @X0 1 sf ]
 "126
-[; ;mcc_generated_files/can1.c: 126: {
+[; ;mcc_generated_files/can1.c: 126: }
+[e :UE 3183 ]
+}
+"128
+[; ;mcc_generated_files/can1.c: 128: static void DefaultBusWakeUpActivityHandler(void)
+[v _DefaultBusWakeUpActivityHandler `(v ~T0 @X0 1 sf ]
+"129
+[; ;mcc_generated_files/can1.c: 129: {
 {
 [e :U _DefaultBusWakeUpActivityHandler ]
 [f ]
-"127
-[; ;mcc_generated_files/can1.c: 127: }
-[e :UE 3183 ]
-}
-"129
-[; ;mcc_generated_files/can1.c: 129: static void DefaultBusErrorHandler(void)
-[v _DefaultBusErrorHandler `(v ~T0 @X0 1 sf ]
 "130
-[; ;mcc_generated_files/can1.c: 130: {
+[; ;mcc_generated_files/can1.c: 130: }
+[e :UE 3184 ]
+}
+"132
+[; ;mcc_generated_files/can1.c: 132: static void DefaultBusErrorHandler(void)
+[v _DefaultBusErrorHandler `(v ~T0 @X0 1 sf ]
+"133
+[; ;mcc_generated_files/can1.c: 133: {
 {
 [e :U _DefaultBusErrorHandler ]
 [f ]
-"131
-[; ;mcc_generated_files/can1.c: 131: }
-[e :UE 3184 ]
-}
-"133
-[; ;mcc_generated_files/can1.c: 133: static void DefaultModeChangeHandler(void)
-[v _DefaultModeChangeHandler `(v ~T0 @X0 1 sf ]
 "134
-[; ;mcc_generated_files/can1.c: 134: {
+[; ;mcc_generated_files/can1.c: 134: }
+[e :UE 3185 ]
+}
+"136
+[; ;mcc_generated_files/can1.c: 136: static void DefaultModeChangeHandler(void)
+[v _DefaultModeChangeHandler `(v ~T0 @X0 1 sf ]
+"137
+[; ;mcc_generated_files/can1.c: 137: {
 {
 [e :U _DefaultModeChangeHandler ]
 [f ]
-"135
-[; ;mcc_generated_files/can1.c: 135: }
-[e :UE 3185 ]
-}
-"137
-[; ;mcc_generated_files/can1.c: 137: static void DefaultSystemErrorHandler(void)
-[v _DefaultSystemErrorHandler `(v ~T0 @X0 1 sf ]
 "138
-[; ;mcc_generated_files/can1.c: 138: {
+[; ;mcc_generated_files/can1.c: 138: }
+[e :UE 3186 ]
+}
+"140
+[; ;mcc_generated_files/can1.c: 140: static void DefaultSystemErrorHandler(void)
+[v _DefaultSystemErrorHandler `(v ~T0 @X0 1 sf ]
+"141
+[; ;mcc_generated_files/can1.c: 141: {
 {
 [e :U _DefaultSystemErrorHandler ]
 [f ]
-"139
-[; ;mcc_generated_files/can1.c: 139: }
-[e :UE 3186 ]
-}
-"141
-[; ;mcc_generated_files/can1.c: 141: static void DefaultTxAttemptHandler(void)
-[v _DefaultTxAttemptHandler `(v ~T0 @X0 1 sf ]
 "142
-[; ;mcc_generated_files/can1.c: 142: {
+[; ;mcc_generated_files/can1.c: 142: }
+[e :UE 3187 ]
+}
+"144
+[; ;mcc_generated_files/can1.c: 144: static void DefaultTxAttemptHandler(void)
+[v _DefaultTxAttemptHandler `(v ~T0 @X0 1 sf ]
+"145
+[; ;mcc_generated_files/can1.c: 145: {
 {
 [e :U _DefaultTxAttemptHandler ]
 [f ]
-"143
-[; ;mcc_generated_files/can1.c: 143: }
-[e :UE 3187 ]
-}
-"145
-[; ;mcc_generated_files/can1.c: 145: static void DefaultRxBufferOverflowHandler(void)
-[v _DefaultRxBufferOverflowHandler `(v ~T0 @X0 1 sf ]
 "146
-[; ;mcc_generated_files/can1.c: 146: {
+[; ;mcc_generated_files/can1.c: 146: }
+[e :UE 3188 ]
+}
+"148
+[; ;mcc_generated_files/can1.c: 148: static void DefaultRxBufferOverflowHandler(void)
+[v _DefaultRxBufferOverflowHandler `(v ~T0 @X0 1 sf ]
+"149
+[; ;mcc_generated_files/can1.c: 149: {
 {
 [e :U _DefaultRxBufferOverflowHandler ]
 [f ]
-"147
-[; ;mcc_generated_files/can1.c: 147: }
-[e :UE 3188 ]
-}
-"149
-[; ;mcc_generated_files/can1.c: 149: void CAN1_RX_FIFO_ResetInfo(void)
-[v _CAN1_RX_FIFO_ResetInfo `(v ~T0 @X0 1 ef ]
 "150
-[; ;mcc_generated_files/can1.c: 150: {
+[; ;mcc_generated_files/can1.c: 150: }
+[e :UE 3189 ]
+}
+"152
+[; ;mcc_generated_files/can1.c: 152: void CAN1_RX_FIFO_ResetInfo(void)
+[v _CAN1_RX_FIFO_ResetInfo `(v ~T0 @X0 1 ef ]
+"153
+[; ;mcc_generated_files/can1.c: 153: {
 {
 [e :U _CAN1_RX_FIFO_ResetInfo ]
 [f ]
-"151
-[; ;mcc_generated_files/can1.c: 151:     uint8_t index;
+"154
+[; ;mcc_generated_files/can1.c: 154:     uint8_t index;
 [v _index `uc ~T0 @X0 1 a ]
-"153
-[; ;mcc_generated_files/can1.c: 153:     for (index = 0; index < (1U); index++)
+"156
+[; ;mcc_generated_files/can1.c: 156:     for (index = 0; index < (1U); index++)
 {
 [e = _index -> -> 0 `i `uc ]
-[e $ < -> _index `ui -> 1 `ui 3190  ]
-[e $U 3191  ]
-[e :U 3190 ]
-"154
-[; ;mcc_generated_files/can1.c: 154:     {
+[e $ < -> _index `ui -> 1 `ui 3191  ]
+[e $U 3192  ]
+[e :U 3191 ]
+"157
+[; ;mcc_generated_files/can1.c: 157:     {
 {
-"155
-[; ;mcc_generated_files/can1.c: 155:         rxFifos[index].fifoHead = 0;
+"158
+[; ;mcc_generated_files/can1.c: 158:         rxFifos[index].fifoHead = 0;
 [e = . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 1 -> -> 0 `i `uc ]
-"156
-[; ;mcc_generated_files/can1.c: 156:     }
+"159
+[; ;mcc_generated_files/can1.c: 159:     }
 }
 [e ++ _index -> -> 1 `i `uc ]
-[e $ < -> _index `ui -> 1 `ui 3190  ]
-[e :U 3191 ]
+[e $ < -> _index `ui -> 1 `ui 3191  ]
+[e :U 3192 ]
 }
-"157
-[; ;mcc_generated_files/can1.c: 157: }
-[e :UE 3189 ]
-}
-"159
-[; ;mcc_generated_files/can1.c: 159: static void CAN1_RX_FIFO_Configuration(void)
-[v _CAN1_RX_FIFO_Configuration `(v ~T0 @X0 1 sf ]
 "160
-[; ;mcc_generated_files/can1.c: 160: {
+[; ;mcc_generated_files/can1.c: 160: }
+[e :UE 3190 ]
+}
+"162
+[; ;mcc_generated_files/can1.c: 162: static void CAN1_RX_FIFO_Configuration(void)
+[v _CAN1_RX_FIFO_Configuration `(v ~T0 @X0 1 sf ]
+"163
+[; ;mcc_generated_files/can1.c: 163: {
 {
 [e :U _CAN1_RX_FIFO_Configuration ]
 [f ]
-"162
-[; ;mcc_generated_files/can1.c: 162:     C1FIFOCON1L = 0x18;
-[e = _C1FIFOCON1L -> -> 24 `i `uc ]
 "165
-[; ;mcc_generated_files/can1.c: 165:     C1FIFOCON1H = 0x04;
-[e = _C1FIFOCON1H -> -> 4 `i `uc ]
+[; ;mcc_generated_files/can1.c: 165:     C1FIFOCON1L = 0x19;
+[e = _C1FIFOCON1L -> -> 25 `i `uc ]
 "168
-[; ;mcc_generated_files/can1.c: 168:     C1FIFOCON1U = 0x60;
-[e = _C1FIFOCON1U -> -> 96 `i `uc ]
+[; ;mcc_generated_files/can1.c: 168:     C1FIFOCON1H = 0x04;
+[e = _C1FIFOCON1H -> -> 4 `i `uc ]
 "171
-[; ;mcc_generated_files/can1.c: 171:     C1FIFOCON1T = 0x05;
+[; ;mcc_generated_files/can1.c: 171:     C1FIFOCON1U = 0x60;
+[e = _C1FIFOCON1U -> -> 96 `i `uc ]
+"174
+[; ;mcc_generated_files/can1.c: 174:     C1FIFOCON1T = 0x05;
 [e = _C1FIFOCON1T -> -> 5 `i `uc ]
-"173
-[; ;mcc_generated_files/can1.c: 173: }
-[e :UE 3193 ]
-}
-"175
-[; ;mcc_generated_files/can1.c: 175: static void CAN1_RX_FIFO_FilterMaskConfiguration(void)
-[v _CAN1_RX_FIFO_FilterMaskConfiguration `(v ~T0 @X0 1 sf ]
 "176
-[; ;mcc_generated_files/can1.c: 176: {
+[; ;mcc_generated_files/can1.c: 176:     CAN1_SetFIFO1NotEmptyHandler(DefaultFIFO1NotEmptyHandler);
+[e ( _CAN1_SetFIFO1NotEmptyHandler (1 &U _DefaultFIFO1NotEmptyHandler ]
+"178
+[; ;mcc_generated_files/can1.c: 178:     C1INTUbits.RXIE = 1;
+[e = . . _C1INTUbits 0 1 -> -> 1 `i `uc ]
+"180
+[; ;mcc_generated_files/can1.c: 180:     PIR4bits.CANRXIF = 0;
+[e = . . _PIR4bits 0 4 -> -> 0 `i `uc ]
+"181
+[; ;mcc_generated_files/can1.c: 181:     PIE4bits.CANRXIE = 1;
+[e = . . _PIE4bits 0 4 -> -> 1 `i `uc ]
+"182
+[; ;mcc_generated_files/can1.c: 182: }
+[e :UE 3194 ]
+}
+"184
+[; ;mcc_generated_files/can1.c: 184: static void CAN1_RX_FIFO_FilterMaskConfiguration(void)
+[v _CAN1_RX_FIFO_FilterMaskConfiguration `(v ~T0 @X0 1 sf ]
+"185
+[; ;mcc_generated_files/can1.c: 185: {
 {
 [e :U _CAN1_RX_FIFO_FilterMaskConfiguration ]
 [f ]
-"178
-[; ;mcc_generated_files/can1.c: 178:     C1FLTOBJ1L = 0x01;
-[e = _C1FLTOBJ1L -> -> 1 `i `uc ]
-"179
-[; ;mcc_generated_files/can1.c: 179:     C1FLTOBJ1H = 0x00;
-[e = _C1FLTOBJ1H -> -> 0 `i `uc ]
-"180
-[; ;mcc_generated_files/can1.c: 180:     C1FLTOBJ1U = 0x00;
-[e = _C1FLTOBJ1U -> -> 0 `i `uc ]
-"181
-[; ;mcc_generated_files/can1.c: 181:     C1FLTOBJ1T = 0x00;
-[e = _C1FLTOBJ1T -> -> 0 `i `uc ]
-"182
-[; ;mcc_generated_files/can1.c: 182:     C1MASK1L = 0xFF;
-[e = _C1MASK1L -> -> 255 `i `uc ]
-"183
-[; ;mcc_generated_files/can1.c: 183:     C1MASK1H = 0x07;
-[e = _C1MASK1H -> -> 7 `i `uc ]
-"184
-[; ;mcc_generated_files/can1.c: 184:     C1MASK1U = 0x00;
+"199
+[; ;mcc_generated_files/can1.c: 199:     C1FLTOBJ1L = 0x5F;
+[e = _C1FLTOBJ1L -> -> 95 `i `uc ]
+"200
+[; ;mcc_generated_files/can1.c: 200:     C1FLTOBJ1H = 0xFF;
+[e = _C1FLTOBJ1H -> -> 255 `i `uc ]
+"201
+[; ;mcc_generated_files/can1.c: 201:     C1FLTOBJ1U = 0xFF;
+[e = _C1FLTOBJ1U -> -> 255 `i `uc ]
+"202
+[; ;mcc_generated_files/can1.c: 202:     C1FLTOBJ1T = 0xFF;
+[e = _C1FLTOBJ1T -> -> 255 `i `uc ]
+"204
+[; ;mcc_generated_files/can1.c: 204:     C1MASK1L = 0x00;
+[e = _C1MASK1L -> -> 0 `i `uc ]
+"205
+[; ;mcc_generated_files/can1.c: 205:     C1MASK1H = 0x00;
+[e = _C1MASK1H -> -> 0 `i `uc ]
+"206
+[; ;mcc_generated_files/can1.c: 206:     C1MASK1U = 0x00;
 [e = _C1MASK1U -> -> 0 `i `uc ]
-"185
-[; ;mcc_generated_files/can1.c: 185:     C1MASK1T = 0x40;
-[e = _C1MASK1T -> -> 64 `i `uc ]
-"186
-[; ;mcc_generated_files/can1.c: 186:     C1FLTCON0H = 0x81;
+"207
+[; ;mcc_generated_files/can1.c: 207:     C1MASK1T = 0x00;
+[e = _C1MASK1T -> -> 0 `i `uc ]
+"208
+[; ;mcc_generated_files/can1.c: 208:     C1FLTCON0H = 0x81;
 [e = _C1FLTCON0H -> -> 129 `i `uc ]
-"188
-[; ;mcc_generated_files/can1.c: 188: }
-[e :UE 3194 ]
+"210
+[; ;mcc_generated_files/can1.c: 210: }
+[e :UE 3195 ]
 }
-"190
-[; ;mcc_generated_files/can1.c: 190: static void CAN1_TX_FIFO_Configuration(void)
+"212
+[; ;mcc_generated_files/can1.c: 212: static void CAN1_TX_FIFO_Configuration(void)
 [v _CAN1_TX_FIFO_Configuration `(v ~T0 @X0 1 sf ]
-"191
-[; ;mcc_generated_files/can1.c: 191: {
+"213
+[; ;mcc_generated_files/can1.c: 213: {
 {
 [e :U _CAN1_TX_FIFO_Configuration ]
 [f ]
-"193
-[; ;mcc_generated_files/can1.c: 193:     C1TXQCONL = 0x10;
+"215
+[; ;mcc_generated_files/can1.c: 215:     C1TXQCONL = 0x10;
 [e = _C1TXQCONL -> -> 16 `i `uc ]
-"196
-[; ;mcc_generated_files/can1.c: 196:     C1TXQCONH = 0x04;
+"218
+[; ;mcc_generated_files/can1.c: 218:     C1TXQCONH = 0x04;
 [e = _C1TXQCONH -> -> 4 `i `uc ]
-"199
-[; ;mcc_generated_files/can1.c: 199:     C1TXQCONU = 0x61;
+"221
+[; ;mcc_generated_files/can1.c: 221:     C1TXQCONU = 0x61;
 [e = _C1TXQCONU -> -> 97 `i `uc ]
-"202
-[; ;mcc_generated_files/can1.c: 202:     C1TXQCONT = 0x05;
+"224
+[; ;mcc_generated_files/can1.c: 224:     C1TXQCONT = 0x05;
 [e = _C1TXQCONT -> -> 5 `i `uc ]
-"204
-[; ;mcc_generated_files/can1.c: 204: }
-[e :UE 3195 ]
+"226
+[; ;mcc_generated_files/can1.c: 226: }
+[e :UE 3196 ]
 }
-"206
-[; ;mcc_generated_files/can1.c: 206: static void CAN1_BitRateConfiguration(void)
+"228
+[; ;mcc_generated_files/can1.c: 228: static void CAN1_BitRateConfiguration(void)
 [v _CAN1_BitRateConfiguration `(v ~T0 @X0 1 sf ]
-"207
-[; ;mcc_generated_files/can1.c: 207: {
+"229
+[; ;mcc_generated_files/can1.c: 229: {
 {
 [e :U _CAN1_BitRateConfiguration ]
 [f ]
-"209
-[; ;mcc_generated_files/can1.c: 209:     C1NBTCFGL = 0x01;
+"231
+[; ;mcc_generated_files/can1.c: 231:     C1NBTCFGL = 0x01;
 [e = _C1NBTCFGL -> -> 1 `i `uc ]
-"212
-[; ;mcc_generated_files/can1.c: 212:     C1NBTCFGH = 0x01;
+"234
+[; ;mcc_generated_files/can1.c: 234:     C1NBTCFGH = 0x01;
 [e = _C1NBTCFGH -> -> 1 `i `uc ]
-"215
-[; ;mcc_generated_files/can1.c: 215:     C1NBTCFGU = 0x06;
+"237
+[; ;mcc_generated_files/can1.c: 237:     C1NBTCFGU = 0x06;
 [e = _C1NBTCFGU -> -> 6 `i `uc ]
-"218
-[; ;mcc_generated_files/can1.c: 218:     C1NBTCFGT = 0x00;
+"240
+[; ;mcc_generated_files/can1.c: 240:     C1NBTCFGT = 0x00;
 [e = _C1NBTCFGT -> -> 0 `i `uc ]
-"220
-[; ;mcc_generated_files/can1.c: 220: }
-[e :UE 3196 ]
+"242
+[; ;mcc_generated_files/can1.c: 242: }
+[e :UE 3197 ]
 }
-"222
-[; ;mcc_generated_files/can1.c: 222: static void CAN1_ErrorNotificationInterruptEnable(void)
+"244
+[; ;mcc_generated_files/can1.c: 244: static void CAN1_ErrorNotificationInterruptEnable(void)
 [v _CAN1_ErrorNotificationInterruptEnable `(v ~T0 @X0 1 sf ]
-"223
-[; ;mcc_generated_files/can1.c: 223: {
+"245
+[; ;mcc_generated_files/can1.c: 245: {
 {
 [e :U _CAN1_ErrorNotificationInterruptEnable ]
 [f ]
-"224
-[; ;mcc_generated_files/can1.c: 224:     CAN1_SetInvalidMessageInterruptHandler(DefaultInvalidMessageHandler);
-[e ( _CAN1_SetInvalidMessageInterruptHandler (1 &U _DefaultInvalidMessageHandler ]
-"225
-[; ;mcc_generated_files/can1.c: 225:     CAN1_SetBusWakeUpActivityInterruptHandler(DefaultBusWakeUpActivityHandler);
-[e ( _CAN1_SetBusWakeUpActivityInterruptHandler (1 &U _DefaultBusWakeUpActivityHandler ]
-"226
-[; ;mcc_generated_files/can1.c: 226:     CAN1_SetBusErrorInterruptHandler(DefaultBusErrorHandler);
-[e ( _CAN1_SetBusErrorInterruptHandler (1 &U _DefaultBusErrorHandler ]
-"227
-[; ;mcc_generated_files/can1.c: 227:     CAN1_SetModeChangeInterruptHandler(DefaultModeChangeHandler);
-[e ( _CAN1_SetModeChangeInterruptHandler (1 &U _DefaultModeChangeHandler ]
-"228
-[; ;mcc_generated_files/can1.c: 228:     CAN1_SetSystemErrorInterruptHandler(DefaultSystemErrorHandler);
-[e ( _CAN1_SetSystemErrorInterruptHandler (1 &U _DefaultSystemErrorHandler ]
-"229
-[; ;mcc_generated_files/can1.c: 229:     CAN1_SetTxAttemptInterruptHandler(DefaultTxAttemptHandler);
-[e ( _CAN1_SetTxAttemptInterruptHandler (1 &U _DefaultTxAttemptHandler ]
-"230
-[; ;mcc_generated_files/can1.c: 230:     CAN1_SetRxBufferOverFlowInterruptHandler(DefaultRxBufferOverflowHandler);
-[e ( _CAN1_SetRxBufferOverFlowInterruptHandler (1 &U _DefaultRxBufferOverflowHandler ]
-"231
-[; ;mcc_generated_files/can1.c: 231:     PIR0bits.CANIF = 0;
-[e = . . _PIR0bits 0 6 -> -> 0 `i `uc ]
-"234
-[; ;mcc_generated_files/can1.c: 234:     C1INTL = 0x00;
-[e = _C1INTL -> -> 0 `i `uc ]
-"237
-[; ;mcc_generated_files/can1.c: 237:     C1INTH = 0x00;
-[e = _C1INTH -> -> 0 `i `uc ]
-"240
-[; ;mcc_generated_files/can1.c: 240:     C1INTU = 0x08;
-[e = _C1INTU -> -> 8 `i `uc ]
-"243
-[; ;mcc_generated_files/can1.c: 243:     C1INTT = 0xFC;
-[e = _C1INTT -> -> 252 `i `uc ]
-"245
-[; ;mcc_generated_files/can1.c: 245:     PIE0bits.CANIE = 1;
-[e = . . _PIE0bits 0 6 -> -> 1 `i `uc ]
 "246
-[; ;mcc_generated_files/can1.c: 246: }
-[e :UE 3197 ]
-}
+[; ;mcc_generated_files/can1.c: 246:     CAN1_SetInvalidMessageInterruptHandler(DefaultInvalidMessageHandler);
+[e ( _CAN1_SetInvalidMessageInterruptHandler (1 &U _DefaultInvalidMessageHandler ]
+"247
+[; ;mcc_generated_files/can1.c: 247:     CAN1_SetBusWakeUpActivityInterruptHandler(DefaultBusWakeUpActivityHandler);
+[e ( _CAN1_SetBusWakeUpActivityInterruptHandler (1 &U _DefaultBusWakeUpActivityHandler ]
 "248
-[; ;mcc_generated_files/can1.c: 248: void CAN1_Initialize(void)
-[v _CAN1_Initialize `(v ~T0 @X0 1 ef ]
+[; ;mcc_generated_files/can1.c: 248:     CAN1_SetBusErrorInterruptHandler(DefaultBusErrorHandler);
+[e ( _CAN1_SetBusErrorInterruptHandler (1 &U _DefaultBusErrorHandler ]
 "249
-[; ;mcc_generated_files/can1.c: 249: {
+[; ;mcc_generated_files/can1.c: 249:     CAN1_SetModeChangeInterruptHandler(DefaultModeChangeHandler);
+[e ( _CAN1_SetModeChangeInterruptHandler (1 &U _DefaultModeChangeHandler ]
+"250
+[; ;mcc_generated_files/can1.c: 250:     CAN1_SetSystemErrorInterruptHandler(DefaultSystemErrorHandler);
+[e ( _CAN1_SetSystemErrorInterruptHandler (1 &U _DefaultSystemErrorHandler ]
+"251
+[; ;mcc_generated_files/can1.c: 251:     CAN1_SetTxAttemptInterruptHandler(DefaultTxAttemptHandler);
+[e ( _CAN1_SetTxAttemptInterruptHandler (1 &U _DefaultTxAttemptHandler ]
+"252
+[; ;mcc_generated_files/can1.c: 252:     CAN1_SetRxBufferOverFlowInterruptHandler(DefaultRxBufferOverflowHandler);
+[e ( _CAN1_SetRxBufferOverFlowInterruptHandler (1 &U _DefaultRxBufferOverflowHandler ]
+"253
+[; ;mcc_generated_files/can1.c: 253:     PIR0bits.CANIF = 0;
+[e = . . _PIR0bits 0 6 -> -> 0 `i `uc ]
+"256
+[; ;mcc_generated_files/can1.c: 256:     C1INTL = 0x00;
+[e = _C1INTL -> -> 0 `i `uc ]
+"259
+[; ;mcc_generated_files/can1.c: 259:     C1INTH = 0x00;
+[e = _C1INTH -> -> 0 `i `uc ]
+"262
+[; ;mcc_generated_files/can1.c: 262:     C1INTU = 0x0A;
+[e = _C1INTU -> -> 10 `i `uc ]
+"265
+[; ;mcc_generated_files/can1.c: 265:     C1INTT = 0xFC;
+[e = _C1INTT -> -> 252 `i `uc ]
+"267
+[; ;mcc_generated_files/can1.c: 267:     PIE0bits.CANIE = 1;
+[e = . . _PIE0bits 0 6 -> -> 1 `i `uc ]
+"268
+[; ;mcc_generated_files/can1.c: 268: }
+[e :UE 3198 ]
+}
+"270
+[; ;mcc_generated_files/can1.c: 270: void CAN1_Initialize(void)
+[v _CAN1_Initialize `(v ~T0 @X0 1 ef ]
+"271
+[; ;mcc_generated_files/can1.c: 271: {
 {
 [e :U _CAN1_Initialize ]
 [f ]
-"251
-[; ;mcc_generated_files/can1.c: 251:     C1CONHbits.ON = 1;
-[e = . . _C1CONHbits 0 6 -> -> 1 `i `uc ]
-"253
-[; ;mcc_generated_files/can1.c: 253:     if (CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
-[e $ ! == -> . `E22356 0 `ui -> ( _CAN1_OperationModeSet (1 . `E22346 4 `ui 3199  ]
-"254
-[; ;mcc_generated_files/can1.c: 254:     {
-{
-"256
-[; ;mcc_generated_files/can1.c: 256:         C1FIFOBA = 0x2600;
-[e = _C1FIFOBA -> -> -> 9728 `i `l `ul ]
-"259
-[; ;mcc_generated_files/can1.c: 259:         C1CONL = 0x60;
-[e = _C1CONL -> -> 96 `i `uc ]
-"262
-[; ;mcc_generated_files/can1.c: 262:         C1CONH = 0x97;
-[e = _C1CONH -> -> 151 `i `uc ]
-"265
-[; ;mcc_generated_files/can1.c: 265:         C1CONU = 0x10;
-[e = _C1CONU -> -> 16 `i `uc ]
-"267
-[; ;mcc_generated_files/can1.c: 267:         CAN1_BitRateConfiguration();
-[e ( _CAN1_BitRateConfiguration ..  ]
-"268
-[; ;mcc_generated_files/can1.c: 268:         CAN1_TX_FIFO_Configuration();
-[e ( _CAN1_TX_FIFO_Configuration ..  ]
-"269
-[; ;mcc_generated_files/can1.c: 269:         CAN1_RX_FIFO_Configuration();
-[e ( _CAN1_RX_FIFO_Configuration ..  ]
-"270
-[; ;mcc_generated_files/can1.c: 270:         CAN1_RX_FIFO_FilterMaskConfiguration();
-[e ( _CAN1_RX_FIFO_FilterMaskConfiguration ..  ]
-"271
-[; ;mcc_generated_files/can1.c: 271:         CAN1_RX_FIFO_ResetInfo();
-[e ( _CAN1_RX_FIFO_ResetInfo ..  ]
-"272
-[; ;mcc_generated_files/can1.c: 272:         CAN1_ErrorNotificationInterruptEnable();
-[e ( _CAN1_ErrorNotificationInterruptEnable ..  ]
 "273
-[; ;mcc_generated_files/can1.c: 273:         CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);
-[e ( _CAN1_OperationModeSet (1 . `E22346 6 ]
-"274
-[; ;mcc_generated_files/can1.c: 274:     }
-}
-[e :U 3199 ]
+[; ;mcc_generated_files/can1.c: 273:     C1CONHbits.ON = 1;
+[e = . . _C1CONHbits 0 6 -> -> 1 `i `uc ]
 "275
-[; ;mcc_generated_files/can1.c: 275: }
-[e :UE 3198 ]
-}
-"277
-[; ;mcc_generated_files/can1.c: 277: CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
-[v _CAN1_OperationModeSet `(E22356 ~T0 @X0 1 ef1`CE22346 ]
+[; ;mcc_generated_files/can1.c: 275:     if (CAN_OP_MODE_REQUEST_SUCCESS == CAN1_OperationModeSet(CAN_CONFIGURATION_MODE))
+[e $ ! == -> . `E22356 0 `ui -> ( _CAN1_OperationModeSet (1 . `E22346 4 `ui 3200  ]
+"276
+[; ;mcc_generated_files/can1.c: 276:     {
+{
 "278
-[; ;mcc_generated_files/can1.c: 278: {
+[; ;mcc_generated_files/can1.c: 278:         C1FIFOBA = 0x2600;
+[e = _C1FIFOBA -> -> -> 9728 `i `l `ul ]
+"281
+[; ;mcc_generated_files/can1.c: 281:         C1CONL = 0x60;
+[e = _C1CONL -> -> 96 `i `uc ]
+"284
+[; ;mcc_generated_files/can1.c: 284:         C1CONH = 0x97;
+[e = _C1CONH -> -> 151 `i `uc ]
+"287
+[; ;mcc_generated_files/can1.c: 287:         C1CONU = 0x10;
+[e = _C1CONU -> -> 16 `i `uc ]
+"289
+[; ;mcc_generated_files/can1.c: 289:         CAN1_BitRateConfiguration();
+[e ( _CAN1_BitRateConfiguration ..  ]
+"290
+[; ;mcc_generated_files/can1.c: 290:         CAN1_TX_FIFO_Configuration();
+[e ( _CAN1_TX_FIFO_Configuration ..  ]
+"291
+[; ;mcc_generated_files/can1.c: 291:         CAN1_RX_FIFO_Configuration();
+[e ( _CAN1_RX_FIFO_Configuration ..  ]
+"292
+[; ;mcc_generated_files/can1.c: 292:         CAN1_RX_FIFO_FilterMaskConfiguration();
+[e ( _CAN1_RX_FIFO_FilterMaskConfiguration ..  ]
+"293
+[; ;mcc_generated_files/can1.c: 293:         CAN1_RX_FIFO_ResetInfo();
+[e ( _CAN1_RX_FIFO_ResetInfo ..  ]
+"294
+[; ;mcc_generated_files/can1.c: 294:         CAN1_ErrorNotificationInterruptEnable();
+[e ( _CAN1_ErrorNotificationInterruptEnable ..  ]
+"295
+[; ;mcc_generated_files/can1.c: 295:         CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);
+[e ( _CAN1_OperationModeSet (1 . `E22346 6 ]
+"296
+[; ;mcc_generated_files/can1.c: 296:     }
+}
+[e :U 3200 ]
+"297
+[; ;mcc_generated_files/can1.c: 297: }
+[e :UE 3199 ]
+}
+"299
+[; ;mcc_generated_files/can1.c: 299: CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
+[v _CAN1_OperationModeSet `(E22356 ~T0 @X0 1 ef1`CE22346 ]
+"300
+[; ;mcc_generated_files/can1.c: 300: {
 {
 [e :U _CAN1_OperationModeSet ]
-"277
-[; ;mcc_generated_files/can1.c: 277: CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
+"299
+[; ;mcc_generated_files/can1.c: 299: CAN_OP_MODE_STATUS CAN1_OperationModeSet(const CAN_OP_MODES requestMode)
 [v _requestMode `CE22346 ~T0 @X0 1 r1 ]
-"278
-[; ;mcc_generated_files/can1.c: 278: {
+"300
+[; ;mcc_generated_files/can1.c: 300: {
 [f ]
-"279
-[; ;mcc_generated_files/can1.c: 279:     CAN_OP_MODE_STATUS status = CAN_OP_MODE_REQUEST_SUCCESS;
+"301
+[; ;mcc_generated_files/can1.c: 301:     CAN_OP_MODE_STATUS status = CAN_OP_MODE_REQUEST_SUCCESS;
 [v _status `E22356 ~T0 @X0 1 a ]
 [e = _status . `E22356 0 ]
-"280
-[; ;mcc_generated_files/can1.c: 280:     CAN_OP_MODES opMode = CAN1_OperationModeGet();
+"302
+[; ;mcc_generated_files/can1.c: 302:     CAN_OP_MODES opMode = CAN1_OperationModeGet();
 [v _opMode `E22346 ~T0 @X0 1 a ]
 [e = _opMode ( _CAN1_OperationModeGet ..  ]
-"282
-[; ;mcc_generated_files/can1.c: 282:     if (CAN_CONFIGURATION_MODE == opMode
-[e $ ! || || == -> . `E22346 4 `ui -> _opMode `ui == -> . `E22346 1 `ui -> _requestMode `ui == -> . `E22346 4 `ui -> _requestMode `ui 3201  ]
-"285
-[; ;mcc_generated_files/can1.c: 285:     {
+"304
+[; ;mcc_generated_files/can1.c: 304:     if (CAN_CONFIGURATION_MODE == opMode
+[e $ ! || || == -> . `E22346 4 `ui -> _opMode `ui == -> . `E22346 1 `ui -> _requestMode `ui == -> . `E22346 4 `ui -> _requestMode `ui 3202  ]
+"307
+[; ;mcc_generated_files/can1.c: 307:     {
 {
-"286
-[; ;mcc_generated_files/can1.c: 286:         C1CONTbits.REQOP = requestMode;
+"308
+[; ;mcc_generated_files/can1.c: 308:         C1CONTbits.REQOP = requestMode;
 [e = . . _C1CONTbits 0 0 -> _requestMode `uc ]
-"288
-[; ;mcc_generated_files/can1.c: 288:         while (C1CONUbits.OPMOD != requestMode)
-[e $U 3202  ]
-[e :U 3203 ]
-"289
-[; ;mcc_generated_files/can1.c: 289:         {
-{
-"291
-[; ;mcc_generated_files/can1.c: 291:             if (1 == C1INTHbits.SERRIF)
-[e $ ! == -> 1 `i -> . . _C1INTHbits 0 3 `i 3205  ]
-"292
-[; ;mcc_generated_files/can1.c: 292:             {
-{
-"293
-[; ;mcc_generated_files/can1.c: 293:                 status = CAN_OP_MODE_SYS_ERROR_OCCURED;
-[e = _status . `E22356 2 ]
-"294
-[; ;mcc_generated_files/can1.c: 294:                 break;
-[e $U 3204  ]
-"295
-[; ;mcc_generated_files/can1.c: 295:             }
-}
-[e :U 3205 ]
-"296
-[; ;mcc_generated_files/can1.c: 296:         }
-}
-[e :U 3202 ]
-"288
-[; ;mcc_generated_files/can1.c: 288:         while (C1CONUbits.OPMOD != requestMode)
-[e $ != -> . . _C1CONUbits 0 5 `ui -> _requestMode `ui 3203  ]
+"310
+[; ;mcc_generated_files/can1.c: 310:         while (C1CONUbits.OPMOD != requestMode)
+[e $U 3203  ]
 [e :U 3204 ]
-"297
-[; ;mcc_generated_files/can1.c: 297:     }
-}
-[e $U 3206  ]
-"298
-[; ;mcc_generated_files/can1.c: 298:     else
-[e :U 3201 ]
-"299
-[; ;mcc_generated_files/can1.c: 299:     {
+"311
+[; ;mcc_generated_files/can1.c: 311:         {
 {
-"300
-[; ;mcc_generated_files/can1.c: 300:         status = CAN_OP_MODE_REQUEST_FAIL;
-[e = _status . `E22356 1 ]
-"301
-[; ;mcc_generated_files/can1.c: 301:     }
+"313
+[; ;mcc_generated_files/can1.c: 313:             if (1 == C1INTHbits.SERRIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 3 `i 3206  ]
+"314
+[; ;mcc_generated_files/can1.c: 314:             {
+{
+"315
+[; ;mcc_generated_files/can1.c: 315:                 status = CAN_OP_MODE_SYS_ERROR_OCCURED;
+[e = _status . `E22356 2 ]
+"316
+[; ;mcc_generated_files/can1.c: 316:                 break;
+[e $U 3205  ]
+"317
+[; ;mcc_generated_files/can1.c: 317:             }
 }
 [e :U 3206 ]
-"303
-[; ;mcc_generated_files/can1.c: 303:     return status;
-[e ) _status ]
-[e $UE 3200  ]
-"304
-[; ;mcc_generated_files/can1.c: 304: }
-[e :UE 3200 ]
+"318
+[; ;mcc_generated_files/can1.c: 318:         }
 }
-"306
-[; ;mcc_generated_files/can1.c: 306: CAN_OP_MODES CAN1_OperationModeGet(void)
+[e :U 3203 ]
+"310
+[; ;mcc_generated_files/can1.c: 310:         while (C1CONUbits.OPMOD != requestMode)
+[e $ != -> . . _C1CONUbits 0 5 `ui -> _requestMode `ui 3204  ]
+[e :U 3205 ]
+"319
+[; ;mcc_generated_files/can1.c: 319:     }
+}
+[e $U 3207  ]
+"320
+[; ;mcc_generated_files/can1.c: 320:     else
+[e :U 3202 ]
+"321
+[; ;mcc_generated_files/can1.c: 321:     {
+{
+"322
+[; ;mcc_generated_files/can1.c: 322:         status = CAN_OP_MODE_REQUEST_FAIL;
+[e = _status . `E22356 1 ]
+"323
+[; ;mcc_generated_files/can1.c: 323:     }
+}
+[e :U 3207 ]
+"325
+[; ;mcc_generated_files/can1.c: 325:     return status;
+[e ) _status ]
+[e $UE 3201  ]
+"326
+[; ;mcc_generated_files/can1.c: 326: }
+[e :UE 3201 ]
+}
+"328
+[; ;mcc_generated_files/can1.c: 328: CAN_OP_MODES CAN1_OperationModeGet(void)
 [v _CAN1_OperationModeGet `(E22346 ~T0 @X0 1 ef ]
-"307
-[; ;mcc_generated_files/can1.c: 307: {
+"329
+[; ;mcc_generated_files/can1.c: 329: {
 {
 [e :U _CAN1_OperationModeGet ]
 [f ]
-"308
-[; ;mcc_generated_files/can1.c: 308:     return C1CONUbits.OPMOD;
+"330
+[; ;mcc_generated_files/can1.c: 330:     return C1CONUbits.OPMOD;
 [e ) -> . . _C1CONUbits 0 5 `E22346 ]
-[e $UE 3207  ]
-"309
-[; ;mcc_generated_files/can1.c: 309: }
-[e :UE 3207 ]
-}
-"311
-[; ;mcc_generated_files/can1.c: 311: static uint8_t GetRxFifoDepth(uint8_t validChannel)
-[v _GetRxFifoDepth `(uc ~T0 @X0 1 sf1`uc ]
-"312
-[; ;mcc_generated_files/can1.c: 312: {
-{
-[e :U _GetRxFifoDepth ]
-"311
-[; ;mcc_generated_files/can1.c: 311: static uint8_t GetRxFifoDepth(uint8_t validChannel)
-[v _validChannel `uc ~T0 @X0 1 r1 ]
-"312
-[; ;mcc_generated_files/can1.c: 312: {
-[f ]
-"313
-[; ;mcc_generated_files/can1.c: 313:     return 1U + (FIFO[validChannel].CONT & 0x1F);
-[e ) -> + -> 1 `ui -> & -> . *U + _FIFO * -> _validChannel `ux -> -> # *U _FIFO `ui `ux 3 `i -> 31 `i `ui `uc ]
 [e $UE 3208  ]
-"314
-[; ;mcc_generated_files/can1.c: 314: }
+"331
+[; ;mcc_generated_files/can1.c: 331: }
 [e :UE 3208 ]
 }
-"316
-[; ;mcc_generated_files/can1.c: 316: static CAN_RX_FIFO_STATUS GetRxFifoStatus(uint8_t validChannel)
-[v _GetRxFifoStatus `(E22453 ~T0 @X0 1 sf1`uc ]
-"317
-[; ;mcc_generated_files/can1.c: 317: {
+"333
+[; ;mcc_generated_files/can1.c: 333: static uint8_t GetRxFifoDepth(uint8_t validChannel)
+[v _GetRxFifoDepth `(uc ~T0 @X0 1 sf1`uc ]
+"334
+[; ;mcc_generated_files/can1.c: 334: {
 {
-[e :U _GetRxFifoStatus ]
-"316
-[; ;mcc_generated_files/can1.c: 316: static CAN_RX_FIFO_STATUS GetRxFifoStatus(uint8_t validChannel)
+[e :U _GetRxFifoDepth ]
+"333
+[; ;mcc_generated_files/can1.c: 333: static uint8_t GetRxFifoDepth(uint8_t validChannel)
 [v _validChannel `uc ~T0 @X0 1 r1 ]
-"317
-[; ;mcc_generated_files/can1.c: 317: {
+"334
+[; ;mcc_generated_files/can1.c: 334: {
 [f ]
-"318
-[; ;mcc_generated_files/can1.c: 318:     return FIFO[validChannel].STAL & (CAN_RX_MSG_AVAILABLE | CAN_RX_MSG_OVERFLOW);
-[e ) -> & -> . *U + _FIFO * -> _validChannel `ux -> -> # *U _FIFO `ui `ux 4 `i | -> . `E22453 1 `i -> . `E22453 2 `i `E22453 ]
+"335
+[; ;mcc_generated_files/can1.c: 335:     return 1U + (FIFO[validChannel].CONT & 0x1F);
+[e ) -> + -> 1 `ui -> & -> . *U + _FIFO * -> _validChannel `ux -> -> # *U _FIFO `ui `ux 3 `i -> 31 `i `ui `uc ]
 [e $UE 3209  ]
-"319
-[; ;mcc_generated_files/can1.c: 319: }
+"336
+[; ;mcc_generated_files/can1.c: 336: }
 [e :UE 3209 ]
 }
-"321
-[; ;mcc_generated_files/can1.c: 321: static void ReadMessageFromFifo(uint8_t *rxFifoObj, CAN_MSG_OBJ *rxCanMsg)
-[v _ReadMessageFromFifo `(v ~T0 @X0 1 sf2`*uc`*S3179 ]
-"322
-[; ;mcc_generated_files/can1.c: 322: {
-{
-[e :U _ReadMessageFromFifo ]
-"321
-[; ;mcc_generated_files/can1.c: 321: static void ReadMessageFromFifo(uint8_t *rxFifoObj, CAN_MSG_OBJ *rxCanMsg)
-[v _rxFifoObj `*uc ~T0 @X0 1 r1 ]
-[v _rxCanMsg `*S3179 ~T0 @X0 1 r2 ]
-"322
-[; ;mcc_generated_files/can1.c: 322: {
-[f ]
-"323
-[; ;mcc_generated_files/can1.c: 323:     uint32_t msgId;
-[v _msgId `ul ~T0 @X0 1 a ]
-"324
-[; ;mcc_generated_files/can1.c: 324:     uint8_t status = rxFifoObj[4];
-[v _status `uc ~T0 @X0 1 a ]
-[e = _status *U + _rxFifoObj * -> -> 4 `i `x -> -> # *U _rxFifoObj `i `x ]
-"325
-[; ;mcc_generated_files/can1.c: 325:     const uint8_t payloadOffsetBytes =
-[v _payloadOffsetBytes `Cuc ~T0 @X0 1 a ]
-[e = _payloadOffsetBytes -> + + + -> 4 `ui -> 1 `ui -> 1 `ui -> 2 `ui `uc ]
-"331
-[; ;mcc_generated_files/can1.c: 331:     rxCanMsg->field.dlc = status;
-[e = . . . *U _rxCanMsg 1 1 2 _status ]
-"332
-[; ;mcc_generated_files/can1.c: 332:     rxCanMsg->field.idType = (status & (1UL << (4U))) ? CAN_FRAME_EXT : CAN_FRAME_STD;
-[e = . . . *U _rxCanMsg 1 1 0 -> ? != & -> _status `ul << -> 1 `ul -> 4 `ui -> -> -> 0 `i `l `ul : . `E22328 1 . `E22328 0 `uc ]
-"333
-[; ;mcc_generated_files/can1.c: 333:     rxCanMsg->field.frameType = (status & (1UL << (5U))) ? CAN_FRAME_RTR : CAN_FRAME_DATA;
-[e = . . . *U _rxCanMsg 1 1 1 -> ? != & -> _status `ul << -> 1 `ul -> 5 `ui -> -> -> 0 `i `l `ul : . `E22332 1 . `E22332 0 `uc ]
-"334
-[; ;mcc_generated_files/can1.c: 334:     rxCanMsg->field.brs = (status & (1UL << (6U))) ? CAN_BRS_MODE : CAN_NON_BRS_MODE;
-[e = . . . *U _rxCanMsg 1 1 4 -> ? != & -> _status `ul << -> 1 `ul -> 6 `ui -> -> -> 0 `i `l `ul : . `E22324 1 . `E22324 0 `uc ]
-"335
-[; ;mcc_generated_files/can1.c: 335:     rxCanMsg->field.formatType = (status & (1UL << (7U))) ? CAN_FRAME_EXT : CAN_FRAME_STD;
-[e = . . . *U _rxCanMsg 1 1 3 -> ? != & -> _status `ul << -> 1 `ul -> 7 `ui -> -> -> 0 `i `l `ul : . `E22328 1 . `E22328 0 `uc ]
-"337
-[; ;mcc_generated_files/can1.c: 337:     msgId = rxFifoObj[1] & (0x07U);
-[e = _msgId -> & -> *U + _rxFifoObj * -> -> 1 `i `x -> -> # *U _rxFifoObj `i `x `ui -> 7 `ui `ul ]
 "338
-[; ;mcc_generated_files/can1.c: 338:     msgId <<= (8U);
-[e =<< _msgId -> -> 8 `ui `ul ]
+[; ;mcc_generated_files/can1.c: 338: static CAN_RX_FIFO_STATUS GetRxFifoStatus(uint8_t validChannel)
+[v _GetRxFifoStatus `(E22534 ~T0 @X0 1 sf1`uc ]
 "339
-[; ;mcc_generated_files/can1.c: 339:     msgId |= rxFifoObj[0];
-[e =| _msgId -> *U + _rxFifoObj * -> -> 0 `i `x -> -> # *U _rxFifoObj `i `x `ul ]
-"340
-[; ;mcc_generated_files/can1.c: 340:     if (CAN_FRAME_EXT == rxCanMsg->field.idType)
-[e $ ! == -> . `E22328 1 `i -> . . . *U _rxCanMsg 1 1 0 `i 3211  ]
-"341
-[; ;mcc_generated_files/can1.c: 341:     {
+[; ;mcc_generated_files/can1.c: 339: {
 {
-"342
-[; ;mcc_generated_files/can1.c: 342:         msgId <<= (5U);
-[e =<< _msgId -> -> 5 `ui `ul ]
-"343
-[; ;mcc_generated_files/can1.c: 343:         msgId |= (rxFifoObj[3] & (0x1FU));
-[e =| _msgId -> & -> *U + _rxFifoObj * -> -> 3 `i `x -> -> # *U _rxFifoObj `i `x `ui -> 31 `ui `ul ]
-"344
-[; ;mcc_generated_files/can1.c: 344:         msgId <<= (8U);
-[e =<< _msgId -> -> 8 `ui `ul ]
-"345
-[; ;mcc_generated_files/can1.c: 345:         msgId |= rxFifoObj[2];
-[e =| _msgId -> *U + _rxFifoObj * -> -> 2 `i `x -> -> # *U _rxFifoObj `i `x `ul ]
-"346
-[; ;mcc_generated_files/can1.c: 346:         msgId <<= (5U);
-[e =<< _msgId -> -> 5 `ui `ul ]
-"347
-[; ;mcc_generated_files/can1.c: 347:         msgId |= (rxFifoObj[1] & (0xF8U)) >> (3U);
-[e =| _msgId -> >> & -> *U + _rxFifoObj * -> -> 1 `i `x -> -> # *U _rxFifoObj `i `x `ui -> 248 `ui -> 3 `ui `ul ]
-"348
-[; ;mcc_generated_files/can1.c: 348:     }
-}
-[e :U 3211 ]
-"349
-[; ;mcc_generated_files/can1.c: 349:     rxCanMsg->msgId = msgId;
-[e = . *U _rxCanMsg 0 _msgId ]
-"351
-[; ;mcc_generated_files/can1.c: 351:     memcpy(rxMsgData, rxFifoObj + payloadOffsetBytes, (DLC_BYTES[(rxCanMsg->field.dlc)]));
-[e ( _memcpy (3 , , -> &U _rxMsgData `*v -> + _rxFifoObj * -> -> _payloadOffsetBytes `i `x -> -> # *U _rxFifoObj `i `x `*Cv -> *U + &U _DLC_BYTES * -> . . . *U _rxCanMsg 1 1 2 `ux -> -> # *U &U _DLC_BYTES `ui `ux `ui ]
-"352
-[; ;mcc_generated_files/can1.c: 352:     rxCanMsg->data = rxMsgData;
-[e = . *U _rxCanMsg 2 &U _rxMsgData ]
-"353
-[; ;mcc_generated_files/can1.c: 353: }
+[e :U _GetRxFifoStatus ]
+"338
+[; ;mcc_generated_files/can1.c: 338: static CAN_RX_FIFO_STATUS GetRxFifoStatus(uint8_t validChannel)
+[v _validChannel `uc ~T0 @X0 1 r1 ]
+"339
+[; ;mcc_generated_files/can1.c: 339: {
+[f ]
+"340
+[; ;mcc_generated_files/can1.c: 340:     return FIFO[validChannel].STAL & (CAN_RX_MSG_AVAILABLE | CAN_RX_MSG_OVERFLOW);
+[e ) -> & -> . *U + _FIFO * -> _validChannel `ux -> -> # *U _FIFO `ui `ux 4 `i | -> . `E22534 1 `i -> . `E22534 2 `i `E22534 ]
+[e $UE 3210  ]
+"341
+[; ;mcc_generated_files/can1.c: 341: }
 [e :UE 3210 ]
 }
-"355
-[; ;mcc_generated_files/can1.c: 355: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
-[v _CAN1_Receive `(a ~T0 @X0 1 ef1`*S3179 ]
-"356
-[; ;mcc_generated_files/can1.c: 356: {
+"343
+[; ;mcc_generated_files/can1.c: 343: static void ReadMessageFromFifo(uint8_t *rxFifoObj, CAN_MSG_OBJ *rxCanMsg)
+[v _ReadMessageFromFifo `(v ~T0 @X0 1 sf2`*uc`*S3179 ]
+"344
+[; ;mcc_generated_files/can1.c: 344: {
 {
-[e :U _CAN1_Receive ]
-"355
-[; ;mcc_generated_files/can1.c: 355: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
-[v _rxCanMsg `*S3179 ~T0 @X0 1 r1 ]
-"356
-[; ;mcc_generated_files/can1.c: 356: {
+[e :U _ReadMessageFromFifo ]
+"343
+[; ;mcc_generated_files/can1.c: 343: static void ReadMessageFromFifo(uint8_t *rxFifoObj, CAN_MSG_OBJ *rxCanMsg)
+[v _rxFifoObj `*uc ~T0 @X0 1 r1 ]
+[v _rxCanMsg `*S3179 ~T0 @X0 1 r2 ]
+"344
+[; ;mcc_generated_files/can1.c: 344: {
 [f ]
+"345
+[; ;mcc_generated_files/can1.c: 345:     uint32_t msgId;
+[v _msgId `ul ~T0 @X0 1 a ]
+"346
+[; ;mcc_generated_files/can1.c: 346:     uint8_t status = rxFifoObj[4];
+[v _status `uc ~T0 @X0 1 a ]
+[e = _status *U + _rxFifoObj * -> -> 4 `i `x -> -> # *U _rxFifoObj `i `x ]
+"347
+[; ;mcc_generated_files/can1.c: 347:     const uint8_t payloadOffsetBytes =
+[v _payloadOffsetBytes `Cuc ~T0 @X0 1 a ]
+[e = _payloadOffsetBytes -> + + + -> 4 `ui -> 1 `ui -> 1 `ui -> 2 `ui `uc ]
+"353
+[; ;mcc_generated_files/can1.c: 353:     rxCanMsg->field.dlc = status;
+[e = . . . *U _rxCanMsg 1 1 2 _status ]
+"354
+[; ;mcc_generated_files/can1.c: 354:     rxCanMsg->field.idType = (status & (1UL << (4U))) ? CAN_FRAME_EXT : CAN_FRAME_STD;
+[e = . . . *U _rxCanMsg 1 1 0 -> ? != & -> _status `ul << -> 1 `ul -> 4 `ui -> -> -> 0 `i `l `ul : . `E22328 1 . `E22328 0 `uc ]
+"355
+[; ;mcc_generated_files/can1.c: 355:     rxCanMsg->field.frameType = (status & (1UL << (5U))) ? CAN_FRAME_RTR : CAN_FRAME_DATA;
+[e = . . . *U _rxCanMsg 1 1 1 -> ? != & -> _status `ul << -> 1 `ul -> 5 `ui -> -> -> 0 `i `l `ul : . `E22332 1 . `E22332 0 `uc ]
+"356
+[; ;mcc_generated_files/can1.c: 356:     rxCanMsg->field.brs = (status & (1UL << (6U))) ? CAN_BRS_MODE : CAN_NON_BRS_MODE;
+[e = . . . *U _rxCanMsg 1 1 4 -> ? != & -> _status `ul << -> 1 `ul -> 6 `ui -> -> -> 0 `i `l `ul : . `E22324 1 . `E22324 0 `uc ]
 "357
-[; ;mcc_generated_files/can1.c: 357:     uint8_t index;
-[v _index `uc ~T0 @X0 1 a ]
-"358
-[; ;mcc_generated_files/can1.c: 358:     _Bool status = 0;
+[; ;mcc_generated_files/can1.c: 357:     rxCanMsg->field.formatType = (status & (1UL << (7U))) ? CAN_FRAME_EXT : CAN_FRAME_STD;
+[e = . . . *U _rxCanMsg 1 1 3 -> ? != & -> _status `ul << -> 1 `ul -> 7 `ui -> -> -> 0 `i `l `ul : . `E22328 1 . `E22328 0 `uc ]
+"359
+[; ;mcc_generated_files/can1.c: 359:     msgId = rxFifoObj[1] & (0x07U);
+[e = _msgId -> & -> *U + _rxFifoObj * -> -> 1 `i `x -> -> # *U _rxFifoObj `i `x `ui -> 7 `ui `ul ]
+"360
+[; ;mcc_generated_files/can1.c: 360:     msgId <<= (8U);
+[e =<< _msgId -> -> 8 `ui `ul ]
+"361
+[; ;mcc_generated_files/can1.c: 361:     msgId |= rxFifoObj[0];
+[e =| _msgId -> *U + _rxFifoObj * -> -> 0 `i `x -> -> # *U _rxFifoObj `i `x `ul ]
+"362
+[; ;mcc_generated_files/can1.c: 362:     if (CAN_FRAME_EXT == rxCanMsg->field.idType)
+[e $ ! == -> . `E22328 1 `i -> . . . *U _rxCanMsg 1 1 0 `i 3212  ]
+"363
+[; ;mcc_generated_files/can1.c: 363:     {
+{
+"364
+[; ;mcc_generated_files/can1.c: 364:         msgId <<= (5U);
+[e =<< _msgId -> -> 5 `ui `ul ]
+"365
+[; ;mcc_generated_files/can1.c: 365:         msgId |= (rxFifoObj[3] & (0x1FU));
+[e =| _msgId -> & -> *U + _rxFifoObj * -> -> 3 `i `x -> -> # *U _rxFifoObj `i `x `ui -> 31 `ui `ul ]
+"366
+[; ;mcc_generated_files/can1.c: 366:         msgId <<= (8U);
+[e =<< _msgId -> -> 8 `ui `ul ]
+"367
+[; ;mcc_generated_files/can1.c: 367:         msgId |= rxFifoObj[2];
+[e =| _msgId -> *U + _rxFifoObj * -> -> 2 `i `x -> -> # *U _rxFifoObj `i `x `ul ]
+"368
+[; ;mcc_generated_files/can1.c: 368:         msgId <<= (5U);
+[e =<< _msgId -> -> 5 `ui `ul ]
+"369
+[; ;mcc_generated_files/can1.c: 369:         msgId |= (rxFifoObj[1] & (0xF8U)) >> (3U);
+[e =| _msgId -> >> & -> *U + _rxFifoObj * -> -> 1 `i `x -> -> # *U _rxFifoObj `i `x `ui -> 248 `ui -> 3 `ui `ul ]
+"370
+[; ;mcc_generated_files/can1.c: 370:     }
+}
+[e :U 3212 ]
+"371
+[; ;mcc_generated_files/can1.c: 371:     rxCanMsg->msgId = msgId;
+[e = . *U _rxCanMsg 0 _msgId ]
+"373
+[; ;mcc_generated_files/can1.c: 373:     memcpy(rxMsgData, rxFifoObj + payloadOffsetBytes, (DLC_BYTES[(rxCanMsg->field.dlc)]));
+[e ( _memcpy (3 , , -> &U _rxMsgData `*v -> + _rxFifoObj * -> -> _payloadOffsetBytes `i `x -> -> # *U _rxFifoObj `i `x `*Cv -> *U + &U _DLC_BYTES * -> . . . *U _rxCanMsg 1 1 2 `ux -> -> # *U &U _DLC_BYTES `ui `ux `ui ]
+"374
+[; ;mcc_generated_files/can1.c: 374:     rxCanMsg->data = rxMsgData;
+[e = . *U _rxCanMsg 2 -> &U _rxMsgData `*uc ]
+"375
+[; ;mcc_generated_files/can1.c: 375: }
+[e :UE 3211 ]
+}
+"377
+[; ;mcc_generated_files/can1.c: 377: static _Bool Receive(uint8_t index, CAN1_RX_FIFO_CHANNELS channel, CAN_MSG_OBJ *rxCanMsg)
+[v _Receive `(a ~T0 @X0 1 sf3`uc`E22386`*S3179 ]
+"378
+[; ;mcc_generated_files/can1.c: 378: {
+{
+[e :U _Receive ]
+"377
+[; ;mcc_generated_files/can1.c: 377: static _Bool Receive(uint8_t index, CAN1_RX_FIFO_CHANNELS channel, CAN_MSG_OBJ *rxCanMsg)
+[v _index `uc ~T0 @X0 1 r1 ]
+[v _channel `E22386 ~T0 @X0 1 r2 ]
+[v _rxCanMsg `*S3179 ~T0 @X0 1 r3 ]
+"378
+[; ;mcc_generated_files/can1.c: 378: {
+[f ]
+"379
+[; ;mcc_generated_files/can1.c: 379:     _Bool status = 0;
 [v _status `a ~T0 @X0 1 a ]
 [e = _status -> -> 0 `i `a ]
-"360
-[; ;mcc_generated_files/can1.c: 360:     for (index = 0; index < (1U); index++)
-{
-[e = _index -> -> 0 `i `uc ]
-[e $ < -> _index `ui -> 1 `ui 3213  ]
-[e $U 3214  ]
-[e :U 3213 ]
-"361
-[; ;mcc_generated_files/can1.c: 361:     {
-{
-"362
-[; ;mcc_generated_files/can1.c: 362:         CAN1_RX_FIFO_CHANNELS channel = rxFifos[index].channel;
-[v _channel `E22458 ~T0 @X0 1 a ]
-[e = _channel . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 0 ]
-"363
-[; ;mcc_generated_files/can1.c: 363:         CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
-[v _rxMsgStatus `E22453 ~T0 @X0 1 a ]
+"380
+[; ;mcc_generated_files/can1.c: 380:     CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
+[v _rxMsgStatus `E22534 ~T0 @X0 1 a ]
 [e = _rxMsgStatus ( _GetRxFifoStatus (1 -> _channel `uc ]
-"365
-[; ;mcc_generated_files/can1.c: 365:         if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
-[e $ ! == -> . `E22453 1 `ui & -> _rxMsgStatus `ui -> . `E22453 1 `ui 3216  ]
-"366
-[; ;mcc_generated_files/can1.c: 366:         {
+"382
+[; ;mcc_generated_files/can1.c: 382:     if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
+[e $ ! == -> . `E22534 1 `ui & -> _rxMsgStatus `ui -> . `E22534 1 `ui 3214  ]
+"383
+[; ;mcc_generated_files/can1.c: 383:     {
 {
-"367
-[; ;mcc_generated_files/can1.c: 367:             uint8_t *rxFifoObj = (uint8_t *) FIFO[channel].UA;
+"384
+[; ;mcc_generated_files/can1.c: 384:         uint8_t *rxFifoObj = (uint8_t *) FIFO[channel].UA;
 [v _rxFifoObj `*uc ~T0 @X0 1 a ]
 [e = _rxFifoObj -> . *U + _FIFO * -> _channel `x -> -> # *U _FIFO `i `x 8 `*uc ]
-"369
-[; ;mcc_generated_files/can1.c: 369:             if (rxFifoObj != ((void*)0))
-[e $ ! != _rxFifoObj -> -> -> 0 `i `*v `*uc 3217  ]
-"370
-[; ;mcc_generated_files/can1.c: 370:             {
-{
-"371
-[; ;mcc_generated_files/can1.c: 371:                 ReadMessageFromFifo(rxFifoObj, rxCanMsg);
-[e ( _ReadMessageFromFifo (2 , _rxFifoObj _rxCanMsg ]
-"372
-[; ;mcc_generated_files/can1.c: 372:                 FIFO[channel].CONH |= 0x1;
-[e =| . *U + _FIFO * -> _channel `x -> -> # *U _FIFO `i `x 1 -> -> 1 `i `Vuc ]
-"374
-[; ;mcc_generated_files/can1.c: 374:                 rxFifos[index].fifoHead += 1;
-[e =+ . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 1 -> -> 1 `i `Vuc ]
-"375
-[; ;mcc_generated_files/can1.c: 375:                 if (rxFifos[index].fifoHead >= GetRxFifoDepth(channel))
-[e $ ! >= -> . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 1 `i -> ( _GetRxFifoDepth (1 -> _channel `uc `i 3218  ]
-"376
-[; ;mcc_generated_files/can1.c: 376:                 {
-{
-"377
-[; ;mcc_generated_files/can1.c: 377:                     rxFifos[index].fifoHead = 0;
-[e = . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 1 -> -> 0 `i `uc ]
-"378
-[; ;mcc_generated_files/can1.c: 378:                 }
-}
-[e :U 3218 ]
-"380
-[; ;mcc_generated_files/can1.c: 380:                 if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
-[e $ ! == -> . `E22453 2 `ui & -> _rxMsgStatus `ui -> . `E22453 2 `ui 3219  ]
-"381
-[; ;mcc_generated_files/can1.c: 381:                 {
-{
-"382
-[; ;mcc_generated_files/can1.c: 382:                     FIFO[channel].STAL &= ~0x8;
-[e =& . *U + _FIFO * -> _channel `x -> -> # *U _FIFO `i `x 4 -> ~ -> 8 `i `Vuc ]
-"383
-[; ;mcc_generated_files/can1.c: 383:                 }
-}
-[e :U 3219 ]
-"385
-[; ;mcc_generated_files/can1.c: 385:                 status = 1;
-[e = _status -> -> 1 `i `a ]
 "386
-[; ;mcc_generated_files/can1.c: 386:             }
-}
-[e :U 3217 ]
+[; ;mcc_generated_files/can1.c: 386:         if (rxFifoObj != ((void*)0))
+[e $ ! != _rxFifoObj -> -> -> 0 `i `*v `*uc 3215  ]
+"387
+[; ;mcc_generated_files/can1.c: 387:         {
+{
 "388
-[; ;mcc_generated_files/can1.c: 388:             break;
-[e $U 3214  ]
+[; ;mcc_generated_files/can1.c: 388:             ReadMessageFromFifo(rxFifoObj, rxCanMsg);
+[e ( _ReadMessageFromFifo (2 , _rxFifoObj _rxCanMsg ]
 "389
-[; ;mcc_generated_files/can1.c: 389:         }
+[; ;mcc_generated_files/can1.c: 389:             FIFO[channel].CONH |= 0x1;
+[e =| . *U + _FIFO * -> _channel `x -> -> # *U _FIFO `i `x 1 -> -> 1 `i `Vuc ]
+"391
+[; ;mcc_generated_files/can1.c: 391:             rxFifos[index].fifoHead += 1;
+[e =+ . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 1 -> -> 1 `i `Vuc ]
+"392
+[; ;mcc_generated_files/can1.c: 392:             if (rxFifos[index].fifoHead >= GetRxFifoDepth(channel))
+[e $ ! >= -> . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 1 `i -> ( _GetRxFifoDepth (1 -> _channel `uc `i 3216  ]
+"393
+[; ;mcc_generated_files/can1.c: 393:             {
+{
+"394
+[; ;mcc_generated_files/can1.c: 394:                 rxFifos[index].fifoHead = 0;
+[e = . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 1 -> -> 0 `i `uc ]
+"395
+[; ;mcc_generated_files/can1.c: 395:             }
 }
 [e :U 3216 ]
-"390
-[; ;mcc_generated_files/can1.c: 390:     }
+"397
+[; ;mcc_generated_files/can1.c: 397:             if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
+[e $ ! == -> . `E22534 2 `ui & -> _rxMsgStatus `ui -> . `E22534 2 `ui 3217  ]
+"398
+[; ;mcc_generated_files/can1.c: 398:             {
+{
+"399
+[; ;mcc_generated_files/can1.c: 399:                 FIFO[channel].STAL &= ~0x8;
+[e =& . *U + _FIFO * -> _channel `x -> -> # *U _FIFO `i `x 4 -> ~ -> 8 `i `Vuc ]
+"400
+[; ;mcc_generated_files/can1.c: 400:             }
+}
+[e :U 3217 ]
+"402
+[; ;mcc_generated_files/can1.c: 402:             status = 1;
+[e = _status -> -> 1 `i `a ]
+"403
+[; ;mcc_generated_files/can1.c: 403:         }
+}
+[e :U 3215 ]
+"404
+[; ;mcc_generated_files/can1.c: 404:     }
+}
+[e :U 3214 ]
+"406
+[; ;mcc_generated_files/can1.c: 406:     return status;
+[e ) _status ]
+[e $UE 3213  ]
+"407
+[; ;mcc_generated_files/can1.c: 407: }
+[e :UE 3213 ]
+}
+"409
+[; ;mcc_generated_files/can1.c: 409: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
+[v _CAN1_Receive `(a ~T0 @X0 1 ef1`*S3179 ]
+"410
+[; ;mcc_generated_files/can1.c: 410: {
+{
+[e :U _CAN1_Receive ]
+"409
+[; ;mcc_generated_files/can1.c: 409: _Bool CAN1_Receive(CAN_MSG_OBJ *rxCanMsg)
+[v _rxCanMsg `*S3179 ~T0 @X0 1 r1 ]
+"410
+[; ;mcc_generated_files/can1.c: 410: {
+[f ]
+"411
+[; ;mcc_generated_files/can1.c: 411:     uint8_t index;
+[v _index `uc ~T0 @X0 1 a ]
+"412
+[; ;mcc_generated_files/can1.c: 412:     _Bool status = 0;
+[v _status `a ~T0 @X0 1 a ]
+[e = _status -> -> 0 `i `a ]
+"414
+[; ;mcc_generated_files/can1.c: 414:     for (index = 0; index < (1U); index++)
+{
+[e = _index -> -> 0 `i `uc ]
+[e $ < -> _index `ui -> 1 `ui 3219  ]
+[e $U 3220  ]
+[e :U 3219 ]
+"415
+[; ;mcc_generated_files/can1.c: 415:     {
+{
+"416
+[; ;mcc_generated_files/can1.c: 416:         status = Receive(index, rxFifos[index].channel, rxCanMsg);
+[e = _status ( _Receive (3 , , _index . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 0 _rxCanMsg ]
+"418
+[; ;mcc_generated_files/can1.c: 418:         if (status)
+[e $ ! != -> _status `i -> 0 `i 3222  ]
+"419
+[; ;mcc_generated_files/can1.c: 419:         {
+{
+"420
+[; ;mcc_generated_files/can1.c: 420:             break;
+[e $U 3220  ]
+"421
+[; ;mcc_generated_files/can1.c: 421:         }
+}
+[e :U 3222 ]
+"422
+[; ;mcc_generated_files/can1.c: 422:     }
 }
 [e ++ _index -> -> 1 `i `uc ]
-[e $ < -> _index `ui -> 1 `ui 3213  ]
-[e :U 3214 ]
+[e $ < -> _index `ui -> 1 `ui 3219  ]
+[e :U 3220 ]
 }
-"391
-[; ;mcc_generated_files/can1.c: 391:     return status;
+"424
+[; ;mcc_generated_files/can1.c: 424:     return status;
 [e ) _status ]
-[e $UE 3212  ]
-"392
-[; ;mcc_generated_files/can1.c: 392: }
-[e :UE 3212 ]
+[e $UE 3218  ]
+"425
+[; ;mcc_generated_files/can1.c: 425: }
+[e :UE 3218 ]
 }
-"394
-[; ;mcc_generated_files/can1.c: 394: uint8_t CAN1_ReceivedMessageCountGet(void)
+"427
+[; ;mcc_generated_files/can1.c: 427: _Bool CAN1_ReceiveFrom(const CAN1_RX_FIFO_CHANNELS channel, CAN_MSG_OBJ *rxCanMsg)
+[v _CAN1_ReceiveFrom `(a ~T0 @X0 1 ef2`CE22386`*S3179 ]
+"428
+[; ;mcc_generated_files/can1.c: 428: {
+{
+[e :U _CAN1_ReceiveFrom ]
+"427
+[; ;mcc_generated_files/can1.c: 427: _Bool CAN1_ReceiveFrom(const CAN1_RX_FIFO_CHANNELS channel, CAN_MSG_OBJ *rxCanMsg)
+[v _channel `CE22386 ~T0 @X0 1 r1 ]
+[v _rxCanMsg `*S3179 ~T0 @X0 1 r2 ]
+"428
+[; ;mcc_generated_files/can1.c: 428: {
+[f ]
+"429
+[; ;mcc_generated_files/can1.c: 429:     uint8_t index;
+[v _index `uc ~T0 @X0 1 a ]
+"430
+[; ;mcc_generated_files/can1.c: 430:     _Bool status = 0;
+[v _status `a ~T0 @X0 1 a ]
+[e = _status -> -> 0 `i `a ]
+"432
+[; ;mcc_generated_files/can1.c: 432:     for (index = 0; index < (1U); index++)
+{
+[e = _index -> -> 0 `i `uc ]
+[e $ < -> _index `ui -> 1 `ui 3224  ]
+[e $U 3225  ]
+[e :U 3224 ]
+"433
+[; ;mcc_generated_files/can1.c: 433:     {
+{
+"434
+[; ;mcc_generated_files/can1.c: 434:         if (channel == rxFifos[index].channel)
+[e $ ! == -> _channel `ui -> . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 0 `ui 3227  ]
+"435
+[; ;mcc_generated_files/can1.c: 435:         {
+{
+"436
+[; ;mcc_generated_files/can1.c: 436:             status = Receive(index, channel, rxCanMsg);
+[e = _status ( _Receive (3 , , _index _channel _rxCanMsg ]
+"437
+[; ;mcc_generated_files/can1.c: 437:             break;
+[e $U 3225  ]
+"438
+[; ;mcc_generated_files/can1.c: 438:         }
+}
+[e :U 3227 ]
+"439
+[; ;mcc_generated_files/can1.c: 439:     }
+}
+[e ++ _index -> -> 1 `i `uc ]
+[e $ < -> _index `ui -> 1 `ui 3224  ]
+[e :U 3225 ]
+}
+"441
+[; ;mcc_generated_files/can1.c: 441:     return status;
+[e ) _status ]
+[e $UE 3223  ]
+"442
+[; ;mcc_generated_files/can1.c: 442: }
+[e :UE 3223 ]
+}
+"444
+[; ;mcc_generated_files/can1.c: 444: uint8_t CAN1_ReceivedMessageCountGet(void)
 [v _CAN1_ReceivedMessageCountGet `(uc ~T0 @X0 1 ef ]
-"395
-[; ;mcc_generated_files/can1.c: 395: {
+"445
+[; ;mcc_generated_files/can1.c: 445: {
 {
 [e :U _CAN1_ReceivedMessageCountGet ]
 [f ]
-"396
-[; ;mcc_generated_files/can1.c: 396:     uint8_t index, totalMsgObj = 0;
+"446
+[; ;mcc_generated_files/can1.c: 446:     uint8_t index, totalMsgObj = 0;
 [v _index `uc ~T0 @X0 1 a ]
 [v _totalMsgObj `uc ~T0 @X0 1 a ]
 [e = _totalMsgObj -> -> 0 `i `uc ]
-"398
-[; ;mcc_generated_files/can1.c: 398:     for (index = 0; index < (1U); index++)
+"448
+[; ;mcc_generated_files/can1.c: 448:     for (index = 0; index < (1U); index++)
 {
 [e = _index -> -> 0 `i `uc ]
-[e $ < -> _index `ui -> 1 `ui 3221  ]
-[e $U 3222  ]
-[e :U 3221 ]
-"399
-[; ;mcc_generated_files/can1.c: 399:     {
+[e $ < -> _index `ui -> 1 `ui 3229  ]
+[e $U 3230  ]
+[e :U 3229 ]
+"449
+[; ;mcc_generated_files/can1.c: 449:     {
 {
-"400
-[; ;mcc_generated_files/can1.c: 400:         CAN1_RX_FIFO_CHANNELS channel = rxFifos[index].channel;
-[v _channel `E22458 ~T0 @X0 1 a ]
+"450
+[; ;mcc_generated_files/can1.c: 450:         CAN1_RX_FIFO_CHANNELS channel = rxFifos[index].channel;
+[v _channel `E22386 ~T0 @X0 1 a ]
 [e = _channel . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 0 ]
-"401
-[; ;mcc_generated_files/can1.c: 401:         CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
-[v _rxMsgStatus `E22453 ~T0 @X0 1 a ]
+"451
+[; ;mcc_generated_files/can1.c: 451:         CAN_RX_FIFO_STATUS rxMsgStatus = GetRxFifoStatus(channel);
+[v _rxMsgStatus `E22534 ~T0 @X0 1 a ]
 [e = _rxMsgStatus ( _GetRxFifoStatus (1 -> _channel `uc ]
-"403
-[; ;mcc_generated_files/can1.c: 403:         if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
-[e $ ! == -> . `E22453 1 `ui & -> _rxMsgStatus `ui -> . `E22453 1 `ui 3224  ]
-"404
-[; ;mcc_generated_files/can1.c: 404:         {
+"453
+[; ;mcc_generated_files/can1.c: 453:         if (CAN_RX_MSG_AVAILABLE == (rxMsgStatus & CAN_RX_MSG_AVAILABLE))
+[e $ ! == -> . `E22534 1 `ui & -> _rxMsgStatus `ui -> . `E22534 1 `ui 3232  ]
+"454
+[; ;mcc_generated_files/can1.c: 454:         {
 {
-"405
-[; ;mcc_generated_files/can1.c: 405:             uint8_t numOfMsg, fifoDepth = GetRxFifoDepth(channel);
+"455
+[; ;mcc_generated_files/can1.c: 455:             uint8_t numOfMsg, fifoDepth = GetRxFifoDepth(channel);
 [v _numOfMsg `uc ~T0 @X0 1 a ]
 [v _fifoDepth `uc ~T0 @X0 1 a ]
 [e = _fifoDepth ( _GetRxFifoDepth (1 -> _channel `uc ]
-"407
-[; ;mcc_generated_files/can1.c: 407:             if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
-[e $ ! == -> . `E22453 2 `ui & -> _rxMsgStatus `ui -> . `E22453 2 `ui 3225  ]
-"408
-[; ;mcc_generated_files/can1.c: 408:             {
-{
-"409
-[; ;mcc_generated_files/can1.c: 409:                 numOfMsg = fifoDepth;
-[e = _numOfMsg _fifoDepth ]
-"410
-[; ;mcc_generated_files/can1.c: 410:             }
-}
-[e $U 3226  ]
-"411
-[; ;mcc_generated_files/can1.c: 411:             else
-[e :U 3225 ]
-"412
-[; ;mcc_generated_files/can1.c: 412:             {
-{
-"413
-[; ;mcc_generated_files/can1.c: 413:                 uint8_t fifoTail = FIFO[channel].STAH & 0x1F;
-[v _fifoTail `uc ~T0 @X0 1 a ]
-[e = _fifoTail -> & -> . *U + _FIFO * -> _channel `x -> -> # *U _FIFO `i `x 5 `i -> 31 `i `uc ]
-"414
-[; ;mcc_generated_files/can1.c: 414:                 uint8_t fifoHead = rxFifos[index].fifoHead;
-[v _fifoHead `uc ~T0 @X0 1 a ]
-[e = _fifoHead . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 1 ]
-"416
-[; ;mcc_generated_files/can1.c: 416:                 if (fifoTail < fifoHead)
-[e $ ! < -> _fifoTail `i -> _fifoHead `i 3227  ]
-"417
-[; ;mcc_generated_files/can1.c: 417:                 {
-{
-"418
-[; ;mcc_generated_files/can1.c: 418:                     numOfMsg = ((fifoTail + fifoDepth) - fifoHead);
-[e = _numOfMsg -> - + -> _fifoTail `i -> _fifoDepth `i -> _fifoHead `i `uc ]
-"419
-[; ;mcc_generated_files/can1.c: 419:                 }
-}
-[e $U 3228  ]
-"420
-[; ;mcc_generated_files/can1.c: 420:                 else if (fifoTail > fifoHead)
-[e :U 3227 ]
-[e $ ! > -> _fifoTail `i -> _fifoHead `i 3229  ]
-"421
-[; ;mcc_generated_files/can1.c: 421:                 {
-{
-"422
-[; ;mcc_generated_files/can1.c: 422:                     numOfMsg = fifoTail - fifoHead;
-[e = _numOfMsg -> - -> _fifoTail `i -> _fifoHead `i `uc ]
-"423
-[; ;mcc_generated_files/can1.c: 423:                 }
-}
-[e $U 3230  ]
-"424
-[; ;mcc_generated_files/can1.c: 424:                 else
-[e :U 3229 ]
-"425
-[; ;mcc_generated_files/can1.c: 425:                 {
-{
-"426
-[; ;mcc_generated_files/can1.c: 426:                     numOfMsg = fifoDepth;
-[e = _numOfMsg _fifoDepth ]
-"427
-[; ;mcc_generated_files/can1.c: 427:                 }
-}
-[e :U 3230 ]
-[e :U 3228 ]
-"428
-[; ;mcc_generated_files/can1.c: 428:             }
-}
-[e :U 3226 ]
-"430
-[; ;mcc_generated_files/can1.c: 430:             totalMsgObj += numOfMsg;
-[e =+ _totalMsgObj -> _numOfMsg `uc ]
-"431
-[; ;mcc_generated_files/can1.c: 431:         }
-}
-[e :U 3224 ]
-"432
-[; ;mcc_generated_files/can1.c: 432:     }
-}
-[e ++ _index -> -> 1 `i `uc ]
-[e $ < -> _index `ui -> 1 `ui 3221  ]
-[e :U 3222 ]
-}
-"434
-[; ;mcc_generated_files/can1.c: 434:     return totalMsgObj;
-[e ) _totalMsgObj ]
-[e $UE 3220  ]
-"435
-[; ;mcc_generated_files/can1.c: 435: }
-[e :UE 3220 ]
-}
-"437
-[; ;mcc_generated_files/can1.c: 437: static _Bool isTxChannel(uint8_t channel)
-[v _isTxChannel `(a ~T0 @X0 1 sf1`uc ]
-"438
-[; ;mcc_generated_files/can1.c: 438: {
-{
-[e :U _isTxChannel ]
-"437
-[; ;mcc_generated_files/can1.c: 437: static _Bool isTxChannel(uint8_t channel)
-[v _channel `uc ~T0 @X0 1 r1 ]
-"438
-[; ;mcc_generated_files/can1.c: 438: {
-[f ]
-"439
-[; ;mcc_generated_files/can1.c: 439:     return channel < 4u && (FIFO[channel].CONL & 0x80);
-[e ) -> -> && < -> _channel `ui -> 4 `ui != & -> . *U + _FIFO * -> _channel `ux -> -> # *U _FIFO `ui `ux 0 `i -> 128 `i -> 0 `i `i `a ]
-[e $UE 3231  ]
-"440
-[; ;mcc_generated_files/can1.c: 440: }
-[e :UE 3231 ]
-}
-"442
-[; ;mcc_generated_files/can1.c: 442: static CAN_TX_FIFO_STATUS GetTxFifoStatus(uint8_t validChannel)
-[v _GetTxFifoStatus `(E22361 ~T0 @X0 1 sf1`uc ]
-"443
-[; ;mcc_generated_files/can1.c: 443: {
-{
-[e :U _GetTxFifoStatus ]
-"442
-[; ;mcc_generated_files/can1.c: 442: static CAN_TX_FIFO_STATUS GetTxFifoStatus(uint8_t validChannel)
-[v _validChannel `uc ~T0 @X0 1 r1 ]
-"443
-[; ;mcc_generated_files/can1.c: 443: {
-[f ]
-"444
-[; ;mcc_generated_files/can1.c: 444:     return (FIFO[validChannel].STAL & 0x1);
-[e ) -> & -> . *U + _FIFO * -> _validChannel `ux -> -> # *U _FIFO `ui `ux 4 `i -> 1 `i `E22361 ]
-[e $UE 3232  ]
-"445
-[; ;mcc_generated_files/can1.c: 445: }
-[e :UE 3232 ]
-}
-"447
-[; ;mcc_generated_files/can1.c: 447: static void WriteMessageToFifo(uint8_t *txFifoObj, CAN_MSG_OBJ *txCanMsg)
-[v _WriteMessageToFifo `(v ~T0 @X0 1 sf2`*uc`*S3179 ]
-"448
-[; ;mcc_generated_files/can1.c: 448: {
-{
-[e :U _WriteMessageToFifo ]
-"447
-[; ;mcc_generated_files/can1.c: 447: static void WriteMessageToFifo(uint8_t *txFifoObj, CAN_MSG_OBJ *txCanMsg)
-[v _txFifoObj `*uc ~T0 @X0 1 r1 ]
-[v _txCanMsg `*S3179 ~T0 @X0 1 r2 ]
-"448
-[; ;mcc_generated_files/can1.c: 448: {
-[f ]
-"449
-[; ;mcc_generated_files/can1.c: 449:     uint32_t msgId = txCanMsg->msgId;
-[v _msgId `ul ~T0 @X0 1 a ]
-[e = _msgId . *U _txCanMsg 0 ]
-"450
-[; ;mcc_generated_files/can1.c: 450:     uint8_t status;
-[v _status `uc ~T0 @X0 1 a ]
-"451
-[; ;mcc_generated_files/can1.c: 451:     const uint8_t payloadOffsetBytes =
-[v _payloadOffsetBytes `Cuc ~T0 @X0 1 a ]
-[e = _payloadOffsetBytes -> + + + -> 4 `ui -> 1 `ui -> 1 `ui -> 2 `ui `uc ]
 "457
-[; ;mcc_generated_files/can1.c: 457:     if (CAN_FRAME_EXT == txCanMsg->field.idType)
-[e $ ! == -> . `E22328 1 `i -> . . . *U _txCanMsg 1 1 0 `i 3234  ]
+[; ;mcc_generated_files/can1.c: 457:             if (CAN_RX_MSG_OVERFLOW == (rxMsgStatus & CAN_RX_MSG_OVERFLOW))
+[e $ ! == -> . `E22534 2 `ui & -> _rxMsgStatus `ui -> . `E22534 2 `ui 3233  ]
 "458
-[; ;mcc_generated_files/can1.c: 458:     {
+[; ;mcc_generated_files/can1.c: 458:             {
 {
 "459
-[; ;mcc_generated_files/can1.c: 459:         txFifoObj[1] = (msgId << (3U)) & (0xF8U);
-[e = *U + _txFifoObj * -> -> 1 `i `x -> -> # *U _txFifoObj `i `x -> & << _msgId -> 3 `ui -> -> 248 `ui `ul `uc ]
+[; ;mcc_generated_files/can1.c: 459:                 numOfMsg = fifoDepth;
+[e = _numOfMsg _fifoDepth ]
 "460
-[; ;mcc_generated_files/can1.c: 460:         msgId >>= (5U);
-[e =>> _msgId -> -> 5 `ui `ul ]
-"461
-[; ;mcc_generated_files/can1.c: 461:         txFifoObj[2] = msgId;
-[e = *U + _txFifoObj * -> -> 2 `i `x -> -> # *U _txFifoObj `i `x -> _msgId `uc ]
-"462
-[; ;mcc_generated_files/can1.c: 462:         msgId >>= (8U);
-[e =>> _msgId -> -> 8 `ui `ul ]
-"463
-[; ;mcc_generated_files/can1.c: 463:         txFifoObj[3] = (msgId & (0x1FU));
-[e = *U + _txFifoObj * -> -> 3 `i `x -> -> # *U _txFifoObj `i `x -> & _msgId -> -> 31 `ui `ul `uc ]
-"464
-[; ;mcc_generated_files/can1.c: 464:         msgId >>= (5U);
-[e =>> _msgId -> -> 5 `ui `ul ]
-"465
-[; ;mcc_generated_files/can1.c: 465:     }
+[; ;mcc_generated_files/can1.c: 460:             }
 }
-[e $U 3235  ]
+[e $U 3234  ]
+"461
+[; ;mcc_generated_files/can1.c: 461:             else
+[e :U 3233 ]
+"462
+[; ;mcc_generated_files/can1.c: 462:             {
+{
+"463
+[; ;mcc_generated_files/can1.c: 463:                 uint8_t fifoTail = FIFO[channel].STAH & 0x1F;
+[v _fifoTail `uc ~T0 @X0 1 a ]
+[e = _fifoTail -> & -> . *U + _FIFO * -> _channel `x -> -> # *U _FIFO `i `x 5 `i -> 31 `i `uc ]
+"464
+[; ;mcc_generated_files/can1.c: 464:                 uint8_t fifoHead = rxFifos[index].fifoHead;
+[v _fifoHead `uc ~T0 @X0 1 a ]
+[e = _fifoHead . *U + &U _rxFifos * -> _index `ux -> -> # *U &U _rxFifos `ui `ux 1 ]
 "466
-[; ;mcc_generated_files/can1.c: 466:     else
-[e :U 3234 ]
+[; ;mcc_generated_files/can1.c: 466:                 if (fifoTail < fifoHead)
+[e $ ! < -> _fifoTail `i -> _fifoHead `i 3235  ]
 "467
-[; ;mcc_generated_files/can1.c: 467:     {
+[; ;mcc_generated_files/can1.c: 467:                 {
 {
 "468
-[; ;mcc_generated_files/can1.c: 468:         txFifoObj[1] = txFifoObj[2] = txFifoObj[3] = 0;
-[e = *U + _txFifoObj * -> -> 1 `i `x -> -> # *U _txFifoObj `i `x = *U + _txFifoObj * -> -> 2 `i `x -> -> # *U _txFifoObj `i `x = *U + _txFifoObj * -> -> 3 `i `x -> -> # *U _txFifoObj `i `x -> -> 0 `i `uc ]
+[; ;mcc_generated_files/can1.c: 468:                     numOfMsg = ((fifoTail + fifoDepth) - fifoHead);
+[e = _numOfMsg -> - + -> _fifoTail `i -> _fifoDepth `i -> _fifoHead `i `uc ]
 "469
-[; ;mcc_generated_files/can1.c: 469:     }
+[; ;mcc_generated_files/can1.c: 469:                 }
 }
+[e $U 3236  ]
+"470
+[; ;mcc_generated_files/can1.c: 470:                 else if (fifoTail > fifoHead)
 [e :U 3235 ]
+[e $ ! > -> _fifoTail `i -> _fifoHead `i 3237  ]
 "471
-[; ;mcc_generated_files/can1.c: 471:     txFifoObj[0] = msgId;
-[e = *U + _txFifoObj * -> -> 0 `i `x -> -> # *U _txFifoObj `i `x -> _msgId `uc ]
+[; ;mcc_generated_files/can1.c: 471:                 {
+{
 "472
-[; ;mcc_generated_files/can1.c: 472:     msgId >>= (8U);
-[e =>> _msgId -> -> 8 `ui `ul ]
+[; ;mcc_generated_files/can1.c: 472:                     numOfMsg = fifoTail - fifoHead;
+[e = _numOfMsg -> - -> _fifoTail `i -> _fifoHead `i `uc ]
 "473
-[; ;mcc_generated_files/can1.c: 473:     txFifoObj[1] |= (msgId & (0x07U));
-[e =| *U + _txFifoObj * -> -> 1 `i `x -> -> # *U _txFifoObj `i `x -> & _msgId -> -> 7 `ui `ul `uc ]
+[; ;mcc_generated_files/can1.c: 473:                 }
+}
+[e $U 3238  ]
+"474
+[; ;mcc_generated_files/can1.c: 474:                 else
+[e :U 3237 ]
 "475
-[; ;mcc_generated_files/can1.c: 475:     status = txCanMsg->field.dlc;
-[e = _status . . . *U _txCanMsg 1 1 2 ]
+[; ;mcc_generated_files/can1.c: 475:                 {
+{
 "476
-[; ;mcc_generated_files/can1.c: 476:     status |= (txCanMsg->field.idType << (4U));
-[e =| _status -> << -> . . . *U _txCanMsg 1 1 0 `i -> 4 `ui `uc ]
+[; ;mcc_generated_files/can1.c: 476:                     numOfMsg = fifoDepth;
+[e = _numOfMsg _fifoDepth ]
 "477
-[; ;mcc_generated_files/can1.c: 477:     status |= (txCanMsg->field.frameType << (5U));
-[e =| _status -> << -> . . . *U _txCanMsg 1 1 1 `i -> 5 `ui `uc ]
-"478
-[; ;mcc_generated_files/can1.c: 478:     status |= (txCanMsg->field.brs << (6U));
-[e =| _status -> << -> . . . *U _txCanMsg 1 1 4 `i -> 6 `ui `uc ]
-"479
-[; ;mcc_generated_files/can1.c: 479:     status |= (txCanMsg->field.formatType << (7U));
-[e =| _status -> << -> . . . *U _txCanMsg 1 1 3 `i -> 7 `ui `uc ]
-"480
-[; ;mcc_generated_files/can1.c: 480:     txFifoObj[4] = status;
-[e = *U + _txFifoObj * -> -> 4 `i `x -> -> # *U _txFifoObj `i `x _status ]
-"482
-[; ;mcc_generated_files/can1.c: 482:     if (CAN_FRAME_DATA == txCanMsg->field.frameType)
-[e $ ! == -> . `E22332 0 `i -> . . . *U _txCanMsg 1 1 1 `i 3236  ]
-"483
-[; ;mcc_generated_files/can1.c: 483:     {
-{
-"484
-[; ;mcc_generated_files/can1.c: 484:         memcpy(txFifoObj + payloadOffsetBytes, txCanMsg->data, (DLC_BYTES[(txCanMsg->field.dlc)]));
-[e ( _memcpy (3 , , -> + _txFifoObj * -> -> _payloadOffsetBytes `i `x -> -> # *U _txFifoObj `i `x `*v -> . *U _txCanMsg 2 `*Cv -> *U + &U _DLC_BYTES * -> . . . *U _txCanMsg 1 1 2 `ux -> -> # *U &U _DLC_BYTES `ui `ux `ui ]
-"485
-[; ;mcc_generated_files/can1.c: 485:     }
-}
-[e :U 3236 ]
-"486
-[; ;mcc_generated_files/can1.c: 486: }
-[e :UE 3233 ]
-}
-"488
-[; ;mcc_generated_files/can1.c: 488: static CAN_TX_MSG_REQUEST_STATUS ValidateTransmission(uint8_t validChannel, CAN_MSG_OBJ *txCanMsg)
-[v _ValidateTransmission `(E22340 ~T0 @X0 1 sf2`uc`*S3179 ]
-"489
-[; ;mcc_generated_files/can1.c: 489: {
-{
-[e :U _ValidateTransmission ]
-"488
-[; ;mcc_generated_files/can1.c: 488: static CAN_TX_MSG_REQUEST_STATUS ValidateTransmission(uint8_t validChannel, CAN_MSG_OBJ *txCanMsg)
-[v _validChannel `uc ~T0 @X0 1 r1 ]
-[v _txCanMsg `*S3179 ~T0 @X0 1 r2 ]
-"489
-[; ;mcc_generated_files/can1.c: 489: {
-[f ]
-"490
-[; ;mcc_generated_files/can1.c: 490:     CAN_TX_MSG_REQUEST_STATUS txMsgStatus = CAN_TX_MSG_REQUEST_SUCCESS;
-[v _txMsgStatus `E22340 ~T0 @X0 1 a ]
-[e = _txMsgStatus . `E22340 0 ]
-"491
-[; ;mcc_generated_files/can1.c: 491:     CAN_MSG_FIELD field = txCanMsg->field;
-[v _field `S3177 ~T0 @X0 1 a ]
-[e = _field . *U _txCanMsg 1 ]
-"492
-[; ;mcc_generated_files/can1.c: 492:     uint8_t plsize = 0;
-[v _plsize `uc ~T0 @X0 1 a ]
-[e = _plsize -> -> 0 `i `uc ]
-"494
-[; ;mcc_generated_files/can1.c: 494:     if (CAN_BRS_MODE == field.brs && (CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
-[e $ ! && == -> . `E22324 1 `i -> . . _field 1 4 `i == -> . `E22346 6 `ui -> ( _CAN1_OperationModeGet ..  `ui 3238  ]
-"495
-[; ;mcc_generated_files/can1.c: 495:     {
-{
-"496
-[; ;mcc_generated_files/can1.c: 496:         txMsgStatus |= CAN_TX_MSG_REQUEST_BRS_ERROR;
-[e =| _txMsgStatus -> . `E22340 2 `E22340 ]
-"497
-[; ;mcc_generated_files/can1.c: 497:     }
+[; ;mcc_generated_files/can1.c: 477:                 }
 }
 [e :U 3238 ]
-"499
-[; ;mcc_generated_files/can1.c: 499:     if (field.dlc > DLC_8 && (CAN_2_0_FORMAT == field.formatType || CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
-[e $ ! && > -> . . _field 1 2 `i -> . `E22365 8 `i || == -> . `E22336 0 `i -> . . _field 1 3 `i == -> . `E22346 6 `ui -> ( _CAN1_OperationModeGet ..  `ui 3239  ]
-"500
-[; ;mcc_generated_files/can1.c: 500:     {
-{
-"501
-[; ;mcc_generated_files/can1.c: 501:         txMsgStatus |= CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR;
-[e =| _txMsgStatus -> . `E22340 1 `E22340 ]
-"502
-[; ;mcc_generated_files/can1.c: 502:     }
+[e :U 3236 ]
+"478
+[; ;mcc_generated_files/can1.c: 478:             }
 }
-[e :U 3239 ]
-"504
-[; ;mcc_generated_files/can1.c: 504:     if ((DLC_BYTES[(field.dlc)]) > ((DLC_BYTES[(8u + (plsize))])))
-[e $ ! > -> *U + &U _DLC_BYTES * -> . . _field 1 2 `ux -> -> # *U &U _DLC_BYTES `ui `ux `i -> *U + &U _DLC_BYTES * -> + -> 8 `ui -> _plsize `ui `ux -> -> # *U &U _DLC_BYTES `ui `ux `i 3240  ]
-"505
-[; ;mcc_generated_files/can1.c: 505:     {
-{
-"506
-[; ;mcc_generated_files/can1.c: 506:         txMsgStatus |= CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR;
-[e =| _txMsgStatus -> . `E22340 1 `E22340 ]
-"507
-[; ;mcc_generated_files/can1.c: 507:     }
+[e :U 3234 ]
+"480
+[; ;mcc_generated_files/can1.c: 480:             totalMsgObj += numOfMsg;
+[e =+ _totalMsgObj -> _numOfMsg `uc ]
+"481
+[; ;mcc_generated_files/can1.c: 481:         }
 }
-[e :U 3240 ]
-"509
-[; ;mcc_generated_files/can1.c: 509:     if (CAN_TX_FIFO_FULL == GetTxFifoStatus(validChannel))
-[e $ ! == -> . `E22361 0 `ui -> ( _GetTxFifoStatus (1 _validChannel `ui 3241  ]
-"510
-[; ;mcc_generated_files/can1.c: 510:     {
-{
-"511
-[; ;mcc_generated_files/can1.c: 511:         txMsgStatus |= CAN_TX_MSG_REQUEST_FIFO_FULL;
-[e =| _txMsgStatus -> . `E22340 3 `E22340 ]
-"512
-[; ;mcc_generated_files/can1.c: 512:     }
+[e :U 3232 ]
+"482
+[; ;mcc_generated_files/can1.c: 482:     }
 }
-[e :U 3241 ]
-"514
-[; ;mcc_generated_files/can1.c: 514:     return txMsgStatus;
-[e ) _txMsgStatus ]
-[e $UE 3237  ]
-"515
-[; ;mcc_generated_files/can1.c: 515: }
-[e :UE 3237 ]
+[e ++ _index -> -> 1 `i `uc ]
+[e $ < -> _index `ui -> 1 `ui 3229  ]
+[e :U 3230 ]
 }
-"517
-[; ;mcc_generated_files/can1.c: 517: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg)
-[v _CAN1_Transmit `(E22340 ~T0 @X0 1 ef2`CE22383`*S3179 ]
-"518
-[; ;mcc_generated_files/can1.c: 518: {
+"484
+[; ;mcc_generated_files/can1.c: 484:     return totalMsgObj;
+[e ) _totalMsgObj ]
+[e $UE 3228  ]
+"485
+[; ;mcc_generated_files/can1.c: 485: }
+[e :UE 3228 ]
+}
+"487
+[; ;mcc_generated_files/can1.c: 487: static _Bool isTxChannel(uint8_t channel)
+[v _isTxChannel `(a ~T0 @X0 1 sf1`uc ]
+"488
+[; ;mcc_generated_files/can1.c: 488: {
 {
-[e :U _CAN1_Transmit ]
-"517
-[; ;mcc_generated_files/can1.c: 517: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg)
-[v _fifoChannel `CE22383 ~T0 @X0 1 r1 ]
-[v _txCanMsg `*S3179 ~T0 @X0 1 r2 ]
-"518
-[; ;mcc_generated_files/can1.c: 518: {
+[e :U _isTxChannel ]
+"487
+[; ;mcc_generated_files/can1.c: 487: static _Bool isTxChannel(uint8_t channel)
+[v _channel `uc ~T0 @X0 1 r1 ]
+"488
+[; ;mcc_generated_files/can1.c: 488: {
 [f ]
+"489
+[; ;mcc_generated_files/can1.c: 489:     return channel < 4u && (FIFO[channel].CONL & 0x80);
+[e ) -> -> && < -> _channel `ui -> 4 `ui != & -> . *U + _FIFO * -> _channel `ux -> -> # *U _FIFO `ui `ux 0 `i -> 128 `i -> 0 `i `i `a ]
+[e $UE 3239  ]
+"490
+[; ;mcc_generated_files/can1.c: 490: }
+[e :UE 3239 ]
+}
+"492
+[; ;mcc_generated_files/can1.c: 492: static CAN_TX_FIFO_STATUS GetTxFifoStatus(uint8_t validChannel)
+[v _GetTxFifoStatus `(E22361 ~T0 @X0 1 sf1`uc ]
+"493
+[; ;mcc_generated_files/can1.c: 493: {
+{
+[e :U _GetTxFifoStatus ]
+"492
+[; ;mcc_generated_files/can1.c: 492: static CAN_TX_FIFO_STATUS GetTxFifoStatus(uint8_t validChannel)
+[v _validChannel `uc ~T0 @X0 1 r1 ]
+"493
+[; ;mcc_generated_files/can1.c: 493: {
+[f ]
+"494
+[; ;mcc_generated_files/can1.c: 494:     return (FIFO[validChannel].STAL & 0x1);
+[e ) -> & -> . *U + _FIFO * -> _validChannel `ux -> -> # *U _FIFO `ui `ux 4 `i -> 1 `i `E22361 ]
+[e $UE 3240  ]
+"495
+[; ;mcc_generated_files/can1.c: 495: }
+[e :UE 3240 ]
+}
+"497
+[; ;mcc_generated_files/can1.c: 497: static void WriteMessageToFifo(uint8_t *txFifoObj, CAN_MSG_OBJ *txCanMsg)
+[v _WriteMessageToFifo `(v ~T0 @X0 1 sf2`*uc`*S3179 ]
+"498
+[; ;mcc_generated_files/can1.c: 498: {
+{
+[e :U _WriteMessageToFifo ]
+"497
+[; ;mcc_generated_files/can1.c: 497: static void WriteMessageToFifo(uint8_t *txFifoObj, CAN_MSG_OBJ *txCanMsg)
+[v _txFifoObj `*uc ~T0 @X0 1 r1 ]
+[v _txCanMsg `*S3179 ~T0 @X0 1 r2 ]
+"498
+[; ;mcc_generated_files/can1.c: 498: {
+[f ]
+"499
+[; ;mcc_generated_files/can1.c: 499:     uint32_t msgId = txCanMsg->msgId;
+[v _msgId `ul ~T0 @X0 1 a ]
+[e = _msgId . *U _txCanMsg 0 ]
+"500
+[; ;mcc_generated_files/can1.c: 500:     uint8_t status;
+[v _status `uc ~T0 @X0 1 a ]
+"501
+[; ;mcc_generated_files/can1.c: 501:     const uint8_t payloadOffsetBytes =
+[v _payloadOffsetBytes `Cuc ~T0 @X0 1 a ]
+[e = _payloadOffsetBytes -> + + + -> 4 `ui -> 1 `ui -> 1 `ui -> 2 `ui `uc ]
+"507
+[; ;mcc_generated_files/can1.c: 507:     if (CAN_FRAME_EXT == txCanMsg->field.idType)
+[e $ ! == -> . `E22328 1 `i -> . . . *U _txCanMsg 1 1 0 `i 3242  ]
+"508
+[; ;mcc_generated_files/can1.c: 508:     {
+{
+"509
+[; ;mcc_generated_files/can1.c: 509:         txFifoObj[1] = (msgId << (3U)) & (0xF8U);
+[e = *U + _txFifoObj * -> -> 1 `i `x -> -> # *U _txFifoObj `i `x -> & << _msgId -> 3 `ui -> -> 248 `ui `ul `uc ]
+"510
+[; ;mcc_generated_files/can1.c: 510:         msgId >>= (5U);
+[e =>> _msgId -> -> 5 `ui `ul ]
+"511
+[; ;mcc_generated_files/can1.c: 511:         txFifoObj[2] = msgId;
+[e = *U + _txFifoObj * -> -> 2 `i `x -> -> # *U _txFifoObj `i `x -> _msgId `uc ]
+"512
+[; ;mcc_generated_files/can1.c: 512:         msgId >>= (8U);
+[e =>> _msgId -> -> 8 `ui `ul ]
+"513
+[; ;mcc_generated_files/can1.c: 513:         txFifoObj[3] = (msgId & (0x1FU));
+[e = *U + _txFifoObj * -> -> 3 `i `x -> -> # *U _txFifoObj `i `x -> & _msgId -> -> 31 `ui `ul `uc ]
+"514
+[; ;mcc_generated_files/can1.c: 514:         msgId >>= (5U);
+[e =>> _msgId -> -> 5 `ui `ul ]
+"515
+[; ;mcc_generated_files/can1.c: 515:     }
+}
+[e $U 3243  ]
+"516
+[; ;mcc_generated_files/can1.c: 516:     else
+[e :U 3242 ]
+"517
+[; ;mcc_generated_files/can1.c: 517:     {
+{
+"518
+[; ;mcc_generated_files/can1.c: 518:         txFifoObj[1] = txFifoObj[2] = txFifoObj[3] = 0;
+[e = *U + _txFifoObj * -> -> 1 `i `x -> -> # *U _txFifoObj `i `x = *U + _txFifoObj * -> -> 2 `i `x -> -> # *U _txFifoObj `i `x = *U + _txFifoObj * -> -> 3 `i `x -> -> # *U _txFifoObj `i `x -> -> 0 `i `uc ]
 "519
-[; ;mcc_generated_files/can1.c: 519:     CAN_TX_MSG_REQUEST_STATUS status = CAN_TX_MSG_REQUEST_FIFO_FULL;
-[v _status `E22340 ~T0 @X0 1 a ]
-[e = _status . `E22340 3 ]
-"521
-[; ;mcc_generated_files/can1.c: 521:     if (isTxChannel(fifoChannel))
-[e $ ! != -> ( _isTxChannel (1 -> _fifoChannel `uc `i -> 0 `i 3243  ]
-"522
-[; ;mcc_generated_files/can1.c: 522:     {
-{
-"523
-[; ;mcc_generated_files/can1.c: 523:         status = ValidateTransmission(fifoChannel, txCanMsg);
-[e = _status ( _ValidateTransmission (2 , -> _fifoChannel `uc _txCanMsg ]
-"524
-[; ;mcc_generated_files/can1.c: 524:         if (CAN_TX_MSG_REQUEST_SUCCESS == status)
-[e $ ! == -> . `E22340 0 `ui -> _status `ui 3244  ]
-"525
-[; ;mcc_generated_files/can1.c: 525:         {
-{
-"526
-[; ;mcc_generated_files/can1.c: 526:             uint8_t *txFifoObj = (uint8_t *) FIFO[fifoChannel].UA;
-[v _txFifoObj `*uc ~T0 @X0 1 a ]
-[e = _txFifoObj -> . *U + _FIFO * -> _fifoChannel `x -> -> # *U _FIFO `i `x 8 `*uc ]
-"528
-[; ;mcc_generated_files/can1.c: 528:             if (txFifoObj != ((void*)0))
-[e $ ! != _txFifoObj -> -> -> 0 `i `*v `*uc 3245  ]
-"529
-[; ;mcc_generated_files/can1.c: 529:             {
-{
-"530
-[; ;mcc_generated_files/can1.c: 530:                 WriteMessageToFifo(txFifoObj, txCanMsg);
-[e ( _WriteMessageToFifo (2 , _txFifoObj _txCanMsg ]
-"531
-[; ;mcc_generated_files/can1.c: 531:                 FIFO[fifoChannel].CONH |= (0x2 | 0x1);
-[e =| . *U + _FIFO * -> _fifoChannel `x -> -> # *U _FIFO `i `x 1 -> | -> 2 `i -> 1 `i `Vuc ]
-"532
-[; ;mcc_generated_files/can1.c: 532:             }
-}
-[e :U 3245 ]
-"533
-[; ;mcc_generated_files/can1.c: 533:         }
-}
-[e :U 3244 ]
-"534
-[; ;mcc_generated_files/can1.c: 534:     }
+[; ;mcc_generated_files/can1.c: 519:     }
 }
 [e :U 3243 ]
-"536
-[; ;mcc_generated_files/can1.c: 536:     return status;
-[e ) _status ]
-[e $UE 3242  ]
-"537
-[; ;mcc_generated_files/can1.c: 537: }
-[e :UE 3242 ]
+"521
+[; ;mcc_generated_files/can1.c: 521:     txFifoObj[0] = msgId;
+[e = *U + _txFifoObj * -> -> 0 `i `x -> -> # *U _txFifoObj `i `x -> _msgId `uc ]
+"522
+[; ;mcc_generated_files/can1.c: 522:     msgId >>= (8U);
+[e =>> _msgId -> -> 8 `ui `ul ]
+"523
+[; ;mcc_generated_files/can1.c: 523:     txFifoObj[1] |= (msgId & (0x07U));
+[e =| *U + _txFifoObj * -> -> 1 `i `x -> -> # *U _txFifoObj `i `x -> & _msgId -> -> 7 `ui `ul `uc ]
+"525
+[; ;mcc_generated_files/can1.c: 525:     status = txCanMsg->field.dlc;
+[e = _status . . . *U _txCanMsg 1 1 2 ]
+"526
+[; ;mcc_generated_files/can1.c: 526:     status |= (txCanMsg->field.idType << (4U));
+[e =| _status -> << -> . . . *U _txCanMsg 1 1 0 `i -> 4 `ui `uc ]
+"527
+[; ;mcc_generated_files/can1.c: 527:     status |= (txCanMsg->field.frameType << (5U));
+[e =| _status -> << -> . . . *U _txCanMsg 1 1 1 `i -> 5 `ui `uc ]
+"528
+[; ;mcc_generated_files/can1.c: 528:     status |= (txCanMsg->field.brs << (6U));
+[e =| _status -> << -> . . . *U _txCanMsg 1 1 4 `i -> 6 `ui `uc ]
+"529
+[; ;mcc_generated_files/can1.c: 529:     status |= (txCanMsg->field.formatType << (7U));
+[e =| _status -> << -> . . . *U _txCanMsg 1 1 3 `i -> 7 `ui `uc ]
+"530
+[; ;mcc_generated_files/can1.c: 530:     txFifoObj[4] = status;
+[e = *U + _txFifoObj * -> -> 4 `i `x -> -> # *U _txFifoObj `i `x _status ]
+"532
+[; ;mcc_generated_files/can1.c: 532:     if (CAN_FRAME_DATA == txCanMsg->field.frameType)
+[e $ ! == -> . `E22332 0 `i -> . . . *U _txCanMsg 1 1 1 `i 3244  ]
+"533
+[; ;mcc_generated_files/can1.c: 533:     {
+{
+"534
+[; ;mcc_generated_files/can1.c: 534:         memcpy(txFifoObj + payloadOffsetBytes, txCanMsg->data, (DLC_BYTES[(txCanMsg->field.dlc)]));
+[e ( _memcpy (3 , , -> + _txFifoObj * -> -> _payloadOffsetBytes `i `x -> -> # *U _txFifoObj `i `x `*v -> . *U _txCanMsg 2 `*Cv -> *U + &U _DLC_BYTES * -> . . . *U _txCanMsg 1 1 2 `ux -> -> # *U &U _DLC_BYTES `ui `ux `ui ]
+"535
+[; ;mcc_generated_files/can1.c: 535:     }
 }
+[e :U 3244 ]
+"536
+[; ;mcc_generated_files/can1.c: 536: }
+[e :UE 3241 ]
+}
+"538
+[; ;mcc_generated_files/can1.c: 538: static CAN_TX_MSG_REQUEST_STATUS ValidateTransmission(uint8_t validChannel, CAN_MSG_OBJ *txCanMsg)
+[v _ValidateTransmission `(E22340 ~T0 @X0 1 sf2`uc`*S3179 ]
 "539
-[; ;mcc_generated_files/can1.c: 539: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel)
-[v _CAN1_TransmitFIFOStatusGet `(E22361 ~T0 @X0 1 ef1`CE22383 ]
-"540
-[; ;mcc_generated_files/can1.c: 540: {
+[; ;mcc_generated_files/can1.c: 539: {
 {
-[e :U _CAN1_TransmitFIFOStatusGet ]
+[e :U _ValidateTransmission ]
+"538
+[; ;mcc_generated_files/can1.c: 538: static CAN_TX_MSG_REQUEST_STATUS ValidateTransmission(uint8_t validChannel, CAN_MSG_OBJ *txCanMsg)
+[v _validChannel `uc ~T0 @X0 1 r1 ]
+[v _txCanMsg `*S3179 ~T0 @X0 1 r2 ]
 "539
-[; ;mcc_generated_files/can1.c: 539: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel)
-[v _fifoChannel `CE22383 ~T0 @X0 1 r1 ]
-"540
-[; ;mcc_generated_files/can1.c: 540: {
+[; ;mcc_generated_files/can1.c: 539: {
 [f ]
+"540
+[; ;mcc_generated_files/can1.c: 540:     CAN_TX_MSG_REQUEST_STATUS txMsgStatus = CAN_TX_MSG_REQUEST_SUCCESS;
+[v _txMsgStatus `E22340 ~T0 @X0 1 a ]
+[e = _txMsgStatus . `E22340 0 ]
 "541
-[; ;mcc_generated_files/can1.c: 541:     CAN_TX_FIFO_STATUS status = CAN_TX_FIFO_FULL;
-[v _status `E22361 ~T0 @X0 1 a ]
-[e = _status . `E22361 0 ]
-"543
-[; ;mcc_generated_files/can1.c: 543:     if (isTxChannel(fifoChannel))
-[e $ ! != -> ( _isTxChannel (1 -> _fifoChannel `uc `i -> 0 `i 3247  ]
+[; ;mcc_generated_files/can1.c: 541:     CAN_MSG_FIELD field = txCanMsg->field;
+[v _field `S3177 ~T0 @X0 1 a ]
+[e = _field . *U _txCanMsg 1 ]
+"542
+[; ;mcc_generated_files/can1.c: 542:     uint8_t plsize = 0;
+[v _plsize `uc ~T0 @X0 1 a ]
+[e = _plsize -> -> 0 `i `uc ]
 "544
-[; ;mcc_generated_files/can1.c: 544:     {
-{
+[; ;mcc_generated_files/can1.c: 544:     if (CAN_BRS_MODE == field.brs && (CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
+[e $ ! && == -> . `E22324 1 `i -> . . _field 1 4 `i == -> . `E22346 6 `ui -> ( _CAN1_OperationModeGet ..  `ui 3246  ]
 "545
-[; ;mcc_generated_files/can1.c: 545:         status = GetTxFifoStatus(fifoChannel);
-[e = _status ( _GetTxFifoStatus (1 -> _fifoChannel `uc ]
+[; ;mcc_generated_files/can1.c: 545:     {
+{
 "546
-[; ;mcc_generated_files/can1.c: 546:     }
+[; ;mcc_generated_files/can1.c: 546:         txMsgStatus |= CAN_TX_MSG_REQUEST_BRS_ERROR;
+[e =| _txMsgStatus -> . `E22340 2 `E22340 ]
+"547
+[; ;mcc_generated_files/can1.c: 547:     }
+}
+[e :U 3246 ]
+"549
+[; ;mcc_generated_files/can1.c: 549:     if (field.dlc > DLC_8 && (CAN_2_0_FORMAT == field.formatType || CAN_NORMAL_2_0_MODE == CAN1_OperationModeGet()))
+[e $ ! && > -> . . _field 1 2 `i -> . `E22365 8 `i || == -> . `E22336 0 `i -> . . _field 1 3 `i == -> . `E22346 6 `ui -> ( _CAN1_OperationModeGet ..  `ui 3247  ]
+"550
+[; ;mcc_generated_files/can1.c: 550:     {
+{
+"551
+[; ;mcc_generated_files/can1.c: 551:         txMsgStatus |= CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR;
+[e =| _txMsgStatus -> . `E22340 1 `E22340 ]
+"552
+[; ;mcc_generated_files/can1.c: 552:     }
 }
 [e :U 3247 ]
-"548
-[; ;mcc_generated_files/can1.c: 548:     return status;
-[e ) _status ]
-[e $UE 3246  ]
-"549
-[; ;mcc_generated_files/can1.c: 549: }
-[e :UE 3246 ]
+"554
+[; ;mcc_generated_files/can1.c: 554:     if ((DLC_BYTES[(field.dlc)]) > ((DLC_BYTES[(8u + (plsize))])))
+[e $ ! > -> *U + &U _DLC_BYTES * -> . . _field 1 2 `ux -> -> # *U &U _DLC_BYTES `ui `ux `i -> *U + &U _DLC_BYTES * -> + -> 8 `ui -> _plsize `ui `ux -> -> # *U &U _DLC_BYTES `ui `ux `i 3248  ]
+"555
+[; ;mcc_generated_files/can1.c: 555:     {
+{
+"556
+[; ;mcc_generated_files/can1.c: 556:         txMsgStatus |= CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR;
+[e =| _txMsgStatus -> . `E22340 1 `E22340 ]
+"557
+[; ;mcc_generated_files/can1.c: 557:     }
 }
-"551
-[; ;mcc_generated_files/can1.c: 551: _Bool CAN1_IsBusOff(void)
+[e :U 3248 ]
+"559
+[; ;mcc_generated_files/can1.c: 559:     if (CAN_TX_FIFO_FULL == GetTxFifoStatus(validChannel))
+[e $ ! == -> . `E22361 0 `ui -> ( _GetTxFifoStatus (1 _validChannel `ui 3249  ]
+"560
+[; ;mcc_generated_files/can1.c: 560:     {
+{
+"561
+[; ;mcc_generated_files/can1.c: 561:         txMsgStatus |= CAN_TX_MSG_REQUEST_FIFO_FULL;
+[e =| _txMsgStatus -> . `E22340 3 `E22340 ]
+"562
+[; ;mcc_generated_files/can1.c: 562:     }
+}
+[e :U 3249 ]
+"564
+[; ;mcc_generated_files/can1.c: 564:     return txMsgStatus;
+[e ) _txMsgStatus ]
+[e $UE 3245  ]
+"565
+[; ;mcc_generated_files/can1.c: 565: }
+[e :UE 3245 ]
+}
+"567
+[; ;mcc_generated_files/can1.c: 567: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg)
+[v _CAN1_Transmit `(E22340 ~T0 @X0 1 ef2`CE22383`*S3179 ]
+"568
+[; ;mcc_generated_files/can1.c: 568: {
+{
+[e :U _CAN1_Transmit ]
+"567
+[; ;mcc_generated_files/can1.c: 567: CAN_TX_MSG_REQUEST_STATUS CAN1_Transmit(const CAN1_TX_FIFO_CHANNELS fifoChannel, CAN_MSG_OBJ *txCanMsg)
+[v _fifoChannel `CE22383 ~T0 @X0 1 r1 ]
+[v _txCanMsg `*S3179 ~T0 @X0 1 r2 ]
+"568
+[; ;mcc_generated_files/can1.c: 568: {
+[f ]
+"569
+[; ;mcc_generated_files/can1.c: 569:     CAN_TX_MSG_REQUEST_STATUS status = CAN_TX_MSG_REQUEST_FIFO_FULL;
+[v _status `E22340 ~T0 @X0 1 a ]
+[e = _status . `E22340 3 ]
+"571
+[; ;mcc_generated_files/can1.c: 571:     if (isTxChannel(fifoChannel))
+[e $ ! != -> ( _isTxChannel (1 -> _fifoChannel `uc `i -> 0 `i 3251  ]
+"572
+[; ;mcc_generated_files/can1.c: 572:     {
+{
+"573
+[; ;mcc_generated_files/can1.c: 573:         status = ValidateTransmission(fifoChannel, txCanMsg);
+[e = _status ( _ValidateTransmission (2 , -> _fifoChannel `uc _txCanMsg ]
+"574
+[; ;mcc_generated_files/can1.c: 574:         if (CAN_TX_MSG_REQUEST_SUCCESS == status)
+[e $ ! == -> . `E22340 0 `ui -> _status `ui 3252  ]
+"575
+[; ;mcc_generated_files/can1.c: 575:         {
+{
+"576
+[; ;mcc_generated_files/can1.c: 576:             uint8_t *txFifoObj = (uint8_t *) FIFO[fifoChannel].UA;
+[v _txFifoObj `*uc ~T0 @X0 1 a ]
+[e = _txFifoObj -> . *U + _FIFO * -> _fifoChannel `x -> -> # *U _FIFO `i `x 8 `*uc ]
+"578
+[; ;mcc_generated_files/can1.c: 578:             if (txFifoObj != ((void*)0))
+[e $ ! != _txFifoObj -> -> -> 0 `i `*v `*uc 3253  ]
+"579
+[; ;mcc_generated_files/can1.c: 579:             {
+{
+"580
+[; ;mcc_generated_files/can1.c: 580:                 WriteMessageToFifo(txFifoObj, txCanMsg);
+[e ( _WriteMessageToFifo (2 , _txFifoObj _txCanMsg ]
+"581
+[; ;mcc_generated_files/can1.c: 581:                 FIFO[fifoChannel].CONH |= (0x2 | 0x1);
+[e =| . *U + _FIFO * -> _fifoChannel `x -> -> # *U _FIFO `i `x 1 -> | -> 2 `i -> 1 `i `Vuc ]
+"582
+[; ;mcc_generated_files/can1.c: 582:             }
+}
+[e :U 3253 ]
+"583
+[; ;mcc_generated_files/can1.c: 583:         }
+}
+[e :U 3252 ]
+"584
+[; ;mcc_generated_files/can1.c: 584:     }
+}
+[e :U 3251 ]
+"586
+[; ;mcc_generated_files/can1.c: 586:     return status;
+[e ) _status ]
+[e $UE 3250  ]
+"587
+[; ;mcc_generated_files/can1.c: 587: }
+[e :UE 3250 ]
+}
+"589
+[; ;mcc_generated_files/can1.c: 589: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel)
+[v _CAN1_TransmitFIFOStatusGet `(E22361 ~T0 @X0 1 ef1`CE22383 ]
+"590
+[; ;mcc_generated_files/can1.c: 590: {
+{
+[e :U _CAN1_TransmitFIFOStatusGet ]
+"589
+[; ;mcc_generated_files/can1.c: 589: CAN_TX_FIFO_STATUS CAN1_TransmitFIFOStatusGet(const CAN1_TX_FIFO_CHANNELS fifoChannel)
+[v _fifoChannel `CE22383 ~T0 @X0 1 r1 ]
+"590
+[; ;mcc_generated_files/can1.c: 590: {
+[f ]
+"591
+[; ;mcc_generated_files/can1.c: 591:     CAN_TX_FIFO_STATUS status = CAN_TX_FIFO_FULL;
+[v _status `E22361 ~T0 @X0 1 a ]
+[e = _status . `E22361 0 ]
+"593
+[; ;mcc_generated_files/can1.c: 593:     if (isTxChannel(fifoChannel))
+[e $ ! != -> ( _isTxChannel (1 -> _fifoChannel `uc `i -> 0 `i 3255  ]
+"594
+[; ;mcc_generated_files/can1.c: 594:     {
+{
+"595
+[; ;mcc_generated_files/can1.c: 595:         status = GetTxFifoStatus(fifoChannel);
+[e = _status ( _GetTxFifoStatus (1 -> _fifoChannel `uc ]
+"596
+[; ;mcc_generated_files/can1.c: 596:     }
+}
+[e :U 3255 ]
+"598
+[; ;mcc_generated_files/can1.c: 598:     return status;
+[e ) _status ]
+[e $UE 3254  ]
+"599
+[; ;mcc_generated_files/can1.c: 599: }
+[e :UE 3254 ]
+}
+"601
+[; ;mcc_generated_files/can1.c: 601: _Bool CAN1_IsBusOff(void)
 [v _CAN1_IsBusOff `(a ~T0 @X0 1 ef ]
-"552
-[; ;mcc_generated_files/can1.c: 552: {
+"602
+[; ;mcc_generated_files/can1.c: 602: {
 {
 [e :U _CAN1_IsBusOff ]
 [f ]
-"553
-[; ;mcc_generated_files/can1.c: 553:     return C1TRECUbits.TXBO;
+"603
+[; ;mcc_generated_files/can1.c: 603:     return C1TRECUbits.TXBO;
 [e ) -> . . _C1TRECUbits 0 5 `a ]
-[e $UE 3248  ]
-"554
-[; ;mcc_generated_files/can1.c: 554: }
-[e :UE 3248 ]
+[e $UE 3256  ]
+"604
+[; ;mcc_generated_files/can1.c: 604: }
+[e :UE 3256 ]
 }
-"556
-[; ;mcc_generated_files/can1.c: 556: _Bool CAN1_IsRxErrorPassive(void)
+"606
+[; ;mcc_generated_files/can1.c: 606: _Bool CAN1_IsRxErrorPassive(void)
 [v _CAN1_IsRxErrorPassive `(a ~T0 @X0 1 ef ]
-"557
-[; ;mcc_generated_files/can1.c: 557: {
+"607
+[; ;mcc_generated_files/can1.c: 607: {
 {
 [e :U _CAN1_IsRxErrorPassive ]
 [f ]
-"558
-[; ;mcc_generated_files/can1.c: 558:     return C1TRECUbits.RXBP;
+"608
+[; ;mcc_generated_files/can1.c: 608:     return C1TRECUbits.RXBP;
 [e ) -> . . _C1TRECUbits 0 3 `a ]
-[e $UE 3249  ]
-"559
-[; ;mcc_generated_files/can1.c: 559: }
-[e :UE 3249 ]
+[e $UE 3257  ]
+"609
+[; ;mcc_generated_files/can1.c: 609: }
+[e :UE 3257 ]
 }
-"561
-[; ;mcc_generated_files/can1.c: 561: _Bool CAN1_IsRxErrorWarning(void)
+"611
+[; ;mcc_generated_files/can1.c: 611: _Bool CAN1_IsRxErrorWarning(void)
 [v _CAN1_IsRxErrorWarning `(a ~T0 @X0 1 ef ]
-"562
-[; ;mcc_generated_files/can1.c: 562: {
+"612
+[; ;mcc_generated_files/can1.c: 612: {
 {
 [e :U _CAN1_IsRxErrorWarning ]
 [f ]
-"563
-[; ;mcc_generated_files/can1.c: 563:     return C1TRECUbits.RXWARN;
+"613
+[; ;mcc_generated_files/can1.c: 613:     return C1TRECUbits.RXWARN;
 [e ) -> . . _C1TRECUbits 0 1 `a ]
-[e $UE 3250  ]
-"564
-[; ;mcc_generated_files/can1.c: 564: }
-[e :UE 3250 ]
+[e $UE 3258  ]
+"614
+[; ;mcc_generated_files/can1.c: 614: }
+[e :UE 3258 ]
 }
-"566
-[; ;mcc_generated_files/can1.c: 566: _Bool CAN1_IsRxErrorActive(void)
+"616
+[; ;mcc_generated_files/can1.c: 616: _Bool CAN1_IsRxErrorActive(void)
 [v _CAN1_IsRxErrorActive `(a ~T0 @X0 1 ef ]
-"567
-[; ;mcc_generated_files/can1.c: 567: {
+"617
+[; ;mcc_generated_files/can1.c: 617: {
 {
 [e :U _CAN1_IsRxErrorActive ]
 [f ]
-"568
-[; ;mcc_generated_files/can1.c: 568:     return !CAN1_IsRxErrorPassive();
+"618
+[; ;mcc_generated_files/can1.c: 618:     return !CAN1_IsRxErrorPassive();
 [e ) -> -> ! != -> ( _CAN1_IsRxErrorPassive ..  `i -> 0 `i `i `a ]
-[e $UE 3251  ]
-"569
-[; ;mcc_generated_files/can1.c: 569: }
-[e :UE 3251 ]
+[e $UE 3259  ]
+"619
+[; ;mcc_generated_files/can1.c: 619: }
+[e :UE 3259 ]
 }
-"571
-[; ;mcc_generated_files/can1.c: 571: _Bool CAN1_IsTxErrorPassive(void)
+"621
+[; ;mcc_generated_files/can1.c: 621: _Bool CAN1_IsTxErrorPassive(void)
 [v _CAN1_IsTxErrorPassive `(a ~T0 @X0 1 ef ]
-"572
-[; ;mcc_generated_files/can1.c: 572: {
+"622
+[; ;mcc_generated_files/can1.c: 622: {
 {
 [e :U _CAN1_IsTxErrorPassive ]
 [f ]
-"573
-[; ;mcc_generated_files/can1.c: 573:     return C1TRECUbits.TXBP;
+"623
+[; ;mcc_generated_files/can1.c: 623:     return C1TRECUbits.TXBP;
 [e ) -> . . _C1TRECUbits 0 4 `a ]
-[e $UE 3252  ]
-"574
-[; ;mcc_generated_files/can1.c: 574: }
-[e :UE 3252 ]
+[e $UE 3260  ]
+"624
+[; ;mcc_generated_files/can1.c: 624: }
+[e :UE 3260 ]
 }
-"576
-[; ;mcc_generated_files/can1.c: 576: _Bool CAN1_IsTxErrorWarning(void)
+"626
+[; ;mcc_generated_files/can1.c: 626: _Bool CAN1_IsTxErrorWarning(void)
 [v _CAN1_IsTxErrorWarning `(a ~T0 @X0 1 ef ]
-"577
-[; ;mcc_generated_files/can1.c: 577: {
+"627
+[; ;mcc_generated_files/can1.c: 627: {
 {
 [e :U _CAN1_IsTxErrorWarning ]
 [f ]
-"578
-[; ;mcc_generated_files/can1.c: 578:     return C1TRECUbits.TXWARN;
+"628
+[; ;mcc_generated_files/can1.c: 628:     return C1TRECUbits.TXWARN;
 [e ) -> . . _C1TRECUbits 0 2 `a ]
-[e $UE 3253  ]
-"579
-[; ;mcc_generated_files/can1.c: 579: }
-[e :UE 3253 ]
+[e $UE 3261  ]
+"629
+[; ;mcc_generated_files/can1.c: 629: }
+[e :UE 3261 ]
 }
-"581
-[; ;mcc_generated_files/can1.c: 581: _Bool CAN1_IsTxErrorActive(void)
+"631
+[; ;mcc_generated_files/can1.c: 631: _Bool CAN1_IsTxErrorActive(void)
 [v _CAN1_IsTxErrorActive `(a ~T0 @X0 1 ef ]
-"582
-[; ;mcc_generated_files/can1.c: 582: {
+"632
+[; ;mcc_generated_files/can1.c: 632: {
 {
 [e :U _CAN1_IsTxErrorActive ]
 [f ]
-"583
-[; ;mcc_generated_files/can1.c: 583:     return !CAN1_IsTxErrorPassive();
+"633
+[; ;mcc_generated_files/can1.c: 633:     return !CAN1_IsTxErrorPassive();
 [e ) -> -> ! != -> ( _CAN1_IsTxErrorPassive ..  `i -> 0 `i `i `a ]
-[e $UE 3254  ]
-"584
-[; ;mcc_generated_files/can1.c: 584: }
-[e :UE 3254 ]
+[e $UE 3262  ]
+"634
+[; ;mcc_generated_files/can1.c: 634: }
+[e :UE 3262 ]
 }
-"586
-[; ;mcc_generated_files/can1.c: 586: void CAN1_Sleep(void)
+"636
+[; ;mcc_generated_files/can1.c: 636: void CAN1_Sleep(void)
 [v _CAN1_Sleep `(v ~T0 @X0 1 ef ]
-"587
-[; ;mcc_generated_files/can1.c: 587: {
+"637
+[; ;mcc_generated_files/can1.c: 637: {
 {
 [e :U _CAN1_Sleep ]
 [f ]
-"588
-[; ;mcc_generated_files/can1.c: 588:     C1INTHbits.WAKIF = 0;
+"638
+[; ;mcc_generated_files/can1.c: 638:     C1INTHbits.WAKIF = 0;
 [e = . . _C1INTHbits 0 5 -> -> 0 `i `uc ]
-"589
-[; ;mcc_generated_files/can1.c: 589:     C1INTTbits.WAKIE = 1;
+"639
+[; ;mcc_generated_files/can1.c: 639:     C1INTTbits.WAKIE = 1;
 [e = . . _C1INTTbits 0 5 -> -> 1 `i `uc ]
-"591
-[; ;mcc_generated_files/can1.c: 591:     CAN1_OperationModeSet(CAN_DISABLE_MODE);
+"641
+[; ;mcc_generated_files/can1.c: 641:     CAN1_OperationModeSet(CAN_DISABLE_MODE);
 [e ( _CAN1_OperationModeSet (1 . `E22346 1 ]
-"592
-[; ;mcc_generated_files/can1.c: 592: }
-[e :UE 3255 ]
+"642
+[; ;mcc_generated_files/can1.c: 642: }
+[e :UE 3263 ]
 }
-"594
-[; ;mcc_generated_files/can1.c: 594: void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void))
-[v _CAN1_SetInvalidMessageInterruptHandler `(v ~T0 @X0 1 ef1`*F22569 ]
-"595
-[; ;mcc_generated_files/can1.c: 595: {
+"644
+[; ;mcc_generated_files/can1.c: 644: void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void))
+[v _CAN1_SetInvalidMessageInterruptHandler `(v ~T0 @X0 1 ef1`*F22660 ]
+"645
+[; ;mcc_generated_files/can1.c: 645: {
 {
 [e :U _CAN1_SetInvalidMessageInterruptHandler ]
-"594
-[; ;mcc_generated_files/can1.c: 594: void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void))
-[v _handler `*F22571 ~T0 @X0 1 r1 ]
-"595
-[; ;mcc_generated_files/can1.c: 595: {
+"644
+[; ;mcc_generated_files/can1.c: 644: void CAN1_SetInvalidMessageInterruptHandler(void (*handler)(void))
+[v _handler `*F22662 ~T0 @X0 1 r1 ]
+"645
+[; ;mcc_generated_files/can1.c: 645: {
 [f ]
-"596
-[; ;mcc_generated_files/can1.c: 596:     CAN1_InvalidMessageHandler = handler;
+"646
+[; ;mcc_generated_files/can1.c: 646:     CAN1_InvalidMessageHandler = handler;
 [e = _CAN1_InvalidMessageHandler _handler ]
-"597
-[; ;mcc_generated_files/can1.c: 597: }
-[e :UE 3256 ]
+"647
+[; ;mcc_generated_files/can1.c: 647: }
+[e :UE 3264 ]
 }
-"599
-[; ;mcc_generated_files/can1.c: 599: void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void))
-[v _CAN1_SetBusWakeUpActivityInterruptHandler `(v ~T0 @X0 1 ef1`*F22574 ]
-"600
-[; ;mcc_generated_files/can1.c: 600: {
+"649
+[; ;mcc_generated_files/can1.c: 649: void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void))
+[v _CAN1_SetBusWakeUpActivityInterruptHandler `(v ~T0 @X0 1 ef1`*F22665 ]
+"650
+[; ;mcc_generated_files/can1.c: 650: {
 {
 [e :U _CAN1_SetBusWakeUpActivityInterruptHandler ]
-"599
-[; ;mcc_generated_files/can1.c: 599: void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void))
-[v _handler `*F22576 ~T0 @X0 1 r1 ]
-"600
-[; ;mcc_generated_files/can1.c: 600: {
+"649
+[; ;mcc_generated_files/can1.c: 649: void CAN1_SetBusWakeUpActivityInterruptHandler(void (*handler)(void))
+[v _handler `*F22667 ~T0 @X0 1 r1 ]
+"650
+[; ;mcc_generated_files/can1.c: 650: {
 [f ]
-"601
-[; ;mcc_generated_files/can1.c: 601:     CAN1_BusWakeUpActivityHandler = handler;
+"651
+[; ;mcc_generated_files/can1.c: 651:     CAN1_BusWakeUpActivityHandler = handler;
 [e = _CAN1_BusWakeUpActivityHandler _handler ]
-"602
-[; ;mcc_generated_files/can1.c: 602: }
-[e :UE 3257 ]
+"652
+[; ;mcc_generated_files/can1.c: 652: }
+[e :UE 3265 ]
 }
-"604
-[; ;mcc_generated_files/can1.c: 604: void CAN1_SetBusErrorInterruptHandler(void (*handler)(void))
-[v _CAN1_SetBusErrorInterruptHandler `(v ~T0 @X0 1 ef1`*F22579 ]
-"605
-[; ;mcc_generated_files/can1.c: 605: {
+"654
+[; ;mcc_generated_files/can1.c: 654: void CAN1_SetBusErrorInterruptHandler(void (*handler)(void))
+[v _CAN1_SetBusErrorInterruptHandler `(v ~T0 @X0 1 ef1`*F22670 ]
+"655
+[; ;mcc_generated_files/can1.c: 655: {
 {
 [e :U _CAN1_SetBusErrorInterruptHandler ]
-"604
-[; ;mcc_generated_files/can1.c: 604: void CAN1_SetBusErrorInterruptHandler(void (*handler)(void))
-[v _handler `*F22581 ~T0 @X0 1 r1 ]
-"605
-[; ;mcc_generated_files/can1.c: 605: {
+"654
+[; ;mcc_generated_files/can1.c: 654: void CAN1_SetBusErrorInterruptHandler(void (*handler)(void))
+[v _handler `*F22672 ~T0 @X0 1 r1 ]
+"655
+[; ;mcc_generated_files/can1.c: 655: {
 [f ]
-"606
-[; ;mcc_generated_files/can1.c: 606:     CAN1_BusErrorHandler = handler;
+"656
+[; ;mcc_generated_files/can1.c: 656:     CAN1_BusErrorHandler = handler;
 [e = _CAN1_BusErrorHandler _handler ]
-"607
-[; ;mcc_generated_files/can1.c: 607: }
-[e :UE 3258 ]
+"657
+[; ;mcc_generated_files/can1.c: 657: }
+[e :UE 3266 ]
 }
-"609
-[; ;mcc_generated_files/can1.c: 609: void CAN1_SetModeChangeInterruptHandler(void (*handler)(void))
-[v _CAN1_SetModeChangeInterruptHandler `(v ~T0 @X0 1 ef1`*F22584 ]
-"610
-[; ;mcc_generated_files/can1.c: 610: {
+"659
+[; ;mcc_generated_files/can1.c: 659: void CAN1_SetModeChangeInterruptHandler(void (*handler)(void))
+[v _CAN1_SetModeChangeInterruptHandler `(v ~T0 @X0 1 ef1`*F22675 ]
+"660
+[; ;mcc_generated_files/can1.c: 660: {
 {
 [e :U _CAN1_SetModeChangeInterruptHandler ]
-"609
-[; ;mcc_generated_files/can1.c: 609: void CAN1_SetModeChangeInterruptHandler(void (*handler)(void))
-[v _handler `*F22586 ~T0 @X0 1 r1 ]
-"610
-[; ;mcc_generated_files/can1.c: 610: {
+"659
+[; ;mcc_generated_files/can1.c: 659: void CAN1_SetModeChangeInterruptHandler(void (*handler)(void))
+[v _handler `*F22677 ~T0 @X0 1 r1 ]
+"660
+[; ;mcc_generated_files/can1.c: 660: {
 [f ]
-"611
-[; ;mcc_generated_files/can1.c: 611:     CAN1_ModeChangeHandler = handler;
+"661
+[; ;mcc_generated_files/can1.c: 661:     CAN1_ModeChangeHandler = handler;
 [e = _CAN1_ModeChangeHandler _handler ]
-"612
-[; ;mcc_generated_files/can1.c: 612: }
-[e :UE 3259 ]
+"662
+[; ;mcc_generated_files/can1.c: 662: }
+[e :UE 3267 ]
 }
-"614
-[; ;mcc_generated_files/can1.c: 614: void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void))
-[v _CAN1_SetSystemErrorInterruptHandler `(v ~T0 @X0 1 ef1`*F22589 ]
-"615
-[; ;mcc_generated_files/can1.c: 615: {
+"664
+[; ;mcc_generated_files/can1.c: 664: void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void))
+[v _CAN1_SetSystemErrorInterruptHandler `(v ~T0 @X0 1 ef1`*F22680 ]
+"665
+[; ;mcc_generated_files/can1.c: 665: {
 {
 [e :U _CAN1_SetSystemErrorInterruptHandler ]
-"614
-[; ;mcc_generated_files/can1.c: 614: void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void))
-[v _handler `*F22591 ~T0 @X0 1 r1 ]
-"615
-[; ;mcc_generated_files/can1.c: 615: {
+"664
+[; ;mcc_generated_files/can1.c: 664: void CAN1_SetSystemErrorInterruptHandler(void (*handler)(void))
+[v _handler `*F22682 ~T0 @X0 1 r1 ]
+"665
+[; ;mcc_generated_files/can1.c: 665: {
 [f ]
-"616
-[; ;mcc_generated_files/can1.c: 616:     CAN1_SystemErrorHandler = handler;
+"666
+[; ;mcc_generated_files/can1.c: 666:     CAN1_SystemErrorHandler = handler;
 [e = _CAN1_SystemErrorHandler _handler ]
-"617
-[; ;mcc_generated_files/can1.c: 617: }
-[e :UE 3260 ]
+"667
+[; ;mcc_generated_files/can1.c: 667: }
+[e :UE 3268 ]
 }
-"619
-[; ;mcc_generated_files/can1.c: 619: void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void))
-[v _CAN1_SetTxAttemptInterruptHandler `(v ~T0 @X0 1 ef1`*F22594 ]
-"620
-[; ;mcc_generated_files/can1.c: 620: {
+"669
+[; ;mcc_generated_files/can1.c: 669: void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void))
+[v _CAN1_SetTxAttemptInterruptHandler `(v ~T0 @X0 1 ef1`*F22685 ]
+"670
+[; ;mcc_generated_files/can1.c: 670: {
 {
 [e :U _CAN1_SetTxAttemptInterruptHandler ]
-"619
-[; ;mcc_generated_files/can1.c: 619: void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void))
-[v _handler `*F22596 ~T0 @X0 1 r1 ]
-"620
-[; ;mcc_generated_files/can1.c: 620: {
+"669
+[; ;mcc_generated_files/can1.c: 669: void CAN1_SetTxAttemptInterruptHandler(void (*handler)(void))
+[v _handler `*F22687 ~T0 @X0 1 r1 ]
+"670
+[; ;mcc_generated_files/can1.c: 670: {
 [f ]
-"621
-[; ;mcc_generated_files/can1.c: 621:     CAN1_TxAttemptHandler = handler;
+"671
+[; ;mcc_generated_files/can1.c: 671:     CAN1_TxAttemptHandler = handler;
 [e = _CAN1_TxAttemptHandler _handler ]
-"622
-[; ;mcc_generated_files/can1.c: 622: }
-[e :UE 3261 ]
+"672
+[; ;mcc_generated_files/can1.c: 672: }
+[e :UE 3269 ]
 }
-"624
-[; ;mcc_generated_files/can1.c: 624: void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void))
-[v _CAN1_SetRxBufferOverFlowInterruptHandler `(v ~T0 @X0 1 ef1`*F22599 ]
-"625
-[; ;mcc_generated_files/can1.c: 625: {
+"674
+[; ;mcc_generated_files/can1.c: 674: void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void))
+[v _CAN1_SetRxBufferOverFlowInterruptHandler `(v ~T0 @X0 1 ef1`*F22690 ]
+"675
+[; ;mcc_generated_files/can1.c: 675: {
 {
 [e :U _CAN1_SetRxBufferOverFlowInterruptHandler ]
-"624
-[; ;mcc_generated_files/can1.c: 624: void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void))
-[v _handler `*F22601 ~T0 @X0 1 r1 ]
-"625
-[; ;mcc_generated_files/can1.c: 625: {
+"674
+[; ;mcc_generated_files/can1.c: 674: void CAN1_SetRxBufferOverFlowInterruptHandler(void (*handler)(void))
+[v _handler `*F22692 ~T0 @X0 1 r1 ]
+"675
+[; ;mcc_generated_files/can1.c: 675: {
 [f ]
-"626
-[; ;mcc_generated_files/can1.c: 626:     CAN1_RxBufferOverflowHandler = handler;
+"676
+[; ;mcc_generated_files/can1.c: 676:     CAN1_RxBufferOverflowHandler = handler;
 [e = _CAN1_RxBufferOverflowHandler _handler ]
-"627
-[; ;mcc_generated_files/can1.c: 627: }
-[e :UE 3262 ]
+"677
+[; ;mcc_generated_files/can1.c: 677: }
+[e :UE 3270 ]
 }
-"629
-[; ;mcc_generated_files/can1.c: 629: void CAN1_ISR(void)
+"679
+[; ;mcc_generated_files/can1.c: 679: void CAN1_ISR(void)
 [v _CAN1_ISR `(v ~T0 @X0 1 ef ]
-"630
-[; ;mcc_generated_files/can1.c: 630: {
+"680
+[; ;mcc_generated_files/can1.c: 680: {
 {
 [e :U _CAN1_ISR ]
 [f ]
-"631
-[; ;mcc_generated_files/can1.c: 631:     if (1 == C1INTHbits.IVMIF)
-[e $ ! == -> 1 `i -> . . _C1INTHbits 0 6 `i 3264  ]
-"632
-[; ;mcc_generated_files/can1.c: 632:     {
+"681
+[; ;mcc_generated_files/can1.c: 681:     if (1 == C1INTHbits.IVMIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 6 `i 3272  ]
+"682
+[; ;mcc_generated_files/can1.c: 682:     {
 {
-"633
-[; ;mcc_generated_files/can1.c: 633:         CAN1_InvalidMessageHandler();
+"683
+[; ;mcc_generated_files/can1.c: 683:         CAN1_InvalidMessageHandler();
 [e ( *U _CAN1_InvalidMessageHandler ..  ]
-"634
-[; ;mcc_generated_files/can1.c: 634:         C1INTHbits.IVMIF = 0;
+"684
+[; ;mcc_generated_files/can1.c: 684:         C1INTHbits.IVMIF = 0;
 [e = . . _C1INTHbits 0 6 -> -> 0 `i `uc ]
-"635
-[; ;mcc_generated_files/can1.c: 635:     }
-}
-[e :U 3264 ]
-"637
-[; ;mcc_generated_files/can1.c: 637:     if (1 == C1INTHbits.WAKIF)
-[e $ ! == -> 1 `i -> . . _C1INTHbits 0 5 `i 3265  ]
-"638
-[; ;mcc_generated_files/can1.c: 638:     {
-{
-"639
-[; ;mcc_generated_files/can1.c: 639:         CAN1_BusWakeUpActivityHandler();
-[e ( *U _CAN1_BusWakeUpActivityHandler ..  ]
-"640
-[; ;mcc_generated_files/can1.c: 640:         C1INTHbits.WAKIF = 0;
-[e = . . _C1INTHbits 0 5 -> -> 0 `i `uc ]
-"641
-[; ;mcc_generated_files/can1.c: 641:     }
-}
-[e :U 3265 ]
-"643
-[; ;mcc_generated_files/can1.c: 643:     if (1 == C1INTHbits.CERRIF)
-[e $ ! == -> 1 `i -> . . _C1INTHbits 0 4 `i 3266  ]
-"644
-[; ;mcc_generated_files/can1.c: 644:     {
-{
-"645
-[; ;mcc_generated_files/can1.c: 645:         CAN1_BusErrorHandler();
-[e ( *U _CAN1_BusErrorHandler ..  ]
-"646
-[; ;mcc_generated_files/can1.c: 646:         C1INTHbits.CERRIF = 0;
-[e = . . _C1INTHbits 0 4 -> -> 0 `i `uc ]
-"647
-[; ;mcc_generated_files/can1.c: 647:     }
-}
-[e :U 3266 ]
-"649
-[; ;mcc_generated_files/can1.c: 649:     if (1 == C1INTLbits.MODIF)
-[e $ ! == -> 1 `i -> . . _C1INTLbits 0 3 `i 3267  ]
-"650
-[; ;mcc_generated_files/can1.c: 650:     {
-{
-"651
-[; ;mcc_generated_files/can1.c: 651:         CAN1_ModeChangeHandler();
-[e ( *U _CAN1_ModeChangeHandler ..  ]
-"652
-[; ;mcc_generated_files/can1.c: 652:         C1INTLbits.MODIF = 0;
-[e = . . _C1INTLbits 0 3 -> -> 0 `i `uc ]
-"653
-[; ;mcc_generated_files/can1.c: 653:     }
-}
-[e :U 3267 ]
-"655
-[; ;mcc_generated_files/can1.c: 655:     if (1 == C1INTHbits.SERRIF)
-[e $ ! == -> 1 `i -> . . _C1INTHbits 0 3 `i 3268  ]
-"656
-[; ;mcc_generated_files/can1.c: 656:     {
-{
-"657
-[; ;mcc_generated_files/can1.c: 657:         CAN1_SystemErrorHandler();
-[e ( *U _CAN1_SystemErrorHandler ..  ]
-"658
-[; ;mcc_generated_files/can1.c: 658:         C1INTHbits.SERRIF = 0;
-[e = . . _C1INTHbits 0 3 -> -> 0 `i `uc ]
-"659
-[; ;mcc_generated_files/can1.c: 659:     }
-}
-[e :U 3268 ]
-"661
-[; ;mcc_generated_files/can1.c: 661:     if (1 == C1INTHbits.TXATIF)
-[e $ ! == -> 1 `i -> . . _C1INTHbits 0 1 `i 3269  ]
-"662
-[; ;mcc_generated_files/can1.c: 662:     {
-{
-"663
-[; ;mcc_generated_files/can1.c: 663:         CAN1_TxAttemptHandler();
-[e ( *U _CAN1_TxAttemptHandler ..  ]
-"664
-[; ;mcc_generated_files/can1.c: 664:         if (1 == C1TXQSTALbits.TXATIF)
-[e $ ! == -> 1 `i -> . . _C1TXQSTALbits 0 4 `i 3270  ]
-"665
-[; ;mcc_generated_files/can1.c: 665:         {
-{
-"666
-[; ;mcc_generated_files/can1.c: 666:             C1TXQSTALbits.TXATIF = 0;
-[e = . . _C1TXQSTALbits 0 4 -> -> 0 `i `uc ]
-"667
-[; ;mcc_generated_files/can1.c: 667:         }
-}
-[e :U 3270 ]
-"668
-[; ;mcc_generated_files/can1.c: 668:     }
-}
-[e :U 3269 ]
-"670
-[; ;mcc_generated_files/can1.c: 670:     if (1 == C1INTHbits.RXOVIF)
-[e $ ! == -> 1 `i -> . . _C1INTHbits 0 2 `i 3271  ]
-"671
-[; ;mcc_generated_files/can1.c: 671:     {
-{
-"672
-[; ;mcc_generated_files/can1.c: 672:         CAN1_RxBufferOverflowHandler();
-[e ( *U _CAN1_RxBufferOverflowHandler ..  ]
-"673
-[; ;mcc_generated_files/can1.c: 673:         if (1 == C1FIFOSTA1Lbits.RXOVIF)
-[e $ ! == -> 1 `i -> . . _C1FIFOSTA1Lbits 0 3 `i 3272  ]
-"674
-[; ;mcc_generated_files/can1.c: 674:         {
-{
-"675
-[; ;mcc_generated_files/can1.c: 675:             C1FIFOSTA1Lbits.RXOVIF = 0;
-[e = . . _C1FIFOSTA1Lbits 0 3 -> -> 0 `i `uc ]
-"676
-[; ;mcc_generated_files/can1.c: 676:         }
+"685
+[; ;mcc_generated_files/can1.c: 685:     }
 }
 [e :U 3272 ]
-"677
-[; ;mcc_generated_files/can1.c: 677:     }
+"687
+[; ;mcc_generated_files/can1.c: 687:     if (1 == C1INTHbits.WAKIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 5 `i 3273  ]
+"688
+[; ;mcc_generated_files/can1.c: 688:     {
+{
+"689
+[; ;mcc_generated_files/can1.c: 689:         CAN1_BusWakeUpActivityHandler();
+[e ( *U _CAN1_BusWakeUpActivityHandler ..  ]
+"690
+[; ;mcc_generated_files/can1.c: 690:         C1INTHbits.WAKIF = 0;
+[e = . . _C1INTHbits 0 5 -> -> 0 `i `uc ]
+"691
+[; ;mcc_generated_files/can1.c: 691:     }
 }
-[e :U 3271 ]
-"679
-[; ;mcc_generated_files/can1.c: 679:     PIR0bits.CANIF = 0;
+[e :U 3273 ]
+"693
+[; ;mcc_generated_files/can1.c: 693:     if (1 == C1INTHbits.CERRIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 4 `i 3274  ]
+"694
+[; ;mcc_generated_files/can1.c: 694:     {
+{
+"695
+[; ;mcc_generated_files/can1.c: 695:         CAN1_BusErrorHandler();
+[e ( *U _CAN1_BusErrorHandler ..  ]
+"696
+[; ;mcc_generated_files/can1.c: 696:         C1INTHbits.CERRIF = 0;
+[e = . . _C1INTHbits 0 4 -> -> 0 `i `uc ]
+"697
+[; ;mcc_generated_files/can1.c: 697:     }
+}
+[e :U 3274 ]
+"699
+[; ;mcc_generated_files/can1.c: 699:     if (1 == C1INTLbits.MODIF)
+[e $ ! == -> 1 `i -> . . _C1INTLbits 0 3 `i 3275  ]
+"700
+[; ;mcc_generated_files/can1.c: 700:     {
+{
+"701
+[; ;mcc_generated_files/can1.c: 701:         CAN1_ModeChangeHandler();
+[e ( *U _CAN1_ModeChangeHandler ..  ]
+"702
+[; ;mcc_generated_files/can1.c: 702:         C1INTLbits.MODIF = 0;
+[e = . . _C1INTLbits 0 3 -> -> 0 `i `uc ]
+"703
+[; ;mcc_generated_files/can1.c: 703:     }
+}
+[e :U 3275 ]
+"705
+[; ;mcc_generated_files/can1.c: 705:     if (1 == C1INTHbits.SERRIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 3 `i 3276  ]
+"706
+[; ;mcc_generated_files/can1.c: 706:     {
+{
+"707
+[; ;mcc_generated_files/can1.c: 707:         CAN1_SystemErrorHandler();
+[e ( *U _CAN1_SystemErrorHandler ..  ]
+"708
+[; ;mcc_generated_files/can1.c: 708:         C1INTHbits.SERRIF = 0;
+[e = . . _C1INTHbits 0 3 -> -> 0 `i `uc ]
+"709
+[; ;mcc_generated_files/can1.c: 709:     }
+}
+[e :U 3276 ]
+"711
+[; ;mcc_generated_files/can1.c: 711:     if (1 == C1INTHbits.TXATIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 1 `i 3277  ]
+"712
+[; ;mcc_generated_files/can1.c: 712:     {
+{
+"713
+[; ;mcc_generated_files/can1.c: 713:         CAN1_TxAttemptHandler();
+[e ( *U _CAN1_TxAttemptHandler ..  ]
+"714
+[; ;mcc_generated_files/can1.c: 714:         if (1 == C1TXQSTALbits.TXATIF)
+[e $ ! == -> 1 `i -> . . _C1TXQSTALbits 0 4 `i 3278  ]
+"715
+[; ;mcc_generated_files/can1.c: 715:         {
+{
+"716
+[; ;mcc_generated_files/can1.c: 716:             C1TXQSTALbits.TXATIF = 0;
+[e = . . _C1TXQSTALbits 0 4 -> -> 0 `i `uc ]
+"717
+[; ;mcc_generated_files/can1.c: 717:         }
+}
+[e :U 3278 ]
+"718
+[; ;mcc_generated_files/can1.c: 718:     }
+}
+[e :U 3277 ]
+"720
+[; ;mcc_generated_files/can1.c: 720:     if (1 == C1INTHbits.RXOVIF)
+[e $ ! == -> 1 `i -> . . _C1INTHbits 0 2 `i 3279  ]
+"721
+[; ;mcc_generated_files/can1.c: 721:     {
+{
+"722
+[; ;mcc_generated_files/can1.c: 722:         CAN1_RxBufferOverflowHandler();
+[e ( *U _CAN1_RxBufferOverflowHandler ..  ]
+"723
+[; ;mcc_generated_files/can1.c: 723:         if (1 == C1FIFOSTA1Lbits.RXOVIF)
+[e $ ! == -> 1 `i -> . . _C1FIFOSTA1Lbits 0 3 `i 3280  ]
+"724
+[; ;mcc_generated_files/can1.c: 724:         {
+{
+"725
+[; ;mcc_generated_files/can1.c: 725:             C1FIFOSTA1Lbits.RXOVIF = 0;
+[e = . . _C1FIFOSTA1Lbits 0 3 -> -> 0 `i `uc ]
+"726
+[; ;mcc_generated_files/can1.c: 726:         }
+}
+[e :U 3280 ]
+"727
+[; ;mcc_generated_files/can1.c: 727:     }
+}
+[e :U 3279 ]
+"729
+[; ;mcc_generated_files/can1.c: 729:     PIR0bits.CANIF = 0;
 [e = . . _PIR0bits 0 6 -> -> 0 `i `uc ]
-"680
-[; ;mcc_generated_files/can1.c: 680: }
-[e :UE 3263 ]
+"730
+[; ;mcc_generated_files/can1.c: 730: }
+[e :UE 3271 ]
+}
+"732
+[; ;mcc_generated_files/can1.c: 732: void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void))
+[v _CAN1_SetFIFO1NotEmptyHandler `(v ~T0 @X0 1 ef1`*F22696 ]
+"733
+[; ;mcc_generated_files/can1.c: 733: {
+{
+[e :U _CAN1_SetFIFO1NotEmptyHandler ]
+"732
+[; ;mcc_generated_files/can1.c: 732: void CAN1_SetFIFO1NotEmptyHandler(void (*handler)(void))
+[v _handler `*F22698 ~T0 @X0 1 r1 ]
+"733
+[; ;mcc_generated_files/can1.c: 733: {
+[f ]
+"734
+[; ;mcc_generated_files/can1.c: 734:     CAN1_FIFO1NotEmptyHandler = handler;
+[e = _CAN1_FIFO1NotEmptyHandler _handler ]
+"735
+[; ;mcc_generated_files/can1.c: 735: }
+[e :UE 3281 ]
+}
+"738
+[; ;mcc_generated_files/can1.c: 738: void CAN1_RXI_ISR(void)
+[v _CAN1_RXI_ISR `(v ~T0 @X0 1 ef ]
+"739
+[; ;mcc_generated_files/can1.c: 739: {
+{
+[e :U _CAN1_RXI_ISR ]
+[f ]
+"740
+[; ;mcc_generated_files/can1.c: 740:     if (1 == C1FIFOSTA1Lbits.TFNRFNIF)
+[e $ ! == -> 1 `i -> . . _C1FIFOSTA1Lbits 0 0 `i 3283  ]
+"741
+[; ;mcc_generated_files/can1.c: 741:     {
+{
+"742
+[; ;mcc_generated_files/can1.c: 742:         CAN1_FIFO1NotEmptyHandler();
+[e ( *U _CAN1_FIFO1NotEmptyHandler ..  ]
+"744
+[; ;mcc_generated_files/can1.c: 744:     }
+}
+[e :U 3283 ]
+"746
+[; ;mcc_generated_files/can1.c: 746: }
+[e :UE 3282 ]
 }

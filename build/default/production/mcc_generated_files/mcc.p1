@@ -25,8 +25,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "106 mcc_generated_files/tmr0.h
 [; ;mcc_generated_files/tmr0.h: 106: void TMR0_Initialize(void);
 [v _TMR0_Initialize `(v ~T0 @X0 0 ef ]
-"102 mcc_generated_files/can1.h
-[; ;mcc_generated_files/can1.h: 102: void CAN1_Initialize(void);
+"106 mcc_generated_files/can1.h
+[; ;mcc_generated_files/can1.h: 106: void CAN1_Initialize(void);
 [v _CAN1_Initialize `(v ~T0 @X0 0 ef ]
 "5336 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 5336: extern volatile unsigned char OSCCON1 __attribute__((address(0x0AD)));

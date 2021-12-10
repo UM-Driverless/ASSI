@@ -36,7 +36,7 @@ void CANWriteMessage( unsigned long id, unsigned char dataLength, unsigned char 
     msgTransmit.field.formatType = CAN_2_0_FORMAT;  //CAN 2.0
     msgTransmit.field.brs = CAN_NON_BRS_MODE;   //NO BRS
     msgTransmit.field.frameType = CAN_FRAME_DATA;   //FRAME DATA, NO REMOTE
-    msgTransmit.field.idType = CAN_FRAME_EXT;   //CAN VERSION STANDARD
+    msgTransmit.field.idType = CAN_FRAME_STD;   //CAN VERSION STANDARD
     msgTransmit.field.dlc = ( dataLength & 0x0F ); //DATA LENGTH
     msgTransmit.data = CANDATAdata;
     
@@ -83,7 +83,7 @@ void CANReadMessage (void)
     
     if(CAN1_ReceivedMessageCountGet() > 0) 
     {
-        if(TRUE == CAN1_Receive(&msgReceipt))
+        if(true == CAN1_Receive(&msgReceipt))
         {
             Nop();
             id = msgReceipt.msgId;
@@ -102,9 +102,10 @@ void CANReadMessage (void)
             {
                 case DV_SYSTEM_STATUS:
                     ucASState_prev = ucASState;
-                    ucASState = ( data1 & 0x03 );
+                    ucASState = ( data1 & 0x07 );
                     if (ucASState_prev != ucASState)
                     {
+                        //ENVIAR AQUI MENSAJE DE ESTADO ASSI con el AS que estoy y el anterior
                         LEDS();
                         SPEAKER();
                     }

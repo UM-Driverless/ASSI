@@ -107,7 +107,7 @@ void main(void)
         //AS_FINISHED     4
         
         //MESSSAGES_ASSIState();
-        CANReadMessage();
+        //CANReadMessage();
     }
 }
 

@@ -3544,8 +3544,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _SPEAKER ]
 [f ]
 "17
-[; ;SPEAKER.c: 17:     if (ucASState == 3 )
-[e $ ! == -> _ucASState `i -> 3 `i 3177  ]
+[; ;SPEAKER.c: 17:     if (ucASState == 4 )
+[e $ ! == -> _ucASState `i -> 4 `i 3177  ]
 "18
 [; ;SPEAKER.c: 18:     {
 {

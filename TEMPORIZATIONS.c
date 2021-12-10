@@ -7,7 +7,7 @@
 
 
 #include "TEMPORIZATIONS.h"
-
+#include "MESSAGES.h"
 
 //VARIABLES    
 unsigned int uiCount30min;  
