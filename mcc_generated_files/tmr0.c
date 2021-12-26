@@ -128,7 +128,7 @@ void TMR0_ISR(void)
     // clear the TMR0 interrupt flag
     PIR3bits.TMR0IF = 0;
     // callback function - called every 36th pass
-    if (++CountCallBack >= TMR0_INTERRUPT_TICKER_FACTOR)    //tiempo????
+    if (++CountCallBack >= TMR0_INTERRUPT_TICKER_FACTOR)    //1s
     {
    
         //DJU Ejemplo añadir, ponerla en su tiempo bien
@@ -152,7 +152,7 @@ void TMR0_ISR(void)
             ucSpeakerCount = 0;
             SPEAKER_SetLow();
         }
-        SPEAKER();
+        SPEAKER_Toggle();
     }
 }
 

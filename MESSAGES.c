@@ -126,13 +126,13 @@ void MESSSAGES_ASSIState (void)
     switch ( ucASSIName )
     {
         case ASSI_CENTER:
-            CANWriteMessage(ID_ASSIS_C, data_lenght8, 0, 0, 0, 0, 0, 0, 0, 0);
+            CANWriteMessage(ID_ASSIS_C, data_lenght8, ucASState, ucASState_prev, 0, 0, 0, 0, 0, 0);
             break;
         case ASSI_LEFT:
-            CANWriteMessage(ID_ASSIS_R, data_lenght8, 0, 0, 0, 0, 0, 0, 0, 0);
+            CANWriteMessage(ID_ASSIS_R, data_lenght8, ucASState, ucASState_prev, 0, 0, 0, 0, 0, 0);
             break;
         case ASSI_RIGHT:
-            CANWriteMessage(ID_ASSIS_L, data_lenght8, 0, 0, 0, 0, 0, 0, 0, 0);
+            CANWriteMessage(ID_ASSIS_L, data_lenght8, ucASState, ucASState_prev, 0, 0, 0, 0, 0, 0);
             break;
     }
     

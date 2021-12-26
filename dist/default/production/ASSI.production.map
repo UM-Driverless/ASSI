@@ -1,11 +1,11 @@
-Microchip MPLAB XC8 Compiler V2.30
+Microchip MPLAB XC8 Compiler V2.31
 
 Linker command line:
 
--W-3 --edf=C:\Program Files\Microchip\xc8\v2.30\pic\dat\en_msgs.txt \
+-W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt \
   -pivt0x8=08h -cn -h+dist/default/production\ASSI.production.sym \
   --cmf=dist/default/production\ASSI.production.cmf -z -Q18F26Q84 \
-  -oC:\Users\panze\AppData\Local\Temp\s1qagx2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\panze\AppData\Local\Temp\sad8.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/ASSI.production.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=0588h-025FFh -pstack=STACK -ACODE=00h-0FFFFh \
   -ACONST=00h-0FFFFh -ASMALLCONST=02600h-026FFhx218 \
@@ -31,7 +31,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\panze\AppData\Local\Temp\s1qagx8.o \
+  C:\Users\panze\AppData\Local\Temp\sad8.o \
   dist/default/production\ASSI.production.o 
 
 Object code version is 3.11
@@ -41,7 +41,7 @@ Machine type is 18F26Q84
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\panze\AppData\Local\Temp\s1qagx8.o
+C:\Users\panze\AppData\Local\Temp\sad8.o
                 idloc                            200000   200000       20        0       5
                 config                           300000   300000       24        0       4
                 init                                 1A       1A        4        4       0
@@ -51,78 +51,91 @@ dist/default/production\ASSI.production.o
                 config                           300000   300000       24        0       4
                 smallconst                         2600     2600        E     1300       0
                 ivt0x8                                8        8       12        4       0
-                text62                             3582     3582        2     1307       0
-                text61                             3580     3580        2     1307       0
-                text60                             357E     357E        2     1307       0
-                text59                             357C     357C        2     1307       0
-                text58                             357A     357A        2     1307       0
-                text57                             3578     3578        2     1307       0
-                text56                             3576     3576        2     1307       0
-                text55                             284E     284E      156     1307       0
-                text54                             345E     345E       1E     1307       0
-                text53                             3494     3494       18     1307       0
-                text52                             3040     3040       5A     1307       0
-                text51                             260E     260E      240     1307       0
-                text50                             29A4     29A4       EC     1307       0
-                text49                             30F2     30F2       52     1307       0
-                text48                             2C2A     2C2A       CA     1307       0
-                text47                             2DBA     2DBA       BA     1307       0
-                text46                             3252     3252       3A     1307       0
-                text45                             2A90     2A90       D0     1307       0
-                text44                             355E     355E        6     1307       0
-                text43                             33A2     33A2       2A     1307       0
-                text42                             3574     3574        2     1307       0
-                text41                             3572     3572        2     1307       0
-                text40                             3570     3570        2     1307       0
-                text39                             356E     356E        2     1307       0
-                text38                             2B60     2B60       CA     1307       0
-                text37                             356C     356C        2     1307       0
-                text36                             334A     334A       2E     1307       0
-                text35                             2F86     2F86       5E     1307       0
-                text34                             356A     356A        2     1307       0
-                text33                             331C     331C       2E     1307       0
-                text32                             32EE     32EE       2E     1307       0
-                text31                             3218     3218       3A     1307       0
-                text30                             2CF4     2CF4       C6     1307       0
-                text29                             328C     328C       34     1307       0
-                text28                             31D4     31D4       44     1307       0
-                text27                             3558     3558        6     1307       0
-                text26                             34D6     34D6       14     1307       0
-                text25                             354E     354E        A     1307       0
-                text24                             3544     3544        A     1307       0
-                text23                             353A     353A        A     1307       0
-                text22                             3530     3530        A     1307       0
-                text21                             3526     3526        A     1307       0
-                text20                             351C     351C        A     1307       0
-                text19                             3512     3512        A     1307       0
-                text18                             2F0C     2F0C       7A     1307       0
-                text17                             3508     3508        A     1307       0
-                text16                             2E74     2E74       98     1307       0
-                text15                             34FE     34FE        A     1307       0
-                text14                             3378     3378       2A     1307       0
-                text13                             341C     341C       22     1307       0
-                text12                             32C0     32C0       2E     1307       0
-                text11                             34C2     34C2       14     1307       0
-                text10                             309A     309A       58     1307       0
-                text9                              3564     3564        4     1307       0
-                text8                              347C     347C       18     1307       0
-                text7                              2FE4     2FE4       5C     1307       0
-                text6                              33F4     33F4       28     1307       0
-                text5                              34F4     34F4        A     1307       0
-                text4                              33CC     33CC       28     1307       0
-                text3                              34EA     34EA        A     1307       0
-                text2                              318C     318C       48     1307       0
-                text1                              343E     343E       20     1307       0
-                text0                              34AC     34AC       16     1307       0
+                text75                             3BEA     3BEA        2     1307       0
+                text74                             3BE8     3BE8        2     1307       0
+                text73                             3BE6     3BE6        2     1307       0
+                text72                             3BE4     3BE4        2     1307       0
+                text71                             3BE2     3BE2        2     1307       0
+                text70                             3BE0     3BE0        2     1307       0
+                text69                             3BDE     3BDE        2     1307       0
+                text68                             2A94     2A94      156     1307       0
+                text67                             3A44     3A44       1E     1307       0
+                text66                             3AAC     3AAC       18     1307       0
+                text65                             35D6     35D6       5A     1307       0
+                text64                             2854     2854      240     1307       0
+                text63                             2CD6     2CD6       EC     1307       0
+                text62                             3688     3688       52     1307       0
+                text61                             310A     310A       CA     1307       0
+                text60                             329A     329A       BA     1307       0
+                text59                             39DE     39DE       24     1307       0
+                text58                             2F70     2F70       D0     1307       0
+                text57                             3BC8     3BC8        6     1307       0
+                text56                             393C     393C       2A     1307       0
+                text55                             3BDC     3BDC        2     1307       0
+                text54                             3BDA     3BDA        2     1307       0
+                text53                             3BD8     3BD8        2     1307       0
+                text52                             3B06     3B06       16     1307       0
+                text51                             3AF0     3AF0       16     1307       0
+                text50                             3A62     3A62       1A     1307       0
+                text49                             3ADA     3ADA       16     1307       0
+                text48                             3A94     3A94       18     1307       0
+                text47                             3BB2     3BB2        A     1307       0
+                text46                             2DC2     2DC2       D8     1307       0
+                text45                             260E     260E      246     1307       0
+                text44                             37AE     37AE       3E     1307       0
+                text43                             33EC     33EC       94     1307       0
+                text42                             39B6     39B6       28     1307       0
+                text41                             2E9A     2E9A       D6     1307       0
+                text40                             2BEA     2BEA       EC     1307       0
+                text39                             3BC2     3BC2        6     1307       0
+                text38                             3040     3040       CA     1307       0
+                text37                             3BD6     3BD6        2     1307       0
+                text36                             38E4     38E4       2E     1307       0
+                text35                             3480     3480       80     1307       0
+                text34                             3BD4     3BD4        2     1307       0
+                text33                             38B6     38B6       2E     1307       0
+                text32                             3888     3888       2E     1307       0
+                text31                             37EC     37EC       3A     1307       0
+                text30                             31D4     31D4       C6     1307       0
+                text29                             3826     3826       34     1307       0
+                text28                             376A     376A       44     1307       0
+                text27                             3BBC     3BBC        6     1307       0
+                text26                             3B30     3B30       14     1307       0
+                text25                             3BA8     3BA8        A     1307       0
+                text24                             3B9E     3B9E        A     1307       0
+                text23                             3B94     3B94        A     1307       0
+                text22                             3B8A     3B8A        A     1307       0
+                text21                             3B80     3B80        A     1307       0
+                text20                             3B76     3B76        A     1307       0
+                text19                             3B6C     3B6C        A     1307       0
+                text18                             3500     3500       7A     1307       0
+                text17                             3B62     3B62        A     1307       0
+                text16                             3354     3354       98     1307       0
+                text15                             3B58     3B58        A     1307       0
+                text14                             3912     3912       2A     1307       0
+                text13                             3A02     3A02       22     1307       0
+                text12                             385A     385A       2E     1307       0
+                text11                             3B1C     3B1C       14     1307       0
+                text10                             3630     3630       58     1307       0
+                text9                              3BCE     3BCE        4     1307       0
+                text8                              3A7C     3A7C       18     1307       0
+                text7                              357A     357A       5C     1307       0
+                text6                              398E     398E       28     1307       0
+                text5                              3B4E     3B4E        A     1307       0
+                text4                              3966     3966       28     1307       0
+                text3                              3B44     3B44        A     1307       0
+                text2                              3722     3722       48     1307       0
+                text1                              3A24     3A24       20     1307       0
+                text0                              3AC4     3AC4       16     1307       0
                 cstackCOMRAM                        501      501       3B      501       1
                 cstackBANK5                         582      582        4      560       1
                 dataBANK5                           586      586        2      560       1
                 bssBANK5                            560      560       1E      560       1
                 bssCOMRAM                           53C      53C       21      501       1
-                cinit                              3144     3144       48     1307       0
+                cinit                              36DA     36DA       48     1307       0
                 nvBANK5                             57E      57E        4      560       1
                 nvCOMRAM                            55D      55D        2      501       1
-                idataBANK5                         3568     3568        2     1307       0
+                idataBANK5                         3BD2     3BD2        2     1307       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -131,71 +144,84 @@ TOTAL           Name                               Link     Load   Length     Sp
                 init                                 1A       1A        4         0
                 reset_vec                             0        0        4         0
                 ivt0x8                                8        8       12         0
-                text62                             3582     3582        2         0
-                text61                             3580     3580        2         0
-                text60                             357E     357E        2         0
-                text59                             357C     357C        2         0
-                text58                             357A     357A        2         0
-                text57                             3578     3578        2         0
-                text56                             3576     3576        2         0
-                text55                             284E     284E      156         0
-                text54                             345E     345E       1E         0
-                text53                             3494     3494       18         0
-                text52                             3040     3040       5A         0
-                text51                             260E     260E      240         0
-                text50                             29A4     29A4       EC         0
-                text49                             30F2     30F2       52         0
-                text48                             2C2A     2C2A       CA         0
-                text47                             2DBA     2DBA       BA         0
-                text46                             3252     3252       3A         0
-                text45                             2A90     2A90       D0         0
-                text44                             355E     355E        6         0
-                text43                             33A2     33A2       2A         0
-                text42                             3574     3574        2         0
-                text41                             3572     3572        2         0
-                text40                             3570     3570        2         0
-                text39                             356E     356E        2         0
-                text38                             2B60     2B60       CA         0
-                text37                             356C     356C        2         0
-                text36                             334A     334A       2E         0
-                text35                             2F86     2F86       5E         0
-                text34                             356A     356A        2         0
-                text33                             331C     331C       2E         0
-                text32                             32EE     32EE       2E         0
-                text31                             3218     3218       3A         0
-                text30                             2CF4     2CF4       C6         0
-                text29                             328C     328C       34         0
-                text28                             31D4     31D4       44         0
-                text27                             3558     3558        6         0
-                text26                             34D6     34D6       14         0
-                text25                             354E     354E        A         0
-                text24                             3544     3544        A         0
-                text23                             353A     353A        A         0
-                text22                             3530     3530        A         0
-                text21                             3526     3526        A         0
-                text20                             351C     351C        A         0
-                text19                             3512     3512        A         0
-                text18                             2F0C     2F0C       7A         0
-                text17                             3508     3508        A         0
-                text16                             2E74     2E74       98         0
-                text15                             34FE     34FE        A         0
-                text14                             3378     3378       2A         0
-                text13                             341C     341C       22         0
-                text12                             32C0     32C0       2E         0
-                text11                             34C2     34C2       14         0
-                text10                             309A     309A       58         0
-                text9                              3564     3564        4         0
-                text8                              347C     347C       18         0
-                text7                              2FE4     2FE4       5C         0
-                text6                              33F4     33F4       28         0
-                text5                              34F4     34F4        A         0
-                text4                              33CC     33CC       28         0
-                text3                              34EA     34EA        A         0
-                text2                              318C     318C       48         0
-                text1                              343E     343E       20         0
-                text0                              34AC     34AC       16         0
-                cinit                              3144     3144       48         0
-                idataBANK5                         3568     3568        2         0
+                text75                             3BEA     3BEA        2         0
+                text74                             3BE8     3BE8        2         0
+                text73                             3BE6     3BE6        2         0
+                text72                             3BE4     3BE4        2         0
+                text71                             3BE2     3BE2        2         0
+                text70                             3BE0     3BE0        2         0
+                text69                             3BDE     3BDE        2         0
+                text68                             2A94     2A94      156         0
+                text67                             3A44     3A44       1E         0
+                text66                             3AAC     3AAC       18         0
+                text65                             35D6     35D6       5A         0
+                text64                             2854     2854      240         0
+                text63                             2CD6     2CD6       EC         0
+                text62                             3688     3688       52         0
+                text61                             310A     310A       CA         0
+                text60                             329A     329A       BA         0
+                text59                             39DE     39DE       24         0
+                text58                             2F70     2F70       D0         0
+                text57                             3BC8     3BC8        6         0
+                text56                             393C     393C       2A         0
+                text55                             3BDC     3BDC        2         0
+                text54                             3BDA     3BDA        2         0
+                text53                             3BD8     3BD8        2         0
+                text52                             3B06     3B06       16         0
+                text51                             3AF0     3AF0       16         0
+                text50                             3A62     3A62       1A         0
+                text49                             3ADA     3ADA       16         0
+                text48                             3A94     3A94       18         0
+                text47                             3BB2     3BB2        A         0
+                text46                             2DC2     2DC2       D8         0
+                text45                             260E     260E      246         0
+                text44                             37AE     37AE       3E         0
+                text43                             33EC     33EC       94         0
+                text42                             39B6     39B6       28         0
+                text41                             2E9A     2E9A       D6         0
+                text40                             2BEA     2BEA       EC         0
+                text39                             3BC2     3BC2        6         0
+                text38                             3040     3040       CA         0
+                text37                             3BD6     3BD6        2         0
+                text36                             38E4     38E4       2E         0
+                text35                             3480     3480       80         0
+                text34                             3BD4     3BD4        2         0
+                text33                             38B6     38B6       2E         0
+                text32                             3888     3888       2E         0
+                text31                             37EC     37EC       3A         0
+                text30                             31D4     31D4       C6         0
+                text29                             3826     3826       34         0
+                text28                             376A     376A       44         0
+                text27                             3BBC     3BBC        6         0
+                text26                             3B30     3B30       14         0
+                text25                             3BA8     3BA8        A         0
+                text24                             3B9E     3B9E        A         0
+                text23                             3B94     3B94        A         0
+                text22                             3B8A     3B8A        A         0
+                text21                             3B80     3B80        A         0
+                text20                             3B76     3B76        A         0
+                text19                             3B6C     3B6C        A         0
+                text18                             3500     3500       7A         0
+                text17                             3B62     3B62        A         0
+                text16                             3354     3354       98         0
+                text15                             3B58     3B58        A         0
+                text14                             3912     3912       2A         0
+                text13                             3A02     3A02       22         0
+                text12                             385A     385A       2E         0
+                text11                             3B1C     3B1C       14         0
+                text10                             3630     3630       58         0
+                text9                              3BCE     3BCE        4         0
+                text8                              3A7C     3A7C       18         0
+                text7                              357A     357A       5C         0
+                text6                              398E     398E       28         0
+                text5                              3B4E     3B4E        A         0
+                text4                              3966     3966       28         0
+                text3                              3B44     3B44        A         0
+                text2                              3722     3722       48         0
+                text1                              3A24     3A24       20         0
+                text0                              3AC4     3AC4       16         0
+                cinit                              36DA     36DA       48         0
+                idataBANK5                         3BD2     3BD2        2         0
 
         CLASS   CONST          
 
@@ -306,7 +332,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 cstackCOMRAM                   000501  00005E  00055F       501       1  COMRAM  
                 bssBANK5                       000560  000028  000588       560       1  BANK5   
                 smallconst                     002600  00000E  00260E      1300       0  SMALLCON
-                text51                         00260E  000F76  003584      1307       0  CODE    
+                text45                         00260E  0015DE  003BEC      1307       0  CODE    
 
 
 UNUSED ADDRESS RANGES
@@ -349,16 +375,16 @@ UNUSED ADDRESS RANGES
                          000588-0025FF             2078
         CODE             000004-000007                4
                          00001E-0025FF             25E2
-                         003584-00FFFF             CA7C
+                         003BEC-00FFFF             C414
         COMRAM           00055F-00055F                1
         CONST            000004-000007                4
                          00001E-0025FF             25E2
-                         003584-00FFFF             CA7C
+                         003BEC-00FFFF             C414
         EEDATA           380000-3803FF              400
-        MEDIUMCONST      003584-00FFFF             CA7C
+        MEDIUMCONST      003BEC-00FFFF             C414
         RAM              000588-0025FF              100
         SFR              000000-0004FF              100
-        SMALLCONST       003584-00FFFF              100
+        SMALLCONST       003BEC-00FFFF              100
         STACK            000588-0025FF             2078
 
                                   Symbol Table
@@ -386,11 +412,28 @@ CAN1_SetModeChangeInterruptHandler@handler          cstackBANK5  000582
 CAN1_SetRxBufferOverFlowInterruptHandler@handler    cstackBANK5  000582
 CAN1_SetSystemErrorInterruptHandler@handler         cstackBANK5  000582
 CAN1_SetTxAttemptInterruptHandler@handler           cstackBANK5  000582
+CAN1_Transmit@fifoChannel                           cstackCOMRAM 00051D
+CAN1_Transmit@status                                cstackCOMRAM 00051A
+CAN1_Transmit@txCanMsg                              cstackCOMRAM 000518
+CAN1_Transmit@txFifoObj                             cstackCOMRAM 00051B
+CAN1_TransmitFIFOStatusGet@fifoChannel              cstackCOMRAM 000504
+CAN1_TransmitFIFOStatusGet@status                   cstackCOMRAM 000503
 CANReadMessage@data1                                cstackCOMRAM 000537
 CANReadMessage@id                                   cstackCOMRAM 000533
+CANWriteMessage@data1                               cstackCOMRAM 000523
+CANWriteMessage@data2                               cstackCOMRAM 000524
+CANWriteMessage@data3                               cstackCOMRAM 000525
+CANWriteMessage@data4                               cstackCOMRAM 000526
+CANWriteMessage@data5                               cstackCOMRAM 000527
+CANWriteMessage@data6                               cstackCOMRAM 000528
+CANWriteMessage@data7                               cstackCOMRAM 000529
+CANWriteMessage@data8                               cstackCOMRAM 00052A
+CANWriteMessage@dataLength                          cstackCOMRAM 000522
+CANWriteMessage@id                                  cstackCOMRAM 00051E
 DELAY_milliseconds@milliseconds                     cstackBANK5  000582
 GetRxFifoDepth@validChannel                         cstackCOMRAM 000502
 GetRxFifoStatus@validChannel                        cstackCOMRAM 000501
+GetTxFifoStatus@validChannel                        cstackCOMRAM 000501
 IVTBASEH                                            (abs)        00045E
 IVTBASEL                                            (abs)        00045D
 IVTBASEU                                            (abs)        00045F
@@ -409,6 +452,14 @@ TMR0_SetInterruptHandler@InterruptHandler           cstackBANK5  000582
 TMR1_ISR@CountCallBack                              bssCOMRAM    000546
 TMR1_SetInterruptHandler@InterruptHandler           cstackBANK5  000582
 TMR1_WriteTimer@timerVal                            cstackCOMRAM 000501
+ValidateTransmission@field                          cstackCOMRAM 00050A
+ValidateTransmission@txCanMsg                       cstackCOMRAM 000502
+ValidateTransmission@txMsgStatus                    cstackCOMRAM 000509
+ValidateTransmission@validChannel                   cstackCOMRAM 000507
+WriteMessageToFifo@msgId                            cstackCOMRAM 000514
+WriteMessageToFifo@status                           cstackCOMRAM 000513
+WriteMessageToFifo@txCanMsg                         cstackCOMRAM 00050E
+WriteMessageToFifo@txFifoObj                        cstackCOMRAM 00050C
 _ANSELA                                             (abs)        000400
 _ANSELB                                             (abs)        000408
 _ANSELC                                             (abs)        000410
@@ -451,64 +502,73 @@ _C1TXQCONL                                          (abs)        000150
 _C1TXQCONT                                          (abs)        000153
 _C1TXQCONU                                          (abs)        000152
 _C1TXQSTALbits                                      (abs)        000154
-_CAN1_BitRateConfiguration                          text26       0034D6
+_CAN1_BitRateConfiguration                          text26       003B30
 _CAN1_BusErrorHandler                               bssBANK5     000568
 _CAN1_BusWakeUpActivityHandler                      bssBANK5     00056A
-_CAN1_ErrorNotificationInterruptEnable              text18       002F0C
+_CAN1_ErrorNotificationInterruptEnable              text18       003500
 _CAN1_FIFO1NotEmptyHandler                          bssCOMRAM    000548
-_CAN1_ISR                                           text55       00284E
-_CAN1_Initialize                                    text10       00309A
+_CAN1_ISR                                           text68       002A94
+_CAN1_Initialize                                    text10       003630
 _CAN1_InvalidMessageHandler                         bssBANK5     00056C
+_CAN1_IsBusOff                                      text52       003B06
+_CAN1_IsTxErrorActive                               text50       003A62
+_CAN1_IsTxErrorPassive                              text51       003AF0
+_CAN1_IsTxErrorWarning                              text49       003ADA
 _CAN1_ModeChangeHandler                             bssBANK5     000566
-_CAN1_OperationModeGet                              text17       003508
-_CAN1_OperationModeSet                              text16       002E74
-_CAN1_RXI_ISR                                       text43       0033A2
-_CAN1_RX_FIFO_Configuration                         text14       003378
-_CAN1_RX_FIFO_FilterMaskConfiguration               text13       00341C
-_CAN1_RX_FIFO_ResetInfo                             text12       0032C0
-_CAN1_Receive                                       text49       0030F2
-_CAN1_ReceivedMessageCountGet                       text48       002C2A
+_CAN1_OperationModeGet                              text17       003B62
+_CAN1_OperationModeSet                              text16       003354
+_CAN1_RXI_ISR                                       text56       00393C
+_CAN1_RX_FIFO_Configuration                         text14       003912
+_CAN1_RX_FIFO_FilterMaskConfiguration               text13       003A02
+_CAN1_RX_FIFO_ResetInfo                             text12       00385A
+_CAN1_Receive                                       text62       003688
+_CAN1_ReceivedMessageCountGet                       text61       00310A
 _CAN1_RxBufferOverflowHandler                       bssBANK5     000560
-_CAN1_SetBusErrorInterruptHandler                   text25       00354E
-_CAN1_SetBusWakeUpActivityInterruptHandler          text24       003544
-_CAN1_SetFIFO1NotEmptyHandler                       text15       0034FE
-_CAN1_SetInvalidMessageInterruptHandler             text23       00353A
-_CAN1_SetModeChangeInterruptHandler                 text22       003530
-_CAN1_SetRxBufferOverFlowInterruptHandler           text21       003526
-_CAN1_SetSystemErrorInterruptHandler                text20       00351C
-_CAN1_SetTxAttemptInterruptHandler                  text19       003512
+_CAN1_SetBusErrorInterruptHandler                   text25       003BA8
+_CAN1_SetBusWakeUpActivityInterruptHandler          text24       003B9E
+_CAN1_SetFIFO1NotEmptyHandler                       text15       003B58
+_CAN1_SetInvalidMessageInterruptHandler             text23       003B94
+_CAN1_SetModeChangeInterruptHandler                 text22       003B8A
+_CAN1_SetRxBufferOverFlowInterruptHandler           text21       003B80
+_CAN1_SetSystemErrorInterruptHandler                text20       003B76
+_CAN1_SetTxAttemptInterruptHandler                  text19       003B6C
 _CAN1_SystemErrorHandler                            bssBANK5     000564
-_CAN1_TX_FIFO_Configuration                         text11       0034C2
+_CAN1_TX_FIFO_Configuration                         text11       003B1C
+_CAN1_Transmit                                      text43       0033EC
+_CAN1_TransmitFIFOStatusGet                         text42       0039B6
 _CAN1_TxAttemptHandler                              bssBANK5     000562
 _CANDATAdata                                        bssBANK5     000576
 _CANRXPPS                                           (abs)        00023D
-_CANReadMessage                                     text45       002A90
-_DELAY_milliseconds                                 text29       00328C
+_CANReadMessage                                     text58       002F70
+_CANWriteMessage                                    text41       002E9A
+_DELAY_milliseconds                                 text29       003826
 _DLC_BYTES                                          smallconst   002601
-_DefaultBusErrorHandler                             text62       003582
-_DefaultBusWakeUpActivityHandler                    text61       003580
-_DefaultFIFO1NotEmptyHandler                        text44       00355E
-_DefaultInvalidMessageHandler                       text60       00357E
-_DefaultModeChangeHandler                           text59       00357C
-_DefaultRxBufferOverflowHandler                     text58       00357A
-_DefaultSystemErrorHandler                          text57       003578
-_DefaultTxAttemptHandler                            text56       003576
-_GetRxFifoDepth                                     text54       00345E
-_GetRxFifoStatus                                    text53       003494
+_DefaultBusErrorHandler                             text75       003BEA
+_DefaultBusWakeUpActivityHandler                    text74       003BE8
+_DefaultFIFO1NotEmptyHandler                        text57       003BC8
+_DefaultInvalidMessageHandler                       text73       003BE6
+_DefaultModeChangeHandler                           text72       003BE4
+_DefaultRxBufferOverflowHandler                     text71       003BE2
+_DefaultSystemErrorHandler                          text70       003BE0
+_DefaultTxAttemptHandler                            text69       003BDE
+_GetRxFifoDepth                                     text67       003A44
+_GetRxFifoStatus                                    text66       003AAC
+_GetTxFifoStatus                                    text48       003A94
 _INLVLA                                             (abs)        000404
 _INLVLB                                             (abs)        00040C
 _INLVLC                                             (abs)        000414
 _INLVLE                                             (abs)        000424
 _INTCON0bits                                        (abs)        0004D6
-_INTERRUPT_Initialize                               text9        003564
-_INTERRUPT_InterruptManager                         text30       002CF4
-_Init_hardware                                      text28       0031D4
+_INTERRUPT_Initialize                               text9        003BCE
+_INTERRUPT_InterruptManager                         text30       0031D4
+_Init_hardware                                      text28       00376A
 _LATA                                               (abs)        0004BE
 _LATB                                               (abs)        0004BF
 _LATBbits                                           (abs)        0004BF
 _LATC                                               (abs)        0004C0
 _LATCbits                                           (abs)        0004C0
-_LEDS                                               text47       002DBA
+_LEDS                                               text60       00329A
+_MESSSAGES_ASSIState                                text40       002BEA
 _ODCONA                                             (abs)        000402
 _ODCONB                                             (abs)        00040A
 _ODCONC                                             (abs)        000412
@@ -516,13 +576,13 @@ _OSCCON1                                            (abs)        0000AD
 _OSCCON3                                            (abs)        0000AF
 _OSCEN                                              (abs)        0000B3
 _OSCFRQ                                             (abs)        0000B1
-_OSCILLATOR_Initialize                              text8        00347C
+_OSCILLATOR_Initialize                              text8        003A7C
 _OSCTUNE                                            (abs)        0000B0
-_PARAMETERS_Init                                    text27       003558
+_PARAMETERS_Init                                    text27       003BBC
 _PIE0bits                                           (abs)        00049E
 _PIE3bits                                           (abs)        0004A1
 _PIE4bits                                           (abs)        0004A2
-_PIN_MANAGER_Initialize                             text7        002FE4
+_PIN_MANAGER_Initialize                             text7        00357A
 _PIR0bits                                           (abs)        0004AE
 _PIR3bits                                           (abs)        0004B1
 _PIR4bits                                           (abs)        0004B2
@@ -535,15 +595,15 @@ _PMD5                                               (abs)        000065
 _PMD6                                               (abs)        000066
 _PMD7                                               (abs)        000067
 _PMD8                                               (abs)        000068
-_PMD_Initialize                                     text6        0033F4
+_PMD_Initialize                                     text6        00398E
 _RB4PPS                                             (abs)        00020D
-_ReadMessageFromFifo                                text51       00260E
-_Receive                                            text50       0029A4
+_ReadMessageFromFifo                                text64       002854
+_Receive                                            text63       002CD6
 _SLRCONA                                            (abs)        000403
 _SLRCONB                                            (abs)        00040B
 _SLRCONC                                            (abs)        000413
-_SPEAKER                                            text46       003252
-_SYSTEM_Initialize                                  text1        00343E
+_SPEAKER                                            text59       0039DE
+_SYSTEM_Initialize                                  text1        003A24
 _T0CON0                                             (abs)        00031A
 _T0CON0bits                                         (abs)        00031A
 _T0CON1                                             (abs)        00031B
@@ -553,36 +613,38 @@ _T1CONbits                                          (abs)        00031E
 _T1GATE                                             (abs)        000320
 _T1GCON                                             (abs)        00031F
 _T1GCONbits                                         (abs)        00031F
-_TEMPORIZATION_15mins                               text42       003574
-_TEMPORIZATION_1mins                                text41       003572
-_TEMPORIZATION_1s                                   text38       002B60
-_TEMPORIZATION_30mins                               text40       003570
-_TEMPORIZATION_30s                                  text39       00356E
+_TEMPORIZATION_15mins                               text55       003BDC
+_TEMPORIZATION_1mins                                text54       003BDA
+_TEMPORIZATION_1s                                   text38       003040
+_TEMPORIZATION_30mins                               text53       003BD8
+_TEMPORIZATION_5s                                   text39       003BC2
 _TMR0H                                              (abs)        000319
 _TMR0L                                              (abs)        000318
-_TMR0_CallBack                                      text36       00334A
-_TMR0_DefaultInterruptHandler                       text37       00356C
-_TMR0_ISR                                           text35       002F86
-_TMR0_Initialize                                    text4        0033CC
+_TMR0_CallBack                                      text36       0038E4
+_TMR0_DefaultInterruptHandler                       text37       003BD6
+_TMR0_ISR                                           text35       003480
+_TMR0_Initialize                                    text4        003966
 _TMR0_InterruptHandler                              nvBANK5      00057E
-_TMR0_SetInterruptHandler                           text5        0034F4
+_TMR0_SetInterruptHandler                           text5        003B4E
 _TMR1H                                              (abs)        00031D
 _TMR1L                                              (abs)        00031C
-_TMR1_CallBack                                      text33       00331C
-_TMR1_DefaultInterruptHandler                       text34       00356A
-_TMR1_ISR                                           text31       003218
-_TMR1_Initialize                                    text2        00318C
+_TMR1_CallBack                                      text33       0038B6
+_TMR1_DefaultInterruptHandler                       text34       003BD4
+_TMR1_ISR                                           text31       0037EC
+_TMR1_Initialize                                    text2        003722
 _TMR1_InterruptHandler                              nvBANK5      000580
-_TMR1_SetInterruptHandler                           text3        0034EA
-_TMR1_WriteTimer                                    text32       0032EE
+_TMR1_SetInterruptHandler                           text3        003B44
+_TMR1_WriteTimer                                    text32       003888
 _TRISA                                              (abs)        0004C6
 _TRISB                                              (abs)        0004C7
 _TRISC                                              (abs)        0004C8
 _TRISE                                              (abs)        0004CA
+_ValidateTransmission                               text46       002DC2
 _WPUA                                               (abs)        000401
 _WPUB                                               (abs)        000409
 _WPUC                                               (abs)        000411
 _WPUE                                               (abs)        000421
+_WriteMessageToFifo                                 text45       00260E
 __HRAM                                              (abs)        000000
 __Habs1                                             abs1         000000
 __Hbank10                                           bank10       000000
@@ -662,7 +724,7 @@ __Hreset_vec                                        reset_vec    000004
 __Hrparam                                           rparam       000000
 __Hsfr                                              sfr          000000
 __Hsmallconst                                       smallconst   00260E
-__Hspace_0                                          (abs)        003584
+__Hspace_0                                          (abs)        003BEC
 __Hspace_1                                          (abs)        000588
 __Hspace_2                                          (abs)        000000
 __Hspace_4                                          (abs)        600024
@@ -731,7 +793,20 @@ __Htext60                                           text60       000000
 __Htext61                                           text61       000000
 __Htext62                                           text62       000000
 __Htext63                                           text63       000000
+__Htext64                                           text64       000000
+__Htext65                                           text65       000000
+__Htext66                                           text66       000000
+__Htext67                                           text67       000000
+__Htext68                                           text68       000000
+__Htext69                                           text69       000000
 __Htext7                                            text7        000000
+__Htext70                                           text70       000000
+__Htext71                                           text71       000000
+__Htext72                                           text72       000000
+__Htext73                                           text73       000000
+__Htext74                                           text74       000000
+__Htext75                                           text75       000000
+__Htext76                                           text76       000000
 __Htext8                                            text8        000000
 __Htext9                                            text9        000000
 __LRAM                                              (abs)        000001
@@ -882,10 +957,23 @@ __Ltext60                                           text60       000000
 __Ltext61                                           text61       000000
 __Ltext62                                           text62       000000
 __Ltext63                                           text63       000000
+__Ltext64                                           text64       000000
+__Ltext65                                           text65       000000
+__Ltext66                                           text66       000000
+__Ltext67                                           text67       000000
+__Ltext68                                           text68       000000
+__Ltext69                                           text69       000000
 __Ltext7                                            text7        000000
+__Ltext70                                           text70       000000
+__Ltext71                                           text71       000000
+__Ltext72                                           text72       000000
+__Ltext73                                           text73       000000
+__Ltext74                                           text74       000000
+__Ltext75                                           text75       000000
+__Ltext76                                           text76       000000
 __Ltext8                                            text8        000000
 __Ltext9                                            text9        000000
-__S0                                                (abs)        003584
+__S0                                                (abs)        003BEC
 __S1                                                (abs)        000588
 __S2                                                (abs)        000000
 __S4                                                (abs)        000000
@@ -897,154 +985,184 @@ ___rparam_used                                      (abs)        000001
 ___sp                                               stack        000000
 __accesstop                                         (abs)        000560
 __activetblptr                                      (abs)        000003
-__end_of_CAN1_BitRateConfiguration                  text26       0034EA
-__end_of_CAN1_ErrorNotificationInterruptEnable      text18       002F86
-__end_of_CAN1_ISR                                   text55       0029A4
-__end_of_CAN1_Initialize                            text10       0030F2
-__end_of_CAN1_OperationModeGet                      text17       003512
-__end_of_CAN1_OperationModeSet                      text16       002F0C
-__end_of_CAN1_RXI_ISR                               text43       0033CC
-__end_of_CAN1_RX_FIFO_Configuration                 text14       0033A2
-__end_of_CAN1_RX_FIFO_FilterMaskConfiguration       text13       00343E
-__end_of_CAN1_RX_FIFO_ResetInfo                     text12       0032EE
-__end_of_CAN1_Receive                               text49       003144
-__end_of_CAN1_ReceivedMessageCountGet               text48       002CF4
-__end_of_CAN1_SetBusErrorInterruptHandler           text25       003558
-__end_of_CAN1_SetBusWakeUpActivityInterruptHandler  text24       00354E
-__end_of_CAN1_SetFIFO1NotEmptyHandler               text15       003508
-__end_of_CAN1_SetInvalidMessageInterruptHandler     text23       003544
-__end_of_CAN1_SetModeChangeInterruptHandler         text22       00353A
-__end_of_CAN1_SetRxBufferOverFlowInterruptHandler   text21       003530
-__end_of_CAN1_SetSystemErrorInterruptHandler        text20       003526
-__end_of_CAN1_SetTxAttemptInterruptHandler          text19       00351C
-__end_of_CAN1_TX_FIFO_Configuration                 text11       0034D6
-__end_of_CANReadMessage                             text45       002B60
-__end_of_DELAY_milliseconds                         text29       0032C0
+__end_of_CAN1_BitRateConfiguration                  text26       003B44
+__end_of_CAN1_ErrorNotificationInterruptEnable      text18       00357A
+__end_of_CAN1_ISR                                   text68       002BEA
+__end_of_CAN1_Initialize                            text10       003688
+__end_of_CAN1_IsBusOff                              text52       003B1C
+__end_of_CAN1_IsTxErrorActive                       text50       003A7C
+__end_of_CAN1_IsTxErrorPassive                      text51       003B06
+__end_of_CAN1_IsTxErrorWarning                      text49       003AF0
+__end_of_CAN1_OperationModeGet                      text17       003B6C
+__end_of_CAN1_OperationModeSet                      text16       0033EC
+__end_of_CAN1_RXI_ISR                               text56       003966
+__end_of_CAN1_RX_FIFO_Configuration                 text14       00393C
+__end_of_CAN1_RX_FIFO_FilterMaskConfiguration       text13       003A24
+__end_of_CAN1_RX_FIFO_ResetInfo                     text12       003888
+__end_of_CAN1_Receive                               text62       0036DA
+__end_of_CAN1_ReceivedMessageCountGet               text61       0031D4
+__end_of_CAN1_SetBusErrorInterruptHandler           text25       003BB2
+__end_of_CAN1_SetBusWakeUpActivityInterruptHandler  text24       003BA8
+__end_of_CAN1_SetFIFO1NotEmptyHandler               text15       003B62
+__end_of_CAN1_SetInvalidMessageInterruptHandler     text23       003B9E
+__end_of_CAN1_SetModeChangeInterruptHandler         text22       003B94
+__end_of_CAN1_SetRxBufferOverFlowInterruptHandler   text21       003B8A
+__end_of_CAN1_SetSystemErrorInterruptHandler        text20       003B80
+__end_of_CAN1_SetTxAttemptInterruptHandler          text19       003B76
+__end_of_CAN1_TX_FIFO_Configuration                 text11       003B30
+__end_of_CAN1_Transmit                              text43       003480
+__end_of_CAN1_TransmitFIFOStatusGet                 text42       0039DE
+__end_of_CANReadMessage                             text58       003040
+__end_of_CANWriteMessage                            text41       002F70
+__end_of_DELAY_milliseconds                         text29       00385A
 __end_of_DLC_BYTES                                  smallconst   00260A
-__end_of_DefaultBusErrorHandler                     text62       003584
-__end_of_DefaultBusWakeUpActivityHandler            text61       003582
-__end_of_DefaultFIFO1NotEmptyHandler                text44       003564
-__end_of_DefaultInvalidMessageHandler               text60       003580
-__end_of_DefaultModeChangeHandler                   text59       00357E
-__end_of_DefaultRxBufferOverflowHandler             text58       00357C
-__end_of_DefaultSystemErrorHandler                  text57       00357A
-__end_of_DefaultTxAttemptHandler                    text56       003578
+__end_of_DefaultBusErrorHandler                     text75       003BEC
+__end_of_DefaultBusWakeUpActivityHandler            text74       003BEA
+__end_of_DefaultFIFO1NotEmptyHandler                text57       003BCE
+__end_of_DefaultInvalidMessageHandler               text73       003BE8
+__end_of_DefaultModeChangeHandler                   text72       003BE6
+__end_of_DefaultRxBufferOverflowHandler             text71       003BE4
+__end_of_DefaultSystemErrorHandler                  text70       003BE2
+__end_of_DefaultTxAttemptHandler                    text69       003BE0
 __end_of_FIFO                                       smallconst   00260C
-__end_of_GetRxFifoDepth                             text54       00347C
-__end_of_GetRxFifoStatus                            text53       0034AC
-__end_of_INTERRUPT_Initialize                       text9        003568
-__end_of_INTERRUPT_InterruptManager                 text30       002DBA
-__end_of_Init_hardware                              text28       003218
-__end_of_LEDS                                       text47       002E74
-__end_of_OSCILLATOR_Initialize                      text8        003494
-__end_of_PARAMETERS_Init                            text27       00355E
-__end_of_PIN_MANAGER_Initialize                     text7        003040
-__end_of_PMD_Initialize                             text6        00341C
-__end_of_ReadMessageFromFifo                        text51       00284E
-__end_of_Receive                                    text50       002A90
-__end_of_SPEAKER                                    text46       00328C
-__end_of_SYSTEM_Initialize                          text1        00345E
-__end_of_TEMPORIZATION_15mins                       text42       003576
-__end_of_TEMPORIZATION_1mins                        text41       003574
-__end_of_TEMPORIZATION_1s                           text38       002C2A
-__end_of_TEMPORIZATION_30mins                       text40       003572
-__end_of_TEMPORIZATION_30s                          text39       003570
-__end_of_TMR0_CallBack                              text36       003378
-__end_of_TMR0_DefaultInterruptHandler               text37       00356E
-__end_of_TMR0_ISR                                   text35       002FE4
-__end_of_TMR0_Initialize                            text4        0033F4
-__end_of_TMR0_SetInterruptHandler                   text5        0034FE
-__end_of_TMR1_CallBack                              text33       00334A
-__end_of_TMR1_DefaultInterruptHandler               text34       00356C
-__end_of_TMR1_ISR                                   text31       003252
-__end_of_TMR1_Initialize                            text2        0031D4
-__end_of_TMR1_SetInterruptHandler                   text3        0034F4
-__end_of_TMR1_WriteTimer                            text32       00331C
-__end_of__initialization                            cinit        003186
-__end_of_main                                       text0        0034C2
-__end_of_memcpy                                     text52       00309A
-__initialization                                    cinit        003144
+__end_of_GetRxFifoDepth                             text67       003A62
+__end_of_GetRxFifoStatus                            text66       003AC4
+__end_of_GetTxFifoStatus                            text48       003AAC
+__end_of_INTERRUPT_Initialize                       text9        003BD2
+__end_of_INTERRUPT_InterruptManager                 text30       00329A
+__end_of_Init_hardware                              text28       0037AE
+__end_of_LEDS                                       text60       003354
+__end_of_MESSSAGES_ASSIState                        text40       002CD6
+__end_of_OSCILLATOR_Initialize                      text8        003A94
+__end_of_PARAMETERS_Init                            text27       003BC2
+__end_of_PIN_MANAGER_Initialize                     text7        0035D6
+__end_of_PMD_Initialize                             text6        0039B6
+__end_of_ReadMessageFromFifo                        text64       002A94
+__end_of_Receive                                    text63       002DC2
+__end_of_SPEAKER                                    text59       003A02
+__end_of_SYSTEM_Initialize                          text1        003A44
+__end_of_TEMPORIZATION_15mins                       text55       003BDE
+__end_of_TEMPORIZATION_1mins                        text54       003BDC
+__end_of_TEMPORIZATION_1s                           text38       00310A
+__end_of_TEMPORIZATION_30mins                       text53       003BDA
+__end_of_TEMPORIZATION_5s                           text39       003BC8
+__end_of_TMR0_CallBack                              text36       003912
+__end_of_TMR0_DefaultInterruptHandler               text37       003BD8
+__end_of_TMR0_ISR                                   text35       003500
+__end_of_TMR0_Initialize                            text4        00398E
+__end_of_TMR0_SetInterruptHandler                   text5        003B58
+__end_of_TMR1_CallBack                              text33       0038E4
+__end_of_TMR1_DefaultInterruptHandler               text34       003BD6
+__end_of_TMR1_ISR                                   text31       003826
+__end_of_TMR1_Initialize                            text2        00376A
+__end_of_TMR1_SetInterruptHandler                   text3        003B4E
+__end_of_TMR1_WriteTimer                            text32       0038B6
+__end_of_ValidateTransmission                       text46       002E9A
+__end_of_WriteMessageToFifo                         text45       002854
+__end_of__initialization                            cinit        00371C
+__end_of_isTxChannel                                text44       0037EC
+__end_of_main                                       text0        003ADA
+__end_of_memcpy                                     text65       003630
+__end_ofi2_CAN1_OperationModeGet                    text47       003BBC
+__initialization                                    cinit        0036DA
 __mediumconst                                       mediumconst  000000
 __pbssBANK5                                         bssBANK5     000560
 __pbssCOMRAM                                        bssCOMRAM    00053C
-__pcinit                                            cinit        003144
+__pcinit                                            cinit        0036DA
 __pcstackBANK5                                      cstackBANK5  000582
 __pcstackCOMRAM                                     cstackCOMRAM 000501
 __pdataBANK5                                        dataBANK5    000586
-__pidataBANK5                                       idataBANK5   003568
+__pidataBANK5                                       idataBANK5   003BD2
 __pivt0x8                                           ivt0x8       000008
 __pnvBANK5                                          nvBANK5      00057E
 __pnvCOMRAM                                         nvCOMRAM     00055D
 __psmallconst                                       smallconst   002600
-__ptext0                                            text0        0034AC
-__ptext1                                            text1        00343E
-__ptext10                                           text10       00309A
-__ptext11                                           text11       0034C2
-__ptext12                                           text12       0032C0
-__ptext13                                           text13       00341C
-__ptext14                                           text14       003378
-__ptext15                                           text15       0034FE
-__ptext16                                           text16       002E74
-__ptext17                                           text17       003508
-__ptext18                                           text18       002F0C
-__ptext19                                           text19       003512
-__ptext2                                            text2        00318C
-__ptext20                                           text20       00351C
-__ptext21                                           text21       003526
-__ptext22                                           text22       003530
-__ptext23                                           text23       00353A
-__ptext24                                           text24       003544
-__ptext25                                           text25       00354E
-__ptext26                                           text26       0034D6
-__ptext27                                           text27       003558
-__ptext28                                           text28       0031D4
-__ptext29                                           text29       00328C
-__ptext3                                            text3        0034EA
-__ptext30                                           text30       002CF4
-__ptext31                                           text31       003218
-__ptext32                                           text32       0032EE
-__ptext33                                           text33       00331C
-__ptext34                                           text34       00356A
-__ptext35                                           text35       002F86
-__ptext36                                           text36       00334A
-__ptext37                                           text37       00356C
-__ptext38                                           text38       002B60
-__ptext39                                           text39       00356E
-__ptext4                                            text4        0033CC
-__ptext40                                           text40       003570
-__ptext41                                           text41       003572
-__ptext42                                           text42       003574
-__ptext43                                           text43       0033A2
-__ptext44                                           text44       00355E
-__ptext45                                           text45       002A90
-__ptext46                                           text46       003252
-__ptext47                                           text47       002DBA
-__ptext48                                           text48       002C2A
-__ptext49                                           text49       0030F2
-__ptext5                                            text5        0034F4
-__ptext50                                           text50       0029A4
-__ptext51                                           text51       00260E
-__ptext52                                           text52       003040
-__ptext53                                           text53       003494
-__ptext54                                           text54       00345E
-__ptext55                                           text55       00284E
-__ptext56                                           text56       003576
-__ptext57                                           text57       003578
-__ptext58                                           text58       00357A
-__ptext59                                           text59       00357C
-__ptext6                                            text6        0033F4
-__ptext60                                           text60       00357E
-__ptext61                                           text61       003580
-__ptext62                                           text62       003582
-__ptext63                                           text63       000000
-__ptext7                                            text7        002FE4
-__ptext8                                            text8        00347C
-__ptext9                                            text9        003564
+__ptext0                                            text0        003AC4
+__ptext1                                            text1        003A24
+__ptext10                                           text10       003630
+__ptext11                                           text11       003B1C
+__ptext12                                           text12       00385A
+__ptext13                                           text13       003A02
+__ptext14                                           text14       003912
+__ptext15                                           text15       003B58
+__ptext16                                           text16       003354
+__ptext17                                           text17       003B62
+__ptext18                                           text18       003500
+__ptext19                                           text19       003B6C
+__ptext2                                            text2        003722
+__ptext20                                           text20       003B76
+__ptext21                                           text21       003B80
+__ptext22                                           text22       003B8A
+__ptext23                                           text23       003B94
+__ptext24                                           text24       003B9E
+__ptext25                                           text25       003BA8
+__ptext26                                           text26       003B30
+__ptext27                                           text27       003BBC
+__ptext28                                           text28       00376A
+__ptext29                                           text29       003826
+__ptext3                                            text3        003B44
+__ptext30                                           text30       0031D4
+__ptext31                                           text31       0037EC
+__ptext32                                           text32       003888
+__ptext33                                           text33       0038B6
+__ptext34                                           text34       003BD4
+__ptext35                                           text35       003480
+__ptext36                                           text36       0038E4
+__ptext37                                           text37       003BD6
+__ptext38                                           text38       003040
+__ptext39                                           text39       003BC2
+__ptext4                                            text4        003966
+__ptext40                                           text40       002BEA
+__ptext41                                           text41       002E9A
+__ptext42                                           text42       0039B6
+__ptext43                                           text43       0033EC
+__ptext44                                           text44       0037AE
+__ptext45                                           text45       00260E
+__ptext46                                           text46       002DC2
+__ptext47                                           text47       003BB2
+__ptext48                                           text48       003A94
+__ptext49                                           text49       003ADA
+__ptext5                                            text5        003B4E
+__ptext50                                           text50       003A62
+__ptext51                                           text51       003AF0
+__ptext52                                           text52       003B06
+__ptext53                                           text53       003BD8
+__ptext54                                           text54       003BDA
+__ptext55                                           text55       003BDC
+__ptext56                                           text56       00393C
+__ptext57                                           text57       003BC8
+__ptext58                                           text58       002F70
+__ptext59                                           text59       0039DE
+__ptext6                                            text6        00398E
+__ptext60                                           text60       00329A
+__ptext61                                           text61       00310A
+__ptext62                                           text62       003688
+__ptext63                                           text63       002CD6
+__ptext64                                           text64       002854
+__ptext65                                           text65       0035D6
+__ptext66                                           text66       003AAC
+__ptext67                                           text67       003A44
+__ptext68                                           text68       002A94
+__ptext69                                           text69       003BDE
+__ptext7                                            text7        00357A
+__ptext70                                           text70       003BE0
+__ptext71                                           text71       003BE2
+__ptext72                                           text72       003BE4
+__ptext73                                           text73       003BE6
+__ptext74                                           text74       003BE8
+__ptext75                                           text75       003BEA
+__ptext76                                           text76       000000
+__ptext8                                            text8        003A7C
+__ptext9                                            text9        003BCE
 __ramtop                                            ramtop       002600
 __size_of_CAN1_BitRateConfiguration                 (abs)        000000
 __size_of_CAN1_ErrorNotificationInterruptEnable     (abs)        000000
 __size_of_CAN1_ISR                                  (abs)        000000
 __size_of_CAN1_Initialize                           (abs)        000000
+__size_of_CAN1_IsBusOff                             (abs)        000000
+__size_of_CAN1_IsTxErrorActive                      (abs)        000000
+__size_of_CAN1_IsTxErrorPassive                     (abs)        000000
+__size_of_CAN1_IsTxErrorWarning                     (abs)        000000
 __size_of_CAN1_OperationModeGet                     (abs)        000000
 __size_of_CAN1_OperationModeSet                     (abs)        000000
 __size_of_CAN1_RXI_ISR                              (abs)        000000
@@ -1062,7 +1180,10 @@ __size_of_CAN1_SetRxBufferOverFlowInterruptHandler  (abs)        000000
 __size_of_CAN1_SetSystemErrorInterruptHandler       (abs)        000000
 __size_of_CAN1_SetTxAttemptInterruptHandler         (abs)        000000
 __size_of_CAN1_TX_FIFO_Configuration                (abs)        000000
+__size_of_CAN1_Transmit                             (abs)        000000
+__size_of_CAN1_TransmitFIFOStatusGet                (abs)        000000
 __size_of_CANReadMessage                            (abs)        000000
+__size_of_CANWriteMessage                           (abs)        000000
 __size_of_DELAY_milliseconds                        (abs)        000000
 __size_of_DefaultBusErrorHandler                    (abs)        000000
 __size_of_DefaultBusWakeUpActivityHandler           (abs)        000000
@@ -1074,10 +1195,12 @@ __size_of_DefaultSystemErrorHandler                 (abs)        000000
 __size_of_DefaultTxAttemptHandler                   (abs)        000000
 __size_of_GetRxFifoDepth                            (abs)        000000
 __size_of_GetRxFifoStatus                           (abs)        000000
+__size_of_GetTxFifoStatus                           (abs)        000000
 __size_of_INTERRUPT_Initialize                      (abs)        000000
 __size_of_INTERRUPT_InterruptManager                (abs)        000000
 __size_of_Init_hardware                             (abs)        000000
 __size_of_LEDS                                      (abs)        000000
+__size_of_MESSSAGES_ASSIState                       (abs)        000000
 __size_of_OSCILLATOR_Initialize                     (abs)        000000
 __size_of_PARAMETERS_Init                           (abs)        000000
 __size_of_PIN_MANAGER_Initialize                    (abs)        000000
@@ -1090,7 +1213,7 @@ __size_of_TEMPORIZATION_15mins                      (abs)        000000
 __size_of_TEMPORIZATION_1mins                       (abs)        000000
 __size_of_TEMPORIZATION_1s                          (abs)        000000
 __size_of_TEMPORIZATION_30mins                      (abs)        000000
-__size_of_TEMPORIZATION_30s                         (abs)        000000
+__size_of_TEMPORIZATION_5s                          (abs)        000000
 __size_of_TMR0_CallBack                             (abs)        000000
 __size_of_TMR0_DefaultInterruptHandler              (abs)        000000
 __size_of_TMR0_ISR                                  (abs)        000000
@@ -1102,11 +1225,17 @@ __size_of_TMR1_ISR                                  (abs)        000000
 __size_of_TMR1_Initialize                           (abs)        000000
 __size_of_TMR1_SetInterruptHandler                  (abs)        000000
 __size_of_TMR1_WriteTimer                           (abs)        000000
+__size_of_ValidateTransmission                      (abs)        000000
+__size_of_WriteMessageToFifo                        (abs)        000000
+__size_of_isTxChannel                               (abs)        000000
 __size_of_main                                      (abs)        000000
 __size_of_memcpy                                    (abs)        000000
+__size_ofi2_CAN1_OperationModeGet                   (abs)        000000
 __smallconst                                        smallconst   002600
-_main                                               text0        0034AC
-_memcpy                                             text52       003040
+_isTxChannel                                        text44       0037AE
+_isTxChannel$718                                    cstackCOMRAM 000501
+_main                                               text0        003AC4
+_memcpy                                             text65       0035D6
 _msgReceipt                                         bssCOMRAM    00054F
 _msgTransmit                                        bssCOMRAM    000556
 _rxFifos                                            dataBANK5    000586
@@ -1120,12 +1249,14 @@ _ucSpeakerCount                                     bssCOMRAM    00054D
 _uiCount15min                                       bssCOMRAM    000542
 _uiCount1min                                        bssCOMRAM    000540
 _uiCount30min                                       bssCOMRAM    000544
-_uiCount30s                                         bssCOMRAM    00053E
-end_of_initialization                               cinit        003186
+_uiCount5s                                          bssCOMRAM    00053E
+end_of_initialization                               cinit        00371C
+i2_CAN1_OperationModeGet                            text47       003BB2
 intlevel0                                           text         000000
 intlevel1                                           text         000000
 intlevel2                                           text         000000
 intlevel3                                           text         000000
+isTxChannel@channel                                 cstackCOMRAM 000502
 ivt0x8_base                                         ivt0x8       000008
 memcpy@d                                            cstackCOMRAM 000507
 memcpy@d1                                           cstackCOMRAM 000501
@@ -1136,7 +1267,7 @@ memcpy@tmp                                          cstackCOMRAM 00050B
 stackhi                                             (abs)        0025FF
 stacklo                                             (abs)        000588
 start                                               init         00001A
-start_initialization                                cinit        003144
+start_initialization                                cinit        0036DA
 
 
 FUNCTION INFORMATION:
@@ -1162,7 +1293,7 @@ FUNCTION INFORMATION:
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
- Hardware stack levels required when called:   12
+ Hardware stack levels required when called:   13
  This function calls:
 		_Init_hardware
 		_PARAMETERS_Init
@@ -1194,7 +1325,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:   11
+ Hardware stack levels required when called:   12
  This function calls:
 		_CAN1_Initialize
 		_INTERRUPT_Initialize
@@ -1230,7 +1361,7 @@ Total ram usage:        0 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    9
+ Hardware stack levels required when called:   10
  This function calls:
 		_TMR1_SetInterruptHandler
  This function is called by:
@@ -1261,7 +1392,7 @@ Total ram usage:        2 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1291,7 +1422,7 @@ Total ram usage:        2 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    9
+ Hardware stack levels required when called:   10
  This function calls:
 		_TMR0_SetInterruptHandler
  This function is called by:
@@ -1322,7 +1453,7 @@ Total ram usage:        0 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1352,7 +1483,7 @@ Total ram usage:        2 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1382,7 +1513,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1412,7 +1543,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1442,7 +1573,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1472,7 +1603,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:   10
+ Hardware stack levels required when called:   11
  This function calls:
 		_CAN1_BitRateConfiguration
 		_CAN1_ErrorNotificationInterruptEnable
@@ -1508,7 +1639,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1538,7 +1669,7 @@ Total ram usage:        0 bytes
       Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        1 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1568,7 +1699,7 @@ Total ram usage:        1 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1598,7 +1729,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    9
+ Hardware stack levels required when called:   10
  This function calls:
 		_CAN1_SetFIFO1NotEmptyHandler
  This function is called by:
@@ -1629,7 +1760,7 @@ Total ram usage:        0 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1661,7 +1792,7 @@ Total ram usage:        2 bytes
       Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        3 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    9
+ Hardware stack levels required when called:   10
  This function calls:
 		_CAN1_OperationModeGet
  This function is called by:
@@ -1692,12 +1823,11 @@ Total ram usage:        3 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
 		_CAN1_OperationModeSet
-		_ValidateTransmission
  This function uses a non-reentrant model
 
 
@@ -1723,7 +1853,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    9
+ Hardware stack levels required when called:   10
  This function calls:
 		_CAN1_SetBusErrorInterruptHandler
 		_CAN1_SetBusWakeUpActivityInterruptHandler
@@ -1760,7 +1890,7 @@ Total ram usage:        0 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1791,7 +1921,7 @@ Total ram usage:        2 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1822,7 +1952,7 @@ Total ram usage:        2 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1853,7 +1983,7 @@ Total ram usage:        2 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1884,7 +2014,7 @@ Total ram usage:        2 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1915,7 +2045,7 @@ Total ram usage:        2 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1946,7 +2076,7 @@ Total ram usage:        2 bytes
       Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -1976,7 +2106,7 @@ Total ram usage:        2 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -2006,7 +2136,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -2036,7 +2166,7 @@ Total ram usage:        0 bytes
       Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        0 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    9
+ Hardware stack levels required when called:   10
  This function calls:
 		_DELAY_milliseconds
  This function is called by:
@@ -2066,7 +2196,7 @@ Total ram usage:        0 bytes
       Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        3 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    8
+ Hardware stack levels required when called:    9
  This function calls:
 		Nothing
  This function is called by:
@@ -2084,7 +2214,7 @@ Total ram usage:        3 bytes
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2096,7 +2226,7 @@ Total ram usage:        3 bytes
       Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        4 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    7
+ Hardware stack levels required when called:    8
  This function calls:
 		_CAN1_ISR
 		_CAN1_RXI_ISR
@@ -2240,7 +2370,7 @@ Total ram usage:        0 bytes
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2, status,0, pclath, tosl, cstack
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclath, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2248,13 +2378,12 @@ Total ram usage:        0 bytes
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        0 bytes
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    2
+ Hardware stack levels required when called:    7
  This function calls:
-		_SPEAKER
 		_TEMPORIZATION_1s
 		_TMR0_CallBack
  This function is called by:
@@ -2333,7 +2462,7 @@ Total ram usage:        0 bytes
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
-		wreg, status,2, status,0, cstack
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2345,18 +2474,18 @@ Total ram usage:        0 bytes
       Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    1
+ Hardware stack levels required when called:    6
  This function calls:
 		_TEMPORIZATION_15mins
 		_TEMPORIZATION_1mins
 		_TEMPORIZATION_30mins
-		_TEMPORIZATION_30s
+		_TEMPORIZATION_5s
  This function is called by:
 		_TMR0_ISR
  This function uses a non-reentrant model
 
 
- *************** function _TEMPORIZATION_30s *****************
+ *************** function _TEMPORIZATION_5s *****************
  Defined at:
 		line 71 in file "TEMPORIZATIONS.c"
  Parameters:    Size  Location     Type
@@ -2366,7 +2495,281 @@ Total ram usage:        2 bytes
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_MESSSAGES_ASSIState
+ This function is called by:
+		_TEMPORIZATION_1s
+ This function uses a non-reentrant model
+
+
+ *************** function _MESSSAGES_ASSIState *****************
+ Defined at:
+		line 124 in file "MESSAGES.c"
+ Parameters:    Size  Location     Type
 		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_CANWriteMessage
+ This function is called by:
+		_TEMPORIZATION_5s
+ This function uses a non-reentrant model
+
+
+ *************** function _CANWriteMessage *****************
+ Defined at:
+		line 23 in file "MESSAGES.c"
+ Parameters:    Size  Location     Type
+  id              4   29[COMRAM] unsigned long 
+  dataLength      1   33[COMRAM] unsigned char 
+  data1           1   34[COMRAM] unsigned char 
+  data2           1   35[COMRAM] unsigned char 
+  data3           1   36[COMRAM] unsigned char 
+  data4           1   37[COMRAM] unsigned char 
+  data5           1   38[COMRAM] unsigned char 
+  data6           1   39[COMRAM] unsigned char 
+  data7           1   40[COMRAM] unsigned char 
+  data8           1   41[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:        13       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        14       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_CAN1_IsBusOff
+		_CAN1_IsTxErrorActive
+		_CAN1_IsTxErrorPassive
+		_CAN1_IsTxErrorWarning
+		_CAN1_Transmit
+		_CAN1_TransmitFIFOStatusGet
+ This function is called by:
+		_MESSSAGES_ASSIState
+ This function uses a non-reentrant model
+
+
+ *************** function _CAN1_TransmitFIFOStatusGet *****************
+ Defined at:
+		line 589 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  fifoChannel     1    wreg     const enum E22383
+ Auto vars:     Size  Location     Type
+  fifoChannel     1    3[COMRAM] const enum E22383
+  status          1    2[COMRAM] enum E22361
+ Return value:  Size  Location     Type
+                  1    wreg      enum E22361
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_GetTxFifoStatus
+		_isTxChannel
+ This function is called by:
+		_CANWriteMessage
+ This function uses a non-reentrant model
+
+
+ *************** function _CAN1_Transmit *****************
+ Defined at:
+		line 567 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  fifoChannel     1    wreg     const enum E22383
+  txCanMsg        2   23[COMRAM] PTR struct .
+		 -> msgTransmit(7), 
+ Auto vars:     Size  Location     Type
+  fifoChannel     1   28[COMRAM] const enum E22383
+  txFifoObj       2   26[COMRAM] PTR unsigned char 
+		 -> RAM(9727), 
+  status          1   25[COMRAM] enum E22340
+ Return value:  Size  Location     Type
+                  1    wreg      enum E22340
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_ValidateTransmission
+		_WriteMessageToFifo
+		_isTxChannel
+ This function is called by:
+		_CANWriteMessage
+ This function uses a non-reentrant model
+
+
+ *************** function _isTxChannel *****************
+ Defined at:
+		line 487 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  channel         1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  channel         1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      _Bool 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_CAN1_Transmit
+		_CAN1_TransmitFIFOStatusGet
+ This function uses a non-reentrant model
+
+
+ *************** function _WriteMessageToFifo *****************
+ Defined at:
+		line 497 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  txFifoObj       2   11[COMRAM] PTR unsigned char 
+		 -> RAM(9727), 
+  txCanMsg        2   13[COMRAM] PTR struct .
+		 -> msgTransmit(7), 
+ Auto vars:     Size  Location     Type
+  msgId           4   19[COMRAM] unsigned long 
+  status          1   18[COMRAM] unsigned char 
+  payloadOffse    1    0        const unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        12       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       12 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_memcpy
+ This function is called by:
+		_CAN1_Transmit
+ This function uses a non-reentrant model
+
+
+ *************** function _ValidateTransmission *****************
+ Defined at:
+		line 538 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  validChannel    1    wreg     unsigned char 
+  txCanMsg        2    1[COMRAM] PTR struct .
+		 -> msgTransmit(7), 
+ Auto vars:     Size  Location     Type
+  validChannel    1    6[COMRAM] unsigned char 
+  field           1    9[COMRAM] struct .
+  txMsgStatus     1    8[COMRAM] enum E22340
+  plsize          1    0        unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E22340
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         9       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_GetTxFifoStatus
+		i2_CAN1_OperationModeGet
+ This function is called by:
+		_CAN1_Transmit
+ This function uses a non-reentrant model
+
+
+ *************** function i2_CAN1_OperationModeGet *****************
+ Defined at:
+		line 328 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      enum E22346
+ Registers used:
+		wreg, status,2, status,0
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -2381,7 +2784,155 @@ Total ram usage:        0 bytes
  This function calls:
 		Nothing
  This function is called by:
-		_TEMPORIZATION_1s
+		_ValidateTransmission
+ This function uses a non-reentrant model
+
+
+ *************** function _GetTxFifoStatus *****************
+ Defined at:
+		line 492 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+  validChannel    1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  validChannel    1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      enum E22361
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_ValidateTransmission
+		_CAN1_TransmitFIFOStatusGet
+ This function uses a non-reentrant model
+
+
+ *************** function _CAN1_IsTxErrorWarning *****************
+ Defined at:
+		line 626 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      _Bool 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_CANWriteMessage
+ This function uses a non-reentrant model
+
+
+ *************** function _CAN1_IsTxErrorActive *****************
+ Defined at:
+		line 631 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      _Bool 
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_CAN1_IsTxErrorPassive
+ This function is called by:
+		_CANWriteMessage
+ This function uses a non-reentrant model
+
+
+ *************** function _CAN1_IsTxErrorPassive *****************
+ Defined at:
+		line 621 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      _Bool 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_CAN1_IsTxErrorActive
+		_CANWriteMessage
+ This function uses a non-reentrant model
+
+
+ *************** function _CAN1_IsBusOff *****************
+ Defined at:
+		line 601 in file "mcc_generated_files/can1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      _Bool 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_CANWriteMessage
  This function uses a non-reentrant model
 
 
@@ -2595,14 +3146,13 @@ Total ram usage:       18 bytes
  Data sizes:     COMRAM   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14  BANK15  BANK16  BANK17  BANK18  BANK19  BANK20  BANK21  BANK22  BANK23  BANK24  BANK25  BANK26  BANK27  BANK28  BANK29  BANK30  BANK31  BANK32  BANK33  BANK34  BANK35  BANK36  BANK37
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        1 bytes
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
  Hardware stack levels used:    1
  This function calls:
 		Nothing
  This function is called by:
-		_TMR0_ISR
 		_CANReadMessage
  This function uses a non-reentrant model
 
@@ -2784,7 +3334,7 @@ Total ram usage:       12 bytes
 
  *************** function _memcpy *****************
  Defined at:
-		line 4 in file "C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c"
+		line 4 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c"
  Parameters:    Size  Location     Type
   d1              2    0[COMRAM] PTR void 
 		 -> RAM(9727), rxMsgData(8), 
@@ -3132,128 +3682,141 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 mcc_generated_files/can1.c
-		_ReadMessageFromFifo		CODE           	260E	0000	576
-		_DefaultFIFO1NotEmptyHandler		CODE           	355E	0000	6
-		_CAN1_BitRateConfiguration		CODE           	34D6	0000	20
-		_CAN1_SetTxAttemptInterruptHandler		CODE           	3512	0000	10
-		_Receive       		CODE           	29A4	0000	236
-		_CAN1_SetInvalidMessageInterruptHandler		CODE           	353A	0000	10
-		_CAN1_TX_FIFO_Configuration		CODE           	34C2	0000	20
-		_GetRxFifoDepth		CODE           	345E	0000	30
-		_CAN1_ISR      		CODE           	284E	0000	342
-		_DefaultBusErrorHandler		CODE           	3582	0000	2
-		_CAN1_OperationModeGet		CODE           	3508	0000	10
-		_CAN1_Initialize		CODE           	309A	0000	88
-		_DefaultInvalidMessageHandler		CODE           	357E	0000	2
-		_CAN1_SetFIFO1NotEmptyHandler		CODE           	34FE	0000	10
-		_DefaultBusWakeUpActivityHandler		CODE           	3580	0000	2
-		_CAN1_RX_FIFO_FilterMaskConfiguration		CODE           	341C	0000	34
-		_CAN1_RX_FIFO_Configuration		CODE           	3378	0000	42
-		_GetRxFifoStatus		CODE           	3494	0000	24
-		_CAN1_ReceivedMessageCountGet		CODE           	2C2A	0000	202
-		_CAN1_SetBusErrorInterruptHandler		CODE           	354E	0000	10
-		_CAN1_SetSystemErrorInterruptHandler		CODE           	351C	0000	10
-		_DefaultSystemErrorHandler		CODE           	3578	0000	2
-		_DefaultRxBufferOverflowHandler		CODE           	357A	0000	2
-		_CAN1_ErrorNotificationInterruptEnable		CODE           	2F0C	0000	122
-		_CAN1_SetBusWakeUpActivityInterruptHandler		CODE           	3544	0000	10
-		_CAN1_Receive  		CODE           	30F2	0000	82
-		_CAN1_SetRxBufferOverFlowInterruptHandler		CODE           	3526	0000	10
-		_CAN1_RX_FIFO_ResetInfo		CODE           	32C0	0000	46
-		_CAN1_OperationModeSet		CODE           	2E74	0000	152
-		_CAN1_SetModeChangeInterruptHandler		CODE           	3530	0000	10
-		_CAN1_RXI_ISR  		CODE           	33A2	0000	42
-		_DefaultTxAttemptHandler		CODE           	3576	0000	2
-		_DefaultModeChangeHandler		CODE           	357C	0000	2
+		_ReadMessageFromFifo		CODE           	2854	0000	576
+		_ValidateTransmission		CODE           	2DC2	0000	216
+		_CAN1_IsTxErrorPassive		CODE           	3AF0	0000	22
+		_DefaultFIFO1NotEmptyHandler		CODE           	3BC8	0000	6
+		_CAN1_BitRateConfiguration		CODE           	3B30	0000	20
+		_CAN1_SetTxAttemptInterruptHandler		CODE           	3B6C	0000	10
+		_Receive       		CODE           	2CD6	0000	236
+		_CAN1_SetInvalidMessageInterruptHandler		CODE           	3B94	0000	10
+		_CAN1_TX_FIFO_Configuration		CODE           	3B1C	0000	20
+		_GetRxFifoDepth		CODE           	3A44	0000	30
+		_CAN1_ISR      		CODE           	2A94	0000	342
+		_DefaultBusErrorHandler		CODE           	3BEA	0000	2
+		_CAN1_OperationModeGet		CODE           	3B62	0000	10
+		_CAN1_IsBusOff 		CODE           	3B06	0000	22
+		_CAN1_Initialize		CODE           	3630	0000	88
+		_DefaultInvalidMessageHandler		CODE           	3BE6	0000	2
+		_CAN1_SetFIFO1NotEmptyHandler		CODE           	3B58	0000	10
+		_DefaultBusWakeUpActivityHandler		CODE           	3BE8	0000	2
+		_CAN1_TransmitFIFOStatusGet		CODE           	39B6	0000	40
+		_CAN1_Transmit 		CODE           	33EC	0000	148
+		_CAN1_RX_FIFO_FilterMaskConfiguration		CODE           	3A02	0000	34
+		_CAN1_RX_FIFO_Configuration		CODE           	3912	0000	42
+		_CAN1_IsTxErrorActive		CODE           	3A62	0000	26
+		_GetRxFifoStatus		CODE           	3AAC	0000	24
+		_CAN1_ReceivedMessageCountGet		CODE           	310A	0000	202
+		_CAN1_SetBusErrorInterruptHandler		CODE           	3BA8	0000	10
+		_CAN1_SetSystemErrorInterruptHandler		CODE           	3B76	0000	10
+		_DefaultSystemErrorHandler		CODE           	3BE0	0000	2
+		_CAN1_IsTxErrorWarning		CODE           	3ADA	0000	22
+		_isTxChannel   		CODE           	37AE	0000	62
+		_GetTxFifoStatus		CODE           	3A94	0000	24
+		_WriteMessageToFifo		CODE           	260E	0000	582
+		_DefaultRxBufferOverflowHandler		CODE           	3BE2	0000	2
+		_CAN1_ErrorNotificationInterruptEnable		CODE           	3500	0000	122
+		_CAN1_SetBusWakeUpActivityInterruptHandler		CODE           	3B9E	0000	10
+		_CAN1_Receive  		CODE           	3688	0000	82
+		_CAN1_SetRxBufferOverFlowInterruptHandler		CODE           	3B80	0000	10
+		_CAN1_RX_FIFO_ResetInfo		CODE           	385A	0000	46
+		_CAN1_OperationModeSet		CODE           	3354	0000	152
+		_CAN1_SetModeChangeInterruptHandler		CODE           	3B8A	0000	10
+		_CAN1_RXI_ISR  		CODE           	393C	0000	42
+		_DefaultTxAttemptHandler		CODE           	3BDE	0000	2
+		_DefaultModeChangeHandler		CODE           	3BE4	0000	2
 
-mcc_generated_files/can1.c estimated size: 2168
+mcc_generated_files/can1.c estimated size: 3332
 
 PARAMETERS.c
-		_PARAMETERS_Init		CODE           	3558	0000	6
+		_PARAMETERS_Init		CODE           	3BBC	0000	6
 
 PARAMETERS.c estimated size: 6
 
 TEMPORIZATIONS.c
-		_TEMPORIZATION_1mins		CODE           	3572	0000	2
-		_TEMPORIZATION_30mins		CODE           	3570	0000	2
-		_TEMPORIZATION_15mins		CODE           	3574	0000	2
-		_TEMPORIZATION_30s		CODE           	356E	0000	2
-		_TEMPORIZATION_1s		CODE           	2B60	0000	202
+		_TEMPORIZATION_1mins		CODE           	3BDA	0000	2
+		_TEMPORIZATION_30mins		CODE           	3BD8	0000	2
+		_TEMPORIZATION_15mins		CODE           	3BDC	0000	2
+		_TEMPORIZATION_1s		CODE           	3040	0000	202
+		_TEMPORIZATION_5s		CODE           	3BC2	0000	6
 
-TEMPORIZATIONS.c estimated size: 210
-
-C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c
-		_memcpy        		CODE           	3040	0000	90
-
-C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c estimated size: 90
+TEMPORIZATIONS.c estimated size: 214
 
 MESSAGES.c
-		_CANReadMessage		CODE           	2A90	0000	208
+		_CANWriteMessage		CODE           	2E9A	0000	214
+		_CANReadMessage		CODE           	2F70	0000	208
+		_MESSSAGES_ASSIState		CODE           	2BEA	0000	236
 
-MESSAGES.c estimated size: 208
+MESSAGES.c estimated size: 658
 
 mcc_generated_files/interrupt_manager.c
-		_INTERRUPT_Initialize		CODE           	3564	0000	4
-		_INTERRUPT_InterruptManager		CODE           	2CF4	0000	198
+		_INTERRUPT_Initialize		CODE           	3BCE	0000	4
+		_INTERRUPT_InterruptManager		CODE           	31D4	0000	198
 
 mcc_generated_files/interrupt_manager.c estimated size: 202
 
 mcc_generated_files/tmr0.c
-		_TMR0_SetInterruptHandler		CODE           	34F4	0000	10
-		_TMR0_DefaultInterruptHandler		CODE           	356C	0000	2
-		_TMR0_CallBack 		CODE           	334A	0000	46
-		_TMR0_ISR      		CODE           	2F86	0000	94
-		_TMR0_Initialize		CODE           	33CC	0000	40
+		_TMR0_SetInterruptHandler		CODE           	3B4E	0000	10
+		_TMR0_DefaultInterruptHandler		CODE           	3BD6	0000	2
+		_TMR0_CallBack 		CODE           	38E4	0000	46
+		_TMR0_ISR      		CODE           	3480	0000	128
+		_TMR0_Initialize		CODE           	3966	0000	40
 
-mcc_generated_files/tmr0.c estimated size: 192
+mcc_generated_files/tmr0.c estimated size: 226
 
 mcc_generated_files/pin_manager.c
-		_PIN_MANAGER_Initialize		CODE           	2FE4	0000	92
+		_PIN_MANAGER_Initialize		CODE           	357A	0000	92
 
 mcc_generated_files/pin_manager.c estimated size: 92
 
 SPEAKER.c
-		_SPEAKER       		CODE           	3252	0000	58
+		_SPEAKER       		CODE           	39DE	0000	36
 
-SPEAKER.c estimated size: 58
+SPEAKER.c estimated size: 36
 
 LEDS.c
-		_LEDS          		CODE           	2DBA	0000	186
+		_LEDS          		CODE           	329A	0000	186
 
 LEDS.c estimated size: 186
 
 shared
 		_FIFO          		SMALLCONST     	0000	0000	0
 		_DLC_BYTES     		SMALLCONST     	2601	0000	9
-		__initialization		CODE           	3144	0000	66
+		__initialization		CODE           	36DA	0000	66
+		i2_CAN1_OperationModeGet		CODE           	3BB2	0000	10
 
-shared estimated size: 75
+shared estimated size: 85
 
 mcc_generated_files/mcc.c
-		_PMD_Initialize		CODE           	33F4	0000	40
-		_OSCILLATOR_Initialize		CODE           	347C	0000	24
-		_SYSTEM_Initialize		CODE           	343E	0000	32
+		_PMD_Initialize		CODE           	398E	0000	40
+		_OSCILLATOR_Initialize		CODE           	3A7C	0000	24
+		_SYSTEM_Initialize		CODE           	3A24	0000	32
 
 mcc_generated_files/mcc.c estimated size: 96
 
 mcc_generated_files/tmr1.c
-		_TMR1_Initialize		CODE           	318C	0000	72
-		_TMR1_SetInterruptHandler		CODE           	34EA	0000	10
-		_TMR1_DefaultInterruptHandler		CODE           	356A	0000	2
-		_TMR1_CallBack 		CODE           	331C	0000	46
-		_TMR1_WriteTimer		CODE           	32EE	0000	46
-		_TMR1_ISR      		CODE           	3218	0000	58
+		_TMR1_Initialize		CODE           	3722	0000	72
+		_TMR1_SetInterruptHandler		CODE           	3B44	0000	10
+		_TMR1_DefaultInterruptHandler		CODE           	3BD4	0000	2
+		_TMR1_CallBack 		CODE           	38B6	0000	46
+		_TMR1_WriteTimer		CODE           	3888	0000	46
+		_TMR1_ISR      		CODE           	37EC	0000	58
 
 mcc_generated_files/tmr1.c estimated size: 234
 
+C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
+		_memcpy        		CODE           	35D6	0000	90
+
+C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c estimated size: 90
+
 mcc_generated_files/delay.c
-		_DELAY_milliseconds		CODE           	328C	0000	52
+		_DELAY_milliseconds		CODE           	3826	0000	52
 
 mcc_generated_files/delay.c estimated size: 52
 
 main.c
-		_main          		CODE           	34AC	0000	22
-		_Init_hardware 		CODE           	31D4	0000	68
+		_main          		CODE           	3AC4	0000	22
+		_Init_hardware 		CODE           	376A	0000	68
 
 main.c estimated size: 90
 

@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 18F26Q84 ]
 [d frameptr 1249 ]
-"102 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/can1.c
+"102 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [e E22386 . `uc
 FIFO1 1
 ]
@@ -83,7 +83,7 @@ CAN_FD_FORMAT 1
 [e E22383 . `uc
 TXQ 0
 ]
-"36 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\MESSAGES.c
+"36 C:\Users\panze\Documents\GitHub\ASSI\MESSAGES.c
 [e E22220 . `uc
 CAN_2_0_FORMAT 0
 CAN_FD_FORMAT 1
@@ -118,39 +118,39 @@ CAN_TX_MSG_REQUEST_DLC_EXCEED_ERROR 1
 CAN_TX_MSG_REQUEST_BRS_ERROR 2
 CAN_TX_MSG_REQUEST_FIFO_FULL 3
 ]
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\fleq.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\float.c
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftadd.c
+"86 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftdiv.c
+"54 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftmul.c
+"62 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\ftsub.c
+"19 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcdiv.c
+"11 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul64.c
+"91 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"12 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\LEDS.c
+"12 C:\Users\panze\Documents\GitHub\ASSI\LEDS.c
 [v _LEDS LEDS `(v  1 e 1 0 ]
-"56 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\main.c
+"56 C:\Users\panze\Documents\GitHub\ASSI\main.c
 [v _Init_hardware Init_hardware `(v  1 e 1 0 ]
 "79
 [v _main main `(v  1 e 1 0 ]
-"119 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/can1.c
+"119 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _DefaultFIFO1NotEmptyHandler DefaultFIFO1NotEmptyHandler `(v  1 s 1 DefaultFIFO1NotEmptyHandler ]
 "124
 [v _DefaultInvalidMessageHandler DefaultInvalidMessageHandler `(v  1 s 1 DefaultInvalidMessageHandler ]
@@ -184,6 +184,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _CAN1_OperationModeSet CAN1_OperationModeSet `(E22356  1 e 1 0 ]
 "328
 [v _CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
+[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
 "333
 [v _GetRxFifoDepth GetRxFifoDepth `(uc  1 s 1 GetRxFifoDepth ]
 "338
@@ -238,21 +239,21 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _CAN1_SetFIFO1NotEmptyHandler CAN1_SetFIFO1NotEmptyHandler `(v  1 e 1 0 ]
 "738
 [v _CAN1_RXI_ISR CAN1_RXI_ISR `(v  1 e 1 0 ]
-"38 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/delay.c
+"38 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/delay.c
 [v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
-"52 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "58
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
-"50 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/mcc.c
+"50 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "62
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "76
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"55 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/pin_manager.c
+"55 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"64 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/tmr0.c
+"64 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 "124
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
@@ -262,7 +263,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
 "173
 [v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
-"64 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/tmr1.c
+"64 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "127
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
@@ -274,15 +275,17 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
 "199
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
-"23 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\MESSAGES.c
+"23 C:\Users\panze\Documents\GitHub\ASSI\MESSAGES.c
 [v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
 "68
 [v _CANReadMessage CANReadMessage `(v  1 e 1 0 ]
-"17 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\PARAMETERS.c
+"124
+[v _MESSSAGES_ASSIState MESSSAGES_ASSIState `(v  1 e 1 0 ]
+"17 C:\Users\panze\Documents\GitHub\ASSI\PARAMETERS.c
 [v _PARAMETERS_Init PARAMETERS_Init `(v  1 e 1 0 ]
-"15 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\SPEAKER.c
+"15 C:\Users\panze\Documents\GitHub\ASSI\SPEAKER.c
 [v _SPEAKER SPEAKER `(v  1 e 1 0 ]
-"20 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\TEMPORIZATIONS.c
+"20 C:\Users\panze\Documents\GitHub\ASSI\TEMPORIZATIONS.c
 [v _TEMPORIZATION_1s TEMPORIZATION_1s `(v  1 e 1 0 ]
 "55
 [v _TEMPORIZATION_30mins TEMPORIZATION_30mins `(v  1 e 1 0 ]
@@ -291,14 +294,14 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "66
 [v _TEMPORIZATION_1mins TEMPORIZATION_1mins `(v  1 e 1 0 ]
 "71
-[v _TEMPORIZATION_30s TEMPORIZATION_30s `(v  1 e 1 0 ]
+[v _TEMPORIZATION_5s TEMPORIZATION_5s `(v  1 e 1 0 ]
 [s S24 . 1 `uc 1 idType 1 0 :1:0 
 `uc 1 frameType 1 0 :1:1 
 `uc 1 dlc 1 0 :4:2 
 `uc 1 formatType 1 0 :1:6 
 `uc 1 brs 1 0 :1:7 
 ]
-"26 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI/MESSAGES.h
+"26 C:\Users\panze\Documents\GitHub\ASSI/MESSAGES.h
 [u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
 [s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
 [v _msgTransmit msgTransmit `S33  1 e 7 0 ]
@@ -354,7 +357,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
 "1536
 [v _LATB LATB `VEuc  1 e 1 @1215 ]
-[s S1477 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S1473 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -364,8 +367,8 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 `uc 1 LATB7 1 0 :1:7 
 ]
 "1553
-[u S1486 . 1 `S1477 1 . 1 0 ]
-[v _LATBbits LATBbits `VES1486  1 e 1 @1215 ]
+[u S1482 . 1 `S1473 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1482  1 e 1 @1215 ]
 "1565
 [v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
 "1598
@@ -783,7 +786,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 "65313
 "65313
 [v _PIE4bits PIE4bits `VES120  1 e 1 @1186 ]
-"100 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/can1.c
+"100 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _rxMsgData rxMsgData `VE[8]uc  1 s 8 rxMsgData ]
 [s S39 CAN1_RX_FIFO 2 `E22386 1 channel 1 0 `VEuc 1 fifoHead 1 1 ]
 "102
@@ -806,41 +809,41 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v _CAN1_TxAttemptHandler CAN1_TxAttemptHandler `*.37(v  1 s 2 CAN1_TxAttemptHandler ]
 "117
 [v _CAN1_RxBufferOverflowHandler CAN1_RxBufferOverflowHandler `*.37(v  1 s 2 CAN1_RxBufferOverflowHandler ]
-"62 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/tmr0.c
+"62 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr0.c
 [v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
-"57 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/tmr1.c
+"57 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
 "58
 [v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
-"12 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\PARAMETERS.c
+"12 C:\Users\panze\Documents\GitHub\ASSI\PARAMETERS.c
 [v _ucASState ucASState `uc  1 e 1 0 ]
 "13
 [v _ucASState_prev ucASState_prev `uc  1 e 1 0 ]
 "14
 [v _ucASSIName ucASSIName `uc  1 e 1 0 ]
-"12 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\SPEAKER.c
+"12 C:\Users\panze\Documents\GitHub\ASSI\SPEAKER.c
 [v _ucFlagEmergencySpeaker ucFlagEmergencySpeaker `uc  1 e 1 0 ]
 "13
 [v _ucSpeakerCount ucSpeakerCount `uc  1 e 1 0 ]
-"13 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\TEMPORIZATIONS.c
+"13 C:\Users\panze\Documents\GitHub\ASSI\TEMPORIZATIONS.c
 [v _uiCount30min uiCount30min `ui  1 e 2 0 ]
 "14
 [v _uiCount15min uiCount15min `ui  1 e 2 0 ]
 "15
 [v _uiCount1min uiCount1min `ui  1 e 2 0 ]
 "16
-[v _uiCount30s uiCount30s `ui  1 e 2 0 ]
-"79 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\main.c
+[v _uiCount5s uiCount5s `ui  1 e 2 0 ]
+"79 C:\Users\panze\Documents\GitHub\ASSI\main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "112
 } 0
-"50 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/mcc.c
+"50 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "60
 } 0
-"64 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/tmr1.c
+"64 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "97
@@ -851,7 +854,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "197
 } 0
-"64 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/tmr0.c
+"64 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
 "88
@@ -862,27 +865,27 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "171
 } 0
-"76 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/mcc.c
+"76 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "96
 } 0
-"55 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/pin_manager.c
+"55 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "118
 } 0
-"62 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/mcc.c
+"62 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "74
 } 0
-"52 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "56
 } 0
-"270 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/can1.c
+"270 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _CAN1_Initialize CAN1_Initialize `(v  1 e 1 0 ]
 {
 "297
@@ -986,28 +989,28 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 {
 "242
 } 0
-"17 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\PARAMETERS.c
+"17 C:\Users\panze\Documents\GitHub\ASSI\PARAMETERS.c
 [v _PARAMETERS_Init PARAMETERS_Init `(v  1 e 1 0 ]
 {
 "20
 } 0
-"56 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\main.c
+"56 C:\Users\panze\Documents\GitHub\ASSI\main.c
 [v _Init_hardware Init_hardware `(v  1 e 1 0 ]
 {
 "73
 } 0
-"38 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/delay.c
+"38 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/delay.c
 [v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
 {
 [v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 0 ]
 "42
 } 0
-"58 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/interrupt_manager.c
+"58 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
 "83
 } 0
-"164 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/tmr1.c
+"164 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr1.c
 [v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
 {
 "166
@@ -1030,7 +1033,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 {
 "202
 } 0
-"124 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/tmr0.c
+"124 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
 {
 "126
@@ -1047,17 +1050,157 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 {
 "176
 } 0
-"20 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\TEMPORIZATIONS.c
+"20 C:\Users\panze\Documents\GitHub\ASSI\TEMPORIZATIONS.c
 [v _TEMPORIZATION_1s TEMPORIZATION_1s `(v  1 e 1 0 ]
 {
 "43
 } 0
 "71
-[v _TEMPORIZATION_30s TEMPORIZATION_30s `(v  1 e 1 0 ]
+[v _TEMPORIZATION_5s TEMPORIZATION_5s `(v  1 e 1 0 ]
 {
 "74
 } 0
-"55
+"124 C:\Users\panze\Documents\GitHub\ASSI\MESSAGES.c
+[v _MESSSAGES_ASSIState MESSSAGES_ASSIState `(v  1 e 1 0 ]
+{
+"139
+} 0
+"23
+[v _CANWriteMessage CANWriteMessage `(v  1 e 1 0 ]
+{
+[v CANWriteMessage@id id `ul  1 p 4 29 ]
+[v CANWriteMessage@dataLength dataLength `uc  1 p 1 33 ]
+[v CANWriteMessage@data1 data1 `uc  1 p 1 34 ]
+[v CANWriteMessage@data2 data2 `uc  1 p 1 35 ]
+[v CANWriteMessage@data3 data3 `uc  1 p 1 36 ]
+[v CANWriteMessage@data4 data4 `uc  1 p 1 37 ]
+[v CANWriteMessage@data5 data5 `uc  1 p 1 38 ]
+[v CANWriteMessage@data6 data6 `uc  1 p 1 39 ]
+[v CANWriteMessage@data7 data7 `uc  1 p 1 40 ]
+[v CANWriteMessage@data8 data8 `uc  1 p 1 41 ]
+"65
+} 0
+"589 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
+[v _CAN1_TransmitFIFOStatusGet CAN1_TransmitFIFOStatusGet `(E22361  1 e 1 0 ]
+{
+[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
+"591
+[v CAN1_TransmitFIFOStatusGet@status status `E22361  1 a 1 2 ]
+"589
+[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
+"591
+[v CAN1_TransmitFIFOStatusGet@fifoChannel fifoChannel `CE22383  1 a 1 3 ]
+"599
+} 0
+"567
+[v _CAN1_Transmit CAN1_Transmit `(E22340  1 e 1 0 ]
+{
+[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
+"576
+[v CAN1_Transmit@txFifoObj txFifoObj `*.39uc  1 a 2 26 ]
+"569
+[v CAN1_Transmit@status status `E22340  1 a 1 25 ]
+"567
+[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 wreg ]
+[s S24 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+[u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
+[s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v CAN1_Transmit@txCanMsg txCanMsg `*.39S33  1 p 2 23 ]
+[v CAN1_Transmit@fifoChannel fifoChannel `CE22383  1 a 1 28 ]
+"587
+} 0
+"487
+[v _isTxChannel isTxChannel `(a  1 s 1 isTxChannel ]
+{
+[v isTxChannel@channel channel `uc  1 a 1 wreg ]
+[v isTxChannel@channel channel `uc  1 a 1 wreg ]
+"489
+[v isTxChannel@channel channel `uc  1 a 1 1 ]
+"490
+} 0
+"497
+[v _WriteMessageToFifo WriteMessageToFifo `(v  1 s 1 WriteMessageToFifo ]
+{
+"499
+[v WriteMessageToFifo@msgId msgId `ul  1 a 4 19 ]
+"500
+[v WriteMessageToFifo@status status `uc  1 a 1 18 ]
+"497
+[v WriteMessageToFifo@txFifoObj txFifoObj `*.39uc  1 p 2 11 ]
+[s S24 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+[u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
+[s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v WriteMessageToFifo@txCanMsg txCanMsg `*.39S33  1 p 2 13 ]
+"536
+} 0
+"538
+[v _ValidateTransmission ValidateTransmission `(E22340  1 s 1 ValidateTransmission ]
+{
+[v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
+[s S24 . 1 `uc 1 idType 1 0 :1:0 
+`uc 1 frameType 1 0 :1:1 
+`uc 1 dlc 1 0 :4:2 
+`uc 1 formatType 1 0 :1:6 
+`uc 1 brs 1 0 :1:7 
+]
+"541
+[u S30 . 1 `uc 1 msgfields 1 0 `S24 1 . 1 0 ]
+[v ValidateTransmission@field field `S30  1 a 1 9 ]
+"540
+[v ValidateTransmission@txMsgStatus txMsgStatus `E22340  1 a 1 8 ]
+"538
+[v ValidateTransmission@validChannel validChannel `uc  1 a 1 wreg ]
+[s S33 . 7 `ul 1 msgId 4 0 `S30 1 field 1 4 `*.39uc 1 data 2 5 ]
+[v ValidateTransmission@txCanMsg txCanMsg `*.39S33  1 p 2 1 ]
+"540
+[v ValidateTransmission@validChannel validChannel `uc  1 a 1 6 ]
+"565
+} 0
+"328
+[v i2_CAN1_OperationModeGet CAN1_OperationModeGet `(E22346  1 e 1 0 ]
+{
+"331
+} 0
+"492
+[v _GetTxFifoStatus GetTxFifoStatus `(E22361  1 s 1 GetTxFifoStatus ]
+{
+[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
+[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]
+"494
+[v GetTxFifoStatus@validChannel validChannel `uc  1 a 1 0 ]
+"495
+} 0
+"626
+[v _CAN1_IsTxErrorWarning CAN1_IsTxErrorWarning `(a  1 e 1 0 ]
+{
+"629
+} 0
+"631
+[v _CAN1_IsTxErrorActive CAN1_IsTxErrorActive `(a  1 e 1 0 ]
+{
+"634
+} 0
+"621
+[v _CAN1_IsTxErrorPassive CAN1_IsTxErrorPassive `(a  1 e 1 0 ]
+{
+"624
+} 0
+"601
+[v _CAN1_IsBusOff CAN1_IsBusOff `(a  1 e 1 0 ]
+{
+"604
+} 0
+"55 C:\Users\panze\Documents\GitHub\ASSI\TEMPORIZATIONS.c
 [v _TEMPORIZATION_30mins TEMPORIZATION_30mins `(v  1 e 1 0 ]
 {
 "58
@@ -1072,7 +1215,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 {
 "63
 } 0
-"738 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/can1.c
+"738 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _CAN1_RXI_ISR CAN1_RXI_ISR `(v  1 e 1 0 ]
 {
 "746
@@ -1082,26 +1225,26 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 {
 "122
 } 0
-"68 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\MESSAGES.c
+"68 C:\Users\panze\Documents\GitHub\ASSI\MESSAGES.c
 [v _CANReadMessage CANReadMessage `(v  1 e 1 0 ]
 {
 "70
 [v CANReadMessage@id id `ul  1 a 4 50 ]
 "73
 [v CANReadMessage@data1 data1 `uc  1 a 1 54 ]
-"118
+"119
 } 0
-"15 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\SPEAKER.c
+"15 C:\Users\panze\Documents\GitHub\ASSI\SPEAKER.c
 [v _SPEAKER SPEAKER `(v  1 e 1 0 ]
 {
-"21
+"27
 } 0
-"12 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\LEDS.c
+"12 C:\Users\panze\Documents\GitHub\ASSI\LEDS.c
 [v _LEDS LEDS `(v  1 e 1 0 ]
 {
 "46
 } 0
-"444 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/can1.c
+"444 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _CAN1_ReceivedMessageCountGet CAN1_ReceivedMessageCountGet `(uc  1 e 1 0 ]
 {
 "464
@@ -1185,7 +1328,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v ReadMessageFromFifo@rxCanMsg rxCanMsg `*.39S33  1 p 2 13 ]
 "375
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\memcpy.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
 {
 "8
@@ -1200,7 +1343,7 @@ CAN_TX_MSG_REQUEST_FIFO_FULL 3
 [v memcpy@n n `ui  1 p 2 4 ]
 "18
 } 0
-"338 D:\GrabCAD\UM06\Analysis & Simulation\DV - Driverless\PROYECTOS\HARDWARE\PROJECT - ASSIS\software\ASSI\mcc_generated_files/can1.c
+"338 C:\Users\panze\Documents\GitHub\ASSI\mcc_generated_files/can1.c
 [v _GetRxFifoStatus GetRxFifoStatus `(E22534  1 s 1 GetRxFifoStatus ]
 {
 [v GetRxFifoStatus@validChannel validChannel `uc  1 a 1 wreg ]

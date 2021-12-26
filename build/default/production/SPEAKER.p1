@@ -3550,17 +3550,40 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;SPEAKER.c: 18:     {
 {
 "19
-[; ;SPEAKER.c: 19:         do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0);
+[; ;SPEAKER.c: 19:         do { LATCbits.LATC3 = 1; } while(0);
 [e :U 3180 ]
 {
-[e = . . _LATCbits 0 3 -> ~ -> . . _LATCbits 0 3 `i `uc ]
+[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 3179 ]
 "20
-[; ;SPEAKER.c: 20:     }
-}
-[e :U 3177 ]
+[; ;SPEAKER.c: 20:         ucFlagEmergencySpeaker = 1;
+[e = _ucFlagEmergencySpeaker -> -> 1 `i `uc ]
 "21
-[; ;SPEAKER.c: 21: }
+[; ;SPEAKER.c: 21:     }
+}
+[e $U 3181  ]
+"22
+[; ;SPEAKER.c: 22:     else
+[e :U 3177 ]
+"23
+[; ;SPEAKER.c: 23:     {
+{
+"24
+[; ;SPEAKER.c: 24:         do { LATCbits.LATC3 = 0; } while(0);
+[e :U 3184 ]
+{
+[e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 3183 ]
+"25
+[; ;SPEAKER.c: 25:         ucFlagEmergencySpeaker = 0;
+[e = _ucFlagEmergencySpeaker -> -> 0 `i `uc ]
+"26
+[; ;SPEAKER.c: 26:     }
+}
+[e :U 3181 ]
+"27
+[; ;SPEAKER.c: 27: }
 [e :UE 3176 ]
 }

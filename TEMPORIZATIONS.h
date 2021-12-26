@@ -16,19 +16,19 @@ extern "C" {
 #define MINS_30 1800    
 #define MINS_15 900    
 #define MINS_1 60
-#define SEC_30 30
+#define SEC_5 5
     
 //VARIABLES    
 unsigned int uiCount30min;  
 unsigned int uiCount15min;
 unsigned int uiCount1min;
-unsigned int uiCount30s;
+unsigned int uiCount5s;
 
 //FUNCIONES
 void TEMPORIZATION_10ms (void);
 void TEMPORIZATION_100ms (void);
 void TEMPORIZATION_1s (void);
-void TEMPORIZATION_30s (void);
+void TEMPORIZATION_5s (void);
 void TEMPORIZATION_1mins (void);
 void TEMPORIZATION_15mins (void);
 void TEMPORIZATION_30mins (void);

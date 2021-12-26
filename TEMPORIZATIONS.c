@@ -13,7 +13,7 @@
 unsigned int uiCount30min;  
 unsigned int uiCount15min;
 unsigned int uiCount1min;
-unsigned int uiCount30s;
+unsigned int uiCount5s;
 
 
 //FUNCIONES
@@ -34,10 +34,10 @@ void TEMPORIZATION_1s (void)
         TEMPORIZATION_1mins();
         uiCount1min = 0;
     }
-    else if (uiCount30s++ > 1)
+    else if (uiCount5s++ > SEC_5)
     {
-        TEMPORIZATION_30s();
-        uiCount30s = 0;
+        TEMPORIZATION_5s();
+        uiCount5s = 0;
     }
     
 }
@@ -68,7 +68,7 @@ void TEMPORIZATION_1mins (void)
 
 }
 
-void TEMPORIZATION_30s (void)
+void TEMPORIZATION_5s (void)
 {
-    
+    MESSSAGES_ASSIState();
 }

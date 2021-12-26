@@ -21,8 +21,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./TEMPORIZATIONS.h: 32: void TEMPORIZATION_1mins (void);
 [v _TEMPORIZATION_1mins `(v ~T0 @X0 0 ef ]
 "31
-[; ;./TEMPORIZATIONS.h: 31: void TEMPORIZATION_30s (void);
-[v _TEMPORIZATION_30s `(v ~T0 @X0 0 ef ]
+[; ;./TEMPORIZATIONS.h: 31: void TEMPORIZATION_5s (void);
+[v _TEMPORIZATION_5s `(v ~T0 @X0 0 ef ]
+"71 ./MESSAGES.h
+[; ;./MESSAGES.h: 71: void MESSSAGES_ASSIState (void);
+[v _MESSSAGES_ASSIState `(v ~T0 @X0 0 ef ]
 "22 ./TEMPORIZATIONS.h
 [; ;./TEMPORIZATIONS.h: 22: unsigned int uiCount30min;
 [v _uiCount30min `ui ~T0 @X0 1 e ]
@@ -33,8 +36,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./TEMPORIZATIONS.h: 24: unsigned int uiCount1min;
 [v _uiCount1min `ui ~T0 @X0 1 e ]
 "25
-[; ;./TEMPORIZATIONS.h: 25: unsigned int uiCount30s;
-[v _uiCount30s `ui ~T0 @X0 1 e ]
+[; ;./TEMPORIZATIONS.h: 25: unsigned int uiCount5s;
+[v _uiCount5s `ui ~T0 @X0 1 e ]
 "363 C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h
 [; ;C:/Users/panze/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f26q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3570,8 +3573,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;TEMPORIZATIONS.c: 15: unsigned int uiCount1min;
 [v _uiCount1min `ui ~T0 @X0 1 e ]
 "16
-[; ;TEMPORIZATIONS.c: 16: unsigned int uiCount30s;
-[v _uiCount30s `ui ~T0 @X0 1 e ]
+[; ;TEMPORIZATIONS.c: 16: unsigned int uiCount5s;
+[v _uiCount5s `ui ~T0 @X0 1 e ]
 "20
 [; ;TEMPORIZATIONS.c: 20: void TEMPORIZATION_1s (void)
 [v _TEMPORIZATION_1s `(v ~T0 @X0 1 ef ]
@@ -3631,18 +3634,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 3185  ]
 "37
-[; ;TEMPORIZATIONS.c: 37:     else if (uiCount30s++ > 1)
+[; ;TEMPORIZATIONS.c: 37:     else if (uiCount5s++ > 5)
 [e :U 3184 ]
-[e $ ! > ++ _uiCount30s -> -> 1 `i `ui -> -> 1 `i `ui 3186  ]
+[e $ ! > ++ _uiCount5s -> -> 1 `i `ui -> -> 5 `i `ui 3186  ]
 "38
 [; ;TEMPORIZATIONS.c: 38:     {
 {
 "39
-[; ;TEMPORIZATIONS.c: 39:         TEMPORIZATION_30s();
-[e ( _TEMPORIZATION_30s ..  ]
+[; ;TEMPORIZATIONS.c: 39:         TEMPORIZATION_5s();
+[e ( _TEMPORIZATION_5s ..  ]
 "40
-[; ;TEMPORIZATIONS.c: 40:         uiCount30s = 0;
-[e = _uiCount30s -> -> 0 `i `ui ]
+[; ;TEMPORIZATIONS.c: 40:         uiCount5s = 0;
+[e = _uiCount5s -> -> 0 `i `ui ]
 "41
 [; ;TEMPORIZATIONS.c: 41:     }
 }
@@ -3715,13 +3718,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 3191 ]
 }
 "71
-[; ;TEMPORIZATIONS.c: 71: void TEMPORIZATION_30s (void)
-[v _TEMPORIZATION_30s `(v ~T0 @X0 1 ef ]
+[; ;TEMPORIZATIONS.c: 71: void TEMPORIZATION_5s (void)
+[v _TEMPORIZATION_5s `(v ~T0 @X0 1 ef ]
 "72
 [; ;TEMPORIZATIONS.c: 72: {
 {
-[e :U _TEMPORIZATION_30s ]
+[e :U _TEMPORIZATION_5s ]
 [f ]
+"73
+[; ;TEMPORIZATIONS.c: 73:     MESSSAGES_ASSIState();
+[e ( _MESSSAGES_ASSIState ..  ]
 "74
 [; ;TEMPORIZATIONS.c: 74: }
 [e :UE 3192 ]

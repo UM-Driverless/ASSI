@@ -92,9 +92,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S3064 . . ]
 "1615
 [v _LATCbits `VS3064 ~T0 @X0 0 e@1216 ]
-"16 mcc_generated_files/../SPEAKER.h
-[; ;mcc_generated_files/../SPEAKER.h: 16: void SPEAKER (void);
-[v _SPEAKER `(v ~T0 @X0 0 ef ]
 [v F22386 `(v ~T0 @X0 0 tf ]
 [v F22388 `(v ~T0 @X0 0 tf ]
 [v F22390 `(v ~T0 @X0 0 tf ]
@@ -3624,8 +3621,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/../TEMPORIZATIONS.h: 24: unsigned int uiCount1min;
 [v _uiCount1min `ui ~T0 @X0 1 e ]
 "25
-[; ;mcc_generated_files/../TEMPORIZATIONS.h: 25: unsigned int uiCount30s;
-[v _uiCount30s `ui ~T0 @X0 1 e ]
+[; ;mcc_generated_files/../TEMPORIZATIONS.h: 25: unsigned int uiCount5s;
+[v _uiCount5s `ui ~T0 @X0 1 e ]
 "26 mcc_generated_files/../MESSAGES.h
 [; ;mcc_generated_files/../MESSAGES.h: 26: CAN_MSG_OBJ msgTransmit;
 [v _msgTransmit `S3178 ~T0 @X0 1 e ]
@@ -3781,8 +3778,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/tmr0.c: 129:     PIR3bits.TMR0IF = 0;
 [e = . . _PIR3bits 0 7 -> -> 0 `i `uc ]
 "131
-[; ;mcc_generated_files/tmr0.c: 131:     if (++CountCallBack >= 36)
-[e $ ! >= -> =+ F22384 -> -> 1 `i `Vus `ui -> -> 36 `i `ui 3186  ]
+[; ;mcc_generated_files/tmr0.c: 131:     if (++CountCallBack >= 4)
+[e $ ! >= -> =+ F22384 -> -> 1 `i `Vus `ui -> -> 4 `i `ui 3186  ]
 "132
 [; ;mcc_generated_files/tmr0.c: 132:     {
 {
@@ -3829,8 +3826,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 3188 ]
 "155
-[; ;mcc_generated_files/tmr0.c: 155:         SPEAKER();
-[e ( _SPEAKER ..  ]
+[; ;mcc_generated_files/tmr0.c: 155:         do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0);
+[e :U 3194 ]
+{
+[e = . . _LATCbits 0 3 -> ~ -> . . _LATCbits 0 3 `i `uc ]
+}
+[e :U 3193 ]
 "156
 [; ;mcc_generated_files/tmr0.c: 156:     }
 }
@@ -3849,7 +3850,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "163
 [; ;mcc_generated_files/tmr0.c: 163:     if(TMR0_InterruptHandler)
-[e $ ! != _TMR0_InterruptHandler -> -> 0 `i `*F22386 3193  ]
+[e $ ! != _TMR0_InterruptHandler -> -> 0 `i `*F22386 3196  ]
 "164
 [; ;mcc_generated_files/tmr0.c: 164:     {
 {
@@ -3859,10 +3860,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "166
 [; ;mcc_generated_files/tmr0.c: 166:     }
 }
-[e :U 3193 ]
+[e :U 3196 ]
 "167
 [; ;mcc_generated_files/tmr0.c: 167: }
-[e :UE 3192 ]
+[e :UE 3195 ]
 }
 "169
 [; ;mcc_generated_files/tmr0.c: 169: void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
@@ -3876,7 +3877,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _TMR0_InterruptHandler _InterruptHandler ]
 "171
 [; ;mcc_generated_files/tmr0.c: 171: }
-[e :UE 3194 ]
+[e :UE 3197 ]
 }
 "173
 [; ;mcc_generated_files/tmr0.c: 173: void TMR0_DefaultInterruptHandler(void){
@@ -3886,5 +3887,5 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "176
 [; ;mcc_generated_files/tmr0.c: 176: }
-[e :UE 3195 ]
+[e :UE 3198 ]
 }

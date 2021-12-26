@@ -16,6 +16,12 @@ void SPEAKER (void)
 {
     if (ucASState == AS_EMERGENCY )
     {
-        SPEAKER_Toggle();
+        SPEAKER_SetHigh();
+        ucFlagEmergencySpeaker = 1;
+    }
+    else 
+    {
+        SPEAKER_SetLow();
+        ucFlagEmergencySpeaker = 0;
     }
 }
