@@ -108,6 +108,7 @@ void CANReadMessage (void)
                         //ENVIAR AQUI MENSAJE DE ESTADO ASSI con el AS que estoy y el anterior
                         LEDS();
                         SPEAKER();
+                        MESSSAGES_ASSIState();
                     }
                     break;
                 default:
