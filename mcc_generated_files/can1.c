@@ -49,6 +49,7 @@
 #include <string.h>
 #include "can1.h"
 #include "../MESSAGES.h"
+#include "pin_manager.h"
 
 #define RX_FIFO_MSG_DATA                (8U)
 #define NUM_OF_RX_FIFO                  (1U)
@@ -293,6 +294,10 @@ void CAN1_Initialize(void)
         CAN1_RX_FIFO_ResetInfo();
         CAN1_ErrorNotificationInterruptEnable();
         CAN1_OperationModeSet(CAN_NORMAL_2_0_MODE);    
+        
+        //Inicializacion driver CAN LOW = HIGH SPEED MODE
+        STBY_SetDigitalOutput();
+        STBY_SetLow();
     }
 }
 
